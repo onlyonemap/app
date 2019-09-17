@@ -1,0 +1,103 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="text-center p-lg">
+                    <h2>{$array.sermonth|date="Y年m月",###}第 {$array.batch} 次对账单详情</h2>
+                </div>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr style="background-color:#F0FAFD;">
+                            <td class="project-completion">
+                                订单编号
+                            </td>
+                            <td class="project-completion">
+                                接单时间
+                            </td>
+                            <td class="project-completion">
+                                订单承接人
+                            </td>
+                            <td class="project-completion">
+                                运输费用                           
+                            </td>
+                            <td class="project-completion">
+                                
+                            </td>
+                        </tr>
+                        {volist name="$list" id="vo"}
+                            <tr>
+                                <td>{$vo.ordernumber}</td>
+                                <td>{$vo.receivetime|date="Y年m月d日 H:i:s",###}</td>
+                                <td>{$vo.realname}</td>
+                                <td>{$vo.tprice}（元）</td>
+                                <td><a href="/backstage/order/torderdetails?id={$vo.picid}" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 查看</a></td>
+
+                            </tr>
+                        {/volist}
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>{$list->render()}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label">账单总金额:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$array.totalprice}（元）
+                            </div>
+                        </div>
+                        <label class="col-sm-1 control-label">发票号码:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                 <input type="test" value="{$array.Invoiceno}" id="Invoiceno" class="form-control" style="width:200px;">
+                            </div>
+                        </div>
+                        <label class="col-sm-1 control-label">发票金额:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                <input type="test" value="{$array.Invoiceamount}" id="Invoiceamount" class="form-control" style="width:100px;">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                </div>
+                {if condition="$array.Invoiceno eq ''"}
+                    <div class="form-group">
+                        <div class="col-sm-4" style="color:red;">* 确定账单无误，请开票并且填写发票信息！<br>* 如果没有问题，请尽快确定！ </div>
+                        {if condition="$array.confirm eq 0"}
+                        <div class="col-sm-4"><a onClick="javascript:determine({$array.iid});" class="btn btn-w-m btn-success">确  定</a></div>
+                        {/if}
+                        <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-danger">返  回</a>
+                    </div>
+                {else/}
+                    <a onClick="javascript :history.back(-1);" class="btn btn-block btn-outline btn-primary">返  回</a>
+                {/if}
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function upda(id){
+    var price = document.getElementById('newprice');
+    var remark = document.getElementById('remark');
+    window.location.href='/backstage/reconciliation/determineq?id='+id+'&price='+price.value+'&remark='+remark.value;
+}
+function determine(id){
+    var Invoiceno = document.getElementById('Invoiceno');
+    var Invoiceamount = document.getElementById('Invoiceamount');
+    if (!Invoiceno.value) {alert('请填写发票号码！');return false;};
+    if (!Invoiceamount.value) {alert('请填写发票金额！');return false;};
+    window.location.href='/backstage/reconciliation/gdetermine?id='+id+'&Invoiceno='+Invoiceno.value+'&Invoiceamount='+Invoiceamount.value;
+}
+</script>
+{include file="public/footer" /} 

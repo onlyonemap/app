@@ -1,0 +1,117 @@
+{include file="public/header"}
+<style>
+    p{
+        padding: 0;
+        padding-top:10px;
+        margin: 0;
+    }
+    ul>.one{
+        background-color: rgba(238,238,238,0.98);
+        padding: 5px 15px;
+    ;
+    }
+    ul li{
+        display: inline-block;
+    }
+    .tosubmit{
+        margin-left: 30%;
+    }
+</style>
+<body class="gray-bg">
+<div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>
+                        <span>用户组管理</span>
+                        <a href="{:url('admin/auth/authxr')}?qid={$Think.get.qid}"><i class="fa fa-refresh"></i></a>
+                    </h5>
+<!--                    <div class="ibox-tools">-->
+<!--                        <a class="dropdown-toggle"  href="javascript:;" onclick="add()" style="color:#000">-->
+<!--                            <i class="fa fa-wrench"></i> 添加用户组-->
+<!--                        </a>-->
+<!--                    </div>-->
+                </div>
+                <form id="quan" class="form-horizontal m-t">
+                    <input type="hidden" value="{$Think.get.qid}" name="qid">
+                    {volist name='system' id='vo'}
+                    <ul class=""><p class="one"><input type="checkbox" value="{$vo->name}" {if condition="is_numeric(strpos($quanxianstr,$vo->name))"} checked="checked" {/if} name="quanxian[]" onclick="xuanzhong(this,{$vo->id})">{$vo->title}</p>
+                        <li>{if condition="$vo->getSon($vo->id)"}
+                            {volist name='$vo->getSon($vo->id)' id='voo'}
+                            <ul class="">
+                                <p><input class="t" {if condition="is_numeric(strpos($quanxianstr,$voo->name))"}} checked="checked" {/if}  type="checkbox" value="{$voo->name}" name="quanxian[]" onclick="xuanzhong(this,{$vo->id})">{$voo->title}</p>
+                                {if condition="$voo->getSon($voo->id)"}
+                                {volist name='$vo->getSon($voo->id)' id='vooo'}
+                                <ul style="display: inline-block" class="">
+                                    <li><input class="t{$vo->id} t{$voo->id}" {if condition="is_numeric(strpos($quanxianstr,$vooo->name))"} checked="checked" {/if} type="checkbox" value="{$vooo->name}" name="quanxian[]">{$vooo->title}</li>
+                                </ul>
+                                {/volist}
+                                {/if}
+                            </ul>
+                            {/volist}{/if}
+                        </li>
+                    </ul>
+                    {/volist}
+                    <button class="btn btn-primary tosubmit" type="button" value="" onclick="quanxianadd()">提交</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+
+<script src="/static/tpl/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- 自定义js -->
+<script src="/static/tpl/js/content.js?v=1.0.0"></script>
+<script src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+<script>
+    function checkAll(obj){
+        $(obj).parents('.b-group').eq(0).find("input[type='checkbox']").prop('checked', $(obj).prop('checked'));
+    }
+
+    function xuanzhong(hh,sid) {
+        var clk = $('.t'+sid)
+        if(hh.checked){
+            $.each(clk,function (index,value) {
+                clk.eq(index).prop('checked', true)
+            })
+        }else{
+            $.each(clk,function (index,value) {
+                clk.eq(index).prop('checked', false)
+            })
+        }
+    }
+    function quanxianadd() {
+        $.ajax({
+            url:"{:url('admin/auth/tosaveauth')}",
+            data:$('#quan').serialize(),
+            type:'post',
+            dataType:'json',
+            success: function (res) {
+                console.log(res)
+                if(res.result=='success'){
+                    layer.msg(res.msg,{icon:1,time:1200});
+                    setTimeout(function () {
+                        window.location.href="{:url('admin/auth/setting')}"
+                    },2100)
+                }else if(res.result=='error'){
+                    layer.msg(res.msg,{icon:2,time:1200});
+                }
+            }
+        })
+    }
+</script>
+
+
+
+
+</body>
+
+</html>

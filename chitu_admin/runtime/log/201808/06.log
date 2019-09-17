@@ -1,0 +1,50 @@
+[ 2018-08-06T13:28:46+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/city_With
+[ log ] www.ctadmin.com/user/vehicle/city_With [运行时间：0.377000s][吞吐率：2.65req/s] [内存消耗：2,800.59kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'city_With',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1389',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '75750910-aff3-7754-b98a-483a7c87f11c',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryi7TCB8cre1sPtgQg',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/city_With' => '',
+  'token' => 'McTtUpyhOpT6g956O9D6k95OTM1NjIyMWNvZGVwaHAO0O0O',
+  'carid' => '9',
+  'taddress' => '[{"address":"上海市黄浦区自忠路408号"}]',
+  'paddress' => '[{"address":"上海市徐汇区天钥桥南路1298-4号","addtabid":1}]',
+  'ordertype' => '1',
+  'cold_type' => '冷藏2℃~8℃',
+  'data_type' => '2018-06-28 12:00',
+  'price' => '380',
+  'user_discount' => '380',
+  'remark' => '',
+  'cityid' => '45054',
+  'pytype' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->city_With[ E:\chitu\chitu_admin\trunk\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1529898999356221codephp' LIMIT 1 [ RunTime:0.050000s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/iCheck/custom.css" rel="stylesheet" />
+    <link href="/static/tpl/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+    <link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>用户反馈信息已解决列表</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/feedback/index" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="input-group date date-view-three" data-provide="datepicker">
+                            <div class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </div>
+                            <input type="text" name="starttime" id="starttime" value="<?php echo isset($_GET['starttime'])?$_GET['starttime']:'' ?>" class="form-control" placeholder="搜索开始时间">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-1">
+                        <p class="form-control-static text-center">----</p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="input-group date date-view-three" data-provide="datepicker">
+                            <div class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </div>
+                            <input type="text" id="endtime" name="endtime" value="<?php echo isset($_GET['endtime'])?$_GET['endtime']:'' ?>" class="form-control" placeholder="搜索结束时间">
+                        </div>
+                    </div>
+
+                    <div class="col-md-1">
+                        <div class="input-group text-right">
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <table class="footable table table-stripped toggle-arrow-tiny" >
+                    <thead>
+                        <tr>  
+                            <th></th>
+                            <th class="text-left">内容</th>
+                            <th class="text-left">联系人</th>
+                            <th class="text-left">用户类型</th>
+                            <th class="text-left">时间</th>
+
+                            <th class="text-right">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>  
+                            <td ><input type="checkbox" value="{$vo.id}" class="i-checks check-list text-left" name="id"></td>   
+                            <td class="text-left">{$vo.content}</td> 
+                            <td class="text-left">{$vo.username}</td>
+                            <td class="text-left">{if condition="($vo.type==1)"}用户端{else/}司机端{/if}</td>  
+                            <td class="text-left">{$vo.add_time|date='Y-m-d H:i:s',###}</td>
+                            <td class="text-right">
+                                <a href="/admin/feedback/del?id={$vo.id}&
+                                " class="btn btn-info" ><i class="fa fa-paste"></i>删除</a>
+                            </td>
+                        </tr>
+
+                        {/volist}
+                    
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td >
+                                <input class="i-checks" id="allCheck" type="checkbox" />
+                                <label for="allCheck">全选</label>
+                            </td>
+                            <td colspan="5">
+                                <a class="btn btn-sm btn-primary" id="del" href="javascript:;">删除</a>
+                            </td> 
+                        </tr>
+                    </tfoot>
+                </table>
+                {$page}
+            </div>
+        </div>
+    </div>
+    
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+     <!-- 日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <!-- 调用日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+    <script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="/static/tpl/js/calliCheck.js"></script>
+    <script type="text/javascript" src="/static/tpl/js/reconciliation.js"></script>
+    <script src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#del").click(function(){
+                var chk_value = new Array();
+                var length = $('input[name="id"]:checked').length;
+                $('input[name="id"]:checked').each(function(){
+                    chk_value.push($(this).val());//将选中的值添加到数组chk_value中
+                });
+                layer.confirm('确定要删除这条定制线路吗', {
+                    btn: ['确定','取消'] //按钮
+                }, function(){
+                    layer.closeAll();
+                    $.get('/admin/feedback/del',{del:2,id:chk_value},function(msg){
+                        if (msg =="ok") {
+                            location.reload();
+                        }else if(msg == "fail"){
+                            alert("操作有误!!!");
+                            return false;
+                        }
+                    });
+              });
+            });
+            // 查询
+            $('#search').click(function(){
+                var endtime = document.getElementById("endtime").value;
+                var starttime = document.getElementById("starttime").value;
+                window.location.href='/admin/feedback/index?starttime='+starttime+'&endtime='+endtime;
+            });
+        })
+    </script>
+</body>
+
+</html>

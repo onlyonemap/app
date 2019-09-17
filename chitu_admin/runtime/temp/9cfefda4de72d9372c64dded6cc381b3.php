@@ -1,0 +1,64 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"D:\WWW\chitu_admin\public/../application/admin\view\error\index.html";i:1519958841;}*/ ?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="以“移动互联网技术＋冷链运营技术”为基础，线上统一规划、线下协同运作，聚合温控资源，以区域配送为核心，云仓、零担班线和整车为侧翼的产品矩阵， 打造全程可视化、一站式稳定交付的温控管理平台。公司地址：上海市嘉定区金沙江西路1555弄慧创国际；热线电话：4009-206-101" />
+		<meta name="keywords" content="chitu,赤途,gongyinglian,供应链,物流,冷链,货车,零担,整车,承运商,运输" />
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+		<link href="/static/tpl/css/404.css" type="text/css" rel="stylesheet" />
+		<title>出错了</title>
+	</head>
+	<body>
+		<div class="header"></div>
+		
+		<!--页面主体文本，配图-->
+		<div class="container">
+			<div class="mainContent">
+				<div class="picture">
+					
+					<!--404配图-->
+					<div>
+						<img class="alignment" src="/static/tpl/img/404.png" alt="404图片" />
+					</div>
+				</div>
+				<div class="hintContent alignment">
+					
+					<!--主体内容-->
+					<p>您在访问另一个平行宇宙中的页面</p>
+					<p>对不起，您要访问的页面可能跑到了另一个平行宇宙中。您可以返回首页。</p>
+				</div>
+				<div class="button alignment">
+					
+					<!--跳转按钮-->
+					<div><a href="https://app.56cold.com/admin/" >返回首页</a></div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+			
+			<!--右侧配图-->
+			<div class="rightFigure">
+				<div>
+					<img src="/static/tpl/img/UFO.png" alt="右侧配图" />
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+		
+	</body>
+</html>
+ <script type="text/javascript">
+        
+
+        
+                
+setTimeout(function(){
+	parent.location.reload();
+
+//window.location.href='https://t.56cold.com/admin/';
+},1500);
+          
+    </script>

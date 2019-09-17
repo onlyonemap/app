@@ -1,0 +1,210 @@
+[ 2018-12-17T10:40:46+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.ctadmin.com/user/placeorder/datalist [运行时间：17.048000s][吞吐率：0.06req/s] [内存消耗：2,806.84kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '385',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => 'fa28b553-43bb-6358-3ce6-e71a90047b63',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryletzyk1Nd0AL5Jn8',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp0hNpD6g9z6N9j6k93MTE5NDE3N2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ E:\chitu\chitu_project\trunk\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.149000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.073000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.075000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1544836971194177codephp' LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 125  AND `delstate` = 1 LIMIT 1 [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.073000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1545062400 AND `g`.`deptime` < 1545580799 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.089000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_tpprice` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_tpprice` WHERE  `companyid` = 158  AND `type` = 1  AND `province` = 45054 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_tpprice` WHERE  `companyid` = 158  AND `type` = 2  AND `province` = 45052 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.092000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 2 LIMIT 1 [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.317000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 3 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 4 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.084000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 5 LIMIT 1 [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.046000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 6 LIMIT 1 [ RunTime:0.078000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.079000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.034000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 7 LIMIT 1 [ RunTime:0.094000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.142000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.072000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_cost` [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_city_cost` WHERE  `c_city` = 45054  AND `delstate` = 1 LIMIT 1 [ RunTime:0.082000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.064000s ]
+
+---------------------------------------------------------------
+[ 2018-12-17T17:31:15+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.ctadmin.com/user/placeorder/datalist [运行时间：0.434000s][吞吐率：2.30req/s] [内存消耗：2,756.12kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '385',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '7f9a4125-97f9-4b5e-bab0-500cd35c0c7e',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryt1JHn2PqTCdAeytJ',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp0hNpD6g9z6N9j6k93MTE5NDE3N2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ E:\chitu\chitu_project\trunk\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.082000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1544836971194177codephp' LIMIT 1 [ RunTime:0.063000s ]
+
+---------------------------------------------------------------
+[ 2018-12-17T17:32:06+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.ctadmin.com/user/placeorder/datalist [运行时间：17.109000s][吞吐率：0.06req/s] [内存消耗：2,810.53kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '385',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '1d42fb7d-0139-7330-5f91-de70f8a5b09f',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryMzBQzEdAv1aFA7RQ',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp0hNpT6A9y6O9T6M93MDYzNjEyOWNvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ E:\chitu\chitu_project\trunk\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.079000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1545029370636129codephp' LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.076000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 125  AND `delstate` = 1 LIMIT 1 [ RunTime:0.075000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.094000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.082000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1545062400 AND `g`.`deptime` < 1545580799 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_tpprice` [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_tpprice` WHERE  `companyid` = 158  AND `type` = 1  AND `province` = 45054 LIMIT 1 [ RunTime:0.073000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_tpprice` WHERE  `companyid` = 158  AND `type` = 2  AND `province` = 45052 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.077000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.084000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.034000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 2 LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.073000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 3 LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.081000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 4 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 5 LIMIT 1 [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 6 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 7 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_cost` [ RunTime:0.072000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_city_cost` WHERE  `c_city` = 45054  AND `delstate` = 1 LIMIT 1 [ RunTime:0.098000s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>项目公司列表</h5>
+                <div class="ibox-tools">
+                    <a class="dropdown-toggle" href="/admin/manager/addmanager" style="color: #000">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <span>添加</span>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/manager/index" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="provSelect1" value="" placeholder="请输入公司名称" /> 
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <table class="footable table table-stripped toggle-arrow-tiny">
+                    <thead>
+                        <tr>
+                            <th>公司名称</th>
+                            <th class="text-right">信用额度</th>
+                            <th class="text-right">剩余额度</th>
+                            <th class="text-right">添加时间</th>
+                            <th class="text-right">操作</th>
+                            <th class="text-center" data-hide="all"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>
+                            <td>{$vo.name}</td>
+                            <td class="text-right">{$vo.credit}</td>
+                            <td class="text-right">{$vo.money}</td>
+                            <td class="text-right">{$vo.addtime|date='Y-m-d h:m:s',###}</td>
+                            <td class="text-right">
+                                <a class="btn btn-info" href="/admin/manager/detail?cid={$vo.cid}" >
+                                    <span class="glyphicon glyphicon-file"></span>
+                                    <span>详情</span>
+                                </a>
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">操作 <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/admin/manager/updatemanager?cid={$vo.cid}" >修改</a></li>
+                                        <li><a class="confir"  data-ur="/admin/manager/delcom?cid={$vo.cid}" href="javascript:;" >删除</a></li>
+                                        <li><a class="carryout"  data-id="{$vo.cid}">修改信用额度</a></li>
+                                        {if condition="($vo.customer == 1)"}
+                                            <li><a  href="javascript:;" class="upuser" data-url="/admin/manager/upgrade?cid={$vo.cid}" >公司升级</a></li>
+                                        {/if}
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                {if condition="isset($vo.alluser)"}
+                                <table class=" table">
+                                    <thead>
+                                        <th width="20%">真实姓名</th>
+                                        <th width="20%">用户名</th>
+                                        <th width="20%">性别</th>
+                                        <th width="20%">联系方式</th>
+                                        <th width="20%">职位</th>
+                                    </thead>
+                                    <tbody>
+                                        {volist name="vo.alluser" id="v"}
+                                        <tr>
+                                            <td width="20%">{$v.realname}</td>
+                                            <td width="20%">{$v.username}</td>
+                                            <td width="20%">{if condition="($v.sex =='1')"}男{else/}女{/if}</td>
+                                            <td width="20%">{$v.phone}</td>
+                                            <td width="20%">{if condition="($v.user_grade =='1')"}管理员{else/}业务员{/if}</td>
+                                        <tr/>
+                                        {/volist}
+                                    </tbody>
+                                </table>
+                                {/if}
+                            </td>
+                        </tr>
+                        {/volist}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="8">{$page}</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+    <script type="text/javascript" src="/static/tpl/js/plugins/layer-v3.3.1/layer.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /**
+             * 修改信用额度
+             * @Auther: 李渊
+             * @Date: 2018.7.5
+             * @param  {[type]} data [请求参数]
+             * @return {[type]}      [description]
+             */
+            function updateCredit(data) {
+                $.ajax({
+                    url: '/admin/manager/recharge',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: data,
+                })
+                .done(function(response) {
+                    layer.msg(response.message);
+                    if(response.code){
+                        setTimeout(function (argument) {
+                            window.location.reload();
+                        },1000)
+                    }
+                })
+                .fail(function() {
+                    console.log("error");
+                })
+                .always(function() {
+                    console.log("complete");
+                });
+            }
+            // 初始化表格
+            $('.footable').footable();
+            // 查询
+            $('#search').click(function(){
+                var psel = document.getElementById("provSelect1");
+                window.location.href='/admin/manager/index?search='+psel.value;
+            });
+            // 删除公司
+            $('.confir').click(function(){
+            	var url = $(this).attr("data-ur");
+                layer.confirm('删除后数据将无法找回，确定要执行该操作吗？', {
+                    btn: ['确定','取消'] //按钮
+                }, function(){
+                    window.location.href=url;
+                }, function(){
+                	
+                });
+            });
+            // 用户升级
+            $('.upuser').click(function(){
+                var url = $(this).attr("data-url");
+                layer.confirm('您确定要升级用户为定制用户吗？', {
+                    btn: ['确定','取消'] //按钮
+                }, function(){
+                    window.location.href=url;
+                }, function(){
+                    
+                });
+            });
+            // 修改公司信用额度
+            $(".carryout").click(function(){
+                // 获取公司id
+                var companyId = $(this).attr('data-id');
+                // 弹出层
+                layer.prompt({title: '请填写调整的信用额度值', formType: 0}, function(value, index, elem){
+                    // 关闭弹出层
+                    layer.close(index);
+                    // 获取输入的值
+                    var value = !isNaN(value) ? value : 0;
+                    // 更新信用额度
+                    updateCredit({number:value,id:companyId});
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

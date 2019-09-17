@@ -1,0 +1,184 @@
+ <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs" style="font-size:20px;">
+                                        <i class="fa fa-area-chart"></i>
+                                        <strong class="font-bold">{$arr.name}</strong>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="logo-element">{$arr.name}
+                        </div>
+                    </li>
+                    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                        <span class="ng-scope">管理菜单</span>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="/backstage/index/main">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-user"></i>
+                            <span class="nav-label">账号管理</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/account/index">账号列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    {if condition="$usertype eq 'user'"}
+                     <li>
+                        <a href="#">
+                            <i class="fa fa-user"></i>
+                            <span class="nav-label">订单导入</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/orderimport/imcarload">整车订单导入</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="/backstage/orderimport/imcity">市配订单导入</a>
+                            </li>
+                        </ul>
+                    </li>
+                    {/if}
+                    {if condition="$usertype eq 'driver'"}
+                    <li>
+                         <a href="#">
+                            <i class="fa fa-user"></i>
+                            <span class="nav-label">干线运营</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/carrcompany/index">干线公司</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="/backstage/shift/index">干线班次</a>
+                            </li>
+                             <li>
+                                <a class="J_menuItem" href="/backstage/shift/template">干线模板</a>
+                            </li>
+                            <!--<li>
+                                <a class="J_menuItem" href="/backstage/shift/shiftlog">班次队列</a>
+                            </li>-->
+                        </ul>
+                    </li>
+                    {/if}
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-list-alt"></i>
+                            <span class="nav-label">订单查询</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        {if condition="$usertype eq 'driver'"}
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/order/torder">提货订单列表</a>
+                            </li>
+                        </ul>
+                        {/if}
+                        {if condition="$usertype eq 'user'"}
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/order/uorder">订单列表</a>
+                            </li>
+                        </ul>
+                        {/if}
+                        {if condition="$usertype eq 'driver'"}
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/order/gorder">干线订单列表</a>
+                            </li>
+                        </ul>
+                        {/if}
+                        {if condition="$usertype eq 'driver'"}
+                        <!--承运商-->
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/order/cityvehicle">整车订单列表</a>
+                            </li>
+                        </ul>
+                        {/if}
+                       {if condition="$usertype eq 'user'"}
+                       <!--项目客户-->
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/order/usercityvehicle">整车订单列表</a>
+                            </li>
+                        </ul>
+                        {/if}
+                        {if condition="$usertype eq 'driver'"}
+                        <!--承运商-->
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/order/citydistribution">市内配送订单列表</a>
+                            </li>
+                        </ul>
+                        {/if}
+                         {if condition="$usertype eq 'user'"}
+                        <!--项目客户-->
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/order/usercity">市内配送订单列表</a>
+                            </li>
+                        </ul>
+                        {/if}
+                    </li>
+                    {if condition="$usertype eq 'driver'"}
+                    <li>
+                        <a href="#">
+                            <i class="fa fa fa-bar-chart-o"></i>
+                            <span class="nav-label">车辆信息</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/vehiclereview">车辆列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    {/if}
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-balance-scale"></i>
+                            <span class="nav-label">运营对账</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/reconciliation/index">账单确认</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            <i class="fa fa fa-bar-chart-o"></i>
+                            <span class="nav-label">统计图表</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/backstage/account/index">总统计图表</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                  
+                </ul>
+            </div>
+        </nav>
+        <!--左侧导航结束-->

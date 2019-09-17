@@ -1,0 +1,678 @@
+[ 2018-10-16T13:36:25+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.ctadmin.com/ [运行时间：0.375000s][吞吐率：2.67req/s] [内存消耗：1,965.14kb] [文件加载：47]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-10-16T13:36:25+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.ctadmin.com/admin/index/login.html [运行时间：0.058500s][吞吐率：17.09req/s] [内存消耗：1,902.77kb] [文件加载：46]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-10-16T13:36:27+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.ctadmin.com/admin/index/login_send [运行时间：0.297500s][吞吐率：3.36req/s] [内存消耗：2,681.83kb] [文件加载：54]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ctadmin.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => 'admin',
+  'admin_password' => '666666',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.146000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `username` = 'admin'  AND `password` = 'b3149bc65f030e6b5e5ce5cb645adb65'  AND `pstate` = 1 LIMIT 1 [ RunTime:0.060500s ]
+
+---------------------------------------------------------------
+[ 2018-10-16T13:36:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ log ] www.ctadmin.com/admin/index/index.html [运行时间：0.776500s][吞吐率：1.29req/s] [内存消耗：1,920.58kb] [文件加载：46]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-10-16T13:36:29+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/patterns/header-profile.png
+[ log ] www.ctadmin.com/static/tpl/css/patterns/header-profile.png [运行时间：0.166000s][吞吐率：6.02req/s] [内存消耗：1,491.03kb] [文件加载：40]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/static/tpl/css/style.min862f.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/patterns/header-profile_png' => '',
+  'patterns' => 'header-profile.png',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-10-16T13:36:30+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.924000s][吞吐率：1.08req/s] [内存消耗：2,650.59kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1539408989' AND `addtime` < '1539668189' )  AND `paystate` IN (2,4)  AND `state` = 1 LIMIT 1 [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.070500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1539408990' AND `addtime` < '1539668190' )  AND `paystate` IN (2,4,5)  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1539408990' AND `addtime` < '1539668190' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1539408990' AND `addtime` < '1539668190' )  AND `status` = '1' LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1539408990' AND `addtime` < '1539668190' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.074500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1539408990' AND `addtime` < '1539668190' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.070500s ]
+
+---------------------------------------------------------------
+[ 2018-10-16T13:36:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/main
+[ log ] www.ctadmin.com/admin/index/main [运行时间：5.474500s][吞吐率：0.18req/s] [内存消耗：2,730.80kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/main' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\index\main.html [ array (
+  0 => 'alipay',
+  1 => 'wechat',
+  2 => 'credit',
+  3 => 'balance',
+  4 => 'tatol_pay',
+  5 => 'pay_recharge',
+  6 => 'wei_recharge',
+  7 => 'client_recharge',
+  8 => 'driver_recharge',
+  9 => 'sum_recharge',
+  10 => 'replay_count',
+  11 => 'replay_pass',
+  12 => 'replay_pass_success',
+  13 => 'replay_sum',
+  14 => 'user',
+  15 => 'driver',
+  16 => 'proceed_order',
+  17 => 'finish_order',
+  18 => 'Invalid_order',
+  19 => 'count_order',
+  20 => 'uncity_user_order',
+  21 => 'city_user_order',
+  22 => 'city_user_cancelorder',
+  23 => 'city_user_countorder',
+  24 => 'uncity_driver_order',
+  25 => 'city_driver_order',
+  26 => 'city_driver_cancelorder',
+  27 => 'city_driver_countorder',
+  28 => 'unfeed_message',
+  29 => 'feed_message',
+  30 => 'sum_applay',
+  31 => 'sum_applay_year',
+  32 => 'sum_pay',
+  33 => 'sum_pay_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_paymessage` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 1  AND `state` = 1  AND ( `paytime` > '1539532800' AND `paytime` < '1539619199' ) LIMIT 1 [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 1  AND `state` = 1  AND ( `paytime` > '1539532800' AND `paytime` < '1540137599' ) LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 1  AND `state` = 1  AND ( `paytime` > '1538323200' AND `paytime` < '1541001599' ) LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 1  AND `state` = 1  AND ( `paytime` > '1514736000' AND `paytime` < '1546271999' ) LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 1  AND `state` = 1 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 2  AND `state` = 1  AND ( `paytime` > '1539532800' AND `paytime` < '1539619199' ) LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 2  AND `state` = 1  AND ( `paytime` > '1539532800' AND `paytime` < '1540137599' ) LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 2  AND `state` = 1  AND ( `paytime` > '1538323200' AND `paytime` < '1541001599' ) LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 2  AND `state` = 1  AND ( `paytime` > '1514736000' AND `paytime` < '1546271999' ) LIMIT 1 [ RunTime:0.057500s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.057500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.073000s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1539619199' ) LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1540137599' ) LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1538323200' AND `addtime` < '1541001599' ) LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1514736000' AND `addtime` < '1546271999' ) LIMIT 1 [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 1  AND `paystate` = 2 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1539619199' ) LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1540137599' ) LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1538323200' AND `addtime` < '1541001599' ) LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1514736000' AND `addtime` < '1546271999' ) LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 1  AND `paystate` = 2 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1539619199' ) LIMIT 1 [ RunTime:0.073500s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1540137599' ) LIMIT 1 [ RunTime:0.035500s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1538323200' AND `addtime` < '1541001599' ) LIMIT 1 [ RunTime:0.036500s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1514736000' AND `addtime` < '1546271999' ) LIMIT 1 [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 1  AND `paystate` = 2 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1539619199' ) LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1540137599' ) LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1538323200' AND `addtime` < '1541001599' ) LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 1  AND `paystate` = 2  AND ( `addtime` > '1514736000' AND `addtime` < '1546271999' ) LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 1  AND `paystate` = 2 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1539619199' ) LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1540137599' ) LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1538323200' AND `addtime` < '1541001599' ) LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1514736000' AND `addtime` < '1546271999' ) LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT SUM(paymoney) AS tp_sum FROM `ct_city_order` WHERE  `pay_type` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1539619199' ) LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1540137599' ) LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1538323200' AND `addtime` < '1541001599' ) LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1514736000' AND `addtime` < '1546271999' ) LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT SUM(referprice) AS tp_sum FROM `ct_userorder` WHERE  `pay_type` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1539619199' ) LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1540137599' ) LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1538323200' AND `addtime` < '1541001599' ) LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1514736000' AND `addtime` < '1546271999' ) LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT SUM(totalprice) AS tp_sum FROM `ct_shift_order` WHERE  `pay_type` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1539619199' ) LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1539532800' AND `addtime` < '1540137599' ) LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1538323200' AND `addtime` < '1541001599' ) LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 2  AND `paystate` = 2  AND ( `addtime` > '1514736000' AND `addtime` < '1546271999' ) LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(all_price) AS tp_sum FROM `ct_order` WHERE  `pay_type` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 1  AND `state` = 2 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 2  AND `state` = 2 LIMIT 1 [ RunTime:0.034000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `type` = 1  AND `state` = 2 LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `type` = 2  AND `state` = 2 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` LIMIT 1 [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_application` [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ct_application` WHERE  `states` = 1 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ct_application` WHERE  `states` = 2 LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ct_application` WHERE  `states` = 4 LIMIT 1 [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ct_application` WHERE  `states` = 4 LIMIT 1 [ RunTime:0.034500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.064500s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  ( `addtime` > '1539532800' AND `addtime` < '1539619199' )  AND `delstate` = 1 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  ( `addtime` > '1539532800' AND `addtime` < '1540137599' )  AND `delstate` = 1 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  ( `addtime` > '1538323200' AND `addtime` < '1541001599' )  AND `delstate` = 1 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  ( `addtime` > '1514736000' AND `addtime` < '1546271999' )  AND `delstate` = 1 LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  `delstate` = 1 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.076000s ]
+[ sql ] [ SQL ] SELECT COUNT(drivid) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1539532800' AND `addtime` < '1539619199' )  AND `delstate` = 1 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT COUNT(drivid) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1539532800' AND `addtime` < '1540137599' )  AND `delstate` = 1 LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT COUNT(drivid) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1538323200' AND `addtime` < '1541001599' )  AND `delstate` = 1 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT COUNT(drivid) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1514736000' AND `addtime` < '1546271999' )  AND `delstate` = 1 LIMIT 1 [ RunTime:0.028500s ]
+[ sql ] [ SQL ] SELECT COUNT(drivid) AS tp_count FROM `ct_driver` WHERE  `delstate` = 1 LIMIT 1 [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` WHERE  `orderstate` NOT IN (7,8)  AND `paystate` = 2 LIMIT 1 [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` WHERE  `orderstate` = 7  AND `paystate` = 2 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` WHERE  `paystate` = 1 LIMIT 1 [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` LIMIT 1 [ RunTime:0.059500s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `orderstate` = 3 LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `paystate` = 1 LIMIT 1 [ RunTime:0.067500s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` LIMIT 1 [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_city_order` WHERE  `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.057500s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_city_order` WHERE  `paystate` = 2  AND `state` = 3 LIMIT 1 [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_city_order` WHERE  `paystate` = 1 LIMIT 1 [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_city_order` LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_feedback` [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_feedback` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.065500s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_feedback` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ct_application` WHERE  `states` = 4 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT sum(money) as count FROM `ct_application` where states=4  AND DATE_FORMAT(FROM_UNIXTIME(start_time),'%Y') = DATE_FORMAT(FROM_UNIXTIME(1539668194),'%Y') [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT sum(paynum) as count FROM `ct_paymessage` where  DATE_FORMAT(FROM_UNIXTIME(paytime),'%Y') = DATE_FORMAT(FROM_UNIXTIME(1539668194),'%Y') [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_device` [ RunTime:0.104500s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_device` WHERE  `model` <> '' LIMIT 1 [ RunTime:0.056500s ]
+
+---------------------------------------------------------------
+[ 2018-10-16T13:36:45+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/manager/index
+[ log ] www.ctadmin.com/admin/manager/index [运行时间：3.722000s][吞吐率：0.27req/s] [内存消耗：2,861.39kb] [文件加载：58]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'manager',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/admin/manager/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Manager->index[ E:\chitu\chitu_admin\trunk\application\admin\controller\Manager.php ]
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\manager\index.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_auth_group_access` [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id`,`title`,`rules` FROM `ct_auth_group_access` `a` INNER JOIN `ct_auth_group` `g` ON `g`.`id`=`a`.`group_id` WHERE  `a`.`uid` = 1  AND `g`.`status` = 1  AND `a`.`ustype` = 1 [ RunTime:0.075500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_auth_rule` [ RunTime:0.076000s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `ct_auth_rule` WHERE  `id` IN (0)  AND `type` = 1  AND `ertype` = 1  AND `status` = 1 [ RunTime:0.068000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_company` [ RunTime:0.081000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_company` WHERE  `status` = 1  AND `type` = 3 LIMIT 1 [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_company` WHERE  `status` = 1  AND `type` = 3 ORDER BY cid desc LIMIT 0,10 [ RunTime:0.072000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_business` [ RunTime:0.078000s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 166 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 166  AND `sort` = 1 LIMIT 1 [ RunTime:0.068500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 166  AND `delstate` = 1 [ RunTime:0.064500s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 164 LIMIT 1 [ RunTime:0.068000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 164  AND `sort` = 1 LIMIT 1 [ RunTime:0.066500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 58 LIMIT 1 [ RunTime:0.075500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 164  AND `delstate` = 1 [ RunTime:0.067500s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 163 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 163  AND `sort` = 2 LIMIT 1 [ RunTime:0.076000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 55 LIMIT 1 [ RunTime:0.066500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 163  AND `delstate` = 1 [ RunTime:0.064500s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 162 LIMIT 1 [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 162  AND `sort` = 1 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 58 LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 162  AND `delstate` = 1 [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 159 LIMIT 1 [ RunTime:0.078000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 159  AND `sort` = 1 LIMIT 1 [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 159  AND `delstate` = 1 [ RunTime:0.077500s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 155 LIMIT 1 [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 155  AND `sort` = 1 LIMIT 1 [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 57 LIMIT 1 [ RunTime:0.073500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 155  AND `delstate` = 1 [ RunTime:0.076000s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 154 LIMIT 1 [ RunTime:0.070500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 154  AND `sort` = 1 LIMIT 1 [ RunTime:0.073500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 57 LIMIT 1 [ RunTime:0.072500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 154  AND `delstate` = 1 [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 153 LIMIT 1 [ RunTime:0.079000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 153  AND `sort` = 1 LIMIT 1 [ RunTime:0.081500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 56 LIMIT 1 [ RunTime:0.094000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 153  AND `delstate` = 1 [ RunTime:0.081000s ]
+
+---------------------------------------------------------------
+[ 2018-10-16T13:37:15+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/manager/index
+[ log ] www.ctadmin.com/admin/manager/index [运行时间：3.106500s][吞吐率：0.32req/s] [内存消耗：2,861.38kb] [文件加载：58]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'manager',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/manager/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/admin/manager/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Manager->index[ E:\chitu\chitu_admin\trunk\application\admin\controller\Manager.php ]
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\manager\index.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_auth_group_access` [ RunTime:0.081000s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id`,`title`,`rules` FROM `ct_auth_group_access` `a` INNER JOIN `ct_auth_group` `g` ON `g`.`id`=`a`.`group_id` WHERE  `a`.`uid` = 1  AND `g`.`status` = 1  AND `a`.`ustype` = 1 [ RunTime:0.106000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_auth_rule` [ RunTime:0.092000s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `ct_auth_rule` WHERE  `id` IN (0)  AND `type` = 1  AND `ertype` = 1  AND `status` = 1 [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_company` [ RunTime:0.085500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_company` WHERE  `status` = 1  AND `type` = 3 LIMIT 1 [ RunTime:0.066500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_company` WHERE  `status` = 1  AND `type` = 3 ORDER BY cid desc LIMIT 0,10 [ RunTime:0.070500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_business` [ RunTime:0.068500s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 166 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 166  AND `sort` = 1 LIMIT 1 [ RunTime:0.058500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.068500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.065500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.071000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 166  AND `delstate` = 1 [ RunTime:0.075500s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 164 LIMIT 1 [ RunTime:0.095000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 164  AND `sort` = 1 LIMIT 1 [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 58 LIMIT 1 [ RunTime:0.088000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 164  AND `delstate` = 1 [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 163 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 163  AND `sort` = 2 LIMIT 1 [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 55 LIMIT 1 [ RunTime:0.059500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 163  AND `delstate` = 1 [ RunTime:0.068000s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 162 LIMIT 1 [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 162  AND `sort` = 1 LIMIT 1 [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 58 LIMIT 1 [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 162  AND `delstate` = 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 159 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 159  AND `sort` = 1 LIMIT 1 [ RunTime:0.059500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.068000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 159  AND `delstate` = 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 155 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 155  AND `sort` = 1 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 57 LIMIT 1 [ RunTime:0.073000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 155  AND `delstate` = 1 [ RunTime:0.074000s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 154 LIMIT 1 [ RunTime:0.104500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 154  AND `sort` = 1 LIMIT 1 [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 57 LIMIT 1 [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 154  AND `delstate` = 1 [ RunTime:0.075000s ]
+[ sql ] [ SQL ] SELECT MAX(sort) AS tp_max FROM `ct_business` WHERE  `cid` = 153 LIMIT 1 [ RunTime:0.073000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_business` WHERE  `cid` = 153  AND `sort` = 1 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `aid` = 56 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `lineclient` = 153  AND `delstate` = 1 [ RunTime:0.080500s ]
+
+---------------------------------------------------------------
+[ 2018-10-16T13:37:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/customline/companylist
+[ log ] www.ctadmin.com/admin/customline/companylist [运行时间：1.992500s][吞吐率：0.50req/s] [内存消耗：2,946.10kb] [文件加载：58]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'customline',
+    2 => 'companylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/admin/customline/companylist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Customline->companylist[ E:\chitu\chitu_admin\trunk\application\admin\controller\Customline.php ]
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\customline\companylist.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_auth_group_access` [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id`,`title`,`rules` FROM `ct_auth_group_access` `a` INNER JOIN `ct_auth_group` `g` ON `g`.`id`=`a`.`group_id` WHERE  `a`.`uid` = 1  AND `g`.`status` = 1  AND `a`.`ustype` = 1 [ RunTime:0.094000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_auth_rule` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `ct_auth_rule` WHERE  `id` IN (0)  AND `type` = 1  AND `ertype` = 1  AND `status` = 1 [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.096000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_user` `a` INNER JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `a`.`userstate` = 2  AND `a`.`user_grade` = 1  AND `a`.`delstate` = 1  AND `b`.`status` = 1  AND `b`.`customer` = 2 LIMIT 1 [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name`,`b`.`cid` FROM `ct_user` `a` INNER JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `a`.`userstate` = 2  AND `a`.`user_grade` = 1  AND `a`.`delstate` = 1  AND `b`.`status` = 1  AND `b`.`customer` = 2 ORDER BY `a`.`uid`  desc LIMIT 0,10 [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_fixation_line` [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT `a`.*,d.name as carr_company,`c`.`carparame` FROM `ct_fixation_line` `a` LEFT JOIN `ct_company` `d` ON `d`.`cid`=`a`.`carrierid` LEFT JOIN `ct_cartype` `c` ON `c`.`car_id`=`a`.`carid` WHERE  `companyid` = 166  AND `a`.`shiftstate` = '1' [ RunTime:0.068500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.074500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `city_id` = 149 LIMIT 1 [ RunTime:0.092000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.076500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 57 LIMIT 1 [ RunTime:0.034500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45053 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.042500s ]
+[ sql ] [ SQL ] SELECT `a`.*,d.name as carr_company,`c`.`carparame` FROM `ct_fixation_line` `a` LEFT JOIN `ct_company` `d` ON `d`.`cid`=`a`.`carrierid` LEFT JOIN `ct_cartype` `c` ON `c`.`car_id`=`a`.`carid` WHERE  `companyid` = 159  AND `a`.`shiftstate` = '1' [ RunTime:0.073500s ]
+
+---------------------------------------------------------------
+[ 2018-10-16T13:37:30+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.926500s][吞吐率：1.08req/s] [内存消耗：2,650.59kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=7vdap6lfskb110ptreuclo8a17',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.076000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1539409049' AND `addtime` < '1539668249' )  AND `paystate` IN (2,4)  AND `state` = 1 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1539409050' AND `addtime` < '1539668250' )  AND `paystate` IN (2,4,5)  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1539409050' AND `addtime` < '1539668250' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.073000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.082000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1539409050' AND `addtime` < '1539668250' )  AND `status` = '1' LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.079000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1539409050' AND `addtime` < '1539668250' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1539409050' AND `addtime` < '1539668250' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.060000s ]
+
+---------------------------------------------------------------

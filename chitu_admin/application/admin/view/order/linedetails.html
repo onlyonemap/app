@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header" /} 
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+    <link href="/static/tpl/css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
+    <style type="text/css">
+        .lightBoxGallery{
+            display: flex;
+            flex-direction: row;
+        }
+        .lightBoxGallery a {
+            display: flex;
+            margin: 10px;
+            width: 150px;
+            height: 100px;
+            overflow: hidden;
+            border: 5px solid #f3f3f3;
+            border-radius: 5px; 
+        }
+        .lightBoxGallery img {
+            margin: auto;
+            width: 160px;
+        }
+    </style> 
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInUp">
+    <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="ibox-tools">干线订单详情</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>订单详情</h5>
+                    </div>
+                    <div class="ibox-content m-b-sm border-bottom">
+                        <div class="row">
+                            <div class="col-sm-2">订单编号:</div>
+                            <div class="col-sm-10">{$list.ordernumber}-G</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        
+                        <div class="row">
+                            <div class="col-sm-2">班次信息:</div>
+                            <div class="col-sm-10">
+                                <b>{$list.getcompany} </b>
+                                <span>班次号为 <b>{$list.shiftnumber}</b> 的班次</span>
+                                <span>由 {$list.deptime|date='Y年m月d日',###} {$list.timestrat} - {$list.timeend}</span>
+                                <b>出发 从</b>
+                                <span class="label label-primary"> {$list.startcity}</span> 
+                                <b>发往</b> 
+                                <span class="label label-primary">{$list.endcity}</span> 
+                                <span>{$list.endtime|date='Y年m月d日',###} {$list.arrivetimestart} - {$list.arrivetimeend}</span>
+                                <b>到达</b>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">托运公司:</div>
+                            <div class="col-sm-10">{$list.company}</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">下单客户:</div>
+                            <div class="col-sm-10">{$list.username} (TEL:{$list.telephone})</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">接单公司:</div>
+                            <div class="col-sm-10">{$list.drivercom}</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">联系信息:</div>
+                            <div class="col-sm-10">{$list.drivername}/{$list.mobile}</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">收货公司:</div>
+                            <div class="col-sm-10">{$list.getcompany}</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">联系信息:</div>
+                            <div class="col-sm-10">{$list.getname}/{$list.getmobile}</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">物品类别:</div>
+                            <div class="col-sm-10">{$list.itemtype}</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">冷藏类型:</div>
+                            <div class="col-sm-10">{$list.coldtype}</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">提货地址:</div>
+                            <div class="col-sm-10">{$list.tsaddress}</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">配送地址:</div>
+                            <div class="col-sm-10">{$list.psaddress}</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+            
+                        <div class="row">
+                            <div class="col-sm-2">货物规格:</div>
+                            <div class="col-sm-10"> {$list.number}件 {$list.weight}公斤 {$list.volume}立方 </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">干线运费:</div>
+                            <div class="col-sm-10">{$list.linepice|number_format=2} 元</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        
+                        <div class="row">
+                            <div class="col-sm-2">承运运费:</div>
+                            <div class="col-sm-10">{$list.linepice|number_format=2} 元</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-2">订单状态:</div>
+                            <div class="col-sm-10">
+                                {if condition="($list.orderstate ==7)"}
+                                    <span class="label label-primary">已完成</span>
+                                {elseif condition="($list.orderstate == 8)"}
+                                    <span class="label label-warning">订单已取消</span>
+                                {else/}
+                                    {if condition="($list.paystate ==2)" }
+                                        {if condition="($list.linestatus ==1)"}
+                                        <span class="label label-warning">进行中</span>
+                                        {elseif condition="($list.linestatus ==2)"/}
+                                        <span class="label label-info">已接单</span>
+                                        {else/}
+                                        <span class="label label-primary">系统接单</span>
+                                        {/if}
+                                    {else/}
+                                        <span class="label label-danger">未接单</span>
+                                    {/if}
+                                {/if}
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>操作</h5>
+                    </div>
+                    <div class="ibox-content m-b-sm border-bottom">
+                        <div class="row">
+                            <div class="col-sm-2">干线运费:</div>
+                            <div class="col-sm-10">{$list.linepice|number_format=2} (元)</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                      
+                        <div class="row">
+                            <div class="col-sm-2">已修干线费:</div>
+                            <div class="col-sm-10">
+                            {if condition="($list.luseprice !='')"}
+                            {$list.luseprice|number_format=2} (元)
+                            {/if}
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        
+                        {if condition="($list.instate =='1' || $list.instate =='')"}
+                        <div class="row">
+                            <div class="col-sm-2" style="margin-top: 7px">修改干线运费:</div>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <input type="hidden" class="ordernum" value="{$list.lid}">
+                                    <input type="text" class="form-control newprice" value="" /> 
+                                    <span class="input-group-btn">
+                                        <button type="button" id="updateTotal" class="btn btn-primary">修改</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        {/if}
+                        <div class="row">
+                            <div class="col-sm-2">承运运费:</div>
+                            <div class="col-sm-10">{$list.linepice|number_format=2} (元)</div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        
+                        <div class="row">
+                            <div class="col-sm-2">已修承运费:</div>
+                            <div class="col-sm-10">
+                            {if condition="($list.lcarr_price !='')"}
+                            {$list.lcarr_price|number_format=2} (元)
+                            {/if}
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                       
+                        {if condition="($list.carr_instate =='1' || $list.carr_instate =='')"}
+                        <div class="row">
+                            <div class="col-sm-2" style="margin-top: 7px">修改承运商运费:</div>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <input type="hidden" class="orderid" value="{$list.lid}">
+                                    <input type="text" class="form-control carrprice" value="" /> 
+                                    <span class="input-group-btn">
+                                        <button type="button" id="updateprice" class="btn btn-primary">修改</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        {/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script type="text/javascript">
+     $(document).ready(function() {
+        $("#updateTotal").click(function(){
+            var id = $(".ordernum").val();
+            var price = $(".newprice").val();
+            if (price =='') {
+                alert('请填写要修改的总价');
+                return false;
+            };
+            $.post('/admin/order/pick_user_price',{ajax:1,ordertype:2,oid:id,price:price},function(data){
+                window.history.back();
+            });
+        });
+        $("#updateprice").click(function(){
+            var id = $(".orderid").val();
+            var price = $(".carrprice").val();
+            if (price =='') {
+                alert('请填写要修改的总价');
+                return false;
+            };
+            $.post('/admin/order/pick_carr_price',{ajax:1,ordertype:2,oid:id,price:price},function(data){
+                window.history.back();
+            });
+        });
+    })
+</script>

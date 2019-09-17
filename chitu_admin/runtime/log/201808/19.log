@@ -1,0 +1,299 @@
+[ 2018-08-19T11:05:20+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.ctadmin.com/ [运行时间：0.172000s][吞吐率：5.81req/s] [内存消耗：1,952.63kb] [文件加载：47]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-19T11:05:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.ctadmin.com/admin/index/login.html [运行时间：0.214000s][吞吐率：4.67req/s] [内存消耗：1,890.29kb] [文件加载：46]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9btg1aimo2qm1butjs6ptjmuo7',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-19T11:05:40+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/valuation
+[ log ] www.ctadmin.com/user/vehicle/valuation [运行时间：1.407000s][吞吐率：0.71req/s] [内存消耗：2,831.11kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'valuation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1114',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '3a4f3883-1644-b4ad-2e8b-6d4898b7c7e7',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary8X4BlvHmXqBJryXq',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/valuation' => '',
+  'token' => 'McTtUpzhNpD6U9w6M9j6I92NDkzNTg1NmNvZGVwaHAO0O0O',
+  'carid' => '1',
+  'type' => '1',
+  'startcity_str' => '上海市',
+  'endcity_str' => '',
+  'taddress' => '[{"address":"上海市徐汇区上海生命科学研究院生命科学大楼"}]',
+  'paddress' => '[{"address":"上海市上海市嘉定区金沙江西路1555弄","addtabid":1}]',
+  'pickyesno' => '',
+  'sendyesno' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->valuation[ E:\chitu\chitu_admin\trunk\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1534502264935856codephp' LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 126  AND `delstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.027000s ]
+
+---------------------------------------------------------------
+[ 2018-08-19T11:06:45+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/valuation
+[ log ] www.ctadmin.com/user/vehicle/valuation [运行时间：0.230000s][吞吐率：4.35req/s] [内存消耗：2,717.75kb] [文件加载：50]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'valuation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1114',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '43bbb412-a0b6-a2b8-be8f-3a9dc966725a',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryswtrSEO2A3tpA2fA',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/valuation' => '',
+  'token' => 'McTtUpzhNpD6U9w6M9j6I92NDkzNTg1NmNvZGVwaHAO0O0O',
+  'carid' => '1',
+  'type' => '1',
+  'startcity_str' => '上海市',
+  'endcity_str' => '',
+  'taddress' => '[{"address":"上海市徐汇区上海生命科学研究院生命科学大楼"}]',
+  'paddress' => '[{"address":"上海市上海市嘉定区金沙江西路1555弄","addtabid":1}]',
+  'pickyesno' => '',
+  'sendyesno' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->valuation[ E:\chitu\chitu_admin\trunk\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-08-19T11:06:46+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/valuation
+[ log ] www.ctadmin.com/user/vehicle/valuation [运行时间：0.213000s][吞吐率：4.69req/s] [内存消耗：2,717.75kb] [文件加载：50]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'valuation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1114',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '8efa62c2-fafa-e7d3-85df-2ef3590dfd24',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarygu2kujQ6YrO6rDBz',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/valuation' => '',
+  'token' => 'McTtUpzhNpD6U9w6M9j6I92NDkzNTg1NmNvZGVwaHAO0O0O',
+  'carid' => '1',
+  'type' => '1',
+  'startcity_str' => '上海市',
+  'endcity_str' => '',
+  'taddress' => '[{"address":"上海市徐汇区上海生命科学研究院生命科学大楼"}]',
+  'paddress' => '[{"address":"上海市上海市嘉定区金沙江西路1555弄","addtabid":1}]',
+  'pickyesno' => '',
+  'sendyesno' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->valuation[ E:\chitu\chitu_admin\trunk\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-08-19T11:06:47+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/valuation
+[ log ] www.ctadmin.com/user/vehicle/valuation [运行时间：0.226000s][吞吐率：4.42req/s] [内存消耗：2,717.75kb] [文件加载：50]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'valuation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1114',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '8794786e-15ad-5b7d-064f-69d3119713c4',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryWRBnPbS1ilgyOAO0',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/valuation' => '',
+  'token' => 'McTtUpzhNpD6U9w6M9j6I92NDkzNTg1NmNvZGVwaHAO0O0O',
+  'carid' => '1',
+  'type' => '1',
+  'startcity_str' => '上海市',
+  'endcity_str' => '',
+  'taddress' => '[{"address":"上海市徐汇区上海生命科学研究院生命科学大楼"}]',
+  'paddress' => '[{"address":"上海市上海市嘉定区金沙江西路1555弄","addtabid":1}]',
+  'pickyesno' => '',
+  'sendyesno' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->valuation[ E:\chitu\chitu_admin\trunk\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-08-19T11:06:48+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/valuation
+[ log ] www.ctadmin.com/user/vehicle/valuation [运行时间：0.224000s][吞吐率：4.46req/s] [内存消耗：2,717.75kb] [文件加载：50]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'valuation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1114',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '6c4ab0fe-bd1b-369c-c4a6-91f3ea385b59',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHXBp7b19wF3XQxcg',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/valuation' => '',
+  'token' => 'McTtUpzhNpD6U9w6M9j6I92NDkzNTg1NmNvZGVwaHAO0O0O',
+  'carid' => '1',
+  'type' => '1',
+  'startcity_str' => '上海市',
+  'endcity_str' => '',
+  'taddress' => '[{"address":"上海市徐汇区上海生命科学研究院生命科学大楼"}]',
+  'paddress' => '[{"address":"上海市上海市嘉定区金沙江西路1555弄","addtabid":1}]',
+  'pickyesno' => '',
+  'sendyesno' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->valuation[ E:\chitu\chitu_admin\trunk\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,154 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="text-center p-lg">
+                    <h2>订单详情</h2>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">订单号码:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.ordernumber}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">班次信息:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                               
+                                班次号：<b style="font-size:16px;">{$list.shiftnumber}</b>&nbsp&nbsp&nbsp<b style="font-size:16px;">由：</b><span class="label label-primary">{$list.startcity}</span> {$list.deptime|date='Y年m月d日',###} {$list.timestrat} - {$list.timeend}&nbsp&nbsp&nbsp<b style="font-size:16px;">发往</b> <span class="label label-primary">{$list.endcity}</span> {$list.endtime|date='Y年m月d日',###} {$list.arrivetimestart} - {$list.arrivetimeend}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">发货人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                               {$list.username}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp( TEL:{$list.telephone})
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                   {if condition="isset($list.taddress)"}
+                    {volist name="$list.taddress" key="key" id="vo"}
+                    <div class="form-group">      
+                    <label class="col-sm-2 control-label">提货地址:</label>
+                    <div class="col-sm-10">
+                        <div class="radio">
+                            {$list.startcity}{$vo}
+                        </div>
+                    </div>         
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                     {/volist}
+                    {/if}
+                    {if condition="isset($list.paddress)"}
+                    {volist name="$list.paddress" key="key" id="vo"}
+                    <div class="form-group">
+                        
+                            <label class="col-sm-2 control-label">配送地址:</label>
+                            <div class="col-sm-10">
+                                <div class="radio">
+                                      {$list.endcity}{$vo.address}
+                                </div>
+                            </div>
+                    </div>  
+                    <div class="hr-line-dashed"></div> 
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">联系人:</label>
+                            <div class="col-sm-2">
+                                <div class="radio">
+                                    {$vo.contact}
+                                </div>
+                            </div>
+                           
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    {/volist}
+                    {/if}
+                    
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">总重量:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.totalweight}(公斤)
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">总体积:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.totalvolume}(立方)
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">总数量:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.totalnumber}(件)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">总费用:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">{$list.pickcost+$list.linepice+$list.delivecost}(元)</div>
+                        </div>
+                        <label class="col-sm-2 control-label">提货费用:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">{$list.pickcost}(元)</div>
+                        </div>
+                        <label class="col-sm-2 control-label">干线费用:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">{$list.linepice}(元)</div>
+                        </div>
+                        <label class="col-sm-2 control-label">配送费用:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">{$list.delivecost}(元)</div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    {eq name="$list.receipt" value=""}
+                     {else/}
+                     <div class="form-group">
+                        <label class="col-sm-2 control-label">配送回单:</label>
+                        {volist name='$list.receipt' id="vo"}
+                            <div class="radio">
+                               <img id="click" width="200px" hieght="200px;" src="{$vo.name}"/>
+                                <img style="display:none" id="trave" src="{$vo.name}"/>
+                            </div>
+                        {/volist}
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    {/eq}
+                </div>
+               <!--  <div class="text-center p-lg">
+                    <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-primary">返  回</a>
+                </div> --> 
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script type="text/javascript">
+$("body").on("click","img",function(){
+    var _self = $(this).siblings("img");
+    layer.open({
+        type: 1,
+        title: false,
+        closeBtn: 0,
+        area: ['70%', '70%'],
+        shadeClose: true,
+        content: _self
+    });
+});
+</script>
+{include file="public/footer" /}

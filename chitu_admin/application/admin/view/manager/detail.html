@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <!-- 承运商详情 -->
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5> 
+                    <a href="javascript:history.back(-1);"><span class="glyphicon glyphicon-chevron-left"><b>返回</b></span></a>
+                </h5>
+                <div class="ibox-tools">项目客户详情</div>
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    <div class="col-sm-2">公司名称</div>
+                    <div class="col-sm-10">{$list.name}</div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="row">
+                    <div class="col-sm-2">公司信用额度</div>
+                    <div class="col-sm-10">{$list.credit}</div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="row">
+                    <div class="col-sm-2">公司余额</div>
+                    <div class="col-sm-10">{$list.money}</div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="row">
+                    <div class="col-sm-2">公司地址</div>
+                    <div class="col-sm-10">{$list.address}</div>
+                </div>
+                <div class="hr-line-dashed"></div>
+            </div>       
+        </div>
+        <!-- 员工详情 -->
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>员工列表</h5>
+            </div>
+            <div class="ibox-content">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>姓名</th>
+                            <th>用户名</th>
+                            <th>性别</th>
+                            <th>身份证号</th>
+                            <th>手机号</th>
+                            <th>注册时间</th>
+                            <th>职位</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list.user" id="item"}
+                        <tr>
+                            <td><img src="{$item.image}"></td>
+                            <td>{$item.realname}</td>
+                            <td>{$item.username}</td>
+                            <td>{if condition="($item.sex =='1')"}男{else/}女{/if}</td>
+                            <td>{$item.idcard}</td>
+                            <td>{$item.phone}</td>
+                            <td>{$item.addtime|date='Y-m-d h:m:s',###}</td>
+                            <td>
+                                {switch name="item.user_grade"}
+                                    {case value="1"}管理{/case}
+                                    {case value="2"}业务{/case}
+                                    {default /}
+                                {/switch}
+                            </td>
+                        </tr>
+                        {/volist}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5> 
+                    <span>用户组管理</span> 
+                    <a href="/admin/setting/groupindex"><i class="fa fa-refresh"></i></a>
+                </h5>
+                <div class="ibox-tools" id="add"><i class="fa fa-plus"> 添加用户组 </i></div>
+            </div>
+            <div class="ibox-content">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>用户组名</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       {foreach name="rule_data" item="v"}
+                        <tr>
+                            <td>{$v['title']}</td>
+                            <td> 
+                                <a data-id="{$v['id']}" data-title="{$v['title']}" class="update">修改</a>|
+                                <a data-id="{$v['id']}" class="delete">删除</a>|
+                                <a href="/admin/setting/rulegroup?id={$v['id']}">分配权限</a>|
+                                <a href="/admin/setting/checkuser?group_id={$v['id']}">添加成员</a>
+                            </td>
+                        </tr>
+                        {/foreach}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <!-- bootstrap -->
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- layer -->
+    <script src="/static/tpl/js/plugins/layer-v3.3.1/layer.js"></script>
+    <!-- 页面js -->
+    <script type="text/javascript">
+        // 添加用户组接口
+        var addURL = '/admin/setting/addGroup';
+        // 修改用户组接口
+        var updateURL = '/admin/setting/updateGroup';
+        // 删除用户组接口
+        var deleteURL = '/admin/setting/delgroud';
+
+        /**
+         * 发送请求
+         * @param  {[type]}   url      [接口地址]
+         * @param  {[type]}   data     [传输数据]
+         * @param  {Function} callback [回调函数]
+         * @return {[type]}            [description]
+         */
+        function send(url,data,callback) {
+            // 设置loading动画
+            var loading = layer.load();
+            // 请求
+            $.ajax({
+                url: url,
+                type: 'POST',
+                dataType: 'json',
+                data: data,
+            })
+            .done(function(response) {
+                // 提示
+                layer.msg(response.message);
+                // 判断
+                if(!response.code) return false;
+                // 回调函数
+                callback();
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                layer.close(loading);
+            });
+        }
+
+        /**
+         * 提示修改层
+         * @param  {[type]} title    [弹出层title]
+         * @param  {[type]} value    [初始值]
+         * @param  {[type]} callback [回调函数]
+         * @return {[type]}          [description]
+         */
+        function prompt(title,value,callback) {
+            layer.prompt({
+                formType: 0,
+                value: value,
+                title: title,
+                area: ['800px', '350px'] //自定义文本域宽高
+            }, function(value, index, elem){
+                layer.close(index);
+                callback(value);
+            });
+        }
+
+        /**
+         * 对话框
+         * @param  {[type]} callback [回调函数]
+         * @return {[type]}          [description]
+         */
+        function confirm(callback) {
+            layer.confirm('确定要删除吗？', {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                callback();
+            }, function(){
+              
+            });
+        }
+
+        // 添加用户组
+        $('body').on('click', '#add', function(event) {
+            prompt('请输入用户组名','',function (value) {
+                // 添加接口
+                var url = addURL;
+                // 数据
+                var data = {'title':value};
+                // 发送
+                send(url,data,function () {
+                    window.location.reload();
+                })
+            });
+            event.preventDefault();
+            /* Act on the event */
+        });
+
+        // 修改用户组
+        $('body').on('click', '.update', function(event){
+            // 获取索引id
+            var id = $(this).attr('data-id');
+            // 获取名称
+            var title = $(this).attr('data-title');
+            // 提示
+            prompt('请输入用户组名',title,function (value) {
+                // 添加接口
+                var url = updateURL;
+                // 数据
+                var data = {'id':id,'title':value};
+                // 发送
+                send(url,data,function () {
+                    window.location.reload();
+                })
+            });
+            event.preventDefault();
+            /* Act on the event */
+        });
+
+        // 删除用户组
+        $('body').on('click', '.delete', function(event){
+            // 获取索引id
+            var id = $(this).attr('data-id');
+            // 提示
+            confirm(function (argument) {
+                 // 添加接口
+                var url = deleteURL;
+                // 数据
+                var data = {'id':id};
+                // 发送
+                send(url,data,function () {
+                    window.location.reload();
+                })
+            });
+            event.preventDefault();
+            /* Act on the event */
+        });
+    </script>
+</body>
+</html>

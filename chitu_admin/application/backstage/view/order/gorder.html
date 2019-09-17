@@ -1,0 +1,156 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>干线订单列表</h5>
+            </div>
+            <div class="ibox-content">
+                 <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a style="margin-top: 10px;" href="/backstage/order/gorder" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh" style="color:#1a8aff;"></i> 刷新</a>
+                    </div>
+                    
+
+                   
+                    <div class="col-sm-3">
+                        <div class="input-group date date-view-three" data-provide="datepicker" style="margin-top: 10px;">
+                            <div class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </div>
+                            <input type="text" name="starttime" id="starttime" value="<?php echo isset($_GET['starttime'])?$_GET['starttime']:'' ?>" class="form-control" placeholder="搜索下单开始时间">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-1">
+                        <p class="form-control-static text-center">----</p>
+                    </div>
+
+                    <div class="col-sm-3"> 
+                        <div class="input-group date date-view-three" data-provide="datepicker" style="margin-top: 10px;">
+                            <div class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </div>
+                            <input type="text" id="endtime" name="endtime" value="<?php echo isset($_GET['endtime'])?$_GET['endtime']:'' ?>" class="form-control" placeholder="搜索下单结束时间">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group" style="margin-top: 10px;">
+                            <input type="text" value="<?php echo isset($_GET['search'])?$_GET['search']:''?>" placeholder="请输入订单号码" id="provSelect1" class="input-sm form-control"> <span class="input-group-btn">
+                                <a href="javascript:sousuo();" class="btn btn-sm" style="margin-left: 20px; background: #1a8aff; color:#fff;width:60px;border-radius: 6px" > 查询</a> </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-list">
+
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr style="background-color:#F0FAFD;">
+                                <td class="project-completion">
+                                    订单号码
+                                </td>
+                                <td class="project-completion">
+                                    出发城市                           
+                                </td>
+                                <td class="project-completion">
+                                    达到城市                           
+                                </td>
+                                <td class="project-completion">
+                                    班次号
+                                </td>
+                                <td class="project-completion">
+                                    总费用
+                                </td>
+                                <!--<td class="project-completion">
+                                    订单承接人   
+                                </td>-->
+                                <td class="project-completion">
+                                    状态
+                                </td>
+                                <td class="project-completion">
+                                    订单详情
+                                </td>
+                            </tr>
+                            {volist name="list" id="vo"}
+                                <tr>
+                                    <td class="project-completion">
+                                        {$vo.ordernumber}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$vo.startcity}<br/>{$vo.deptime|date='Y年m月d日',###}
+                                         {$vo.timestrat} - {$vo.timeend}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$vo.endcity}<br/>{$vo.endtime|date='Y年m月d日',###}
+                                         {$vo.arrivetimestart} - {$vo.arrivetimeend}
+                                    </td>
+                                    <td class="project-status">
+                                        {$vo.shiftnumber}
+                                    </td>
+                                    <td class="project-status">
+                                        {$vo.linepice+$vo.delivecost+$vo.pickcost}元
+                                    </td>
+                                    <!--<td class="project-completion">
+                                        {$vo.driver}
+                                    </td>-->
+                                    <td class="project-completion">
+                                        {switch name="vo.orderstate" }
+                                            {case value="2"}<span class="label label-warning">进行中</span>{/case}
+                                            {case value="3"}<span class="label label-warning">进行中</span>{/case}
+                                            {case value="4"}<span class="label label-warning">进行中</span>{/case}
+                                            {case value="5"}<span class="label label-warning">进行中</span>{/case}
+                                            {case value="6"}<span class="label label-warning">进行中</span>{/case}
+                                            {case value="7"}<span class="label label-primary">已完成</span>{/case}
+                                            {default /}<span class="label label-warning">未接单</span>
+                                        {/switch}
+                                    </td>
+                                    <td class="project-completion">
+                                        <a href="/backstage/order/gorderdetails?id={$vo.oid}" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 查看</a>
+                                    </td>
+                                </tr>
+                            {/volist}
+                            <tr>
+                                <td class="project-completion">
+                                </td>
+                                <td class="project-completion">
+                                </td>
+                                <td class="project-completion">
+                                </td>
+                                <td class="project-status">
+                                </td>
+                                <td class="project-status">
+                                </td>
+                                <td class="project-completion">
+                                </td>
+                                <td class="project-completion">
+                                </td>
+                                <td class="project-completion">
+                                   {$list->render()}
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<!-- 日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<!-- 调用日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+<script type="text/javascript">
+function sousuo(){
+    var psel = document.getElementById("provSelect1");
+    var endtime = document.getElementById("endtime").value;
+    var starttime = document.getElementById("starttime").value;
+    window.location.href='/backstage/order/gorder?search='+psel.value+'&starttime='+starttime+'&endtime='+endtime;
+}
+</script>

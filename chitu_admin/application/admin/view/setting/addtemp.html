@@ -1,0 +1,104 @@
+{include file="public/header"}
+<link href="/static/tpl/css/plugins/iCheck/custom.css" rel="stylesheet" />
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+       
+      
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                     <div class="ibox-title">
+                        <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                        <div class="ibox-tools">
+                           添加短信模板
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" method="post" action="/admin/setting/posttemp" id="commentForm">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">模板类型:</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control" name="mess_state" id="mess_state">
+                                        <option value="1">下单短信提示</option>
+                                        <option value="2">取消订单</option>
+                                        <option value="3">分派订单</option>
+                                        <option value="4">验证码</option>
+                                        <option value="5">其他</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">模板字段名称:</label>
+                                <div class="col-sm-4">
+                                     <input type="text" value="" placeholder="列如:TMP_SIGNIN_CODE_MESS" class="form-control" id="mess_str" name="mess_str" placeholder="" required="" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">模板名称:</label>
+                                <div class="col-sm-4">
+                                     <input type="text" placeholder="列如:用户注册验证码" class="form-control" id="mess_type" name="mess_type" placeholder="" required="" aria-required="true">
+                                </div>
+                            </div>
+                           
+                           <div class="hr-line-dashed"></div>
+                           <div class="form-group">
+                                <label class="col-sm-2 control-label">内容:</label>
+                                <div class="col-sm-4">
+                                     <textarea rows="10" placeholder="短信发送内容" cols="50" name="message" required="" aria-required="true"></textarea>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                           <div class="form-group">
+                                <label class="col-sm-2 control-label">描述:</label>
+                                <div class="col-sm-4">
+                                     <textarea rows="5" placeholder="短信发送涉及变量名描述" cols="50" name="description"></textarea>
+                                </div>
+                            </div>
+                             <div class="hr-line-dashed"></div>
+                           <div class="form-group">
+                                <label class="col-sm-2 control-label">类型:</label>
+                                <div class="col-sm-4">
+                                    <label class="radio-inline i-checks">
+                                        <input type="radio" checked="" value="1" name="type"> <i></i>用户端</label>
+                                    <label class="radio-inline i-checks">
+                                        <input type="radio" value="2" name="type"> <i></i>司机端</label>
+                                   
+                                </div>
+                            </div>
+                           <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <input type="hidden" value="add" name="action" />
+                                     
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+   
+    
+
+</body>
+
+</html>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+ <!-- iCheck -->
+<script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
+    });
+</script>

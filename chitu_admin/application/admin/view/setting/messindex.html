@@ -1,0 +1,122 @@
+{include file="public/header"}
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                     <div class="ibox-title">
+                        <h5>短信列表</h5>
+                        <div class="ibox-tools">
+                           <a class="dropdown-toggle"  href="/admin/setting/addmess" style="color:#000">
+                                <i class="fa fa-wrench" ></i>
+                                添加短信
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="ibox-content">
+                        <div class="row m-b-sm m-t-sm">
+                            <div class="col-md-1">
+                                <a href="/admin/setting/messindex" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                            </div>
+                            <!--<div class="col-md-11">
+                                <div class="input-group">
+                                     <input type="text" value="" placeholder="请输入城市名称" id="provSelect1" class="input-sm form-control"> <span class="input-group-btn">
+                                    <a href="javascript:sousuo();" class="btn btn-sm btn-primary"> 查询</a> </span>
+                                </div>
+                            </div>-->
+                        </div>
+                         
+                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="8" style="font-size: 14px">
+                             
+                             <thead>
+                                <tr>
+
+                                    <th data-toggle="true">ID</th>
+                                    <th class="text-left">短信内容</th>
+                                    <th class="text-left">发送时间</th>
+                                    <th class="text-left">短信类型</th>
+                                    <th class="text-left">发送方式</th>
+                                   
+                                    
+                                    
+                                    <th class="text-center">操作</th>
+                                </tr>
+                                </thead>
+                              
+                                <tr>
+                                    {volist name="list" id="vo"}
+                                    <td>{$vo.g_id}</td>
+                                    <td class="text-left">{$vo.send_message}</td>
+                                    <td class="text-left">{$vo.send_date|date='Y-m-d H:i:s',###}</td>
+                                    <td class="text-left">{if condition="($vo.mess_type ==1)"}普通推广{else/}节日问候{/if}</td>
+                                    <td class="text-left">{if condition="($vo.send_type ==1)"}所有人{else/}自定义{/if}</td>
+                                    
+                                   
+                                    <td class="text-center">
+                                        <a href="/admin/setting/upmess?id={$vo.g_id}" class="btn btn-info"><i class="fa fa-paste"></i>编辑</a>
+                                       
+                                        <div class="btn-group">
+                                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">操作 <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                               
+                                                <li><a href="/admin/setting/del?del=1&id={$vo.g_id}" >删除</a></li>
+                                                <li><a href="/admin/setting/sendlist?id={$vo.g_id}" >查看发送队列</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                               {/volist}
+                               
+                           
+                            <tfoot>
+                           
+                            </tfoot>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+    <!-- 自定义js -->
+    <script src="/static/tpl/js/content.js?v=1.0.0"></script>
+    
+    <script>
+        $(document).ready(function() {
+            var FieldCount = 1;
+            $('.footable').footable();
+            $('.footable2').footable();
+            $("body").on("click",".removeclass", function(e){
+                var getid = $(this).parents('.par').find(".hid").val();
+                if(getid !='' ){
+                    $.post("/admin/coupon/delsetion",{ajax:1,sid:getid},function(result){
+                        
+                      });
+                }
+               $(this).parents('.zhongliangtext').remove();
+                FieldCount--; //decrement textbox
+                return false;
+            })
+        });
+
+    </script>
+
+<script type="text/javascript">
+    /*function sousuo(){
+        var psel = document.getElementById("provSelect1");
+        window.location.href='/admin/info/costrange?search='+psel.value;
+    }*/
+</script>
+    
+
+</body>
+
+</html>

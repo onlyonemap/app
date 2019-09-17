@@ -1,0 +1,128 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row" id="tong">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="text-center p-lg">
+                    <h2>车辆信息</h2>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车辆牌照:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.carnumber}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车辆发布人员:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.realname}&nbsp&nbsp&nbsp&nbsp&nbsp（电话：{$list.mobile}）
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车辆型号:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.carparame}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">承载重量（公斤）:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.allweight}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">承载立方（立方）:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.allvolume}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车辆参数（米）:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                               {$list.dimensions}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">图片:</label>
+                        <div class="col-sm-3">
+                            <label class="col-sm-6 control-label">行驶证图片:</label>
+                            <div class="radio">
+                               <img id="click" width="200px" hieght="200px;" src="{$list.travelimg}"/>
+                                <img style="display:none" id="trave" src="{$list.travelimg}"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="col-sm-6 control-label">营运证照片:</label>
+                            <div class="radio">
+                               <img id="oper2" width="200px" hieght="200px;" src="{$list.operateimg}">
+                              <img style="display:none" id="oper" src="{$list.operateimg}"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="col-sm-6 control-label">车辆照片:</label>
+                            <div class="radio">
+                               <img id="car" width="200px" hieght="200px;" src="{$list.carimage}">
+                                <img style="display:none" id="car2" src="{$list.carimage}"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车辆审核状态:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {switch name="$list.status" }
+                                    {case value="1"}<span class="label label-warning">等待审核</span>{/case}
+                                    {case value="2"}<span class="label label-success">审核通过</span>{/case}
+                                    {case value="3"}<span class="label label-danger">审核失败</span>{/case}
+                                {/switch}
+                                {$list.fail_reason}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                </div>
+              <!--   <div class="text-center p-lg">
+                    <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-primary">返  回</a>
+                </div> -->
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script type="text/javascript">
+$("body").on("click","img",function(){
+    var _self = $(this).siblings("img");
+    layer.open({
+        type: 1,
+        title: false,
+        closeBtn: 0,
+        area: ['630px', '360px'],
+        shadeClose: true,
+        content: _self
+    });
+});
+</script>
+{include file="public/footer" /} 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="ibox-tools">货源发布详情</div>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">下单信息</div>
+					<div class="panel-body"></div>
+					<ul class="list-group">
+					    <li class="list-group-item">
+					    	<span>订单编号:</span>
+					    	<span class="pull-right">{$list.ordernumber}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>发布时间:</span>
+					    	<span class="pull-right">{$list.addtime|date='Y-m-d H:m:s',###}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>发布人员:</span>
+					    	<span class="pull-right">{$list.realname}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>联系电话:</span>
+					    	<span class="pull-right">{$list.phone}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>查看人数:</span>
+					    	<span class="pull-right">{$list.countlook}人</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>信息状态:</span>
+					    	{switch name="list.orderstate"}
+					    		{case value="1"}<span class="pull-right label label-danger">进行中</span>{/case}
+					    		{case value="2"}<span class="pull-right label label-primary">已完成</span>{/case}
+					    		{case value="3"}<span class="pull-right label label-info">已取消</span>{/case}
+					    		{case value="4"}<span class="pull-right label label-info">已下架</span>{/case}
+					    		{default /}
+					    	{/switch}
+					    </li>
+				  	</ul>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">运输信息</div>
+					<div class="panel-body"></div>
+					<ul class="list-group">
+					    <li class="list-group-item">
+					    	<span>运输线路:</span>
+					    	<span class="pull-right">{$list.start_address}——{$list.end_address}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>货物重量:</span>
+					    	<span class="pull-right">{$list.weight}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>货物立方:</span>
+					    	<span class="pull-right">{$list.volume}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>温度要求:</span>
+					    	<span class="pull-right">{$list.temperture}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>运输类型:</span>
+					    	<span class="pull-right">{$list.carriage}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>联系信息:</span>
+					    	<span class="pull-right">{$list.issue_realname}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>联系电话:</span>
+					    	<span class="pull-right">{$list.issue_phone}</span>
+					    </li>
+				  	</ul>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">详细信息</div>
+					<div class="panel-body"></div>
+					<ul class="list-group">
+					    <li class="list-group-item">
+					    	<span>发货日期:</span>
+					    	<span class="pull-right">{$list.loaddate}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>运输车型:</span>
+					    	<span class="pull-right">{$list.carparame}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>物品类别:</span>
+					    	<span class="pull-right">{$list.good_type}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>装卸方式:</span>
+					    	<span class="pull-right">{$list.pick_remark}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>支付方式:</span>
+					    	<span class="pull-right">{$list.freight_type}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>货物运费:</span>
+					    	<span class="pull-right">{$list.freight_unit_price}</span>
+					    </li>
+					    <li class="list-group-item">
+					    	<span>订单备注:</span>
+					    	<span class="pull-right">{$list.remark}</span>
+					    </li>
+				  	</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+[ 2019-06-22T15:44:39+08:00 ] 127.0.0.1 127.0.0.1 POST /user/index/user_login
+[ log ] www.chitu12.com/user/index/user_login [运行时间：0.426000s][吞吐率：2.35req/s] [内存消耗：2,242.20kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'user_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary2DfUFmYjPLB1YyQU',
+  'postman-token' => '2d6519d2-8855-055a-e483-bf4af8b22fde',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '248',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/index/user_login' => '',
+  'phone' => '18888888888',
+  'password' => '123456',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Index->user_login[ D:\WWW\chitu_admin\application\user\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035500s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.036000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.039000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  (  phone = 18888888888 and delstate = 1 ) LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `ct_user` (`phone` , `userstate` , `user_grade` , `password` , `username` , `addtime`) VALUES ('18888888888' , 1 , 3 , '89d0edf61deb62ac2a01575a272e3e82' , 'Chitu6905' , '1561189478') [ RunTime:0.059500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 208 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `user_id` = 208 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `ct_user_token` (`user_id` , `last_time` , `token`) VALUES (208 , '1561189478' , '1561189478977891codephp') [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_coupon` [ RunTime:0.023500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_coupon` WHERE  `cou_number` = '50'  AND `state` = 1  AND `coutype_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_coupon_user` [ RunTime:0.014500s ]
+[ sql ] [ SQL ] INSERT INTO `ct_coupon_user` (`coup_id` , `userid` , `failure` , `time_start` , `time_end`) VALUES (7 , 208 , 1 , '1561189478' , '1563781478') [ RunTime:0.060500s ]
+
+---------------------------------------------------------------

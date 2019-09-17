@@ -1,0 +1,111 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="text-center p-lg">
+                    <h2>市内订单详情</h2>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">订单编号:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.ordernumber}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">接单人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {if condition="($list.carriersid !='')"}
+                                    {$list.realname} / {$list.telephone}
+                                {else /}
+                                    未确定
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">价格:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.price}
+                            </div>
+                        </div>
+                        <label class="col-sm-1 control-label">车数（辆）:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.carnum}
+                            </div>
+                        </div>
+                        <label class="col-sm-1 control-label">车型（米）:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.carparame}
+                            </div>
+                        </div>
+                        <label class="col-sm-1 control-label">公里数(km):</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.mileage}
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否装卸:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                 {eq name="$list.pickyesno" value="1"}
+                                否
+                                {else/}
+                                是
+                                {/eq}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">提货地址:</label>
+                        
+                    </div>
+                     {volist name="$list.pickaddress" id="vo"}
+                    <div class="form-group">
+                       <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-5">
+                            <div class="radio">
+                               {$vo}
+                            </div>
+                        </div>
+                    </div>
+                     {/volist}
+                    <div class="hr-line-dashed"></div>
+
+                     <div class="form-group">
+                        <label class="col-sm-2 control-label">配送地址:</label>
+                        
+                    </div>
+                     {volist name="$list.sendaddress" id="vo"}
+                    <div class="form-group">
+                       <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-5">
+                            <div class="radio">
+                               {$vo}
+                            </div>
+                        </div>
+                    </div>
+                     {/volist}
+                    <div class="hr-line-dashed"></div>
+                </div>
+                <div class="text-center p-lg">
+                    <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-primary">返  回</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

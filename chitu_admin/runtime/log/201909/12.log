@@ -1,0 +1,1465 @@
+[ 2019-09-12T11:37:16+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.chitu12.com/ [运行时间：0.081000s][吞吐率：12.35req/s] [内存消耗：1,489.30kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:37:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.chitu12.com/admin/index/login.html [运行时间：0.045000s][吞吐率：22.22req/s] [内存消耗：1,491.80kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\chitu_admin\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:37:53+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.020000s][吞吐率：50.00req/s] [内存消耗：1,384.91kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.chitu12.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '38',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => 'admin',
+  'admin_password' => '666666',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:38:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.025000s][吞吐率：40.00req/s] [内存消耗：1,385.23kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'origin' => 'http://www.chitu12.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '38',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => 'admin',
+  'admin_password' => '666666',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:39:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/register.html
+[ log ] www.chitu12.com/admin/index/register.html [运行时间：0.058000s][吞吐率：17.24req/s] [内存消耗：1,489.13kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/register_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->register[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\chitu_admin\public/../application/admin\view\index\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:41:01+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.137000s][吞吐率：7.30req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '123456',
+  'confim_password' => '123456',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259661' , 3 , '哈哈哈' , '89d0edf61deb62ac2a01575a272e3e82' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_73458' , '13661750652' , '市场部经理' , 3) [ RunTime:0.043000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:41:05+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.095000s][吞吐率：10.53req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '123456',
+  'confim_password' => '123456',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259665' , 3 , '哈哈哈' , '89d0edf61deb62ac2a01575a272e3e82' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_30676' , '13661750652' , '市场部经理' , 3) [ RunTime:0.047000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:41:06+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.193000s][吞吐率：5.18req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '123456',
+  'confim_password' => '123456',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259666' , 3 , '哈哈哈' , '89d0edf61deb62ac2a01575a272e3e82' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_86520' , '13661750652' , '市场部经理' , 3) [ RunTime:0.141000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:41:06+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '123456',
+  'confim_password' => '123456',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259666' , 3 , '哈哈哈' , '89d0edf61deb62ac2a01575a272e3e82' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_39587' , '13661750652' , '市场部经理' , 3) [ RunTime:0.064000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:41:06+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.099000s][吞吐率：10.10req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '123456',
+  'confim_password' => '123456',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259666' , 3 , '哈哈哈' , '89d0edf61deb62ac2a01575a272e3e82' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_59350' , '13661750652' , '市场部经理' , 3) [ RunTime:0.043000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:41:16+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.071000s][吞吐率：14.08req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '123456',
+  'confim_password' => '123456',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259676' , 3 , '哈哈哈' , '89d0edf61deb62ac2a01575a272e3e82' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_90856' , '13661750652' , '市场部经理' , 3) [ RunTime:0.042000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:41:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/register.html
+[ log ] www.chitu12.com/admin/index/register.html [运行时间：0.031000s][吞吐率：32.26req/s] [内存消耗：1,489.56kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/register_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->register[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\chitu_admin\public/../application/admin\view\index\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:42:21+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/register.html
+[ log ] www.chitu12.com/admin/index/register.html [运行时间：0.031000s][吞吐率：32.26req/s] [内存消耗：1,489.56kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/register_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->register[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\chitu_admin\public/../application/admin\view\index\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:43:23+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/register.html
+[ log ] www.chitu12.com/admin/index/register.html [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：1,489.56kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/register_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->register[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\chitu_admin\public/../application/admin\view\index\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:44:04+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.104000s][吞吐率：9.62req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '666666',
+  'confim_password' => '666666',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259844' , 3 , '哈哈哈' , 'b3149bc65f030e6b5e5ce5cb645adb65' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_92294' , '13661750652' , '市场部经理' , 3) [ RunTime:0.060000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:44:07+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.089000s][吞吐率：11.24req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '666666',
+  'confim_password' => '666666',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259847' , 3 , '哈哈哈' , 'b3149bc65f030e6b5e5ce5cb645adb65' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_84048' , '13661750652' , '市场部经理' , 3) [ RunTime:0.049000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:44:07+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.110000s][吞吐率：9.09req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '666666',
+  'confim_password' => '666666',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259847' , 3 , '哈哈哈' , 'b3149bc65f030e6b5e5ce5cb645adb65' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_84762' , '13661750652' , '市场部经理' , 3) [ RunTime:0.059000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:44:08+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.148000s][吞吐率：6.76req/s] [内存消耗：2,025.01kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '666666',
+  'confim_password' => '666666',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259848' , 3 , '哈哈哈' , 'b3149bc65f030e6b5e5ce5cb645adb65' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_5804' , '13661750652' , '市场部经理' , 3) [ RunTime:0.110000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:44:08+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.094000s][吞吐率：10.64req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '666666',
+  'confim_password' => '666666',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259848' , 3 , '哈哈哈' , 'b3149bc65f030e6b5e5ce5cb645adb65' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_69769' , '13661750652' , '市场部经理' , 3) [ RunTime:0.044000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:44:12+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.038000s][吞吐率：26.32req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:44:20+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.089000s][吞吐率：11.24req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '666666',
+  'confim_password' => '666666',
+  'realname' => '你猜猜看',
+  'phone' => '13661750652',
+  'email' => 'admin@163.com',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568259860' , 3 , '哈哈哈' , 'b3149bc65f030e6b5e5ce5cb645adb65' , '你猜猜看' , '13661750652' , 'admin@163.com' , 'ct_56698' , '13661750652' , '市场部经理' , 3) [ RunTime:0.044000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T11:46:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.chitu12.com/admin/index/login.html [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：1,492.91kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\chitu_admin\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:46:31+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:46:45+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：1,385.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.chitu12.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '60',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '666666',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:57:13+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:57:20+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.030000s][吞吐率：33.33req/s] [内存消耗：1,385.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.chitu12.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '60',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:57:45+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:57:50+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.020000s][吞吐率：50.00req/s] [内存消耗：1,385.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.chitu12.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '57',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '456',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:57:58+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:58:04+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：1,385.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.chitu12.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '60',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:59:17+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.018000s][吞吐率：55.56req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T11:59:22+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：1,385.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.chitu12.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '57',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '456',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T13:04:43+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.016000s][吞吐率：62.50req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T13:04:53+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.030000s][吞吐率：33.33req/s] [内存消耗：1,385.64kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.chitu12.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => '哈哈哈',
+  'admin_password' => '18623716061',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T13:05:01+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T13:06:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/register.html
+[ log ] www.chitu12.com/admin/index/register.html [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：1,489.50kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/register_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->register[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\chitu_admin\public/../application/admin\view\index\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T13:06:27+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.018000s][吞吐率：55.56req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T13:07:17+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/doregister.html
+[ log ] www.chitu12.com/admin/index/doregister.html [运行时间：0.098000s][吞吐率：10.20req/s] [内存消耗：2,025.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/register.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.chitu12.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '169',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/doregister_html' => '',
+  'admin_name' => '呵呵呵',
+  'admin_password' => '18623716061',
+  'confim_password' => '18623716061',
+  'realname' => '阿斯蒂芬',
+  'phone' => '13661750652',
+  'email' => 'admin',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doregister[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_admin` (`addtime` , `rolenumber` , `username` , `password` , `realname` , `tel` , `email` , `numbers` , `weixin` , `role` , `grade`) VALUES ('1568264836' , 3 , '呵呵呵' , 'b8cc8b2df0b9b2d52236dd6dfddfa1f4' , '阿斯蒂芬' , '13661750652' , 'admin' , 'ct_16516' , '13661750652' , '市场部经理' , 3) [ RunTime:0.047000s ]
+
+---------------------------------------------------------------
+[ 2019-09-12T13:07:35+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T13:07:44+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：1,385.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.chitu12.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '60',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => '呵呵呵',
+  'admin_password' => '666666',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T13:07:55+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/css/bootstrap.min.css.map
+[ log ] www.chitu12.com/static/tpl/css/bootstrap.min.css.map [运行时间：0.020000s][吞吐率：50.00req/s] [内存消耗：1,242.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/css/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-12T13:08:03+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.chitu12.com/admin/index/login_send [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：1,385.64kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=g86snufqk2ogord3f3d5oi4p85',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chitu12.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.chitu12.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => '呵呵呵',
+  'admin_password' => '18623716061',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

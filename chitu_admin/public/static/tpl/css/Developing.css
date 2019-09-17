@@ -1,0 +1,22 @@
+body{
+	max-width: 1150px;
+	min-width: 1150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:200px;
+}
+div{
+	text-align:center;
+}
+img{
+	width:45%;
+}
+p{
+	font-size:20px;
+	color:#1a8aff;
+}
+span{
+	font-style: italic;
+	font-size: 25px;
+	color:red;
+}

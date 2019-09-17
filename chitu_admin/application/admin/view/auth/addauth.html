@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link href="/static/tpl/css/plugins/iCheck/custom.css" rel="stylesheet" />
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+            <div class="ibox-tools"> 添加权限组 </div>
+        </div>
+        <div class="ibox-content">
+            <form class="form-horizontal m-t" method="post" action="" id="commentForm">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">权限组<span style="color:red"> *</span></label>
+                    <div class="col-sm-10">
+                        <input id="title" value="" name="title"  type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">描述<span style="color:red"> *</span></label>
+                    <div class="col-sm-10">
+                        <textarea name="describe" id="describe" value="" cols="60" rows="10"></textarea>
+
+                    </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-2">
+                        <button class="btn btn-primary" onclick="toaddauth()" type="button">保存</button>
+                        <button class="btn btn-primary" onclick="layer_close()" type="button">取消</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<!-- jQuery Validation plugin javascript-->
+<script src="/static/tpl/js/plugins/validate/jquery.validate.min.js"></script>
+<script src="/static/tpl/js/plugins/validate/messages_zh.min.js"></script>
+<!-- iCheck -->
+<script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+<!-- 自动补全 -->
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/layer.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript">
+      function toaddauth(){
+          if($('#title').val()==''){
+              layer.msg('权限组名不能为空', {icon: 2, time: 3000,shade:0.4});
+              return false
+          }
+          $.ajax({
+              url:"{:url('admin/auth/saveauth')}",
+              type:"post",
+              data:$('form').serialize(),
+              dataType:'json',
+              success:function(res){
+                  if(res.result =='success'){
+                      layer.msg(res.msg, {icon: 1, time: 1000});
+                      if($('#lj').val() =='list'){
+                          setTimeout(layer_close,1200);
+                      }else{
+                          setTimeout(function () {
+                              window.location.href = '{:url("admin/auth/authxr")}?qid='+res.data;
+                          },1200);
+                      }
+                  }else if(res.result =='error'){
+                      layer.msg(res.msg, {icon: 2, time: 2000});
+                  }
+              }
+          });
+      }
+</script>
+</body>
+</html>

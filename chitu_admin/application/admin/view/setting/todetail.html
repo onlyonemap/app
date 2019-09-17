@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>
+                        <a href="javascript:history.back(-1);"><span class="glyphicon glyphicon-chevron-left"><b>返回</b></span></a>
+                    </h5>
+                    <div class="ibox-tools">开通城市详情</div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-2">城市名</div>
+                        <div class="col-sm-10">{$list.name}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">每小时价格</div>
+                        <div class="col-sm-10">{$list.scale_hour}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">起步价系数</div>
+                        <div class="col-sm-10">{$list.start_fare}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="row">
+                        <div class="col-sm-2">起步价包含公里数</div>
+                        <div class="col-sm-10">{$list.scale_klio}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">单公里价格系数</div>
+                        <div class="col-sm-10">{$list.scale_price}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">状态</div>
+                        <div class="col-sm-10">{$list.delstate}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">添加时间</div>
+                        <div class="col-sm-10">{$list.addtime}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

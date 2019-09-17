@@ -1,0 +1,186 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="text-center p-lg">
+                    <h2>提货单详情</h2>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">托运人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                赤途（上海）供应链管理有限公司&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp( TEL:021-59917919 )
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">订单号码:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.ordernumber}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">下单时间:</label>
+                        <div class="col-sm-4">
+                            <div class="radio">
+                                {$list.addtime|date='Y年m月d日 H:i:s',###} 
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">提货时间:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                {$list.picktime} 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">接单时间:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.receivetime|date='Y年m月d日 H:i:s',###} 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        {volist name="$list.taddress" key="key" id="vo"}
+                            <label class="col-sm-2 control-label">提货地址:</label>
+                            <div class="col-sm-10">
+                                <div class="radio">
+                                    {$vo}
+                                </div>
+                            </div>
+                            
+                        {/volist}
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+
+                       <!--  <label class="col-sm-2 control-label">运输总量:</label> -->
+                       <!--  <div class="col-sm-1">
+                            <div class="radio">
+                            </div>
+                        </div> -->
+                        <label class="col-sm-2 control-label">总重量:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.weight}(公斤)
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">总体积:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.volume}(立方)
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">总数量:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.number}(件)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">收货人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.name}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp( TEL:{$list.phone} )
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">收货地址:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.psaddress}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                       <!--  <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-1">                        </div>
+                        <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-1">
+                        </div>
+                        <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-1">
+                        </div> -->
+                        <label class="col-sm-2 control-label">提货费用:</label>
+                        <div class="col-sm-3">
+                            <div class="radio">{$list.tprice}(元)</div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+
+                        <label class="col-sm-2 control-label" style="vertical-align: middle">添加提货司机姓名:</label>
+                        <div class="col-sm-2" style="line-height: 30px;height: 30px">
+                            <!-- <div class="radio"> -->
+                                <input type="text" style="height: 30px;line-height: 30px"placeholder="请输入司机姓名" value="{$list.drivername}" class="form-control" id="drivername">
+                            <!-- </div> -->
+                        </div>
+                        <label class="col-sm-2 control-label" style="vertical-align: middle">添加提货司机电话:</label>
+                        <div class="col-sm-2">
+                            <!-- <div class="radio" style="line-height: 30px;height: 30px"> -->
+                                <input type="text" style="height: 30px; line-height: 30px" maxlength="11" width="100%" onblur="abab(this.value);" placeholder="请输入司机手机号" value="{$list.driverphone}" class="form-control" id="driverphone">
+                            <!-- </div> -->
+                        </div>
+                        <label class="col-sm-2 control-label" style="vertical-align: middle">添加提货车辆牌照:</label>
+                        <div class="col-sm-2">
+                            <!-- <div class="radio" style="line-height: 30px;height: 30px"> -->
+                                <input type="text" style="height: 30px; line-height: 30px" placeholder="请输入车辆牌照" value="{$list.carlicense}" class="form-control" id="carlicense">
+                            <!-- </div> -->
+                        </div>
+                       <label class="col-sm-2 control-label pull-right" style="display: inline-block;"><a href="javascript:add({$list.id})" class="btn btn-primary " type="submit">{eq name="$list.drivername" value=""}确定添加{else/}确定修改{/eq}</a></label>
+                       <!-- <div class="col-sm-1">
+                            <div class="radio">
+                                
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="hr-line-dashed"></div>
+                    
+                </div>
+                <!--  <div class="text-center p-lg">
+                    <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-primary">返  回</a>
+                </div> -->
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function abab(arr){
+    if(arr==""){  
+        alert("手机号不能为空！");  
+    }else{  
+        var re = /^(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;                               
+        if (!re.test(arr)) {  
+             alert("手机号格式错误！");
+        }
+    }  
+}
+function add(id){
+    var drivername = document.getElementById('drivername').value;
+    var driverphone = document.getElementById('driverphone').value;
+    var carlicense = document.getElementById('carlicense').value;
+    if (!drivername) {alert('司机姓名不可为空！');return false;};
+    if (!driverphone) {alert('司机电话不可为空！');return false;};
+    if (!carlicense) {alert('车辆牌照不可为空！');return false;};
+    window.location.href='/backstage/order/adddriver_ti?id='+id+'&drivername='+drivername+'&driverphone='+driverphone+'&carlicense='+carlicense;
+}
+</script>

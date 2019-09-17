@@ -1,0 +1,153 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <!-- <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5> -->
+                <div class="text-center p-lg">
+                    <h2>市内配送订单详情</h2>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">托运人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                赤途（上海）供应链管理有限公司&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp( TEL:021-59917919 )
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">接单人员:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$array.realname}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">接单时间:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$array.take_time|date='Y年m月d日 H:i:s',###} 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">发车日期:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$array.data_type} 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">订单类型:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                 {switch name="array.ordertype" }
+                                    {case value="1"}<span class="label label-warning">用车</span>{/case}
+                                    {case value="2"}<span class="label label-primary">包车</span>{/case}
+                                {/switch}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                        {if condition="is_array($array.saddress)"}
+                        {volist name="$array.saddress" id="tvo"}
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">提货地址:</label>
+                            <div class="col-sm-5">
+                                <div class="radio">
+                                   {$tvo.address}
+                                </div>
+                            </div>
+                        </div>
+                        {/volist}
+                        {/if}
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">温度要求:</label>
+                            <div class="col-sm-3">
+                                <div class="radio">
+                                    {$array.cold_type}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        {if condition="is_array($array.eaddress)"}
+                        {volist name="$array.eaddress" id="vo"}
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">配送地址 :</label>
+                            <div class="col-sm-10">
+                                <div class="radio">
+                                     {$vo.address} 
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                       {/volist}
+                       {/if}
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">费用:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">{$array.paymoney}(元)</div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+
+                        <label class="col-sm-2 control-label" style="vertical-align: middle">添加提货司机姓名:</label>
+                        <div class="col-sm-2">
+                            <!-- <div class="radio"> -->
+                                <input type="text" placeholder="请输入司机姓名" style="line-height: 30px;height: 30px"value="{$array.drivername}" class="form-control" id="drivername">
+                            <!-- </div> -->
+                        </div>
+                        <label class="col-sm-2 control-label" style="vertical-align: middle">添加提货司机电话:</label>
+                        <div class="col-sm-2">
+                            <!-- <div class="radio"> -->
+                                <input type="text" maxlength="11" width="100%" style="line-height: 30px;height: 30px"onblur="abab(this.value);" placeholder="请输入司机手机" value="{$array.driverphone}" class="form-control" id="driverphone">
+                            <!-- </div> -->
+                        </div>
+                        <label class="col-sm-2 control-label" style="vertical-align: middle">添加提货车辆牌照:</label>
+                        <div class="col-sm-2">
+                            <!-- <div class="radio"> -->
+                                <input type="text" style="line-height: 30px;height: 30px" placeholder="请输入车辆牌照" value="{$array.carlicense}" class="form-control" id="carlicense">
+                            <!-- </div> -->
+                        </div>
+                        <label class="col-sm-2 control-label pull-right" style="display: inline-block;"><a href="javascript:add({$array.rid})" class="btn btn-primary" type="submit">{eq name="123" value=""}确定添加{else/}确定修改{/eq}</a></label>
+                    
+                </div>
+                 <div class="text-center p-lg">
+                    <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-primary">返  回</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function abab(arr){
+    if(arr==""){  
+        alert("手机号不能为空！");  
+    }else{  
+        var re = /^(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;                               
+        if (!re.test(arr)) {  
+             alert("手机号格式错误！");
+        }
+    }  
+}
+function add(id){
+    var drivername = document.getElementById('drivername').value;
+    var driverphone = document.getElementById('driverphone').value;
+    var carlicense = document.getElementById('carlicense').value;
+    if (!drivername) {alert('司机姓名不可为空！');return false;};
+    if (!driverphone) {alert('司机电话不可为空！');return false;};
+    if (!carlicense) {alert('车辆牌照不可为空！');return false;};
+    window.location.href='/backstage/order/city_driver?id='+id+'&drivername='+drivername+'&driverphone='+driverphone+'&carlicense='+carlicense;
+}
+</script>

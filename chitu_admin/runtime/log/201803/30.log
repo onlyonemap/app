@@ -1,0 +1,2070 @@
+[ 2018-03-30T19:22:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.807000s][吞吐率：1.24req/s] [内存消耗：2,548.42kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522149754' AND `addtime` < '1522408954' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522149754' AND `addtime` < '1522408954' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522149754' AND `addtime` < '1522408954' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522149754' AND `addtime` < '1522408954' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522149754' AND `addtime` < '1522408954' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522149754' AND `addtime` < '1522408954' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:23:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.787000s][吞吐率：1.27req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522149814' AND `addtime` < '1522409014' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522149814' AND `addtime` < '1522409014' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522149814' AND `addtime` < '1522409014' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522149814' AND `addtime` < '1522409014' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522149814' AND `addtime` < '1522409014' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522149814' AND `addtime` < '1522409014' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:24:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.781500s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522149874' AND `addtime` < '1522409074' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522149874' AND `addtime` < '1522409074' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522149874' AND `addtime` < '1522409074' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522149874' AND `addtime` < '1522409074' )  AND `status` = '1' LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522149874' AND `addtime` < '1522409074' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.050500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522149874' AND `addtime` < '1522409074' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.050000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:25:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.767000s][吞吐率：1.30req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522149934' AND `addtime` < '1522409134' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522149934' AND `addtime` < '1522409134' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522149934' AND `addtime` < '1522409134' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522149934' AND `addtime` < '1522409134' )  AND `status` = '1' LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522149934' AND `addtime` < '1522409134' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522149934' AND `addtime` < '1522409134' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:26:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.792500s][吞吐率：1.26req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522149994' AND `addtime` < '1522409194' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522149994' AND `addtime` < '1522409194' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522149994' AND `addtime` < '1522409194' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522149994' AND `addtime` < '1522409194' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522149994' AND `addtime` < '1522409194' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522149994' AND `addtime` < '1522409194' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.058500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:27:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.778500s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150054' AND `addtime` < '1522409254' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150054' AND `addtime` < '1522409254' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150054' AND `addtime` < '1522409254' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150054' AND `addtime` < '1522409254' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150054' AND `addtime` < '1522409254' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150054' AND `addtime` < '1522409254' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:28:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.789000s][吞吐率：1.27req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150114' AND `addtime` < '1522409314' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150114' AND `addtime` < '1522409314' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150114' AND `addtime` < '1522409314' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150114' AND `addtime` < '1522409314' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150114' AND `addtime` < '1522409314' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150114' AND `addtime` < '1522409314' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:29:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.784000s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150174' AND `addtime` < '1522409374' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150174' AND `addtime` < '1522409374' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150174' AND `addtime` < '1522409374' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150174' AND `addtime` < '1522409374' )  AND `status` = '1' LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150174' AND `addtime` < '1522409374' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150174' AND `addtime` < '1522409374' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.052500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:30:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.793000s][吞吐率：1.26req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150234' AND `addtime` < '1522409434' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150234' AND `addtime` < '1522409434' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150234' AND `addtime` < '1522409434' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150234' AND `addtime` < '1522409434' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150234' AND `addtime` < '1522409434' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150234' AND `addtime` < '1522409434' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:31:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.777000s][吞吐率：1.29req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150294' AND `addtime` < '1522409494' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150294' AND `addtime` < '1522409494' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150294' AND `addtime` < '1522409494' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150294' AND `addtime` < '1522409494' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150294' AND `addtime` < '1522409494' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150294' AND `addtime` < '1522409494' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:32:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.778500s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150354' AND `addtime` < '1522409554' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150354' AND `addtime` < '1522409554' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150354' AND `addtime` < '1522409554' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150354' AND `addtime` < '1522409554' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150354' AND `addtime` < '1522409554' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150354' AND `addtime` < '1522409554' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:33:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.769500s][吞吐率：1.30req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150414' AND `addtime` < '1522409614' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150414' AND `addtime` < '1522409614' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150414' AND `addtime` < '1522409614' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.057500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150414' AND `addtime` < '1522409614' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150414' AND `addtime` < '1522409614' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.050500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150414' AND `addtime` < '1522409614' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:34:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.780000s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150474' AND `addtime` < '1522409674' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150474' AND `addtime` < '1522409674' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150474' AND `addtime` < '1522409674' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150474' AND `addtime` < '1522409674' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150474' AND `addtime` < '1522409674' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150474' AND `addtime` < '1522409674' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:35:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.779000s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150534' AND `addtime` < '1522409734' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150534' AND `addtime` < '1522409734' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150534' AND `addtime` < '1522409734' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150534' AND `addtime` < '1522409734' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150534' AND `addtime` < '1522409734' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150534' AND `addtime` < '1522409734' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:36:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.763500s][吞吐率：1.31req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150594' AND `addtime` < '1522409794' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150594' AND `addtime` < '1522409794' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150594' AND `addtime` < '1522409794' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150594' AND `addtime` < '1522409794' )  AND `status` = '1' LIMIT 1 [ RunTime:0.050500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150594' AND `addtime` < '1522409794' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150594' AND `addtime` < '1522409794' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.049500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:37:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.801000s][吞吐率：1.25req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150654' AND `addtime` < '1522409854' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150654' AND `addtime` < '1522409854' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150654' AND `addtime` < '1522409854' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150654' AND `addtime` < '1522409854' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150654' AND `addtime` < '1522409854' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150654' AND `addtime` < '1522409854' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:38:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.800000s][吞吐率：1.25req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150714' AND `addtime` < '1522409914' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150714' AND `addtime` < '1522409914' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150714' AND `addtime` < '1522409914' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150714' AND `addtime` < '1522409914' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150714' AND `addtime` < '1522409914' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150714' AND `addtime` < '1522409914' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:39:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.798500s][吞吐率：1.25req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150774' AND `addtime` < '1522409974' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150774' AND `addtime` < '1522409974' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150774' AND `addtime` < '1522409974' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150774' AND `addtime` < '1522409974' )  AND `status` = '1' LIMIT 1 [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150774' AND `addtime` < '1522409974' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150774' AND `addtime` < '1522409974' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:40:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.778000s][吞吐率：1.29req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150834' AND `addtime` < '1522410034' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.050500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150834' AND `addtime` < '1522410034' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150834' AND `addtime` < '1522410034' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.050500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150834' AND `addtime` < '1522410034' )  AND `status` = '1' LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150834' AND `addtime` < '1522410034' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150834' AND `addtime` < '1522410034' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:41:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.784500s][吞吐率：1.27req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150894' AND `addtime` < '1522410094' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150894' AND `addtime` < '1522410094' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150894' AND `addtime` < '1522410094' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150894' AND `addtime` < '1522410094' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150894' AND `addtime` < '1522410094' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150894' AND `addtime` < '1522410094' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:42:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.804500s][吞吐率：1.24req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522150954' AND `addtime` < '1522410154' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522150954' AND `addtime` < '1522410154' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522150954' AND `addtime` < '1522410154' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522150954' AND `addtime` < '1522410154' )  AND `status` = '1' LIMIT 1 [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522150954' AND `addtime` < '1522410154' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522150954' AND `addtime` < '1522410154' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:43:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.766500s][吞吐率：1.30req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151014' AND `addtime` < '1522410214' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151014' AND `addtime` < '1522410214' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.050500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151014' AND `addtime` < '1522410214' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151014' AND `addtime` < '1522410214' )  AND `status` = '1' LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151014' AND `addtime` < '1522410214' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151014' AND `addtime` < '1522410214' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.050000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:44:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.802000s][吞吐率：1.25req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151074' AND `addtime` < '1522410274' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151074' AND `addtime` < '1522410274' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151074' AND `addtime` < '1522410274' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151074' AND `addtime` < '1522410274' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151074' AND `addtime` < '1522410274' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151074' AND `addtime` < '1522410274' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:45:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.768500s][吞吐率：1.30req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151134' AND `addtime` < '1522410334' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151134' AND `addtime` < '1522410334' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151134' AND `addtime` < '1522410334' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151134' AND `addtime` < '1522410334' )  AND `status` = '1' LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151134' AND `addtime` < '1522410334' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.058500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151134' AND `addtime` < '1522410334' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.050000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:46:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.809500s][吞吐率：1.24req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151194' AND `addtime` < '1522410394' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151194' AND `addtime` < '1522410394' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151194' AND `addtime` < '1522410394' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151194' AND `addtime` < '1522410394' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151194' AND `addtime` < '1522410394' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151194' AND `addtime` < '1522410394' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:47:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.791500s][吞吐率：1.26req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151254' AND `addtime` < '1522410454' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151254' AND `addtime` < '1522410454' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151254' AND `addtime` < '1522410454' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151254' AND `addtime` < '1522410454' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151254' AND `addtime` < '1522410454' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151254' AND `addtime` < '1522410454' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:48:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.826500s][吞吐率：1.21req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151314' AND `addtime` < '1522410514' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151314' AND `addtime` < '1522410514' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151314' AND `addtime` < '1522410514' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151314' AND `addtime` < '1522410514' )  AND `status` = '1' LIMIT 1 [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151314' AND `addtime` < '1522410514' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151314' AND `addtime` < '1522410514' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.055000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:49:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：1.023000s][吞吐率：0.98req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151374' AND `addtime` < '1522410574' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.059500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151374' AND `addtime` < '1522410574' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.278500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151374' AND `addtime` < '1522410574' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151374' AND `addtime` < '1522410574' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151375' AND `addtime` < '1522410575' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151375' AND `addtime` < '1522410575' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:50:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.783500s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151434' AND `addtime` < '1522410634' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151434' AND `addtime` < '1522410634' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151434' AND `addtime` < '1522410634' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151434' AND `addtime` < '1522410634' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151434' AND `addtime` < '1522410634' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151434' AND `addtime` < '1522410634' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:51:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.782500s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151494' AND `addtime` < '1522410694' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151494' AND `addtime` < '1522410694' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151494' AND `addtime` < '1522410694' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151494' AND `addtime` < '1522410694' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151494' AND `addtime` < '1522410694' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151494' AND `addtime` < '1522410694' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.051500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:52:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.800000s][吞吐率：1.25req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151554' AND `addtime` < '1522410754' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151554' AND `addtime` < '1522410754' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151554' AND `addtime` < '1522410754' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151554' AND `addtime` < '1522410754' )  AND `status` = '1' LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151554' AND `addtime` < '1522410754' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151554' AND `addtime` < '1522410754' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.052500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:53:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.807500s][吞吐率：1.24req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151614' AND `addtime` < '1522410814' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151614' AND `addtime` < '1522410814' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151614' AND `addtime` < '1522410814' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151614' AND `addtime` < '1522410814' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151614' AND `addtime` < '1522410814' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151614' AND `addtime` < '1522410814' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:54:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.805000s][吞吐率：1.24req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151674' AND `addtime` < '1522410874' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151674' AND `addtime` < '1522410874' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151674' AND `addtime` < '1522410874' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151674' AND `addtime` < '1522410874' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151674' AND `addtime` < '1522410874' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151674' AND `addtime` < '1522410874' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.056000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:55:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.792500s][吞吐率：1.26req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151734' AND `addtime` < '1522410934' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151734' AND `addtime` < '1522410934' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151734' AND `addtime` < '1522410934' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151734' AND `addtime` < '1522410934' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151734' AND `addtime` < '1522410934' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151734' AND `addtime` < '1522410934' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.054500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:56:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.819000s][吞吐率：1.22req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151794' AND `addtime` < '1522410994' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151794' AND `addtime` < '1522410994' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151794' AND `addtime` < '1522410994' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151794' AND `addtime` < '1522410994' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151794' AND `addtime` < '1522410994' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151794' AND `addtime` < '1522410994' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.055500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:57:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.808500s][吞吐率：1.24req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.056500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151854' AND `addtime` < '1522411054' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151854' AND `addtime` < '1522411054' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151854' AND `addtime` < '1522411054' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151854' AND `addtime` < '1522411054' )  AND `status` = '1' LIMIT 1 [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151854' AND `addtime` < '1522411054' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151854' AND `addtime` < '1522411054' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.054500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:58:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.781000s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151914' AND `addtime` < '1522411114' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.050500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151914' AND `addtime` < '1522411114' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151914' AND `addtime` < '1522411114' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151914' AND `addtime` < '1522411114' )  AND `status` = '1' LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151914' AND `addtime` < '1522411114' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.050500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151914' AND `addtime` < '1522411114' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T19:59:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.792500s][吞吐率：1.26req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522151974' AND `addtime` < '1522411174' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522151974' AND `addtime` < '1522411174' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522151974' AND `addtime` < '1522411174' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522151974' AND `addtime` < '1522411174' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522151974' AND `addtime` < '1522411174' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522151974' AND `addtime` < '1522411174' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.054500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T20:00:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.776500s][吞吐率：1.29req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522152034' AND `addtime` < '1522411234' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522152034' AND `addtime` < '1522411234' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522152034' AND `addtime` < '1522411234' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522152034' AND `addtime` < '1522411234' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522152034' AND `addtime` < '1522411234' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522152034' AND `addtime` < '1522411234' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.050500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T20:01:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.780500s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522152094' AND `addtime` < '1522411294' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522152094' AND `addtime` < '1522411294' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522152094' AND `addtime` < '1522411294' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522152094' AND `addtime` < '1522411294' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522152094' AND `addtime` < '1522411294' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522152094' AND `addtime` < '1522411294' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T20:02:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.779000s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522152154' AND `addtime` < '1522411354' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522152154' AND `addtime` < '1522411354' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522152154' AND `addtime` < '1522411354' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522152154' AND `addtime` < '1522411354' )  AND `status` = '1' LIMIT 1 [ RunTime:0.050500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522152154' AND `addtime` < '1522411354' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522152154' AND `addtime` < '1522411354' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T20:03:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.782000s][吞吐率：1.28req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522152214' AND `addtime` < '1522411414' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522152214' AND `addtime` < '1522411414' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522152214' AND `addtime` < '1522411414' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522152214' AND `addtime` < '1522411414' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522152214' AND `addtime` < '1522411414' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522152214' AND `addtime` < '1522411414' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.052500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T20:04:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.801500s][吞吐率：1.25req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522152274' AND `addtime` < '1522411474' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522152274' AND `addtime` < '1522411474' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522152274' AND `addtime` < '1522411474' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522152274' AND `addtime` < '1522411474' )  AND `status` = '1' LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522152274' AND `addtime` < '1522411474' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522152274' AND `addtime` < '1522411474' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053500s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T20:05:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.790500s][吞吐率：1.27req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522152334' AND `addtime` < '1522411534' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522152334' AND `addtime` < '1522411534' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522152334' AND `addtime` < '1522411534' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522152334' AND `addtime` < '1522411534' )  AND `status` = '1' LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522152334' AND `addtime` < '1522411534' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522152334' AND `addtime` < '1522411534' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-03-30T20:06:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/getcheckmsg
+[ log ] www.ctadmin.com/admin/index/getcheckmsg [运行时间：0.795500s][吞吐率：1.26req/s] [内存消耗：2,548.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getcheckmsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=r2ui3v02d5cdcfp1tdubfelae1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/getcheckmsg' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->getcheckmsg[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_city_order` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_city_order` WHERE  ( `addtime` > '1522152394' AND `addtime` < '1522411594' )  AND `paystate` = 2  AND `state` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` WHERE  ( `addtime` > '1522152394' AND `addtime` < '1522411594' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_order` [ RunTime:0.058500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_shift_order` WHERE  ( `addtime` > '1522152394' AND `addtime` < '1522411594' )  AND `paystate` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_carcategory` [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_carcategory` WHERE  ( `addtime` > '1522152394' AND `addtime` < '1522411594' )  AND `status` = '1' LIMIT 1 [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.052500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_driver` WHERE  ( `addtime` > '1522152394' AND `addtime` < '1522411594' )  AND `delstate` = 1  AND `carstatus` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_order` WHERE  ( `addtime` > '1522152394' AND `addtime` < '1522411594' )  AND `orderstate` = 2  AND `paystate` = 2 LIMIT 1 [ RunTime:0.052500s ]
+
+---------------------------------------------------------------

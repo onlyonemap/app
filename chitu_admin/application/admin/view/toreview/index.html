@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}    
+    <link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>提现审核列表</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/toreview" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" value="" placeholder="请输入用户账号" id="provSelect1" class="form-control" >
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                            
+                <table class="footable table table-stripped toggle-arrow-tiny">
+                    <thead>
+                        <tr>  
+                            <th class="text-left">申请时间</th>
+                            <th class="text-left">申请人</th>
+                            <th class="text-left">手机号码</th>
+                            <th class="text-left">申请提现金额</th>
+                            <th class="text-left">应打款金额</th>
+                            <th class="text-left">支付宝账号</th>
+                            <th class="text-left">用户类型</th>
+                            <th class="text-left">申请属性</th>
+                            <th class="text-right">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>    
+                            <td>{$vo.start_time|date='Y-m-d H:i:s',###}</td>
+                            <td class="text-left">{$vo.realname}</td>
+                            <td class="text-left">{$vo.mobile}</td>
+                            <td class="text-left">{$vo.actual_money}</td>
+                            <td class="text-left">{$vo.money}</td>
+                            <td class="text-left">{$vo.account}</td>
+                            <td class="text-left">{eq name="$vo.action_type" value="1"}司机{else/}货主{/eq}</td>
+                            <td class="text-left">{$vo.menu_type}</td>
+                            <td class="text-right">
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">操作 <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="/admin/toreview/modifytype?type=2&id={$vo.id}">审核成功</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="/admin/toreview/modifytype?type=3&id={$vo.id}">审核失败</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        {/volist}
+                    </tbody>
+                </table>
+                {$page}
+            </div>
+        </div>
+    </div>
+    
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+    
+    <script type="text/javascript">
+        // 初始话表格
+        $('.footable').footable();
+        // 查询
+        $('#search').click(function(){
+            var psel = document.getElementById("provSelect1");
+            window.location.href='/admin/toreview/index?search='+psel.value;
+        });
+    </script>
+</body>
+
+</html>

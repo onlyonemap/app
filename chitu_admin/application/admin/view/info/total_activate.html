@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>承运商启动统计列表</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/info/total_activate" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                </div>
+               
+                <table class="footable table table-stripped toggle-arrow-tiny">
+                    <thead>
+                         <tr>
+                            <th class="text-left" data-sortable="true">编号</th>
+                            <th class="text-left" data-sortable="true">用户</th>
+                            <th class="text-left" data-sortable="true">电话</th>
+                            <th class="text-left" data-sortable="true">今天</th>
+                            <th class="text-left" data-sortable="true">昨天</th>
+                            <th class="text-left" data-sortable="true">当周</th>
+                            <th class="text-left" data-sortable="true">当月</th>
+                            <th class="text-left" data-sortable="true">今年</th>
+                            <th class="text-left" data-sortable="true">总计</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>
+                            <td class="text-left">{$vo.ID}</td>
+                            <td class="text-left">{$vo.realname}</td>
+                            <td class="text-left">{$vo.mobile}</td>
+                            <td class="text-left">{$vo.tonow|intval}</td>
+                            <td class="text-left">{$vo.today|intval}</td>
+                            <td class="text-left">{$vo.toweek|intval}</td>
+                            <td class="text-left">{$vo.tomoth|intval}</td>
+                            <td class="text-left">{$vo.toyear|intval}</td>
+                            <td class="text-left">{$vo.total|intval}</td>
+                        </tr>
+                        {/volist}
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // 初始话表格
+        $('.footable').bootstrapTable();
+    });
+</script>

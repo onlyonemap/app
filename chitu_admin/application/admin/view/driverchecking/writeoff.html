@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+</head>
+<style type="text/css">
+    .cancel1{
+        color:#000;
+    }
+    .cancel1 a{color:#000;}
+    .highlight{
+        background-color:rgba(26,138,255,.3);
+    }
+</style>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox">
+                    <div class="ibox-title">
+                        <h5>财务销账</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row m-b-sm m-t-sm">
+                            <div class="col-sm-1">
+                                <a type="button" id="loading-example-btn" class="btn btn-white btn-sm" href="/admin/driverchecking/writeoff"><i class="fa fa-refresh"></i> 刷新</a>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="input-group" >
+                                    <input type="text" id="invonumber" class="form-control" placeholder="按发票号搜索" name="month" value="<?php echo isset($_GET['invonumber'])?$_GET['invonumber']:'' ?>" />
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="input-group date date-view-two" data-provide="datepicker">
+                                    <div class="input-group-addon">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                    <input type="text" id="moth" class="form-control" placeholder="按业务月份搜索" name="month" value="<?php echo isset($_GET['moth'])?$_GET['moth']:'' ?>">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <div class="input-group">
+                                    <input type="text" placeholder="搜索公司名称/订单编号" id="company" name="company" value="<?php echo isset($_GET['company'])?$_GET['company']:'' ?>" class="form-control">
+                                    <span class="input-group-btn">
+                                        <input type="hidden" value="search" name="action">
+                                        <button type="button" id="search" class="btn btn-primary">查询</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-hover">
+                        <tbody>
+                        {volist name="list" id="vo"} 
+                        <tr {if condition="($vo.unpass==2)"} class='highlight' {/if}>
+                            <td >
+                                <input type="checkbox" value="{$vo.orderid}" class="i-checks check-list" name="oid">
+                                <input type="hidden" value="{$vo.companyid}" class="hid" name="comid">
+                                <input type="hidden" value="{$vo.ostate}" class="ostate" name="ostate">
+                                <input type="hidden" value="{$vo.invoID}" class="invid" name="invid">
+                            </td>
+                            <td>
+                                 {if condition="$vo.ostate==1"}
+                                    <a href="/admin/order/clientorder?search={$vo.ordernumber}">{$vo.ordernumber}</a>
+                                {elseif condition="$vo.ostate==2"/}
+                                    <a href="/admin/order/customlineorder?search={$vo.ordernumber}">{$vo.ordernumber}</a>
+                                {elseif condition="$vo.ostate==3"}
+                                    <a href="/admin/cityorder/index?search={$vo.ordernumber}">{$vo.ordernumber}</a>
+                                {else/}
+                                    <a href="/admin/carloadorder/prouserorder?search={$vo.ordernumber}">{$vo.ordernumber}</a>
+                                {/if}
+                            </td>
+                            <td>{$vo.clinemess}</td>
+                            <td>{$vo.name}</td>
+                            <td>{$vo.addtime|date="Y-m-d H:i",###}</td>
+                            <td>{$vo.line}</td>
+                            <td>{if condition="$vo.ostate==1"}零担{elseif condition="$vo.ostate==2"/}定制{elseif condition="$vo.ostate==3"/}城配{else/}整车{/if}</td>
+                            <td>{$vo.doornum}</td>
+                            <td><span class="thPrice" data-tprice="{$vo.tprice}">{$vo.tprice|number_format=2}</span></td>
+                            <td><span class="gxPrice" data-linepice="{$vo.linepice}">{$vo.linepice|number_format=2}</span></td>
+                            <td><span class="psPrice" data-delivecost="{$vo.delivecost}">{$vo.delivecost|number_format=2}</span></td>
+                            <td>
+                                <span class="newPrice" data-totalprice="{$vo.countcoat}">{$vo.countcoat|number_format=2}</span>
+                            </td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                        </table>
+                        {$page}
+                        <div class="row m-t-sm">
+                            <div class="col-sm-6" style="padding-left: 23px;">
+                                <input class="i-checks" id="allCheck" type="checkbox" />
+                                <label for="allCheck">全选</label>
+                            </div>
+                            {if condition="!empty($list)"}
+                                {if condition="($countarr =='listone')"}  
+                                    <div class="col-sm-2">
+                                        <span>发票号:</span> <span>{$listcount.Invoiceno}</span>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <span>发票金额:</span><span>{$listcount.Invoiceamount}</span>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <span>发票日期:</span><span>{$listcount.paytime|date='Y-m-d',###}</span>
+                                    </div>
+                                {/if}
+                                {if condition="($countarr =='listtwo')"}
+                                    <div class="col-sm-6 text-right">
+                                        {if condition="($listnum<=5)"}
+                                        <span>发票号:</span> <span>{$listcount}</span>
+                                        {else/}
+                                        <span>发票数:</span> <span>{$listnum}</span>
+                                        {/if}
+                                    </div>
+                                {/if}
+                            {/if}
+                        </div>
+                
+                        <div class="row m-t-sm">
+                            <div class="col-sm-8"></div>
+                            <div class="col-sm-2">
+                                <div class="input-group date date-view-three" data-provide="datepicker">
+                                    <div class="input-group-addon border-no">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                    <input class="form-control border-bt" type="text" value="{:date('Y-m-d')}" id="payTime" name="payTime" placeholder="收款日期">
+                                </div>
+                            </div>
+                            <div class="col-sm-1 text-right">
+                                {if condition="!empty($list)"}
+                                    {if condition="($countarr =='listone')"}
+                                        {if condition="($listcount.unpass==1)"}
+                                        <a class="btn btn-sm btn-primary" href="javascript:;" id="cancel">销账</a>
+                                        {else/}
+                                        <a class="btn btn-sm cancel1" style="background-color: gray;" href="javascript:;">销账</a>
+                                        {/if}
+                                    {else/}
+                                        <a class="btn btn-sm cancel1" style="background-color: gray;" href="javascript:;">销账</a>
+                                    {/if}
+                                {/if}
+                            </div>
+                            
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <!-- 调用日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+    <!-- bootstrap table -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+    <!-- bootstrap table 语言包 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+
+    <script type="text/javascript">
+    
+    $(document).ready(function () {
+        $('.table').bootstrapTable({
+            height: 800,
+            showFooter: true,
+            columns: [{
+                title: '',
+                field: '',
+                align: 'left',
+            }, {
+                title: '订单编号',
+                field: '订单编号',
+                align: 'left',
+                sortable: true    
+            }, {
+                title: '下单客户',
+                field: '下单客户',
+                align: 'left',
+                sortable: true    
+            }, {
+                title: '公司名称',
+                field: '公司名称',
+                align: 'left',
+                sortable: true    
+            }, {
+                title: '下单时间',
+                field: '下单时间',
+                align: 'left',
+                sortable: true    
+            }, {
+                title: '线路',
+                field: '线路',
+                align: 'left',
+                sortable: true  
+            }, {
+                title: '订单类型',
+                field: '订单类型',
+                align: 'left',
+                sortable: true ,
+                footerFormatter:function (value) {
+                    return "公司总数: {$comnum}";
+                }    
+            }, {
+                title: '门店数',
+                field: '门店数',
+                align: 'left',
+                sortable: true,
+                footerFormatter:function (value) {
+                    return "订单总数: {$ordercount}";
+                }           
+            },/* {
+                title: '重量(kg)/立方(m³)',
+                field: '重量(kg)/立方(m³)',
+                align: 'left',
+                sortable: true,
+                footerFormatter:function (value) {
+                    var totalWeight = 0;
+                    var totalVolume = 0;
+                    for (var i = 0; i < value.length; i++) {
+                        var weight = $('.weight').eq(i).text();
+                        var volume = $('.volume').eq(i).text();
+                        totalWeight = totalWeight + parseFloat(weight);
+                        totalVolume = totalVolume + parseFloat(volume);
+                    }
+                    return totalWeight + "/" + totalVolume;
+                }              
+            }, */{
+                title: '提货费(元)',
+                field: '提货费(元)',
+                align: 'right',
+                sortable: true,
+                footerFormatter:function (value) {
+                    var totaltprice = 0;
+                    for (var i = 0; i < value.length; i++) {
+                        var tprice = $('.thPrice').eq(i).attr('data-tprice');
+                        totaltprice = totaltprice + parseFloat(tprice);
+                    }
+                    return toMoney(totaltprice)+".00";
+                }              
+            }, {
+                title: '干线费(元)',
+                field: '干线费(元)',
+                align: 'right',
+                sortable: true,
+                footerFormatter:function (value) {
+                    var totallinepice = 0;
+                    for (var i = 0; i < value.length; i++) {
+                        var linepice = $('.gxPrice').eq(i).attr('data-linepice');
+                        totallinepice = totallinepice + parseFloat(linepice);
+                    }
+                    return toMoney(totallinepice)+".00";
+                }           
+            }, {
+                title: '配送费(元)',
+                field: '配送费(元)',
+                align: 'right',
+                sortable: true ,
+                footerFormatter:function (value) {
+                    var totaldelivecost = 0;
+                    for (var i = 0; i < value.length; i++) {
+                        var delivecost = $('.psPrice').eq(i).attr('data-delivecost');
+                        totaldelivecost = totaldelivecost + parseFloat(delivecost);
+                    }
+                    return toMoney(totaldelivecost)+".00";
+                }       
+            }, {
+                title: '运费(元)',
+                field: '运费(元)',
+                sortable: true,
+                align: 'right',
+                footerFormatter:function (value) {
+                    var totalprice = 0;
+                    for (var i = 0; i < value.length; i++) {
+                        var price = $('.newPrice').eq(i).attr('data-totalprice');
+                        totalprice = totalprice + parseFloat(price);
+                    }
+                    return "合计: " + toMoney(totalprice)+".00";
+                }    
+            }],
+        })
+        // 将数字转换成金额显示
+        function toMoney(num){
+            num = num.toFixed(2);
+            num = parseFloat(num)
+            num = num.toLocaleString();
+            return num;//返回的是字符串23,245.12保留2位小数
+        }
+        // 汇总
+        function gettotal(argument) {
+            var checkedLen = $('input[name="oid"]:checked').length;
+            var totalweight = 0; // 总重量
+            var totalVolume = 0; // 中体积
+            var totalthPrice = 0; // 总提货费
+            var totalgxPrice = 0; // 总干线费
+            var totalpsPrice = 0; // 总配送费
+            var totalprice = 0;  // 总费用
+            for (var i = 0; i < checkedLen; i++) {
+                var trEle = $('input[name="oid"]:checked').eq(i).parents('tr');
+                //totalweight = totalweight + parseFloat(trEle.find('.weight').text());
+                //totalVolume = totalVolume +  parseFloat(trEle.find('.volume').text());
+                totalthPrice = totalthPrice + parseFloat(trEle.find('.thPrice').attr('data-tprice'));
+                totalgxPrice = totalgxPrice + parseFloat(trEle.find('.gxPrice').attr('data-linepice'));
+                totalpsPrice = totalpsPrice + parseFloat(trEle.find('.psPrice').attr('data-delivecost'));
+                totalprice = totalprice + parseFloat(trEle.find('.newPrice').attr('data-totalprice'));
+            }
+            //$('.fixed-table-footer').find('td').eq(7).find('.th-inner').text(totalweight+"/"+totalVolume);
+            $('.fixed-table-footer').find('td').eq(7).find('.th-inner').text(toMoney(totalthPrice)+".00");
+            $('.fixed-table-footer').find('td').eq(8).find('.th-inner').text(toMoney(totalgxPrice)+".00");
+            $('.fixed-table-footer').find('td').eq(9).find('.th-inner').text(toMoney(totalpsPrice)+".00");
+            $('.fixed-table-footer').find('td').eq(10).find('.th-inner').text(toMoney(totalprice)+".00");
+        }
+        // 单选
+        $('input[name="oid"]').change(function (argument) {
+            if(this.checked){ // 全选
+                gettotal();
+            }else{ // 全不选
+                gettotal();
+            }
+        });
+        // 全选
+        $('#allCheck').change(function (argument) {
+            if(this.checked){ // 全选
+                $('input[name="oid"]').prop("checked",true); 
+                gettotal();
+            }else{ // 全不选
+                $('input[name="oid"]').prop("checked",false);  
+                gettotal();
+            }
+        });
+     /*
+    *提示内容
+    */
+    function hintmessage(content){
+         layer.open({
+          content: content,
+          shadeClose : true,
+          time: 2000,
+        });
+    }
+    /**
+     * ajax 请求
+     * @param   url      [请求地址]
+     * @param   data     [请求数据]
+     * @param   callback [成功回调]
+    */
+    function send_mess(url,data,callback) {
+        callback = callback || function () {};
+        // 设置loading
+        var loadding = layer.load();
+        // ajax请求
+        $.ajax({
+            url: url,
+            type: 'POST',
+            dataType: 'json',
+            data: data,
+        })
+        .done(function(response) {
+            if(response.code){ // 成功
+                layer.msg(response.message);
+                
+            }else{ // 失败
+                layer.msg(response.message); 
+            }
+            // 回调函数
+            callback();
+        })
+        .fail(function(response) {
+            console.log("error");
+        })
+        .always(function(response) {
+            // 关闭loading
+            layer.close(loadding);
+            location.reload(); 
+        });
+    }  
+    $("#cancel").click(function(){
+        var arrinvo = new Array();
+        var length = $('input[name="oid"]:checked').length;
+        var payTime = $("#payTime").val();
+        var content = '';
+        if(length == 0){
+            content = "请选择要操作的数据!!";
+            hintmessage(content);
+            return false;
+        }
+        for (var i = 0; i < length; i++) {
+            var val = $('input[name="oid"]:checked').eq(i).parents("td").find(".invid").val();
+            arrinvo[i] = val;
+        };
+        var tmp = new Array();
+        for (var t in arrinvo) {
+            if(tmp.indexOf(arrinvo[t])==-1){
+            tmp.push(arrinvo[t]);
+            }
+        }
+        if(tmp.length>1){
+            content = "筛选有误！请重新筛选!!";
+            hintmessage(content);
+            return false;
+        }
+        var data_url = '/admin/driverchecking/passcheck';
+        var data_mess = {ajax:1,invoID:tmp,paytime:payTime};
+        send_mess(data_url,data_mess);
+    });   
+    $('#search').click(function(){
+        var company = document.getElementById("company").value;
+        var number = document.getElementById("invonumber").value;
+        var sermoth = document.getElementById("moth").value;
+        //alert(userstate);
+        window.location.href='/admin/driverchecking/writeoff?company='+company+'&sermonth='+sermoth+'&invonumber='+number;
+    });
+    });
+   
+
+
+    </script>
+    
+
+</body>
+
+</html>

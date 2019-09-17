@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox">
+        <div class="ibox-title">
+            <h5>栏目列表</h5>
+            <div class="ibox-tools">
+                <a class="btn btn-primary radius" onclick="system_category_add('添加权限组','{:url('admin/auth/addauth')}')" href="javascript:;"><span class="glyphicon glyphicon-plus"></span> 添加栏目</a>
+            </div>
+        </div>
+        <div class="ibox-content">
+            <div class="row m-b-sm m-t-sm">
+                <div class="col-md-1">
+                    <a href="/admin/auth/setting" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                </div>
+            </div>
+
+            <table class="footable table table-stripped toggle-arrow-tiny" >
+                <thead>
+                <tr>
+                    <th class="text-left" data-sortable="true"><input type="checkbox" name="" value=""></th>
+                    <th class="text-left" data-sortable="true">ID</th>
+                    <th class="text-left" data-sortable="true">用户组</th>
+                    <th class="text-left" data-sortable="true">描述</th>
+                    <th class="text-left" data-sortable="true">授权</th>
+                    <th class="text-left" data-sortable="true">状态</th>
+                    <th class="text-left" data-sortable="true">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name="list" id="vo"}
+                <tr>
+                    <td class="text-left"><input type="checkbox" name="" class="system" value="{$vo.qid}"></td>
+                    <td class="text-left">{$vo.qid}</td>
+                    <td class="text-left">{$vo.title}</td>
+                    <td class="text-left">{$vo.describe}</td>
+                    <td class="text-left"><a href="{:url('admin/auth/authxr')}?qid={$vo.qid}">授权访问</a></td>
+                    <td class="text-left">{if condition='$vo.status==0'}<span class="label label-success radius">正常</span>
+                        {else/}
+                        <span class="label label-defaunt radius">禁用</span>{/if}</td>
+                    <td class="text-left">
+                        {if condition='$vo.status==0'}
+                        <a style="text-decoration:none" onClick="updatestatus(1,'dd','qid',{$vo.qid})" href="javascript:;" title="禁用"><button class="btn btn-danger">禁用</button></a>
+                        {else/}
+                        <a style="text-decoration:none" onClick="updatestatus(0,'dd','qid',{$vo.qid})" href="javascript:;" title="启用"><button class="btn btn-primary">启用</button></a>
+                        {/if}
+                        <a style="text-decoration:none" class="ml-5" onClick="product_edit('','{:url('admin/auth/authedit')}?qid={$vo.qid}','{$vo.qid}')" href="javascript:;" title="修改">
+                            <button class="btn btn-warning">修改</button>
+                        </a>
+                        <a style="text-decoration:none" class="ml-5" onClick="datadel('dd',{$vo.qid})" href="javascript:;" title="删除">
+                            <button class="btn btn-danger">删除</button>
+                        </a>
+                    </td>
+
+
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+            {$list->render()}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/layer.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/laypage.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js//h-ui.admin/js/H-ui.admin.js"></script>
+<script>
+    $(document).ready(function() {
+        // 初始话表格
+        $('.footable').bootstrapTable();
+    });
+    function system_category_add(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+    function updatestatus(status,all,zhujian,id) {
+        if(status == 0){
+            var msg = '启用'
+        }else if(status==1){
+            var msg = '禁用';
+        }
+        layer.confirm('确认要'+msg+'吗？',function(index) {
+            if (all == 'all') {
+                var classArr = $('.quan');
+                var str = ''
+                $.each(classArr, function (key, value) {
+                    if (classArr[key].checked) {
+                        str += classArr[key].value + ','
+                    }
+                })
+                var data = {
+                    id: str,
+                    status: status,
+                    model: 'quanxian',
+                    zhujian: zhujian,
+                    msg:msg
+                }
+            } else if (all == 'dd') {
+                var data = {
+                    id: id + ',',
+                    status: status,
+                    model: 'quanxian',
+                    zhujian: zhujian,
+                    msg:msg
+                }
+            }
+            $.ajax({
+                url: '{:url("admin/auth/updatestatus")}',
+                data: data,
+                type: 'post',
+                dataType: 'json',
+                success: function (res) {
+                    console.log(res)
+                    if (res.result == 'success') {
+                        layer.msg(res.msg, {icon: 1, time: 1200});
+                        setTimeout(function () {
+                            window.location.reload()
+                        }, 2100)
+                    } else if (res.result == 'error') {
+                        layer.msg(res.msg, {icon: 2, time: 1200});
+                    }
+                }
+            })
+        })
+    }
+    function datadel(all,id) {
+        layer.confirm('确认要删除吗？', function (index) {
+            if (all == 'all') {
+                var classArr = $('.quan');
+                var str = ''
+                $.each(classArr, function (key, value) {
+                    if (classArr[key].checked) {
+                        str += classArr[key].value + ','
+                    }
+                })
+                var data = {
+                    id: str,
+                    model: ['quanxian']
+                }
+            } else if (all == 'dd') {
+                var data = {
+                    id: id + ',',
+                    model: ['quanxian']
+                }
+            }
+            $.ajax({
+                url: '{:url("admin/auth/delete")}',
+                data: data,
+                type: 'post',
+                dataType: 'json',
+                success: function (res) {
+                    if (res.result == 'success') {
+                        layer.msg(res.msg, {icon: 1, time: 1200});
+                        setTimeout(function () {
+                            window.location.reload()
+                        }, 2100)
+                    } else if (res.result == 'error') {
+                        layer.msg(res.msg, {icon: 2, time: 1200});
+                    }
+                }
+            })
+        })
+    }
+    function product_edit(title,url,id){
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+</script>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox">
+        <div class="ibox-title">
+            <h5>栏目列表</h5>
+            <div class="ibox-tools">
+                <a class="btn btn-primary radius" onclick="system_category_add('添加栏目','{:url('admin/system/add')}?sid={$Think.get.sid}')" href="javascript:;"><span class="glyphicon glyphicon-plus"></span> 添加栏目</a>
+            </div>
+        </div>
+        <div class="ibox-content">
+            <div class="row m-b-sm m-t-sm">
+                <div class="col-md-1">
+                    <a href="/admin/System/index" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                </div>
+            </div>
+
+            <table class="footable table table-stripped toggle-arrow-tiny">
+                <thead>
+                <tr>
+                    <th class="text-left" data-sortable="true"><input type="checkbox" name="" value=""></th>
+                    <th class="text-left" data-sortable="true">ID</th>
+                    <th class="text-left" data-sortable="true">名称</th>
+                    <th class="text-left" data-sortable="true">排序</th>
+                    <th class="text-left" data-sortable="true">上级菜单</th>
+                    <th class="text-left" data-sortable="true">URL</th>
+                    <th class="text-left" data-sortable="true">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name="list" id="vo"}
+                <tr>
+                    <td class="text-left"><input type="checkbox" name="" class="system" value="{{$vo.sid}}"></td>
+                    <td class="text-left">{$vo.sid}</td>
+                    <td class="text-left">{$vo.title}</td>
+                    <td class="text-left">{$vo.sort}</td>
+                    <td class="text-left">{$vo.fid}</td>
+                    <td class="text-left">{$vo.connect}</td>
+                    <td class="text-left">
+                        操作
+                    </td>
+
+
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/layer.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/laypage.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js//h-ui.admin/js/H-ui.admin.js"></script>
+<script>
+    $(document).ready(function() {
+        // 初始话表格
+        $('.footable').bootstrapTable();
+    });
+    function system_category_add(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+</script>

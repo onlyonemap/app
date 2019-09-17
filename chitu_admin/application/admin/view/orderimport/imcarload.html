@@ -1,0 +1,70 @@
+{include file="public/header"}
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox">
+                   
+                    <div class="ibox-content">
+                       
+                        <div class="clients-list">
+                            
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane active">
+                                    <div class="full-height-scroll">
+                                        <div class="table-responsive">
+                                          <form action="/admin/orderimport/carload" method="post" enctype="multipart/form-data">
+                                            <label for="file">导入个体司机:</label>
+                                            <input type="file" name="file" id="file" /> 
+                                            <input type="submit" name="submit" value="提交" />
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+
+    <script src="/static/tpl/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="/static/tpl/js/content.js?v=1.0.0"></script>
+    <script src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+    <script>
+        $(function () {
+            $('.full-height-scroll').slimScroll({
+                height: '100%'
+            });
+        });
+        $("body").on("click","img",function(){
+        var _self = $(this).siblings("img");
+        layer.open({
+          type: 1,
+          title: false,
+          closeBtn: 0,
+           area: ['630px', '560px'],
+          //skin: 'layui-layer-nobg', //没有背景色
+          shadeClose: true,
+          content: _self
+        });
+    });
+    </script>
+
+   
+    
+
+</body>
+
+</html>

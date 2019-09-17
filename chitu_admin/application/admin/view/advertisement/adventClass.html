@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {include file="public/header"}
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>广告类别</h5>
+                <div class="ibox-tools">
+                    <a href="/admin/advertisement/adventClassAdd">
+                        <i class="fa fa-plus"> 添加 </i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+            	<!-- search start -->
+				<div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/advertisement/adventClass" class="btn btn-white btn-sm"><i class="fa fa-refresh"> 刷新 </i></a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input class="form-control" id="provSelect1" type="text" placeholder="请输入分类名称" /> 
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- search end -->
+		
+                <table class="footable table table-stripped toggle-arrow-tiny">
+                    <thead>
+                        <tr>
+                            <th class="text-left">分类名称</th>
+                            <th class="text-left">父级分类</th>
+                            <th class="text-left">广告类型</th>
+                            <th class="text-left">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>
+                            <td class="text-left">{$vo.cate_name}</td>
+                            <td class="text-left">{$vo.cate_parent}</td>
+                            <td class="text-left">{$vo.cate_type}</td>
+                            <td class="text-left">
+                             	<a href="/admin/advertisement/adventClassUpdate?id={$vo.id}" class="btn btn-info"><i class="fa fa-paste"></i>编辑</a>
+                            </td>
+                        </tr>
+                       {/volist}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- 全局 -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <!-- bootstrap -->
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- layer -->
+    <script src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+    <!-- 自定义js -->
+    <script type="text/javascript">
+    	// 初始话表格
+        $('.footable').footable();
+        // 查询
+        $('#search').click(function(){
+            var psel = document.getElementById("provSelect1");
+            window.location.href='/admin/advertisement/adventClass?search='+psel.value;
+        });
+        // 删除
+    </script>
+</body>
+
+</html>

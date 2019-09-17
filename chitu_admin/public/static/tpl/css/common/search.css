@@ -1,0 +1,64 @@
+/**
+ * ==================================
+ * 赤途数据后台子级页面下的表单搜索样式
+ * ================================== 
+ */
+.input-group .btn{
+	padding: 6px 12px;
+}
+
+/*业务对账表单项    编辑按钮    样式*/
+.newPrice{
+	padding-left: 8px;
+}
+.update.btn.btn-info.test{
+	background-color: transparent !important;
+	border:none;
+	padding: 4px 4px 4px 12px ; 
+}
+.update.btn.btn-info.test span:before{
+	display: inline-block;
+    width: 14px;
+    text-align: left;
+    position: relative;
+    top: -3px;
+    font-size: 12px;
+    color: #78787a;
+    border-bottom: 1px solid #78787a;
+}
+
+/*账单确认页    下方按钮位置  */
+.ibox-content{
+	padding-bottom: 60px;
+}
+.b_down{
+	top: 50px;
+}
+.f_right{
+	float: right;
+	text-align: right;
+}
+
+/* label 标签大小统一 */
+.addwidth-1{
+	padding: 3px 14px;	
+}
+.addwidth-2{
+	padding: 3px 20px;	
+}
+.badge_addwidth-1{
+	padding: 3px 12px;
+}
+
+td .btn{
+	font-size: 10px;
+	margin-top: 3px;
+	line-height: 1;
+	padding: 4px 8px;
+}
+.btn.btn-info.dropdown-toggle{
+	padding: 5px 10px;
+}
+.float-e-margins .btn{
+	margin-bottom: 3px;
+}

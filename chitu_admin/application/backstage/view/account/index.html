@@ -1,0 +1,83 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="ibox">
+            <div class="ibox-title">
+                <!-- <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5> -->
+                <h5>账号列表</h5>
+                <div class="ibox-tools">
+                    <a href="/backstage/account/addaccount" class="btn btn-primary btn-xs">添加账号</a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/backstage/account/index" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh" style="color:#1a8aff"></i> 刷新</a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入手机号码" id="provSelect1" class="input-sm form-control"> <span class="input-group-btn">
+                                <a href="javascript:sousuo();" class="btn btn-sm" style="margin-left: 20px; background: #1a8aff;color:#fff;border-radius: 6px;"> 搜索</a> </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-list">
+
+                    <table class="table table-hover">
+                        <tbody>
+                            {volist name="array" id="vo"}
+                                <tr>
+                                    <td class="project-status"> 
+                                    
+                                        {if  condition="($vo.type==1)"}
+                                        <span class="label label-info">司 机</span> 
+                                        {elseif condition="($vo.type==2)"}
+                                         <span class="label label-primary">调 度</span> 
+                                        {else}
+                                        <span class="label label-danger">管理员</span> 
+                                        {/if}
+                                    
+                                    </td>
+                                    <td class="project-title">
+                                        <a href="">{$vo.name}</a>                                
+                                    </td>
+                                    <td class="project-completion">
+                                        <small>手机号码： {$vo.phone}</small>
+                                    </td>
+                                    <td class="project-completion">
+                                        <small>添加时间： {$vo.time|date='Y年m月d日 H:i:s',###} </small>
+                                    </td>
+                                    <td class="project-actions">
+                                        <a href="/backstage/account/edit?type={$vo.type}&id={$vo.id}" class="btn btn-primary btn-sm"><i class="fa fa-folder"></i> 修改 </a>
+                                        <a href="javascript:delaccount({$vo.type},{$vo.id})" class="btn btn-danger btn-sm"><i class="fa fa-pencil"></i> 删除 </a>
+                                    </td>
+                                </tr>
+                            {/volist}
+                        </tbody>
+                        </table>
+                        {$page}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function delaccount(type,id){
+    var msg = "您真的确定要删除吗？删除后不可恢复\n\n请确认！";
+    if (confirm(msg)==true){
+        // alert(type);
+        // alert(id);
+        window.location.href='/backstage/account/delaccount?type='+type+'&id='+id;
+    }else{
+        return false;
+    }
+}
+function sousuo(){
+    var psel = document.getElementById("provSelect1");
+    window.location.href='/backstage/account/index?search='+psel.value;
+}
+</script>

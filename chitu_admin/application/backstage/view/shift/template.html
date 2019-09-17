@@ -1,0 +1,103 @@
+{include file="public/header"}
+</style>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>干线班次模板</h5>
+                               <div class="ibox-tools"> 
+                                    <a class="dropdown-toggle"  href="/backstage/shift/addshift" style="color:#000">
+                                        <i class="fa fa-wrench" ></i>
+                                        添加干线班次
+                                    </a>   
+                                </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="row m-b-sm m-t-sm">
+                                <div class="col-md-1">
+                                    <a href="/backstage/shift/template" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="input-group">
+                                         <input type="text" value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>" placeholder="请输入班次号/公司名称" id="provSelect1" class="input-sm form-control">
+                                        <span class="input-group-btn ">
+                                            <a href="javascript:sousuo();" class="btn btn-sm btn-primary" style="margin-left: 20px; border-radius: 6px"> 查询</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="8">
+                                <thead>
+                                <tr>
+                                    <th>公司名称</th>
+                                    <th class="text-center" data-hide="all"></th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                               {volist name="list" id="vo"}
+                                <tr>
+                                    <td>{$vo.companyname}</td>
+                                    <td>
+                                        <table class=" table" style="width:100%">
+                                            <thead>
+                                                <th style="width:25%;">始发城市</th>
+                                                <th style="width:25%;">终点城市</th>
+                                                <th style="width:25%;">班次号</th>
+                                                <th class="text-center" style="width:25%;">操作</th>
+                                            </thead>
+                                            {volist name="$vo.shift" id="v"}
+                                            <tr>
+                                                <td style="width:25%;">{$v.start}</td>
+                                                <td style="width:25%;">{$v.end}</td>
+                                                <td style="width:25%;">{$v.shiftnumber}</td>
+                                                <td style="width:25%;" class="text-center"><a href="/backstage/shift/uptemplate?id={$v.sid}" class="btn btn-info"><i class="fa fa-paste"></i>编辑模板</a></td>
+                                            </tr>
+                                            {/volist}
+                                        </table>
+                                   </td>
+                                    <td class="text-center">查看模板 </td>
+                                </tr>
+                               {/volist}
+                                </tbody>
+                                <tfoot>
+                               
+                                </tfoot>
+                            </table>
+                            {$page}
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+
+   
+    <script>
+        $(document).ready(function() {
+
+            $('.footable').footable();
+            $('.footable2').footable();
+
+        });
+
+    </script>
+
+    <script type="text/javascript">
+    function sousuo(){
+        var psel = document.getElementById("provSelect1");
+        window.location.href='/backstage/shift/template?search='+psel.value;
+    }
+    </script>
+    
+
+</body>
+
+</html>

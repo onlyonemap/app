@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        
+        <!-- 承运商详情 -->
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5> 
+                    <a href="javascript:history.back(-1);"><span class="glyphicon glyphicon-chevron-left"><b>返回</b></span></a>
+                </h5>
+                <div class="ibox-tools">承运商详情</div>
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    <div class="col-sm-2">公司名称</div>
+                    <div class="col-sm-10">{$list.name}</div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="row">
+                    <div class="col-sm-2">公司地址</div>
+                    <div class="col-sm-10">{$list.address}</div>
+                </div>
+                <div class="hr-line-dashed"></div>
+            </div>       
+        </div>
+        <!-- 员工和车牌详情 -->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>员工列表</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    
+                                    <th>姓名</th>
+                                    <th>手机号</th>
+                                    <th>职位</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {volist name="list.driver" id="item"}
+                                <tr>
+                                    
+                                    <td>{$item.realname}</td>
+                                    <td>{$item.mobile}</td>
+                                    <td>
+                                        {switch name="item.type"}
+                                            {case value="1"}司机{/case}
+                                            {case value="2"}调度{/case}
+                                            {case value="3"}管理{/case}
+                                            {default /}
+                                        {/switch}
+                                    </td>
+                                </tr>
+                                {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                 <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>车辆列表</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>车牌号</th>
+                                    <th>车型</th>
+                                    <th>注册日期</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {volist name="list.car" id="item"}
+                                <tr>
+                                    <td>{$item.carnumber}</td>
+                                    <td>
+                                        {switch name="item.carid"}
+                                            {case value="1"}4.2米冷藏厢车{/case}
+                                            {case value="2"}5.2米冷藏厢车{/case}
+                                            {case value="3"}7.6米冷藏厢车{/case}
+                                            {case value="4"}9.6米冷藏厢车(前四后四){/case}
+                                            {case value="5"}9.6米冷藏厢车(前四后八){/case}
+                                            {case value="6"}12.5米冷藏厢车{/case}
+                                            {case value="7"}15米冷藏厢车{/case}
+                                            {case value="9"}依维柯{/case}
+                                            {default /}
+                                        {/switch}
+                                    </td>
+                                    <td>{$item.car_age}</td>
+                                </tr>
+                                {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                 <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>干线区域列表</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>班次号</th>
+                                    <th>城市</th>
+                                    <th>基准价</th>
+                                    <th>免提货费最高吨位数</th>
+                                    <th>干线价格(元/kg)</th>
+                                    <th>抛货价格(元/m³</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {volist name="list.shiftArr" id="item"}
+                                <tr>
+                                    <td>{$item.shiftnumber}</td>
+                                    <td>{$item.shifstartline}</td>
+                                    <td>{$item.shifendline}</td>
+                                    <td>{$item.freetonnage}</td>
+                                    <td>{$item.price}</td>
+                                    <td>{$item.eprice}</td>
+                                </tr>
+                                {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 提配送、干线区域列表 -->
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>提货区域列表</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>城市</th>
+                                    <th>基准价</th>
+                                    <th>费率</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {volist name="list.tiArr" id="item"}
+                                <tr>
+                                    <td>{$item.city}</td>
+                                    <td>{$item.price}</td>
+                                    <td>{$item.rate}</td>
+                                </tr>
+                                {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                 <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>配送区域列表</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>城市</th>
+                                    <th>基准价</th>
+                                    <th>费率</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {volist name="list.peiArr" id="item"}
+                                <tr>
+                                    <td>{$item.city}</td>
+                                    <td>{$item.price}</td>
+                                    <td>{$item.rate}</td>
+                                </tr>
+                                {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

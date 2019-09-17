@@ -1,0 +1,1539 @@
+[ 2019-07-02T13:08:30+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.226000s][吞吐率：4.42req/s] [内存消耗：2,215.64kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryQjOWe10JdZJrZ65Y',
+  'postman-token' => '501b64cb-a1e5-50c4-9315-086cdbca800a',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562083200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.037000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T13:13:14+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.082000s][吞吐率：12.20req/s] [内存消耗：2,218.27kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary9HBHjeey75FPNyni',
+  'postman-token' => 'fe5b63af-957b-ff4e-d4c5-74f936097330',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562083200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T13:14:34+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.357000s][吞吐率：0.74req/s] [内存消耗：2,301.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarySY6F0npitATihCbw',
+  'postman-token' => '58c60619-59df-d0ad-108a-ba612106e867',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562083200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.037000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.037000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.034000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T13:16:11+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.227000s][吞吐率：0.81req/s] [内存消耗：2,301.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarymWZryQpcKifuEVle',
+  'postman-token' => 'f3283f73-2064-891e-bd16-6189d70d1c6f',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1561651200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T13:16:37+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.026000s][吞吐率：0.97req/s] [内存消耗：2,301.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryyeBUB52AjIoqCjsr',
+  'postman-token' => '42945867-6a56-dfeb-2309-b7de0193f5c2',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1561651200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T13:17:58+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.154000s][吞吐率：0.87req/s] [内存消耗：2,301.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryEBAaDFZWyS2Ni6TB',
+  'postman-token' => '14703c87-bcc0-950e-4c4e-4c87d6db5ff5',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '563',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T13:57:41+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.123000s][吞吐率：0.89req/s] [内存消耗：2,301.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryF2twRLUC6OcRCPNl',
+  'postman-token' => '0b24ac3d-e34a-b72c-d899-d84c18bb38b7',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T13:58:42+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.414000s][吞吐率：0.71req/s] [内存消耗：2,301.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryWhMT7BaaJLnObTmu',
+  'postman-token' => 'e2698f5b-1bc8-e476-1b49-0a00368210e4',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T14:05:49+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.173000s][吞吐率：0.85req/s] [内存消耗：2,301.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarypwLmTA8ckBp133yx',
+  'postman-token' => 'a50a2571-1de3-39af-4b13-7f6e304384c2',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T14:07:26+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.101000s][吞吐率：9.90req/s] [内存消耗：2,323.67kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryYEao0cpQAJubmWik',
+  'postman-token' => '7a381c91-f69e-a1e6-901d-b8821918dbeb',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: value[D:\WWW\chitu_admin\application\user\controller\Placeorder.php:340]
+
+---------------------------------------------------------------
+[ 2019-07-02T14:08:14+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.104000s][吞吐率：0.91req/s] [内存消耗：2,301.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryXb0sGd3usLY7GNTF',
+  'postman-token' => '6a1db7ae-9a82-5c68-4cd9-694a4fcf080e',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T14:29:45+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.170000s][吞吐率：0.85req/s] [内存消耗：2,301.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryhziBRKUA16fhurRf',
+  'postman-token' => '152c2717-3ea6-37e6-05f6-1f6a3df104c5',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T14:33:31+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.087000s][吞吐率：11.49req/s] [内存消耗：2,236.09kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarypeqpCq5TPIVbyy9I',
+  'postman-token' => 'e81925b4-eaa6-3491-2fea-66331b801c62',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T14:51:48+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.227000s][吞吐率：0.81req/s] [内存消耗：2,301.17kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryK4BxxTR4GcvYTYXe',
+  'postman-token' => 'd2206f48-28ba-6c02-fc42-17d4632d8416',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T15:20:06+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.471000s][吞吐率：0.68req/s] [内存消耗：2,301.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryr04zxYgRIYwl3EyB',
+  'postman-token' => '0b21e936-49b2-ed12-e180-628f53a0b459',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 ) AND `g`.`deptime` > '1562126400' AND `g`.`deptime` < 1562212799 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T15:31:00+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：1.173000s][吞吐率：0.85req/s] [内存消耗：2,297.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryQeAvIDVVvdvQ2nhi',
+  'postman-token' => '762320b5-6148-8ed3-f0b8-eee0553eb604',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 AND `g`.`deptime` > '1562126400' AND `g`.`deptime` < 1562212799 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T15:35:07+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.104000s][吞吐率：9.62req/s] [内存消耗：2,290.02kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryRhBE0FyxfNUJj3FW',
+  'postman-token' => 'c5520577-e639-dbbb-86b8-2519947a2310',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T15:45:04+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.076000s][吞吐率：13.16req/s] [内存消耗：2,311.38kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryWpuOTtq2gLfFKfam',
+  'postman-token' => 'f5e4dc1c-c68b-171e-74b1-6d518717d9a6',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [2]Missing argument 3 for app\user\controller\Placeorder::line_price(), called in D:\WWW\chitu_admin\application\user\controller\Placeorder.php on line 457 and defined[D:\WWW\chitu_admin\application\user\controller\Placeorder.php:186]
+
+---------------------------------------------------------------
+[ 2019-07-02T15:45:43+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.102000s][吞吐率：9.80req/s] [内存消耗：2,294.16kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryWA91qP5ubcoJrNnm',
+  'postman-token' => '6bf633be-d61a-568f-f829-0a79ce1f0467',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T15:54:44+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.118000s][吞吐率：8.47req/s] [内存消耗：2,294.70kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarys9KKtgx3AedL7kAc',
+  'postman-token' => '58c6e8d4-3e5f-69ff-805b-a9e49d3208be',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T16:00:08+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.120000s][吞吐率：8.33req/s] [内存消耗：2,290.66kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary28CBGr62fsNri2jP',
+  'postman-token' => 'd6bfb8ea-28e8-2906-6b73-d121a340cbe8',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562126400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T16:00:53+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.097000s][吞吐率：10.31req/s] [内存消耗：2,290.66kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryeMUJRGJvvtKTo96R',
+  'postman-token' => '7e5317a5-d4b6-16ff-5871-7c145f0272bb',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562515200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T16:38:08+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.113000s][吞吐率：8.85req/s] [内存消耗：2,313.53kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryYNIEeP4FUM8oYFuo',
+  'postman-token' => '9e30a2b9-97f1-d86a-9bb4-f68da6e2d849',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562515200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_log` [ RunTime:0.009000s ]
+[ error ] [8]未定义数组下标: 1[D:\WWW\chitu_admin\thinkphp\library\think\db\Builder.php:416]
+
+---------------------------------------------------------------
+[ 2019-07-02T16:42:28+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.109000s][吞吐率：9.17req/s] [内存消耗：2,313.53kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryQC8WP3etDNAPEsAb',
+  'postman-token' => 'a4449792-a5e7-faaf-dca8-15f3c7a00038',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562515200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_log` [ RunTime:0.009000s ]
+[ error ] [8]未定义数组下标: 1[D:\WWW\chitu_admin\thinkphp\library\think\db\Builder.php:416]
+
+---------------------------------------------------------------
+[ 2019-07-02T16:44:28+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.079000s][吞吐率：12.66req/s] [内存消耗：2,218.28kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryYVvpGN5oBA9mRhkA',
+  'postman-token' => 'd88428de-3aa3-cc2a-cfb4-20e2a861cdab',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562515200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T16:44:48+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.090000s][吞吐率：11.11req/s] [内存消耗：2,218.28kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryGU71cGGRa9G6YAbh',
+  'postman-token' => '6afdd936-d102-0cb0-ac51-865f073fd3c8',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562515200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-07-02T16:45:10+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.108000s][吞吐率：9.26req/s] [内存消耗：2,317.58kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary3G2pESXKMOUiWM1f',
+  'postman-token' => 'e684a793-f8d5-99fc-575b-57e4087cfd4d',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562515200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_log` [ RunTime:0.008000s ]
+[ error ] [8]未定义数组下标: 1[D:\WWW\chitu_admin\thinkphp\library\think\db\Builder.php:416]
+
+---------------------------------------------------------------
+[ 2019-07-02T16:46:53+08:00 ] 127.0.0.1 127.0.0.1 POST /user/placeorder/datalist
+[ log ] www.chitu12.com/user/placeorder/datalist [运行时间：0.126000s][吞吐率：7.94req/s] [内存消耗：2,297.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'placeorder',
+    2 => 'datalist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryTEkCDryI0CmaTttP',
+  'postman-token' => '56eef566-7c04-1eb6-f424-318a6229735e',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '573',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/placeorder/datalist' => '',
+  'token' => 'McTtUp1hNpT6Y936N9z6c93NTY0MDQzN2NvZGVwaHAO0O0O',
+  'start_city' => '45054',
+  'end_city' => '45052',
+  'time' => '1562515200',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Placeorder->datalist[ D:\WWW\chitu_admin\application\user\controller\Placeorder.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1555677775640437codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 167  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_already_city` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_already_city` WHERE  `start_id` = 45054  AND `end_id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift_log` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `s`.`sid`,`s`.`picktype`,`s`.`sendtype`,`s`.`picksite`,`s`.`stime`,`s`.`sphone`,`s`.`sendsite`,`s`.`dtime`,`s`.`tphone`,`s`.`companyid`,`s`.`shiftnumber`,`s`.`trunkaging`,`s`.`price`,`s`.`timestrat`,`s`.`timeend`,`s`.`lowprice`,`s`.`shiftstate`,`s`.`pmoney`,`s`.`smoney`,`s`.`weekday`,`s`.`discount`,`g`.`slid`,`g`.`deptime` FROM `ct_shift` `s` INNER JOIN `ct_shift_log` `g` ON `g`.`shiftid`=`s`.`sid` WHERE  ( ( `g`.`deptime` > 1562083200 AND `g`.`deptime` < 1562601599 ) AND `g`.`deptime` BETWEEN '1562515200' AND '1562601599' )  AND `g`.`status` IN ('1','3')  AND `s`.`linecityid` = 145 ORDER BY s.trunkaging asc, g.deptime asc [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `o`.`start_city`,`o`.`start_area`,`o`.`end_city`,`o`.`end_area`,`o`.`carid`,`o`.`weight`,`o`.`volume`,`o`.`loaddate`,`o`.`referprice`,`o`.`down_price`,`o`.`remark`,`car`.`carparame`,`car`.`allweight`,`car`.`allvolume` FROM `ct_issue_item` `o` LEFT JOIN `ct_cartype` `car` ON `car`.`car_id`=`o`.`carid` WHERE  `o`.`start_city` = '45054'  AND `o`.`end_city` = '45052'  AND `o`.`ordertype` = 2  AND `o`.`paystate` = 2  AND `o`.`orderstate` = 1 ORDER BY addtime desc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                     <div class="ibox-title">
+                        <h5>司机运费调整区间</h5>
+
+                        <div class="ibox-tools">
+                            <a class="dropdown-toggle"  href="/admin/setting/freight" style="color:#000">
+                                <i class="fa fa-wrench" ></i>
+                                添加运费区间
+                            </a>
+                        </div>
+                    </div>
+                   
+                    <div class="ibox-content">
+                        <div class="row m-b-sm m-t-sm">
+                            <div class="col-md-1">
+                                <a href="/admin/setting/setting_freight" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                            </div>
+                            
+                        </div>
+                             
+                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="8" style="font-size: 14px">
+                             <tbody>
+                             <thead>
+                                
+                                <tr>
+
+                                    <th class="text-left">订单类型</th>
+                                    <th data-hide="all"></th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                                </thead>
+                                {volist name="list" id="vo"}
+                                <tr>
+                                    <td class="text-left">{$vo.otype}</td>
+                                    
+                                    
+                                  
+                                    <td> 
+                                        <table class=" table">
+                                            <thead>
+                                                <th>起始运费(￥)</th>
+                                                <th>终点运费(￥)</th>
+                                                <th>百分比(%)</th>
+                                                
+                                                <th >操作</th>
+                                            </thead>
+                                            
+                                             {volist name="$vo.rang" id="v"}
+                                            <tr class="par zhongliangtext">
+
+                                                <td>{$v.weight_start}<input class='hid' type="hidden" id="setion" name="setion[]" value="{$v.s_id}" /></td>
+                                                <td>{$v.weight_end}</td>
+                                                <td>{$v.billing}</td>
+                                                
+                                                <td><a class="removeclass col-sm-1 col-lg-1 col-xs-2 form-control-static">×</a></td>
+                                            </tr>
+                                            {/volist}
+                                        </table>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="/admin/setting/up_freight?otype={$vo.otypenumber}" class="btn btn-info"><i class="fa fa-paste"></i>编辑</a>
+                                       
+                                        <a data-url="/admin/setting/del_freight?otype={$vo.otypenumber}" class="btn btn-info confir"><i class="fa fa-paste"></i>删除</a>
+                                       
+                                    </td>
+
+                                </tr>
+                               
+                               {/volist}
+                            </tbody>
+                            <tfoot>
+                           
+                            </tfoot>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+    <script src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+    
+    <!-- 自定义js -->
+    <script src="/static/tpl/js/content.js?v=1.0.0"></script>
+    <script>
+        $(document).ready(function() {
+            var FieldCount = 1;
+            // 初始话表格
+            $('.footable').footable();
+            $("body").on("click",".removeclass", function(e){
+                var getid = $(this).parents('.par').find(".hid").val();
+                var msg = "您真的确定要删除吗？\n\n请确认！"; 
+                if (confirm(msg)==true){ 
+                    if(getid !='' ){
+                        $.post("/admin/info/delsetion",{ajax:1,sid:getid},function(result){});
+                        }
+                    $(this).parents('.zhongliangtext').remove();
+                    FieldCount--; //decrement textbox
+                    return false;   
+                }else{ 
+                    return false; 
+                } 
+               
+            })
+           
+            //删除
+            $('.confir').click(function(){
+            	
+            	var url = $(this).attr("data-url");
+                layer.confirm('删除后数据将无法找回，确定要执行该操作吗？', {
+                    btn: ['确定','取消'] //按钮
+                }, function(){
+                    window.location.href=url;
+                }, function(){
+                	
+                });
+                
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link href="/static/tpl/css/plugins/iCheck/custom.css" rel="stylesheet" />
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+            <form class="form-horizontal m-t" method="post" action="" id="commentForm">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">权限组<span style="color:red"> *</span></label>
+                    <select name="qxz" class="select col-sm-10">
+                        {volist name='$quanxian' id='vo'}
+                        <option value="{$vo->qid}" {if condition="$admin->qxz == $vo->qid"} selected {/if}>{$vo->title}</option>
+                        {/volist}
+                    </select>
+                </div>
+                <div class="hr-line-dashed"></div>
+
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-2">
+                        <input type="hidden" value="{$admin->aid}" name="aid">
+                        <input class="btn btn-primary radius" type="button" onclick="domoney()" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+                        <input class="btn btn-primary radius" type="button" onclick="layer_close()" value="&nbsp;&nbsp;取消&nbsp;&nbsp;">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<!-- jQuery Validation plugin javascript-->
+<script src="/static/tpl/js/plugins/validate/jquery.validate.min.js"></script>
+<script src="/static/tpl/js/plugins/validate/messages_zh.min.js"></script>
+<!-- iCheck -->
+<script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+<!-- 自动补全 -->
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/layer.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="__STATIC__/tpl/js/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript">
+    function domoney(){
+        $.ajax({
+            url:'{:url("admin/staff/saveauth")}',
+            data:$('#commentForm').serialize(),
+            type:'post',
+            dataType:'json',
+            success: function (res) {
+                if(res.result=='success'){
+                    layer.msg(res.msg,{icon: 6,time:1000});
+                    setTimeout(layer_close,1200);
+                }else if(res.result=='error'){
+                    layer.msg(res.msg,{icon: 5,time:1000});
+                }
+            }
+        })
+    }
+</script>
+</body>
+</html>

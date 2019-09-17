@@ -1,0 +1,632 @@
+{include file="public/header"}
+
+<body class="gray-bg" onload="getArea('0','province');getTArea('0','tpro');getPArea('0','ppro');getcanArea('0','canprovince');">
+    <div class="wrapper wrapper-content animated fadeInRight">
+       
+      
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                        <div class="ibox-tools">
+                           修改干线承运商
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" id="commentForm" method="post" action="/backstage/carrcompany/addmessage">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">公司名称<span style="color:red"> *</span></label>
+                                <div class="col-sm-10">
+                                    <input id="name" name="name" value="{$list.name}" minlength="2" type="text" class="form-control" required="" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                             <div class="form-group">
+                                <label class="col-sm-2 control-label">原公司地址</label>
+                                <div class="col-sm-5">
+                                    <input id="name2" name="name2" disabled="disabled" type="text" value="{$list.provinceidname}{$list.cityidname}{$list.areaidname}{$list.address}" class="form-control" disable>
+                                </div>
+                                <div class="col-sm-5" style="color:#FF0033;"> ***  原公司地址，填写下方公司地址直接修改地址 </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">公司地址<span style="color:red"> *</span></label>
+                                <div class="col-sm-3">
+                                    <select  class="form-control m-b" name="province" id="province"  onchange="getArea(this.value,'city')"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select  class="form-control m-b" name="city" id="city" onchange="getArea(this.value,'area')"></select>
+                                </div>
+                                 <div class="col-sm-3">
+                                    <select class="form-control m-b" name="area" id="area"></select>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">详细地址</label>
+                                <div class="col-sm-10">
+                                <input id="addinfo" name="addinfo"  placeholder="补全地址" type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            
+                            <div class="form-group" id="thlbb">
+                            <label class="col-sm-2 control-label">提货服务区域列表</label>
+                            <div class="col-sm-10" id="thlb">
+                                
+                                {if condition="isset($list.ti)"}
+                                {volist name="list.ti" id="tiid" key ="k"}
+                                    <div id='pickinfo{$k}{$tiid.tpid}'>
+                                        <div class='col-sm-10 show-hugh' style="padding-left: 0">
+                                            <input disabled='disabled' value='{$tiid.provincename}   提货费用：{$tiid.price}  单点提货费用：{$tiid.rate} ' class='form-control' type='text'>
+                                        </div>
+                                        <div class='col-sm-2 show-hugh'>
+                                            <button data-toggle='dropdown' value='{$k}{$tiid.tpid}' class='btn btn-default pull-right dropdown-toggle' onclick='upda(value,{$tiid.tpid})' aria-expanded='false'>删除</button>
+                                        </div>
+                                    </div>
+                                   
+                                {/volist}
+                               {/if}
+                            </div>
+                            </div>
+                             
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提货服务区域 </label>
+                                <div class="col-sm-3">
+                                    <select  class="form-control m-b" name="tpro" id="tpro"  onchange="getTArea(this.value,'tcity')"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select  class="form-control m-b" name="tcity" id="tcity" onchange=""></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                               <label class="col-sm-2 control-label">提货基础价</label>
+                                <div class="col-sm-3">
+                                <input id="tihuoprice" name="tihuoprice"  type="text" class="form-control" 
+                                onkeyup="this.value=this.value.replace(/[^0-9]/g,'')"
+                                onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')">
+                                </div>
+                                <label class="col-sm-2 control-label">多点提货递增费</label>
+                                <div class="col-sm-3">
+                                <input id="tihuodprice" name="tihuodprice"   type="text" class="form-control" 
+                                onkeyup="this.value=this.value.replace(/[^0-9]/g,'')"
+                                onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')">
+                                </div>
+                                <div class="col-sm-2">
+                                 <button class="btn btn-default pull-right dropdown-toggle" data-toggle="dropdown"
+                                            onclick="thdzadd()" aria-expanded="false">添加
+                                </button>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                                
+                                    <div class="form-group" style="" id="pslb">
+                                    <label class="col-sm-2 control-label">配送服务区域列表：</label>
+                                    <div class="col-sm-10 " id="pslbb">
+                                        {if condition="isset($list.pei)"}
+                                        {volist name="list.pei" id="peiid" key ="k"}
+                                        <div id='info{$k}{$peiid.tpid}'>
+                                            <div class='col-sm-12 col-md-6 col-lg-5 show-hugh'>
+                                                <input disabled='disabled' value='{$peiid.province}
+                                                {if condition="isset($peiid.can) !=''"} （仓库地址：{volist name="peiid.can" id="ku"}{$ku.can_address}{/volist}）{/if}' class='form-control' type='text'>
+                                            </div>
+                                            <div class='col-sm-12 col-lg-5 show-hugh'>
+                                                <input disabled='disabled' value='配送费用：{$peiid.price} 单点配送费用：{$peiid.rate}' class='form-control' type='text'>
+                                            </div>
+                                            <div class='col-sm-12 col-lg-2 show-hugh'>
+                                                <button data-toggle='dropdown' value='{$k}{$peiid.tpid}' class='btn btn-default dropdown-toggle' onclick='updap(value,{$peiid.tpid})' aria-expanded='false'>删除</button>
+                                            </div>
+                                        </div>
+                                       {/volist}
+                                       {/if}
+                                    </div>
+                                    </div>
+                                
+                             <div class="form-group">
+                                <label class="col-sm-2 control-label">配送服务区域</label>
+                                <div class="col-sm-3">
+                                    <select  class="form-control m-b" name="ppro" id="ppro"  onchange="getPArea(this.value,'pcity')"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select  class="form-control m-b" name="pcity" id="pcity" onchange=""></select>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                               <label class="col-sm-2 control-label">配送基础价</label>
+                                <div class="col-sm-3">
+                                    <input id="peisongprice" name="peisongprice"  type="text" class="form-control" 
+                                    onkeyup="this.value=this.value.replace(/[^0-9]/g,'')"
+                                    onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')">
+                                </div>
+                                <label class="col-sm-2 control-label">多点配送递增费</label>
+                                <div class="col-sm-3">
+                                    <input id="peidongdprice" name="peidongdprice"   type="text" class="form-control" 
+                                    onkeyup="this.value=this.value.replace(/[^0-9]/g,'')"
+                                    onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')">
+                                </div>
+                                
+                            </div>
+                       
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">配送仓区域</label>
+                               <div class="col-sm-3">
+                                    <select  class="form-control m-b" name="canprovince" id="canprovince"  onchange="getcanArea(this.value,'cancity')"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select  class="form-control m-b" name="cancity" id="cancity" onchange="getcanArea(this.value,'canarea')"></select>
+                                </div>
+                                 <div class="col-sm-3">
+                                    <select class="form-control m-b" name="canarea" id="canarea"></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">配送仓地址</label>
+                                <div class="col-sm-8">
+                                <input id="canaddinfo" name="canaddinfo"  placeholder="补全地址" type="text" class="form-control" >
+                                </div>
+                                <div class="col-sm-2">
+                                    <button data-toggle="dropdown" onclick="psdzadd()"
+                                            class="btn btn-default pull-right dropdown-toggle" aria-expanded="false">添加
+                                    </button>
+                                </div>
+                            </div>
+                            <input style="display:none;" name="TPlace" id="TPlace" type="text">
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <input type="hidden" value="{$list.cid}" name="cid" />
+                                    <input type="hidden" value="update" name="action" />
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                    <a class="btn btn-danger" onClick="javascript :history.back(-1);" style="width:82px">取消</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="/static/tpl/js/content.js?v=1.0.0"></script>
+    <!-- jQuery Validation plugin javascript-->
+    <script src="/static/tpl/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="/static/tpl/js/plugins/validate/messages_zh.min.js"></script>
+    <!-- iCheck -->
+    <script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="/static/tpl/js/ajaxUtil.js" type="text/javascript"></script>
+    <script type="text/javascript">
+                var getID = '';
+                 var getTID = '';
+                 var getPID = '';
+                 var getCID = '';
+                function getArea(id,objectid){
+                   getID = objectid;
+                    //每次往select节点写入option前先将原有的option节点清掉（关于这个节点删除，还有更简单的方法在我其他文章有）  
+                    var sel2 = document.getElementById(objectid);
+                    var childS = sel2.childNodes;
+                    for (var i = childS.length - 1; i >= 0; i--) {
+                        //alert(childS.length);  
+                        sel2.removeChild(childS[i]);
+                    }
+
+                    //定义url  
+                    var url = "/backstage/carrcompany/getaddress";
+                    //定义参数  
+                    var params = "id=" + id;
+                    //调用ajax 进行交互  
+                    get(url, params, processData);
+                }
+                function getTArea(id,objectid){
+                   getTID = objectid;
+                    //每次往select节点写入option前先将原有的option节点清掉（关于这个节点删除，还有更简单的方法在我其他文章有）  
+                    var sel2 = document.getElementById(objectid);
+                    var childS = sel2.childNodes;
+                    for (var i = childS.length - 1; i >= 0; i--) {
+                        //alert(childS.length);  
+                        sel2.removeChild(childS[i]);
+                    }
+
+                    //定义url  
+                    var url = "/backstage/carrcompany/getaddress";
+                    //定义参数  
+                    var params = "id=" + id;
+                    //调用ajax 进行交互  
+                    get(url, params, processTData);
+                }
+                function getPArea(id,objectid){
+                   getPID = objectid;
+                    //每次往select节点写入option前先将原有的option节点清掉（关于这个节点删除，还有更简单的方法在我其他文章有）  
+                    var sel2 = document.getElementById(objectid);
+                    var childS = sel2.childNodes;
+                    for (var i = childS.length - 1; i >= 0; i--) {
+                        //alert(childS.length);  
+                        sel2.removeChild(childS[i]);
+                    }
+
+                    //定义url  
+                    var url = "/backstage/carrcompany/getaddress";
+                    //定义参数  
+                    var params = "id=" + id;
+                    //调用ajax 进行交互  
+                    get(url, params, processPData);
+                }
+                 function getcanArea(id,objectid){
+                   getCID = objectid;
+                    //每次往select节点写入option前先将原有的option节点清掉（关于这个节点删除，还有更简单的方法在我其他文章有）  
+                    var sel2 = document.getElementById(objectid);
+                    var childS = sel2.childNodes;
+                    for (var i = childS.length - 1; i >= 0; i--) {
+                        //alert(childS.length);  
+                        sel2.removeChild(childS[i]);
+                    }
+
+                    //定义url  
+                    var url = "/backstage/carrcompany/getaddress";
+                    //定义参数  
+                    var params = "id=" + id;
+                    //调用ajax 进行交互  
+                    get(url, params, processcanData);
+                }
+                //处理服务器端返回的数据并且显示  
+                function processData(xhr) {
+
+                    //将服务器端返回的jason格式的字符串转化为对象  
+                    var obj = eval("(" + xhr.responseText + ")");
+
+                    //获取对应objectIdd（sheng，shi，xian）变量的下拉菜单的对象  
+                    var sel1 = document.getElementById(getID);
+                    //创建option节点  
+                    var op1 = document.createElement("option");
+                    //给option加上value属性并赋值为0  
+                    op1.setAttribute("value", 0);
+                    //创建文本节点text  
+                    var text = document.createTextNode("----请选择----");
+                    //将文本节点追加给op1  
+                    op1.appendChild(text);
+                    //将op1追加给sel1  
+                    sel1.appendChild(op1);
+                    //在此将jason数组对象的下表为id的作为option的value值，将下表为name的值作为文本节点追加给  
+                    for (var i = 0; i < obj.length; i++) {
+
+                        var op1 = document.createElement("option");
+                        //alert(obj[i].id);  
+                        op1.setAttribute("value", obj[i].id);
+                        //创建文本节点text  
+                        var text = document.createTextNode(obj[i].name);
+                        op1.appendChild(text);
+                        sel1.appendChild(op1);
+                        //alert(obj[i-1].id+"-"+obj[i-1].name);  
+                    }
+                }
+                //处理服务器端返回的数据并且显示  
+                function processTData(xhr) {
+
+                    //将服务器端返回的jason格式的字符串转化为对象  
+                    var obj = eval("(" + xhr.responseText + ")");
+
+                    //获取对应objectIdd（sheng，shi，xian）变量的下拉菜单的对象  
+                    var sel1 = document.getElementById(getTID);
+                    //创建option节点  
+                    var op1 = document.createElement("option");
+                    //给option加上value属性并赋值为0  
+                    op1.setAttribute("value", 0);
+                    //创建文本节点text  
+                    var text = document.createTextNode("----请选择----");
+                    //将文本节点追加给op1  
+                    op1.appendChild(text);
+                    //将op1追加给sel1  
+                    sel1.appendChild(op1);
+                    //在此将jason数组对象的下表为id的作为option的value值，将下表为name的值作为文本节点追加给  
+                    for (var i = 0; i < obj.length; i++) {
+
+                        var op1 = document.createElement("option");
+                        //alert(obj[i].id);  
+                        op1.setAttribute("value", obj[i].id);
+                        //创建文本节点text  
+                        var text = document.createTextNode(obj[i].name);
+                        op1.appendChild(text);
+                        sel1.appendChild(op1);
+                        //alert(obj[i-1].id+"-"+obj[i-1].name);  
+                    }
+                }
+                //处理服务器端返回的数据并且显示  
+                function processPData(xhr) {
+
+                    //将服务器端返回的jason格式的字符串转化为对象  
+                    var obj = eval("(" + xhr.responseText + ")");
+
+                    //获取对应objectIdd（sheng，shi，xian）变量的下拉菜单的对象  
+                    var sel1 = document.getElementById(getPID);
+                    //创建option节点  
+                    var op1 = document.createElement("option");
+                    //给option加上value属性并赋值为0  
+                    op1.setAttribute("value", 0);
+                    //创建文本节点text  
+                    var text = document.createTextNode("----请选择----");
+                    //将文本节点追加给op1  
+                    op1.appendChild(text);
+                    //将op1追加给sel1  
+                    sel1.appendChild(op1);
+                    //在此将jason数组对象的下表为id的作为option的value值，将下表为name的值作为文本节点追加给  
+                    for (var i = 0; i < obj.length; i++) {
+
+                        var op1 = document.createElement("option");
+                        //alert(obj[i].id);  
+                        op1.setAttribute("value", obj[i].id);
+                        //创建文本节点text  
+                        var text = document.createTextNode(obj[i].name);
+                        op1.appendChild(text);
+                        sel1.appendChild(op1);
+                        //alert(obj[i-1].id+"-"+obj[i-1].name);  
+                    }
+                }
+                //处理服务器端返回的数据并且显示  
+                function processcanData(xhr) {
+
+                    //将服务器端返回的jason格式的字符串转化为对象  
+                    var obj = eval("(" + xhr.responseText + ")");
+
+                    //获取对应objectIdd（sheng，shi，xian）变量的下拉菜单的对象  
+                    var sel1 = document.getElementById(getCID);
+                    //创建option节点  
+                    var op1 = document.createElement("option");
+                    //给option加上value属性并赋值为0  
+                    op1.setAttribute("value", 0);
+                    //创建文本节点text  
+                    var text = document.createTextNode("----请选择----");
+                    //将文本节点追加给op1  
+                    op1.appendChild(text);
+                    //将op1追加给sel1  
+                    sel1.appendChild(op1);
+                    //在此将jason数组对象的下表为id的作为option的value值，将下表为name的值作为文本节点追加给  
+                    for (var i = 0; i < obj.length; i++) {
+
+                        var op1 = document.createElement("option");
+                        //alert(obj[i].id);  
+                        op1.setAttribute("value", obj[i].id);
+                        //创建文本节点text  
+                        var text = document.createTextNode(obj[i].name);
+                        op1.appendChild(text);
+                        sel1.appendChild(op1);
+                        //alert(obj[i-1].id+"-"+obj[i-1].name);  
+                    }
+                }
+    </script>
+    <script type="text/javascript">
+    var i = 0;
+    function thdzadd() {
+        var tplace = $("input[name=TPlace]").attr('value');
+        var tihuoprice = $("input[name=tihuoprice]").val();
+        var tihuodprice = $("input[name=tihuodprice]").val();
+        var tplace = $("input[name=TPlace]").attr('value');
+        var sheng = $("#tpro").find("option:selected").text();
+        var shengid = $("#tpro").find("option:selected").val();
+        var shi = $("#tcity").find("option:selected").text();
+        var shiid = $("#tcity").val();
+        var gid = shengid + "&" + tihuoprice + "||" + tihuodprice + "#";
+        var iid = shiid + "&" + tihuoprice + "||" + tihuodprice + "#";
+        if (!tihuoprice) {
+            alert('请填写提货费用');
+            return false;
+        }
+        ;
+        if (!tihuodprice) {
+            alert('请填写单点提货费用');
+           return false;
+        }
+        ;
+        if (shiid != null && shi != '----请选择----') {
+            if (shengid == 1 || shengid == 2 || shengid == 9 || shengid == 22) {
+                if (tplace == undefined) {
+                    $("#thlb").append("<div id='pickinfo" + shengid + "'><div class='col-sm-10 show-hugh'><input disabled='disabled' data-vv='" + gid + "' value='" + sheng + "   提货费用：" + tihuoprice + " 单点提货费用：" + tihuodprice + "' class=form-control type='text'></div><div class='col-sm-2 show-hugh'><button data-toggle='dropdown' value='" + shengid + "' class='btn btn-default pull-right dropdown-toggle' onclick='upda(value)' aria-expanded='false'>删除</button></div></div>");
+                    tplace = gid;
+                } else {
+                    if (tplace.indexOf(gid) == '-1') {
+                        $("#thlb").append("<div id='pickinfo" + shengid + "'><div class='col-sm-10 show-hugh'><input disabled='disabled' data-vv='" + gid + "' value='" + sheng + "   提货费用：" + tihuoprice + " 单点提货费用：" + tihuodprice + "' class=form-control type='text'></div><div class='col-sm-2 show-hugh'><button data-toggle='dropdown' value='" + shengid + "' class='btn btn-default pull-right dropdown-toggle' onclick='upda(value)' aria-expanded='false'>删除</button></div></div>");
+                        tplace += gid;
+                    } else {
+                        alert('重复数据！');
+                        return false;
+                    }
+                    ;
+                }
+                ;
+                 $("#thlb").append("<input id='pickinfo" + shengid + "' type='hidden'  name='pickinfo[" + i + "][province]' value='" + shengid + "' /><input id='pickinfo" + shengid + "' type='hidden' name='pickinfo[" + i + "][price]' value='" + tihuoprice + "' /><input id='pickinfo" + shengid + "' type='hidden'  name='pickinfo[" + i + "][rate]' value='" + tihuodprice + "' />");
+            } else {
+                if (tplace == undefined) {
+                    $("#thlb").append("<div id='pickinfo" + shiid + "'><div class='col-sm-10 show-hugh'><input disabled='disabled' data-vv='" + iid + "' value='" + sheng + shi + "   提货费用：" + tihuoprice + " 单点提货费用：" + tihuodprice + "' class=form-control type='text'></div><div class='col-sm-2 show-hugh'><button data-toggle='dropdown' value='" + shiid + "' class='btn btn-default pull-right dropdown-toggle' onclick='upda(value)' aria-expanded='false'>删除</button></div></div>");
+                    tplace = iid;
+                } else {
+                    if (tplace.indexOf(iid) == '-1') {
+                        $("#thlb").append("<div id='pickinfo" + shiid + "'><div class='col-sm-10 show-hugh'><input disabled='disabled' data-vv='" + iid + "' value='" + sheng + shi + "   提货费用：" + tihuoprice + " 单点提货费用：" + tihuodprice + "' class=form-control type='text'></div><div class='col-sm-2 show-hugh'><button data-toggle='dropdown' value='" + shiid + "' class='btn btn-default pull-right dropdown-toggle' onclick='upda(value)' aria-expanded='false'>删除</button></div></div>");
+                        tplace += iid;
+                    } else {
+                        alert('重复数据！');
+                       return false;
+                    }
+                    ;
+                }
+                ;
+                $("#thlb").append("<input  id='pickinfo" + shiid + "' type='hidden'  name='pickinfo[" + i + "][province]' value='" + shiid + "' /><input id='pickinfo" + shiid + "' type='hidden' name='pickinfo[" + i + "][price]' value='" + tihuoprice + "' /><input id='pickinfo" + shiid + "' type='hidden'  name='pickinfo[" + i + "][rate]' value='" + tihuodprice + "' />");
+            }
+            ;
+            $("input[name=TPlace]").attr('value', tplace);
+        } else {
+            alert('请选择省市信息！');
+            return false;
+        }
+        ;
+        i++;
+        $("#thlbb").css("display", "block");
+    }
+   
+    function upda(id,pid='') {
+        var num = $("input:text[id=pickinfo" + id + "]").length + 1;
+        for (iii = 0; iii < num; iii++) {
+            $("#pickinfo" + id).remove();
+        }
+        
+        if (pid !='') {
+            $.post("/backstage/carrcompany/deladd",{ajax:1,addid:pid},function(result){
+                //alert(result);
+              }); 
+        };
+  
+    }
+    </script>
+    <script type="text/javascript">
+    function updap(id,pie='') {
+        var num = $("input:text[id=info" + id + "]").length + 1;
+        for (iii = 0; iii < num; iii++) {
+            $("#info" + id).remove();
+        }
+        //alert()
+        if (pie !='') {
+            $.post("/backstage/carrcompany/deladd",{ajax:2,addid:pie},function(result){
+               // alert(result);
+              }); 
+        };
+    }
+    function psdzadd() {
+        var pscdz = $("#canaddinfo").val();
+        var psheng = $("#ppro").find("option:selected").text();//配送省 名字
+        var pcsheng = $("#canprovince").find("option:selected").text();//配送仓库省 名字
+        var pshi = $("#pcity").find("option:selected").text();//配送市 名字
+        var pcshi = $("#cancity").find("option:selected").text();//配送仓库市 名字
+        var pqu = $("#canarea").find("option:selected").text();//配送仓库区、县 名字
+        var pshengid = $("#ppro").find("option:selected").val();//配送省 ID
+        var pcshengid = $("#canprovince").find("option:selected").val();//配送仓库省 ID
+        var pshiid = $("#pcity").find("option:selected").val();//配送市 ID
+        var pcshiid = $("#cancity").find("option:selected").val();//配送仓库市 ID
+        var pcquid = $("#canarea").find("option:selected").val();//配送仓库区、县 ID
+        var peisongprice = $("input[name=peisongprice]").val();
+        var peisongdprice = $("input[name=peidongdprice]").val();
+        if (!peisongprice) {
+            alert('请填写配送费用');
+            return false;
+        }
+       /* if (!pcquid) {
+            alert('请填写完整仓库地址');
+            return false;
+        }*/
+         /*if (!pcshengid) {
+            alert('请填写完整仓库地址');
+            return false;
+        }*/
+         /*if (!pcshiid) {
+            alert('请填写完整仓库地址');
+            return false;
+        }*/
+        if (!peisongdprice) {
+            alert('请填写单点配送费用');
+            return false;
+        }
+        ;
+        if (pshiid == undefined) {
+            alert('请选择配送服务区域！');
+        } else {
+            //添加配送服务区域 城市 ID
+            if (pshengid == 1 || pshengid == 2 || pshengid == 9 || pshengid == 22) {
+                if (document.getElementById("info" + pshengid) != null) {
+                    alert('请勿重复添加');
+                    return false;
+                }
+                if (pcquid == undefined || pcquid == 0) {
+                    // alert('配送仓库区、县为空');
+                    $("#pslbb").append("<div id='info" + pshengid + "'><div class='col-sm-12 col-lg-5 show-hugh'><input disabled='disabled' value='" + psheng + " （配送地址为空）' class=form-control type='text'></div><div class='col-sm-12 col-lg-5 show-hugh'><input disabled='disabled' value='配送费用：" + peisongprice + " 单点配送费用：" + peisongdprice + "' class=form-control type='text'></div><div class='col-sm-12 col-lg-2 show-hugh'><button data-toggle='dropdown' value='" + pshengid + "' class='btn btn-default dropdown-toggle' onclick='updap(value)' aria-expanded='false'>删除</button></div></div>");
+                    $("#pslb").css("display", "block");
+                    var ppsid = pshengid;
+                } else {
+                    //if (pscdz) {
+                        $("#pslbb").append("<div id='info" + pshengid + "'><div class='col-sm-12 col-lg-5 show-hugh'><input disabled='disabled' value='" + psheng + "（仓库地址：" + pcsheng + pcshi + pqu + pscdz + "）' class=form-control type='text'></div><div class='col-sm-12 col-lg-5 show-hugh'><input disabled='disabled' value='配送费用：" + peisongprice + " 单点配送费用：" + peisongdprice + "' class=form-control type='text'></div><div class='col-sm-12 col-lg-2 show-hugh'><button data-toggle='dropdown' value='" + pshengid + "' class='btn btn-default dropdown-toggle' onclick='updap(value)' aria-expanded='false'>删除</button></div></div>");
+                        // alert('配送仓库详细地址有值');
+                        $("#pslb").css("display", "block");
+                        var ppsid = pshengid;
+                        var ppcsid = pcshengid;
+                        var ppcshid = pcshiid;
+                        var ppquidd = pcquid;
+                        var pscdz = pscdz;
+                    //} else {
+                       // alert('配送仓库详细地址没有值');
+                      //  return false;
+                    //}
+                }
+                if (ppcsid == undefined) {
+                    ppcsid ='';
+                }
+                 if (ppcshid == undefined) {
+                    ppcshid ='';
+                }
+                if (ppquidd == undefined) {
+                    ppquidd ='';
+                }
+                $("#pslbb").append("<input id='info" + pshengid + "' type='hidden'  name='infos[" + i + "][province]' value='" + ppsid + "' /><input id='info" + pshengid + "' type='hidden'  name='infos[" + i + "][price]' value='" + peisongprice + "' /><input id='info" + pshengid + "' type='hidden'  name='infos[" + i + "][rate]' value='" + peisongdprice + "' /><input id='info" + pshengid + "' type='hidden'  name='infos[" + i + "][provinceid]' value='" + ppcsid + "' /><input id='info" + pshengid + "' type='hidden'  name='infos[" + i + "][cityid]' value='" + ppcshid + "' /><input id='info" + pshengid + "' type='hidden'  name='infos[" + i + "][areaid]' value='" + ppquidd + "' /><input id='info" + pshengid + "' type='hidden'  name='infos[" + i + "][address]' value='" + pscdz + "' />");
+            }else {
+                if (document.getElementById("info" + pshiid) != null) {
+                    alert('请勿重复添加');
+                   return false;
+                }
+                if (pshiid == undefined || pshiid == 0) {
+                    alert('请填写配送服务区域');
+                    return false;
+                } else {
+                    if (pcquid == undefined || pcquid == 0) {
+                        $("#pslbb").append("<div id='info" + pshiid + "'><div class='col-sm-12 col-lg-5 show-hugh'><input disabled='disabled' value='" + psheng + pshi + " （配送地址为空）' class=form-control type='text'></div><div class='col-sm-12 col-lg-5 show-hugh'><input disabled='disabled' value='配送费用：" + peisongprice + " 单点配送费用：" + peisongdprice + "' class=form-control type='text'></div><div class='col-sm-12 col-lg-2 show-hugh'><button data-toggle='dropdown' value='" + pshiid + "' class='btn btn-default dropdown-toggle' onclick='updap(value)' aria-expanded='false'>删除</button></div></div>");
+                        $("#pslb").css("display", "block");
+                        var ppsid = pshiid;
+                    } else {
+                        //if (pscdz) {
+                            $("#pslbb").append("<div id='info" + pshiid + "'><div class='col-sm-12 col-lg-5 show-hugh'><input disabled='disabled' value='" + psheng + pshi + "（仓库地址：" + pcsheng + pcshi + pqu + pscdz + "）' class=form-control type='text'></div><div class='col-sm-12 col-lg-5 show-hugh'><input disabled='disabled' value='配送费用：" + peisongprice + " 单点配送费用：" + peisongdprice + "' class=form-control type='text'></div><div class='col-sm-12 col-lg-2 show-hugh'><button data-toggle='dropdown' value='" + pshiid + "' class='btn btn-default dropdown-toggle' onclick='updap(value)' aria-expanded='false'>删除</button></div></div>");
+                            $("#pslb").css("display", "block");
+                            var ppsid = pshiid;
+                            var ppcsid = pcshengid;
+                            var ppcshid = pcshiid;
+                            var ppquidd = pcquid;
+                            var pscdz = pscdz;
+                        //} else {
+                           // alert('配送仓库详细地址没有值');
+                           // return false;
+                        //}
+                    }
+                    
+                }
+                if (ppcsid == undefined) {
+                    ppcsid ='';
+                }
+                 if (ppcshid == undefined) {
+                    ppcshid ='';
+                }
+                if (ppquidd == undefined) {
+                    ppquidd ='';
+                }
+                $("#pslbb").append("<input id='info" + pshiid + "' type='hidden'  name='infos[" + i + "][province]' value='" + ppsid + "' /><input id='info" + pshiid + "' type='hidden' name='infos[" + i + "][price]' value='" + peisongprice + "' /><input id='info" + pshiid + "' type='hidden'  name='infos[" + i + "][rate]' value='" + peisongdprice + "' /><input id='info" + pshiid + "' type='hidden'  name='infos[" + i + "][provinceid]' value='" + ppcsid + "' /><input id='info" + pshiid + "' type='hidden'  name='infos[" + i + "][cityid]' value='" + ppcshid + "' /><input id='info" + pshiid + "' type='hidden'  name='infos[" + i + "][areaid]' value='" + ppquidd + "' /><input id='info" + pshiid + "' type='hidden'  name='infos[" + i + "][address]' value='" + pscdz + "' />");
+            }
+            ;
+        }
+        ;
+        i++;
+        return false;
+    }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+            
+        });
+    </script>
+
+    
+    
+
+</body>
+
+</html>

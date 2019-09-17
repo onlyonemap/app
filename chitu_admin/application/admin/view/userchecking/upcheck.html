@@ -1,0 +1,123 @@
+{include file="public/header"}
+<style type="text/css">
+    body{
+        background-color: #fff;
+    }
+    .form-horizontal .form-group{
+        width: 100%;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+    .form-group>label{
+        display: inline-block;
+        width: 17%;
+        text-align: right;
+    }
+    .form-group>div{
+        display: inline-block;
+        width: 60%;
+    }
+    .special_label{
+    	position: relative;
+    	top: -13px;
+    }
+    table.table-condensed{
+    	font-size: 12px;
+    	line-height: 12px;
+    }
+    .table-condensed>thead tr th:nth-child(2){
+    	text-align: center;
+    }
+    .table-condensed td,th{
+    	text-align: center;
+    	padding: 6px 7px !important;
+    }
+    .table-condensed>tfoot th{
+    	text-align: left;
+    }
+    .table-condensed tfoot>tr:last-child th{
+    	position: absolute;
+    	right: 0px;
+    	bottom: 0px;
+    }
+</style>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+        <form class="form-horizontal m-t" id="commentForm">
+            <div class="form-group">
+                <label class=" control-label">发票号：</label>
+                <div class="">
+                    <input id="number" value="" name="number" minlength="2" type="text" class="form-control" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label class=" control-label">发票金额：</label>
+                <div class="">
+                    <input id="money" name="money" value="{$list.checktic}" minlength="2" type="text" class="form-control" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label class=" control-label special_label">开票时间：</label>
+                <div class="">
+                   <div class="input-group date date-view-three" data-provide="datepicker">
+                        <div class="input-group-addon border-no">
+                            <span class="fa fa-calendar"></span>
+                        </div>
+                        <input class="form-control border-bt" type="text" value="{:date('Y-m-d')}" id="payTime" name="payTime" placeholder=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12 col-sm-offset-3">
+                    <input type="hidden" value="{$list.iid}" name="id" id="invoid" />
+                    <a class="btn btn-primary center-block" id="pass">提交</a>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<!-- 日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<!-- 调用日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+var index = parent.layer.getFrameIndex(window.name);
+$("#pass").click(function(){
+        var number = $("#number").val();
+        var payTime = $("#payTime").val();
+        var money = $("#money").val();
+        var invoID = $("#invoid").val();
+       
+       
+        // 未输入发票号、日期、金额不执行提交
+        if( number == "" && payTime == "" && money == ""){
+            alert(" 请输入发票号、日期、金额!");
+            return false;
+        }
+        // 未选中数据不能执行提交
+       
+       
+        //console.log(arrinvo);
+        $.post('/admin/userchecking/confirmcheck',{ajax:2,invoID:invoID,number:number,payTime:payTime,money:money},function(data){
+            //alert(data);
+            if(data == "fail"){
+                 parent.layer.close(index);
+                    parent.location.reload();
+                alert("操作有误！请重新筛选!!");
+                return false;
+            }else if(data == "ok"){
+                
+                 parent.location.reload();
+                parent.layer.close(index);
+            }
+        });
+    });
+});
+</script>

@@ -1,0 +1,2512 @@
+[ 2019-05-24T09:28:46+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Undertake/vehicle_view
+[ log ] www.chitu12.com/driver/Undertake/vehicle_view [运行时间：1.035000s][吞吐率：0.97req/s] [内存消耗：2,700.34kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Undertake',
+    2 => 'vehicle_view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '136',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '5854fcc4-bd35-b77e-3185-185a7aed9a2e',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryAzpA3u3vEazH2Wlo',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Undertake/vehicle_view' => '',
+  'uoid' => '1',
+)
+[ info ] [ RUN ] app\driver\controller\Undertake->vehicle_view[ D:\WWW\chitu_admin\application\driver\controller\Undertake.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `o`.*,`c`.`carparame` FROM `ct_useorder` `o` LEFT JOIN `ct_cartype` `c` ON `o`.`carid`=`c`.`car_id` WHERE  `o`.`uoid` = '1' LIMIT 1 [ RunTime:0.534000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.427000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:29:40+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.092000s][吞吐率：10.87req/s] [内存消耗：2,981.27kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'postman-token' => 'cc10a370-023c-641d-89b2-1a5c7611c882',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.034000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]Uninitialized string offset: 1[D:\WWW\chitu_admin\application\user\controller\Base.php:218]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:29:48+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.059000s][吞吐率：16.95req/s] [内存消耗：2,981.45kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'postman-token' => '55e811f0-ebbc-66cb-0943-ff411f233d2a',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]Uninitialized string offset: 1[D:\WWW\chitu_admin\application\user\controller\Base.php:218]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:30:37+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Ucenter/vehicle_detail
+[ log ] www.chitu12.com/user/Ucenter/vehicle_detail [运行时间：0.202000s][吞吐率：4.95req/s] [内存消耗：3,199.79kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Ucenter',
+    2 => 'vehicle_detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '278',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => 'd4aaa74a-2759-8fce-75eb-2e368fa4c28b',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryWhyXqV97OQOUundG',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/Ucenter/vehicle_detail' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'uoid' => '1490',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Ucenter->vehicle_detail[ D:\WWW\chitu_admin\application\user\controller\Ucenter.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.044000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `o`.*,`c`.`carparame` FROM `ct_userorder` `o` LEFT JOIN `ct_cartype` `c` ON `o`.`carid`=`c`.`car_id` WHERE  `o`.`uoid` = '1490' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45054 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:31:21+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.100000s][吞吐率：10.00req/s] [内存消耗：2,972.86kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '183',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => 'bbc1b4ca-4bba-a898-ac26-c77bce79a7a7',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary3tvqWuemQDYW0moe',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:32:14+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.142000s][吞吐率：7.04req/s] [内存消耗：3,139.99kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '368',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '55aa4cfd-65ab-b673-f78c-80e2aa391e47',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary4AzfVg5gPtAUAmlU',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` IS NULL LIMIT 1 [ RunTime:0.010000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:32:45+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.112000s][吞吐率：8.93req/s] [内存消耗：3,140.21kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '461',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '7fa6f419-e3fa-38ae-a7ed-1386286ac298',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryXl1rTuNVCYmzyvNW',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1490',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 1490 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:37:55+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.102000s][吞吐率：9.80req/s] [内存消耗：2,832.84kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '461',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => 'a7e060ff-23dc-e831-22f6-40f8511688f2',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryDoqDATvVJp5GJz5H',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1490',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:38:16+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.102000s][吞吐率：9.80req/s] [内存消耗：3,000.09kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '461',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '48de3f8b-7797-87f8-bb5c-ada73ae037a3',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPMBO3jpiPZ3rB8xQ',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1490',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 1490 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:38:39+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.105000s][吞吐率：9.52req/s] [内存消耗：3,140.23kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '461',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '4a472bc6-9480-9784-f169-c7a42d27dbe7',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNAYtzHBWAtlnbfaA',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1490',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 1490 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:39:08+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.064000s][吞吐率：15.62req/s] [内存消耗：2,981.29kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]Uninitialized string offset: 1[D:\WWW\chitu_admin\application\user\controller\Base.php:218]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:41:07+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.133000s][吞吐率：7.52req/s] [内存消耗：3,139.03kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 1490 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:41:14+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.175000s][吞吐率：5.71req/s] [内存消耗：3,139.02kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 1490 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:41:24+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.106000s][吞吐率：9.43req/s] [内存消耗：3,139.48kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '461',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '9a8a06aa-0869-52d5-b15e-e7595e05deba',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary3OMhxpf43S0p37Ej',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1490',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 1490 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:41:29+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.119000s][吞吐率：8.40req/s] [内存消耗：3,139.49kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '461',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '00f093dd-6290-6cad-d369-be730359fd4f',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryLOBSTS76dZSUrjDC',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1490',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 1490 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:41:37+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.115000s][吞吐率：8.70req/s] [内存消耗：3,139.45kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '458',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => 'dd964e9c-d2a4-acdc-2c61-609280ff1583',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary6GsSg6wJq0LeTnDh',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 1490 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:41:52+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.107000s][吞吐率：9.35req/s] [内存消耗：3,139.51kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '458',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '4dd2c4bd-8c1a-7dc9-a9f9-e910aadf0d1c',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynBj55brtrJzje380',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:43:27+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.118000s][吞吐率：8.47req/s] [内存消耗：3,139.40kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '458',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '19daa1bc-1f53-bceb-dae8-1ea6b0a758fc',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarymFKavxvU9DfgmJLB',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:43:31+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.128000s][吞吐率：7.81req/s] [内存消耗：3,138.95kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:43:33+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.163000s][吞吐率：6.13req/s] [内存消耗：3,138.95kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:43:42+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.131000s][吞吐率：7.63req/s] [内存消耗：3,139.04kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:43:43+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.117000s][吞吐率：8.55req/s] [内存消耗：3,139.02kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:51:46+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.114000s][吞吐率：8.77req/s] [内存消耗：3,171.10kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '458',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => 'a27fbcbc-3a84-1258-c679-7cee5947fda3',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryvqib4uWL7alSE4C5',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: couponid[D:\WWW\chitu_admin\application\user\controller\Base.php:334]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:52:15+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.106000s][吞吐率：9.43req/s] [内存消耗：3,171.61kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '458',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '16cb1e09-8fb0-7363-975f-f29362b3e531',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynaFeQRq14SMpstlH',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: couponid[D:\WWW\chitu_admin\application\user\controller\Base.php:363]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:52:30+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.099000s][吞吐率：10.10req/s] [内存消耗：3,186.54kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'content-length' => '458',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '4ef366a6-68b5-0195-1955-0f0f3893a396',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBA7fVlieifANVU61',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [1]Call to undefined function openssl_sign()[D:\WWW\chitu_admin\extend\Alipay\aop\AopClient.php:133]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:53:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] www.chitu12.com/index.php [运行时间：0.053000s][吞吐率：18.87req/s] [内存消耗：2,093.90kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\WWW\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 60 seconds exceeded[x��T�n�F~�H��h�%i�RW�8ƃ���2?v�=��ԇ�Hb�RߠH�a.g��]�&�N��P|��}r���������ۍ{7���?\'w7��r{7�N_��t:y���~:�����L���7!���b�X�ltV���cS��.�<���ot�l�(iSC�k[2�aJ��YCr��2R�Z��eX�2K=�FK�D^bk4%�[��ǝ� ��kMMC_�o���}�iWG�+]K�%���N��<��ʯV�c�y�-�����u�E��3Cs��x�_�l5�����E9���yѬ�
+Ξ)�y�]�⥐p<C��S�4����KT�[�|�T8gV�R��E�=�����Oa��؛3ˈ��BIi�w_:kװ7�m)��⽷��C��[�H{����G�� �Q�5�؃���)(Z
+c�F�;8�x�2����b�n�Ԉ�k��N�ɡ�`�q�6���Y+�����G�Td��
+�K��x��Y��s���ಳ�G�6�R���}��K��K"����!p�0mA��bܫD����ԗ1��x�̆��C<�~أ�8�1x���.��^x����%�-R�49�#ht�;4��X�Y�1�$�XW�(s��3�/|gX Cn����ֻ��H0�/��ןh�:W��=��w��Yb���8[T�Țݠ吋��e�W�������7�~�*��>5�O��)�T����h��m@/Ј�nk�߫\�N�b�>Y�L����G��s�������+E[����H�F<����ow�7�ݮ4L����<��`�X�������E�~��{��9@���-�x>��j�~/�{�|�
+���8���C��~Í�[1hҬR�ƞؐl�sݡr�����5f8���q/��	�:�J�~n�y��S4�/�{��wҏ:�5/��A��nA?�Z()���ߏl��P��~\�x]�k�Nno���Q�(13) : eval()'d code(1) : eval()'d code:7]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:56:08+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.120000s][吞吐率：8.33req/s] [内存消耗：3,186.04kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [1]Call to undefined function openssl_sign()[D:\WWW\chitu_admin\extend\Alipay\aop\AopClient.php:133]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:58:33+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.149000s][吞吐率：6.71req/s] [内存消耗：3,186.06kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [1]Call to undefined function openssl_sign()[D:\WWW\chitu_admin\extend\Alipay\aop\AopClient.php:133]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:58:37+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.136000s][吞吐率：7.35req/s] [内存消耗：3,186.06kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [1]Call to undefined function openssl_sign()[D:\WWW\chitu_admin\extend\Alipay\aop\AopClient.php:133]
+
+---------------------------------------------------------------
+[ 2019-05-24T09:58:38+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.137000s][吞吐率：7.30req/s] [内存消耗：3,186.06kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [1]Call to undefined function openssl_sign()[D:\WWW\chitu_admin\extend\Alipay\aop\AopClient.php:133]
+
+---------------------------------------------------------------
+[ 2019-05-24T10:04:38+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.182000s][吞吐率：5.49req/s] [内存消耗：3,200.96kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.chitu12.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.045000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [1]Call to undefined function openssl_sign()[D:\WWW\chitu_admin\extend\Alipay\aop\AopClient.php:133]
+
+---------------------------------------------------------------
+[ 2019-05-24T10:05:28+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.155000s][吞吐率：6.45req/s] [内存消耗：2,510.91kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.024000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [1]Call to undefined function openssl_sign()[D:\WWW\chitu_admin\extend\Alipay\aop\AopClient.php:133]
+
+---------------------------------------------------------------
+[ 2019-05-24T10:05:34+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.095000s][吞吐率：10.53req/s] [内存消耗：2,511.63kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryVcpvaBvQt0Wf69Bs',
+  'postman-token' => '94b24e0e-5ba1-93dc-5e76-4d3b0d80e122',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '458',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [1]Call to undefined function openssl_sign()[D:\WWW\chitu_admin\extend\Alipay\aop\AopClient.php:133]
+
+---------------------------------------------------------------
+[ 2019-05-24T10:06:08+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.165000s][吞吐率：6.06req/s] [内存消耗：2,578.33kb] [文件加载：61]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.039000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [0]致命错误: Call to undefined function openssl_sign()[D:\WWW\chitu_admin\extend\Alipay\aop\AopClient.php:133]
+
+---------------------------------------------------------------
+[ 2019-05-24T10:08:21+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.510000s][吞吐率：1.96req/s] [内存消耗：2,561.80kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.037000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T10:08:30+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.093000s][吞吐率：10.75req/s] [内存消耗：2,561.84kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryT0irpmTaGGhClkDp',
+  'postman-token' => 'a41d493c-02f4-3a55-1f2c-c34061e103e9',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '458',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T10:09:51+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.116000s][吞吐率：8.62req/s] [内存消耗：2,561.85kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T10:32:18+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.483000s][吞吐率：2.07req/s] [内存消耗：2,561.84kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynzgJmD1fnoMGDsZ6',
+  'postman-token' => 'cea83c4c-864d-0d26-beeb-b18f8857ce37',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '458',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'price' => '1',
+  'type' => '1',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T10:32:22+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/infopay
+[ log ] www.chitu12.com/user/pay/infopay [运行时间：0.130000s][吞吐率：7.69req/s] [内存消耗：2,561.80kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'infopay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/infopay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->infopay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T13:32:13+08:00 ] 127.0.0.1 127.0.0.1 GET /user/zcwxpay
+[ log ] www.chitu12.com/user/zcwxpay [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：1,318.03kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'zcwxpay',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '66f4e058-ac71-0100-d2d2-e161ecbefaa2',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/zcwxpay' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-05-24T13:33:37+08:00 ] 127.0.0.1 127.0.0.1 POST /user/zcwxpay
+[ log ] www.chitu12.com/user/zcwxpay [运行时间：0.018000s][吞吐率：55.56req/s] [内存消耗：1,318.63kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'zcwxpay',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNVBgI5fBB0piFFTg',
+  'postman-token' => '327b1b2c-b15d-96f7-bf51-2e392ba375c5',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/zcwxpay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+  'price' => '3000',
+  'uoid' => '1',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-05-24T13:33:56+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/zcwxpay
+[ log ] www.chitu12.com/user/pay/zcwxpay [运行时间：0.084000s][吞吐率：11.90req/s] [内存消耗：2,326.79kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'zcwxpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryQrMH6EalpicX47Ud',
+  'postman-token' => '03e9e7f7-a89f-90ec-66c5-f72f6645f770',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/zcwxpay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+  'price' => '3000',
+  'uoid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->zcwxpay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T13:34:10+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/zcwxpay
+[ log ] www.chitu12.com/user/pay/zcwxpay [运行时间：0.148000s][吞吐率：6.76req/s] [内存消耗：2,496.09kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'zcwxpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryJupC3xgVN1jesUcY',
+  'postman-token' => 'ba4c0e19-92dc-7dc9-0db6-beeaf718564e',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/zcwxpay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+  'price' => '3000',
+  'uoid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->zcwxpay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.037000s ]
+[ sql ] [ SQL ] UPDATE `ct_userorder`  SET `ordernumber`='K20190524013410675419'  WHERE  `uoid` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: couponid[D:\WWW\chitu_admin\application\user\controller\Base.php:375]
+
+---------------------------------------------------------------
+[ 2019-05-24T13:34:44+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/zcwxpay
+[ log ] www.chitu12.com/user/pay/zcwxpay [运行时间：0.085000s][吞吐率：11.76req/s] [内存消耗：2,327.09kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'zcwxpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryuPSOoeVQ9VFRyRQE',
+  'postman-token' => '6a17095b-5e33-a82d-8a09-337969a679a5',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/zcwxpay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+  'price' => '3000',
+  'uoid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->zcwxpay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T13:37:22+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/zcwxpay
+[ log ] www.chitu12.com/user/pay/zcwxpay [运行时间：0.107000s][吞吐率：9.35req/s] [内存消耗：2,320.88kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'zcwxpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryCNwmh30kYdywXLo3',
+  'postman-token' => 'adf91d31-0dc8-8a2a-85fe-665caa27df1b',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/zcwxpay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+  'price' => '3000',
+  'uoid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->zcwxpay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] UPDATE `ct_useorder`  SET `ordernumber`='K20190524013721298833'  WHERE  `uoid` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T13:40:46+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/zcwxpay
+[ log ] www.chitu12.com/user/pay/zcwxpay [运行时间：0.116000s][吞吐率：8.62req/s] [内存消耗：2,489.80kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'zcwxpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryJeltZq3mFQKgFbQz',
+  'postman-token' => 'f3da5a61-b23d-f946-c02a-25ab88ae35fa',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/zcwxpay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+  'price' => '3000',
+  'uoid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->zcwxpay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] UPDATE `ct_useorder`  SET `ordernumber`='K20190524014046336748'  WHERE  `uoid` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: attach[D:\WWW\chitu_admin\extend\wechatAppPay\weixin.php:73]
+
+---------------------------------------------------------------
+[ 2019-05-24T13:42:18+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/zcwxpay
+[ log ] www.chitu12.com/user/pay/zcwxpay [运行时间：0.098000s][吞吐率：10.20req/s] [内存消耗：2,489.81kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'zcwxpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryrj048MjPoP355YNQ',
+  'postman-token' => '085ab3f1-b608-a0bd-6b80-c70913e76db1',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/zcwxpay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+  'price' => '3000',
+  'uoid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->zcwxpay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] UPDATE `ct_useorder`  SET `ordernumber`='K20190524014218530489'  WHERE  `uoid` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]Undefined property: wechatAppPay::$attach[D:\WWW\chitu_admin\extend\wechatAppPay\weixin.php:84]
+
+---------------------------------------------------------------
+[ 2019-05-24T13:45:06+08:00 ] 127.0.0.1 127.0.0.1 POST /user/pay/zcwxpay
+[ log ] www.chitu12.com/user/pay/zcwxpay [运行时间：0.626000s][吞吐率：1.60req/s] [内存消耗：2,501.14kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'zcwxpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryE02jcBUlDvm82qAe',
+  'postman-token' => 'fa329320-079b-629a-c22c-53b637da45b3',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/zcwxpay' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+  'price' => '3000',
+  'uoid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->zcwxpay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] UPDATE `ct_useorder`  SET `ordernumber`='K201905240145058729'  WHERE  `uoid` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `ordernumber` FROM `ct_useorder` WHERE  `uoid` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: prepay_id[D:\WWW\chitu_admin\application\user\controller\Base.php:436]
+
+---------------------------------------------------------------
+[ 2019-05-24T13:45:55+08:00 ] 127.0.0.1 127.0.0.1 GET /user/pay/zcwxpay
+[ log ] www.chitu12.com/user/pay/zcwxpay [运行时间：0.042000s][吞吐率：23.81req/s] [内存消耗：2,446.57kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'pay',
+    2 => 'zcwxpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/pay/zcwxpay' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Pay->zcwxpay[ D:\WWW\chitu_admin\application\user\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]Uninitialized string offset: 1[D:\WWW\chitu_admin\application\user\controller\Base.php:218]
+
+---------------------------------------------------------------
+[ 2019-05-24T15:59:45+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：1.981000s][吞吐率：0.50req/s] [内存消耗：2,424.01kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBb8uQwUnBP3bpvRb',
+  'postman-token' => '2c90b71d-8e0c-2959-19bc-f568275ce03e',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '486',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'startcity_str' => '上海',
+  'endcity_str' => '丽水',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T16:00:07+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：1.305000s][吞吐率：0.77req/s] [内存消耗：2,424.01kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryZG86sUa97UBbGeIz',
+  'postman-token' => '0dec7919-6978-bc61-0f0f-f4ed7789b81b',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '486',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'startcity_str' => '上海',
+  'endcity_str' => '北京',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T16:01:27+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：1.226000s][吞吐率：0.82req/s] [内存消耗：2,424.04kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary4QwBCbnMyfPmNi4H',
+  'postman-token' => 'f56f0211-5ba4-2312-57f6-d12011f11364',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '504',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'startcity_str' => '上海崇明县',
+  'endcity_str' => '北京门头沟',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T16:01:40+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：1.144000s][吞吐率：0.87req/s] [内存消耗：2,424.04kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryMABQFZnt32EYY3aT',
+  'postman-token' => '4c279327-952c-ef45-5241-938d0c6894e3',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '510',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'startcity_str' => '上海市崇明县',
+  'endcity_str' => '北京市门头沟',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T16:04:07+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：1.164000s][吞吐率：0.86req/s] [内存消耗：2,424.04kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryS30wE9JZvyBAgCZi',
+  'postman-token' => '27ee172e-6e8e-9eeb-e8e0-ce1e17317f66',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '513',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'startcity_str' => '上海市崇明县',
+  'endcity_str' => '北京市门头沟区',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T16:14:50+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：0.061000s][吞吐率：16.39req/s] [内存消耗：2,406.92kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary8RSbX4Rwh0d6z2qX',
+  'postman-token' => 'c556be90-fb60-b6e0-dc99-c6db3cc87b56',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '513',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6Y926N9T6M9wNTQ4Mjc0OGNvZGVwaHAO0O0O',
+  'startcity_str' => '上海市崇明县',
+  'endcity_str' => '北京市门头沟区',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558665305482748codephp' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T16:14:56+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：0.050000s][吞吐率：20.00req/s] [内存消耗：2,406.92kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarygbGpIOfXZcMqVQgH',
+  'postman-token' => '51b18c97-14ef-8cae-2586-b6e5bfb39452',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '513',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6Y926N9T6M9wNTQ4Mjc0OGNvZGVwaHAO0O0O',
+  'startcity_str' => '上海市崇明县',
+  'endcity_str' => '北京市门头沟区',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558665305482748codephp' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T16:15:37+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：1.096000s][吞吐率：0.91req/s] [内存消耗：2,424.04kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryZkasBgRyMLsKuZc5',
+  'postman-token' => 'e5914486-fa6d-3422-09e8-a82a747bb1fa',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '510',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'startcity_str' => '上海市崇明县',
+  'endcity_str' => '北京市门头沟',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-24T16:15:45+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：1.106000s][吞吐率：0.90req/s] [内存消耗：2,424.04kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarypBysaYJtfbCHJOMj',
+  'postman-token' => '14d3c8c5-38cb-212f-2fd6-c71435d67d16',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '513',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'startcity_str' => '上海市崇明县',
+  'endcity_str' => '北京市门头沟区',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------

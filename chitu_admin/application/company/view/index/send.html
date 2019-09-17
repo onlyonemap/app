@@ -1,0 +1,17 @@
+{include file="public/header"}
+<body class="gray-bg">
+
+</body>
+<script type="text/javascript" src="http://cdn.goeasy.io/goeasy.js"></script>
+    <script type="text/javascript">
+        var goeasy = new GoEasy({
+            appkey: 'BS-665a449ba3624903a7c893614c2ef082'
+        });
+        goeasy.subscribe({
+            channel: 'demo',
+            onMessage: function(message){
+                alert('Receive：'+message.content);
+            }
+        });
+    </script>
+

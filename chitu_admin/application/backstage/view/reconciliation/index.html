@@ -1,0 +1,120 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>确认账单列表</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="row m-b-sm m-t-sm">
+                        <div class="col-md-1">
+                            <a href="" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh" style="color:#1a8aff"></i> 刷新</a>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="input-group">
+                                <input type="text" placeholder="请输入订单号码" id="provSelect1" class="input-sm form-control"> <span class="input-group-btn">
+                                    <a href="javascript:sousuo();" class="btn btn-sm" style="margin-left: 20px; background: #1a8aff;color:#fff;border-radius: 6px;"> 查询</a> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-list">
+
+                        <table class="table table-hover">
+                        <tbody>
+                            <tr style="background-color:#F0FAFD;">
+                                <td class="project-completion">
+                                    业务月份
+                                </td>
+                                <td class="project-completion">
+                                    业务批次
+                                </td>
+                                <td class="project-completion">
+                                    对账状态                           
+                                </td>
+                                <td class="project-completion">
+                                    发票号码                           
+                                </td>
+                                <td class="project-completion">
+                                    发票金额
+                                </td>
+                                <td class="project-completion">
+                                    首次对账时间
+                                </td>
+                                <td class="project-completion">
+                                    账单总金额 
+                                </td>
+                                <td class="project-completion">
+                                    操作   
+                                </td>
+                            </tr>
+                            {volist name="list" id="vo"}
+                                <tr>
+                                    <td>
+                                        {$vo.sermonth|date="Y年m月",###}
+                                    </td>
+                                    <td>
+                                        第 {$vo.batch} 次
+                                    </td>   
+                                    <td>
+                                        {if condition="$vo.Invoiceno eq ''"}
+                                            <span class="label label-warning">等待审核</span>
+                                        {else/}
+                                            <span class="label label-success">对账完成</span>
+                                        {/if}
+                                    </td>
+                                    <td>
+                                        {if condition="$vo.Invoiceno eq ''"}
+                                            <span class="label label-warning">未开票</span>
+                                        {else/}
+                                            {$vo.Invoiceno}
+                                        {/if}
+                                    </td>
+                                    <td>
+                                        {if condition="$vo.Invoiceno eq ''"}
+                                            <span class="label label-warning">未开票</span>
+                                        {else/}
+                                            {$vo.Invoiceamount}
+                                        {/if}
+                                    </td>
+                                    <td>
+                                        {$vo.firtime|date="Y年m月 H:i:s",###}
+                                    </td>
+                                    <td>
+                                        {$vo.totalprice}（元）
+                                    </td>
+                                    <td>
+                                        <a href="/backstage/reconciliation/details?id={$vo.iid}" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 查看</a>
+                                    </td>
+                                </tr>
+                            {/volist}
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    {$list->render()}
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /} 

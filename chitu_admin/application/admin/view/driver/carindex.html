@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>车辆列表</h5>
+                <div class="ibox-tools">    
+                    <a href="/admin/driver/addcarcategory" style="color:#000">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <span>添加</span>
+                    </a>    
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/driver/carindex" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入车牌号、姓名、个体司机电话、公司名称" id="provSelect1" class="form-control" />  
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <table class="footable table" >
+                    <thead>
+                        <tr>
+                            <th class="text-left">车牌号</th>
+                            <th class="text-left">车型</th>
+                            <th class="text-left">注册日期</th>
+                            <th class="text-left">状态</th>
+                            <th class="text-left">归属</th>
+                            <th class="text-center">联系方式</th>
+                            <th class="text-center">审核状态</th>
+                            <th class="text-center">添加时间</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>
+                            <td class="text-left">{$vo.carnumber}</td>
+                            <td class="text-left">{$vo.carparame}</td>
+                            <td class="text-left">{$vo.car_age}</td>
+                            <td class="text-left">
+                                {if condition="($vo.car_grade == 1)"}
+                                    <span class="label label-info">个体</span>
+                                {else/}
+                                    <span class="label label-primary">公司</span>
+                                {/if}
+                            </td>
+                            <td class="text-left">{$vo.name}</td>
+                            <td class="text-center">{$vo.phone}</td>
+                            
+                            <td class="text-center">
+                                {if condition="($vo.status == 1)"}
+                                <span class="badge badge-danger">未审核</span>
+                                {elseif condition="($vo.status == 2)"}
+                                <span class="badge badge-info">已通过</span>
+                                {elseif condition="($vo.status == 3)"}
+                                <span class="badge badge-primary">未通过</span>
+                                {elseif condition="($vo.status == 4)"}
+                                <span class="badge badge-warning">审核中</span>
+                                {/if}                                
+                            </td>
+                            <td class="text-center">{$vo.addtime|date='Y-m-d H:i:s',###}</td>
+                            <td class="text-center">
+                                <a href="/admin/driver/updatecarcategory?id={$vo.ccid}" class="btn btn-primary btn-sm">修改</a>
+                                <a href="/admin/driver/cardetails?id={$vo.ccid}" class="btn btn-info btn-sm">详情</a>
+                                <a data-href="/admin/driver/delcar_mess?id={$vo.ccid}" class="btn btn-danger btn-sm delete">删除</a>
+                            </td>
+                        </tr>
+                       {/volist}
+                    </tbody>
+                </table>
+                {$page}
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+    <script src="/static/tpl/js/plugins/layer/layer.min.js"></script> 
+    <script type="text/javascript">
+        $(function () {
+            // 初始话表格
+            $('.footable').footable();
+            // 查询
+            $('#search').click(function(){
+                var psel = document.getElementById("provSelect1");
+                window.location.href='/admin/driver/carindex?search='+psel.value;
+            });
+            // 删除
+            $('.delete').click(function(){               
+                var url = $(this).attr("data-href");
+                layer.confirm('删除后数据将无法找回，确定要执行该操作吗？', {
+                    btn: ['确定','取消'] //按钮
+                }, function(){
+                    window.location.href=url;
+                }, function(){
+                            
+                });
+                        
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
+    <style type="text/css">
+        .lightBoxGallery{
+            display: flex;
+            flex-direction: row;
+        }
+        .lightBoxGallery a {
+            display: flex;
+            flex-direction: row;
+            -webkit-flex-direction: row;
+            align-items: center;
+            -webkit-align-items: center;
+            margin: 0px auto;
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            /*border: 5px solid #f3f3f3;*/
+            border-radius: 5px; 
+            text-align: center;
+            vertical-align: middle;
+        }
+        .lightBoxGallery img {
+            margin: auto;
+            width: auto;
+        }
+        
+        
+        
+        
+        .colstyle{
+            height:50px;
+            line-height: 50px;
+            border-right: 1px solid #f3f4f6;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .labstyle{
+            height:50px;
+            line-height: 50px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .panel-body{
+            height:300px;
+        }
+        .panel-heading{
+            height: 45px;
+        }
+        .panel-info {
+            border-color: #fff;
+            border-radius: 6px;
+            margin-top: 10px;
+
+        }
+      	.panel-heading {
+      		position:relative;
+      		top:-60px;
+      		height:40px;
+		    background-color: #85c0ec ;
+		    border-color: #85c0ec ;
+		    color: #fff;
+		    width:80%;
+		    margin:0 auto;
+		    text-align: center;
+		}
+		.yellow-foot{
+			background-color: #f1c352 ;
+			border-color:#f1c352;
+		}
+        
+        span{
+            color: #333;
+            font-size: 13px;
+        }
+        .panel-head{
+            position: relative;
+            top:-85px;
+            height:90px;
+            margin-left: 18px;
+            margin-right: 18px;
+            box-shadow:0px -5px 3px rgba(0,0,0,.1);
+            border-radius: 6px;
+            color: #323232;
+            background-color: #fff;
+            font-size: 14px;
+        }
+        .panel-head p{
+            color: #000;
+        }
+        .ibox-titles{
+            background-color: #85c0ec;
+            border:0px;
+            font-size: 18px;
+            color:#fff;
+        }
+        
+        .paneling{
+        	background-color: #f3f3f4;
+        	margin: 10px 15px;
+        }
+        .paneling .row{
+        	height:120px;
+        	background-color: #fff;
+        	margin-bottom: 20px;
+        	padding-top:10px;
+        	border: 1px solid #fff;
+        }
+        .paneling .imgstyle{
+        	max-width: 50px;
+        }
+        .m-t-lg{
+        	margin-top:0px;
+        }
+      
+        .parts {}
+        .parts .widget{
+            margin-bottom: 0px;
+            padding:15px 20px 0;
+            border-bottom: 1px solid #f3f4f6;
+            background-color: #fff;
+        }
+        .parts .spanstyle{
+            color: #78787a;
+            font-size: 14px;
+        }
+        .parts .fontbold{
+            font-size: 18px;
+            color: #5f5f5f;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .parts .imagestyle{
+            max-width: 50px;
+            position:relative;
+            top:-30px;
+            left:-5px;
+        }
+        .parts .parts-bottom{
+            padding-left: 20px;
+            height: 36px;
+            background-color: #fff;
+            line-height: 35px;
+        }
+    </style>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="ibox-tools">司机详情</div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-2 parts">
+                <div class="widget">
+                    <div class="row vertical-align">
+                        <div class="col-xs-2">
+                            <img src="/static/tpl/img/realname.png" class="imagestyle"/>
+                        </div>
+                        <div class="col-xs-10 text-right">
+                            <span class="spanstyle">真实姓名</span>
+                            <p class="fontbold">{$vo.realname}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="parts-bottom">Realname</div>
+            </div>
+
+            <div class="col-sm-2 parts">
+                <div class="widget">
+                    <div class="row vertical-align">
+                        <div class="col-xs-2">
+                            <img src="/static/tpl/img/username.png" class="imagestyle"/>
+                        </div>
+                        <div class="col-xs-10 text-right">
+                            <span class="spanstyle">用户昵称</span>
+                            <p class="fontbold">{$vo.username}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="parts-bottom">Username</div>
+            </div>
+
+            <div class="col-sm-2 parts">
+                <div class="widget">
+                    <div class="row vertical-align">
+                        <div class="col-xs-2">
+                            <img src="/static/tpl/img/denders.png" class="imagestyle"/>
+                        </div>
+                        <div class="col-xs-10 text-right">
+                            <span class="spanstyle">用户性别</span>
+                            <p class="fontbold">{if condition="($vo.sex ==1)"}男{else/}女{/if}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="parts-bottom">User sex</div>
+            </div>
+
+            <div class="col-sm-2 parts">
+                <div class="widget">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="/static/tpl/img/telephones.png" class="imagestyle"/>
+                        </div>
+                        <div class="col-xs-10 text-right">
+                            <span class="spanstyle">电话号码</span>
+                            <p class="fontbold">{$vo.mobile}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="parts-bottom">Phone number</div>
+            </div>
+
+            <div class="col-sm-2 parts">
+                <div class="widget">
+                    <div class="row vertical-align">
+                        <div class="col-xs-2">
+                            <img src="/static/tpl/img/freight.png" class="imagestyle"/>
+                        </div>
+                        <div class="col-xs-10 text-right">
+                            <span class="spanstyle">个人运费</span>
+                            <p class="fontbold">{$vo.money}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="parts-bottom">Personal freight</div>
+            </div>
+
+            <div class="col-sm-2 parts">
+                <div class="widget">
+                    <div class="row vertical-align">
+                        <div class="col-xs-2">
+                            <img src="/static/tpl/img/pbalance.png" class="imagestyle"/>
+                        </div>
+                        <div class="col-xs-10 text-right">
+                            <span class="spanstyle">个人余额</span>
+                            <p class="fontbold">{$vo.balance}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="parts-bottom">Personal amount</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="panel panel-info">
+                    <div  style="height:400px">
+                        <div class="lightBoxGallery">
+                             {if condition="($vo.image != '')"}
+                                <a  title="用户头像" data-gallery="" style="height: 300px">
+                                <img alt="image" class="img-circle circle-border m-b-md" src="{$vo.image}" 
+                                style="margin: 0 auto;width:100%;" >
+                                </a>
+                            {else/}
+                                <a  title="用户头像" data-gallery="" style="height: 300px">
+                                <img alt="image" class="img-circle circle-border m-b-md" src="/static/user_header.png" style="margin: 0 auto">
+                                </a>
+                            {/if} 
+                            <div id="blueimp-gallery" class="blueimp-gallery">
+                                <div class="slides"></div>
+                                <h3 class="title"></h3>
+                                <a class="prev"><</a>
+                                <a class="next">></a>
+                                <a class="close">×</a>
+                                <a class="play-pause"></a>
+                                <ol class="indicator"></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center panel-heading yellow-foot">
+                	<p style="padding-top: 5px">我的头像</p>
+                        <!--<p style="padding-top: 20px">姓名：{$vo.realname}</p>-->
+                    
+                        <!--<p>用户属性: {if condition="($vo.type == 3)"} 管理员  {elseif condition="($vo.type==2)"/} 调度 {else/} 司机 {/if}</p>-->
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-info">
+                    <div style="height:400px">
+                        <div class="lightBoxGallery">
+                            {if condition="($vo.drivingimage !='') "}
+                            <a href="{$vo.drivingimage}" title="驾驶证照片" data-gallery="" style="height: 300px">
+                                <img src="{$vo.drivingimage}" style="margin: 0 auto; width: 100%; " />
+                            </a>
+                            {else/}
+                            <a href="/static/tpl/img/default.png" title="驾驶证照片" data-gallery="" style="height: 300px">
+                                <img src="/static/tpl/img/default.png" style="margin: 0 auto;width: 100%; "/>
+                            </a>
+                            {/if}
+                            
+                            <div id="blueimp-gallery" class="blueimp-gallery">
+                                <div class="slides"></div>
+                                <h3 class="title"></h3>
+                                <a class="prev"><</a>
+                                <a class="next">></a>
+                                <a class="close">×</a>
+                                <a class="play-pause"></a>
+                                <ol class="indicator"></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center panel-heading yellow-foot">
+                    <p>驾驶证照片</p> 
+                </div>
+            </div>
+
+            <div class="col-xs-4">
+            	<div class="paneling">
+	               	<div class="row">
+	               		<div class="col-sm-6">
+	               			<img src="/static/tpl/img/people.png" class="imgstyle"/>
+	               			<p style="padding-top: 20px;">customer type</p>
+	               		</div>
+	               		<div class="col-sm-6 text-right">
+	               			<p style="font-weight: bold;">用户类型</p>
+	               			<p>用户类型</p>
+	               		</div>
+	               	</div>
+	               	<div class="row">
+	               		<div class="col-sm-6">
+	               			<img src="/static/tpl/img/resgintime.png" class="imgstyle"/>
+	               			<p style="padding-top: 20px;">Registration time</p>
+	               		</div>
+	               		<div class="col-sm-6 text-right">
+	               			<p style="font-weight: bold;">2018-08-03 15:00</p>
+	               			<p>注册时间</p>
+	               		</div>
+	               	</div>
+	               	<div class="row">
+	               		<div class="col-sm-6">
+	               			<img src="/static/tpl/img/share.png" class="imgstyle"/>
+	               			<p style="padding-top: 20px;">Sharing  object</p>
+	               		</div>
+	               		<div class="col-sm-6 text-right">
+	               			<p style="font-weight: bold;">分享对象</p>
+	               			<p>分享对象</p>
+	               		</div>
+	               	</div>
+	            </div>
+            </div>
+        </div>
+        <!-- 循环车辆信息 -->
+        {if condition="(isset($vo.car) && !empty($vo.car))"}
+        {volist name="$vo.car" id="list"}
+
+        <div class="row m-t-lg"> 
+            <div class="col-sm-3">
+                <div class="panel panel-info">
+                    <div>
+                        <div class="lightBoxGallery" style="text-align: center">
+                            {if condition="($list.operateimg !='') "}
+                            <a href="{$list.operateimg}" title="运营证图片" data-gallery="">
+                                <img src="{$list.operateimg}" style="margin: 0 auto; width:100%;" />
+                            </a>
+                            {else/}
+                            <a href="/static/tpl/img/default.png" title="运营证图片" data-gallery="">
+                                <img src="/static/tpl/img/default.png" style="margin: 0 auto; width: 100%; " />
+                            </a>
+                            {/if}
+                            <div id="blueimp-gallery" class="blueimp-gallery">
+                                <div class="slides"></div>
+                                <h3 class="title"></h3>
+                                <a class="prev"><</a>
+                                <a class="next">></a>
+                                <a class="close">×</a>
+                                <a class="play-pause"></a>
+                                <ol class="indicator"></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading text-center">
+                    <p>运营证照片</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-info">
+                    <div>
+                        <div class="lightBoxGallery" style="text-align: center">
+                            {if condition="($list.travelimg !='') "}
+                            <a href="{$list.travelimg}" title="行驶证照" data-gallery="">
+                                <img src="{$list.travelimg}" style="margin: 0 auto; width: 100%;" />
+                            </a>
+                            {else/}
+                            <a href="/static/tpl/img/default.png" title="行驶证照" data-gallery="">
+                                <img src="/static/tpl/img/default.png" style="margin: 0 auto; width: 100%;" />
+                            </a>
+                            {/if}
+                            
+                            <div id="blueimp-gallery" class="blueimp-gallery">
+                                <div class="slides"></div>
+                                <h3 class="title"></h3>
+                                <a class="prev"><</a>
+                                <a class="next">></a>
+                                <a class="close">×</a>
+                                <a class="play-pause"></a>
+                                <ol class="indicator"></ol>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="panel-heading text-center">
+                       <p>行驶证照片</p> 
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-info">
+                    <div>
+                        <div class="lightBoxGallery" style="text-align: center">
+                            {if condition="($list.carimage !='') "}
+                            <a href="{$list.carimage}" title="车辆照" data-gallery="">
+                                <img src="{$list.carimage}" style="margin: 0 auto; width: 100%; " />
+                            </a>
+                            {else/}
+                            <a href="/static/tpl/img/default.png" title="车辆照" data-gallery="">
+                                <img src="/static/tpl/img/default.png" style="margin: 0 auto; width: 100%;" />
+                            </a>
+                            {/if}
+                            <div id="blueimp-gallery" class="blueimp-gallery">
+                                <div class="slides"></div>
+                                <h3 class="title"></h3>
+                                <a class="prev"><</a>
+                                <a class="next">></a>
+                                <a class="close">×</a>
+                                <a class="play-pause"></a>
+                                <ol class="indicator"></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading text-center">
+                    <p>车辆照片</p> 
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-info">
+                    <div class="ibox-title ibox-titles">
+                        <p style="font-size: 16px margin:0px">车辆信息</p>
+                        <div class="ibox-tools"></div>
+                    </div>
+                    <div class="panel-body" style="padding:0px 20px;height: 294px">
+                        <div class="row">
+                            <div class="col-xs-6 colstyle">
+                                <img src="/static/tpl/img/i-car.png" style="width: 15px"/>
+                                <span>车型 : </span>
+                            </div>
+                            <div class="col-xs-6 labstyle">
+                                {switch name="$list.status" }
+                                    {case value="1" }<span>未审核</span>{/case}
+                                    {case value="2"}<span>审核通过</span>{/case}
+                                    {case value="3"}<span>审核未通过</span>{/case}
+                                {/switch}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 colstyle">
+                            <img src="/static/tpl/img/i-card.png" style="width: 15px" />
+                                <span>车牌号 : </span>
+                            </div>
+                            <div class="col-xs-6 labstyle">
+                                <span>{$list.carnumber}</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 colstyle">
+                                <img src="/static/tpl/img/i-tiji.png" style="width: 15px"/>
+                                <span>承载吨位 ( t ) : </span>
+                            </div>
+                            <div class="col-xs-6 labstyle">
+                                <span>{$list.allweight}</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 colstyle">
+                                <img src="/static/tpl/img/i-goods.png" style="width: 15px"/>
+                                <span>承载立方 ( m³ ) : </span>
+                            </div>
+                            <div class="col-xs-6 labstyle">
+                                <span>{$list.allvolume}</span>
+                            </div>
+                        </div>    
+                        <div class="row">
+                            <div class="col-xs-6 colstyle">
+                                <img src="/static/tpl/img/i-height.png" style="width: 15px"/>
+                                <span>长宽高 ( L*W*H ) : </span>
+                            </div>
+                            <div class="col-xs-6 labstyle">
+                                <span>{$list.dimensions}</span>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+            </div> 
+            <div class="clearfix"></div>
+        </div>
+        {/volist}
+        {/if}
+    </div>
+    <!-- 隐藏传值  -->
+    <input type="hidden" value="{$vo.drivid}" name="drivid" id="drivid" />
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <!--  bootstrap  -->
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- 自定义js -->
+    <script src="/static/tpl/js/content.js?v=1.0.0"></script>
+    <!-- 图片画廊 -->
+    <script src="/static/tpl/js/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>
+</body>
+</html>

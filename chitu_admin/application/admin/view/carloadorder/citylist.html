@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>整车优惠线路列表</h5>
+                <div class="ibox-tools">
+                    <a href="/admin/carloadorder/toaddCity" style="color:#000">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <span>添加</span>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/carloadorder/activityCity" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>" placeholder="请输入承运公司名称" id="provSelect1" class="form-control"> 
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                    
+                <table class="footable table table-stripped toggle-arrow-tiny">
+                    <thead>
+                        <tr>
+                            <th class="text-left">起点城市</th>
+                            <th class="text-left">终点城市</th>
+                            <th class="text-left">价格</th>
+                            <th class="text-left">备注</th>
+                            <th class="text-left">承运公司</th>
+                            <th class="text-left">接单人</th>
+                            <th class="text-right">承运价</th>
+                            <th class="text-right">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>
+                            <td class="text-left">{$vo.startCity}</td>
+                            <td class="text-left">{$vo.endCity}</td>
+                            <td class="text-left">{$vo.price}</td>
+                            <td class="text-left">{$vo.remark}</td>
+                            <td class="text-left">{$vo.name}</td>
+                            <td class="text-left">{$vo.realname}</td>
+                            <td class="text-right">{$vo.appoint_price}</td>
+                            <td class="text-right">
+                                <a href="/admin/carloadorder/toupdateCity?id={$vo.id}" class="btn btn-primary btn-sm">编辑</a>
+                                <a data-href="/admin/carloadorder/deleteCity?id={$vo.id}" class="btn btn-danger btn-sm delete">删除</a>
+                            </td>
+                        </tr>
+                        {/volist}
+                    </tbody>
+                </table>
+                {$page}
+            </div>
+        </div>
+    </div>
+    <!-- jquery -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <!-- bootstrap -->
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- footable -->
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+    <!-- layer -->
+    <script src="/static/tpl/js/plugins/layer/layer.min.js"></script>    
+    <!-- 页面js -->
+    <script type="text/javascript">
+        // 表格初始化
+        $('.footable').footable();
+        // 查询
+        $('#search').click(function(){
+            var psel = document.getElementById("provSelect1");
+            window.location.href='/admin/carloadorder/activityCity?search='+psel.value;
+        });
+        // 删除
+        $('.delete').click(function(){ 
+            var href = $(this).attr("data-href");
+            layer.confirm('删除后数据将无法找回，确定要执行该操作吗？', {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                window.location.href=href;
+            }, function(){
+                        
+            });  
+        });
+    </script>
+</body>
+</html>

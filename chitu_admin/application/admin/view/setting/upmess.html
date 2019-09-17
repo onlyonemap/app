@@ -1,0 +1,140 @@
+{include file="public/header"}
+<link rel="stylesheet" type="text/css" href="http://www.bootcss.com/p/bootstrap-datetimepicker/bootstrap-datetimepicker/css/datetimepicker.css">
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5> <a href="javascript:history.back();"><i class="fa fa-chevron-left"></i>  返回 </a></h5>
+                        <div class="ibox-tools">添加短信模板</div>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" method="post" action="/admin/setting/uppostmess" id="commentForm">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">短信类型:</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="mess_type" id="mess_type">
+                                       <option value="1" {if condition="$list.mess_type ==1"} selected = selected{/if}>普通推广</option> 
+                                       <option value="2" {if condition="$list.mess_type ==2"} selected = selected{/if}>节日问候</option> 
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">发送时间:</label>
+                                <div class="col-sm-10">
+                                   <div class="input-group date date-view-four form_datetime" >
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-calendar"></span>
+                                        </div>
+                                        <input type="text" id="send_date" name="send_date" value="{$list.send_date|date='Y-m-d H:i:s',###}" class="form-control" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                           
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">重新发送:</label>
+                                <div class="col-sm-10">
+                                   <label class="radio-inline i-checks"><input type="radio" value="yes" name="send_yes"></label>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">短信内容:</label>
+                                <div class="col-sm-10">
+                                     <textarea class="form-control" rows="10" placeholder="短信发送内容" cols="40" name="send_message" required="" aria-required="true">{$list.send_message}</textarea>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">发送类型:</label>
+                                <div class="col-sm-10">
+                                   <select class="form-control" name="send_type" id="mess_type">
+                                       <option {if condition="$list.send_type ==1"} selected = selected{/if} value="1">全部发送</option> 
+                                       <option {if condition="$list.send_type ==2"} selected = selected{/if} value="2">自定义发送</option> 
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            
+                            <div class="form-group" id="send_define" {if condition="$list.send_type ==1"} style="display:none"{/if} >
+                                <label class="col-sm-2 control-label">自定义:</label>
+                                <div class="col-sm-10">
+                                     <textarea class="form-control" rows="12" placeholder="用半角逗号分隔" cols="20" name="user_defined">{$list.user_defined}</textarea><!-- <i style="color:#FF7171">用半角逗号分隔</i> -->
+                                </div>
+                            </div>
+
+                            <div id="group_id" {if condition="$list.send_type ==2"} style="display:none"{/if}  class="form-group">
+                                <label class="col-sm-2 control-label">发送人群:</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="send_user" id="send_user">
+                                       <option  {if condition="$list.send_user ==1"} selected = selected{/if} value="1">所有人</option> 
+                                       <option {if condition="$list.send_user ==2"} selected = selected{/if} value="2">司机APP</option> 
+                                       <option {if condition="$list.send_user ==3"} selected = selected{/if} value="3">用户APP</option> 
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <input type="hidden" value="update" name="action" />
+                                    <input type="hidden" value="{$list.g_id}" name="id" />
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+ <!-- iCheck -->
+<script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+<!-- 调用日期插件 -->
+<script src="/static/tpl/js/bootstrap-datetimepicker.js"></script>
+ <!-- iCheck -->
+    <script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+<script>
+    $(document).ready(function () {
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
+        $("select[name='send_type']").change(function(){
+            if($(this).val()==2){
+                $("#send_define").show();
+                $("#group_id").hide();
+            }else if($(this).val()==1){
+                $("#send_define").hide();
+                $("#group_id").show();
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+
+    $(".form_datetime").datetimepicker({
+        
+        format: "yyyy-mm-dd hh:ii",
+        autoclose: true
+    });
+</script> 

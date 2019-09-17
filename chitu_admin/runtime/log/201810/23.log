@@ -1,0 +1,1096 @@
+[ 2018-10-23T12:03:11+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.ctadmin.com/ [运行时间：0.291500s][吞吐率：3.43req/s] [内存消耗：1,965.15kb] [文件加载：47]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-10-23T12:03:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.ctadmin.com/admin/index/login.html [运行时间：0.694500s][吞吐率：1.44req/s] [内存消耗：1,902.70kb] [文件加载：46]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-10-23T12:03:49+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.565500s][吞吐率：1.77req/s] [内存消耗：2,563.59kb] [文件加载：55]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.059500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.107000s ]
+[ error ] [8]未定义变量: driver_id[E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php:375]
+
+---------------------------------------------------------------
+[ 2018-10-23T12:04:04+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.410000s][吞吐率：2.44req/s] [内存消耗：2,563.77kb] [文件加载：55]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.062000s ]
+[ error ] [8]未定义变量: driverInfo[E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php:381]
+
+---------------------------------------------------------------
+[ 2018-10-23T12:04:13+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.802500s][吞吐率：1.25req/s] [内存消耗：2,522.16kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.070500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.075000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.053500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.038500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.040500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.036500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.038500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T13:53:47+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.801500s][吞吐率：1.25req/s] [内存消耗：2,522.16kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.133500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.066500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T13:57:50+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.756000s][吞吐率：1.32req/s] [内存消耗：2,522.76kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T13:58:17+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：1.031000s][吞吐率：0.97req/s] [内存消耗：2,522.84kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.333000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.034500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T13:58:58+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：1.027500s][吞吐率：0.97req/s] [内存消耗：2,522.84kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.330000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.037500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:00:16+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.725000s][吞吐率：1.38req/s] [内存消耗：2,522.84kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.076500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:05:04+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.772500s][吞吐率：1.29req/s] [内存消耗：2,522.84kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.140500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.037000s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:05:06+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.705000s][吞吐率：1.42req/s] [内存消耗：2,522.84kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:09:04+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.923500s][吞吐率：1.08req/s] [内存消耗：2,523.22kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.255500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.068000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.075000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.033500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.035500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.034500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:09:07+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.782000s][吞吐率：1.28req/s] [内存消耗：2,523.22kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.064500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.045000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.037500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.037500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.037500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.039000s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:11:53+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.378500s][吞吐率：2.64req/s] [内存消耗：2,565.34kb] [文件加载：55]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.062500s ]
+[ error ] [8]A non well formed numeric value encountered[E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php:379]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:12:05+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.365500s][吞吐率：2.74req/s] [内存消耗：2,565.35kb] [文件加载：55]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.058500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.058500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.059000s ]
+[ error ] [8]A non well formed numeric value encountered[E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php:379]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:14:31+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.846000s][吞吐率：1.18req/s] [内存消耗：2,524.30kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.082000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.075000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.037500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.038500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.042500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:15:21+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.899500s][吞吐率：1.11req/s] [内存消耗：2,524.30kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.094500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.072000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.092000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.093500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.047500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.045500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.045500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.035500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:16:15+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.710500s][吞吐率：1.41req/s] [内存消耗：2,524.30kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.060500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.061500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:17:34+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：1.042500s][吞吐率：0.96req/s] [内存消耗：2,524.30kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.148500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.102000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.108000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.105500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.096000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.048500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.055500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.046500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.036500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:22:54+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.766000s][吞吐率：1.31req/s] [内存消耗：2,527.93kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.069500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.071500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.038000s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:23:21+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.713000s][吞吐率：1.40req/s] [内存消耗：2,527.95kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.063500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.029500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:25:22+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.850500s][吞吐率：1.18req/s] [内存消耗：2,537.07kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096500s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.066500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_issue_item` (`ordernumber` , `start_city` , `end_city` , `carid` , `loaddate` , `ordertype` , `paystate` , `userid` , `addtime` , `issue_realname` , `issue_phone`) SELECT 'P181023022522685',45053,74,6,'2018-10-23 20:00',2,2,189,1540250835,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022522451',45052,74,6,'2018-10-23 20:00',2,2,189,1540249610,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022522447',483,74,6,'2018-10-23 20:00',2,2,189,1540250010,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022522605',423,101,6,'2018-10-23 20:00',2,2,189,1540251478,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022522956',385,166,6,'2018-10-23 20:00',2,2,187,1540251456,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522699',45052,166,6,'2018-10-23 20:00',2,2,187,1540249447,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522161',415,45054,6,'2018-10-23 20:00',2,2,187,1540250315,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522305',45053,45052,6,'2018-10-23 20:00',2,2,187,1540251286,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522420',45053,166,6,'2018-10-23 20:00',2,2,187,1540252450,'胖哥调度','18601648455' UNION ALL SELECT 'P18102302252292',45052,45053,6,'2018-10-23 20:00',2,2,187,1540251914,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522223',86,75,6,'2018-10-23 20:00',2,2,187,1540252722,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522628',45054,385,6,'2018-10-23 20:00',2,2,187,1540252211,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522287',45053,74,6,'2018-10-23 20:00',2,2,189,1540251431,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022522649',45052,74,6,'2018-10-23 20:00',2,2,189,1540252622,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022522466',483,74,6,'2018-10-23 20:00',2,2,189,1540251856,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022522596',423,101,6,'2018-10-23 20:00',2,2,189,1540250770,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022522764',385,166,6,'2018-10-23 20:00',2,2,187,1540251347,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522810',45052,166,6,'2018-10-23 20:00',2,2,187,1540252098,'胖哥调度','18601648455' UNION ALL SELECT 'P18102302252242',415,45054,6,'2018-10-23 20:00',2,2,187,1540250411,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522845',45053,45052,6,'2018-10-23 20:00',2,2,187,1540252626,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522603',45053,166,6,'2018-10-23 20:00',2,2,187,1540251303,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522956',45052,45053,6,'2018-10-23 20:00',2,2,187,1540250065,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522461',86,75,6,'2018-10-23 20:00',2,2,187,1540249813,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022522248',45054,385,6,'2018-10-23 20:00',2,2,187,1540249676,'胖哥调度','18601648455' [ RunTime:0.066500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T14:25:25+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/timeOutCarinfo
+[ log ] www.ctadmin.com/driver/base/timeOutCarinfo [运行时间：0.872000s][吞吐率：1.15req/s] [内存消耗：2,537.08kb] [文件加载：51]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'timeOutCarinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=1ngkv0hlhcfk85m16ai7cnj1q3',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/timeOutCarinfo' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->timeOutCarinfo[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_activitycity` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_activitycity` WHERE  `state` = 1 [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 189 LIMIT 1 [ RunTime:0.032500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver` WHERE  `drivid` = 187 LIMIT 1 [ RunTime:0.030500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_issue_item` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_issue_item` (`ordernumber` , `start_city` , `end_city` , `carid` , `loaddate` , `ordertype` , `paystate` , `userid` , `addtime` , `issue_realname` , `issue_phone`) SELECT 'P181023022525172',45053,74,6,'2018-10-23 20:00',2,2,189,1540249993,'李帅帅的调度','13661750653' UNION ALL SELECT 'P1810230225251',45052,74,6,'2018-10-23 20:00',2,2,189,1540250269,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022525152',483,74,6,'2018-10-23 20:00',2,2,189,1540250490,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022525328',423,101,6,'2018-10-23 20:00',2,2,189,1540249835,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022525428',385,166,6,'2018-10-23 20:00',2,2,187,1540251505,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525881',45052,166,6,'2018-10-23 20:00',2,2,187,1540251489,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525922',415,45054,6,'2018-10-23 20:00',2,2,187,1540250510,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525738',45053,45052,6,'2018-10-23 20:00',2,2,187,1540250260,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525748',45053,166,6,'2018-10-23 20:00',2,2,187,1540252191,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525514',45052,45053,6,'2018-10-23 20:00',2,2,187,1540252530,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525657',86,75,6,'2018-10-23 20:00',2,2,187,1540250938,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525833',45054,385,6,'2018-10-23 20:00',2,2,187,1540252357,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525666',45053,74,6,'2018-10-23 20:00',2,2,189,1540249283,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022525219',45052,74,6,'2018-10-23 20:00',2,2,189,1540250742,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022525267',483,74,6,'2018-10-23 20:00',2,2,189,1540251552,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022525493',423,101,6,'2018-10-23 20:00',2,2,189,1540249235,'李帅帅的调度','13661750653' UNION ALL SELECT 'P181023022525326',385,166,6,'2018-10-23 20:00',2,2,187,1540249422,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525305',45052,166,6,'2018-10-23 20:00',2,2,187,1540251398,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525187',415,45054,6,'2018-10-23 20:00',2,2,187,1540251385,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525240',45053,45052,6,'2018-10-23 20:00',2,2,187,1540251491,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525347',45053,166,6,'2018-10-23 20:00',2,2,187,1540249461,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525522',45052,45053,6,'2018-10-23 20:00',2,2,187,1540252107,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525876',86,75,6,'2018-10-23 20:00',2,2,187,1540252153,'胖哥调度','18601648455' UNION ALL SELECT 'P181023022525954',45054,385,6,'2018-10-23 20:00',2,2,187,1540250197,'胖哥调度','18601648455' [ RunTime:0.070500s ]
+
+---------------------------------------------------------------
+[ 2018-10-23T15:24:08+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/base/app_activate
+[ log ] www.ctadmin.com/driver/base/app_activate [运行时间：0.042000s][吞吐率：23.81req/s] [内存消耗：1,810.59kb] [文件加载：45]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'app_activate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '248',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '15586166-4fd0-5725-362d-302f174c4d5e',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryZqyk3LJgrBmCokyD',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/app_activate' => '',
+  'phone' => '13661750652',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\driver\controller\Base->app_activate[ E:\chitu\chitu_admin\trunk\application\driver\controller\Base.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

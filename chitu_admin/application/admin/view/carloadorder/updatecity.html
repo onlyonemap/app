@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    {include file="public/header"}
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <style type="text/css">
+        .item .delete{
+            top: -5px;
+            left: -3px;
+        }
+    </style>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="ibox-tools"> 添加整车优惠线路 </div>
+            </div>
+        </div>
+        
+        <form class="form-horizontal m-t" method="post" action="/admin/carloadorder/updatecity" id="commentForm">
+
+        <div class="row">
+            <!-- 添加整车优惠线路 start -->
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>添加整车优惠线路</h5>
+                    </div> 
+                    <div class="ibox-content">
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">已选城市</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">{$list.startCityName}——{$list.endCityName}</p>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group selectAddress">
+                            <label class="col-sm-2 control-label">始发城市</label>
+                            <div class="col-sm-5">
+                                <select  class="form-control pro" name="province"></select>
+                            </div>
+                            <div class="col-sm-5">
+                                <select  class="form-control city" name="startCity" id="startCity"></select>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group selectAddress">
+                            <label class="col-sm-2 control-label">终点城市</label>
+                            <div class="col-sm-5">
+                                <select  class="form-control pro" name="province"></select>
+                            </div>
+                            <div class="col-sm-5">
+                                <select  class="form-control city" name="endCity" id="endCity"></select>
+                            </div>
+                        </div>
+						<div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">线路价格</label>
+                            <div class="col-sm-10">
+                               <input class="form-control" type="number" name="price" value="{$list.price}" placeholder="线路价格" required=""  id="price"/>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">线路备注</label>
+                            <div class="col-sm-10">
+                               <input class="form-control" type="text" name="remark" value="{$list.remark}" placeholder="装卸、时效、不含税" required=""  id="remark"/>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group selectAddress">
+                            <label class="col-sm-2 control-label">提货城市</label>
+                            <div class="col-sm-4">
+                                <select  class="form-control pro"></select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select  class="form-control city"></select>
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="btn btn-primary btn-sm pull-right addcity" data-index="1" type="button">添加</button>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group selectAddress">
+                            <label class="col-sm-2 control-label">提货城市</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static" id="startCity-list">
+                                    {volist name="list.startCityAround" id="vo"}
+                                    <span class="item">
+                                        <span class="badge badge-primary item-city" data-id="{$vo.id}">{$vo.name}</span>
+                                        <span class="glyphicon glyphicon-remove delete" aria-hidden="true"></span>
+                                    </span> 
+                                    {/volist}
+                                </p>        
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group selectAddress">
+                            <label class="col-sm-2 control-label">配送城市</label>
+                            <div class="col-sm-4">
+                                <select  class="form-control pro"></select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select  class="form-control city"></select>
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="btn btn-primary btn-sm pull-right addcity" data-index="2" type="button">添加</button>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group selectAddress">
+                            <label class="col-sm-2 control-label">配送城市</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static" id="endCity-list">
+                                    {volist name="list.endCityAround" id="vo"}
+                                    <span class="item">
+                                        <span class="badge badge-primary item-city" data-id="{$vo.id}">{$vo.name}</span>
+                                        <span class="glyphicon glyphicon-remove delete" aria-hidden="true"></span>
+                                    </span>
+                                    {/volist}
+                                </p>        
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 添加整车优惠线路 start -->
+            
+            <!-- 指派承运商 start -->
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>指派承运商</h5>
+                    </div> 
+                    <div class="ibox-content">
+                        
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">承运公司</label>
+                            <div class="col-sm-10">
+                                <input type="hidden" name="appoint_cid" value="{$list.appoint_cid}" id="appoint_cid"/>
+                                <input name="appointName" type="text" class="form-control transportName" value="{$list.companyname}"  required placeholder="请选择指派的承运商" />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">承接人</label>  
+                            <div class="col-sm-10">
+                                <select class="form-control" name="appoint_driver" id="selectDriver" id="appoint_driver"></select>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">承运费用</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="appoint_price" type="number" value="{$list.appoint_price}" required  id="appoint_price"/>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- 指派承运商 end -->
+        </div>
+        <!-- 隐藏域 -->
+        <div class="hidden">
+            <input type="hidden" name="id" value="{$list.id}" id="listid" />
+            <input type="hidden" id="appoint_driver" value="{$list.appoint_driver}" />
+        </div>
+        <!-- 保存 -->
+        <button class="btn btn-primary btn-lg btn-block" type="submit" id="submit">保存</button>
+        </form>
+    </div>
+    <!-- 城市 -->
+    
+    <!-- jquery -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <!-- bootstrap -->
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- 自动补全 -->
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- 提示 -->
+    <script src="/static/tpl/js/plugins/layer-v3.3.1/layer.js"></script>
+    <!-- 地址三级联动 -->
+    <script src="/static/tpl/js/common/select-address.js"></script>
+
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+            // 获取项目公司接口
+            var getManagerURL = '/admin/common/getmanager';
+            // 获取承运公司接口
+            var getCarriersURL = '/admin/common/getcarriers';
+            // 获取承运公司下调度接口
+            var getCarrierStaffURL = '/admin/common/getCarrierStaff';
+            // 数据更新接口
+            var sendDataURL = '/admin/carloadorder/updatecity';
+
+            /**
+             * ajax 请求
+             * @param  {[type]}   url      [请求地址]
+             * @param  {[type]}   data     [请求数据]
+             * @param  {Function} callback [成功回调]
+             * @return {[type]}            [description]
+             */
+            function send(url,data,callback) {
+                callback = callback || function () {};
+                // 设置loading
+                var loadding = layer.load();
+                // ajax请求
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    dataType: 'json',
+                    data: data,
+                })
+                .done(function(response) {
+                    if(response.code){ // 成功
+                        layer.msg(response.message); 
+                        // 回调函数
+                        callback(response.data);
+                    }else{ // 失败
+                        layer.msg(response.message); 
+                    }
+                })
+                .fail(function(response) {
+                    console.log("error");
+                })
+                .always(function(response) {
+                    // 关闭loading
+                    layer.close(loadding);
+                });
+            } 
+
+            /**
+             * 插入select下的options
+             * @param  {[type]} ele         [需要插入的dom]
+             * @param  {[type]} data        [插入的数据]
+             * @param  {[type]} selectVal   [选中的值]
+             * @return {[type]}             [description]
+             */
+            function setOptions(ele,data,selectVal) {
+                var options = '';
+                for (var i = 0; i < data.length; i++) {
+                    if(selectVal == data[i].id){
+                        options +='<option value="'+data[i].id+'" selected>'+data[i].name+'</option>';
+                    }else{
+                        options +='<option value="'+data[i].id+'">'+data[i].name+'</option>';
+                    }
+                }
+                ele.html(options);
+            }
+
+            /**
+             * 获取承运公司下的调度和管理
+             * @param  {[type]} argument [description]
+             * @return {[type]}          [description]
+             */
+            function getDriver() {
+                // 接口
+                var url = getCarrierStaffURL;
+                // 数据
+                var data = {
+                    cid : $('input[name="appoint_cid"]').val(),
+                    type: 2,  // 1司机 2调度 3管理 不传则返回所有
+                }
+                // 请求
+                send(url,data,function (data) {
+                    setOptions($('#selectDriver'),data,$('#appoint_driver').val());
+                })
+            }
+
+            // 获取承运人
+            getDriver();
+            // 项目公司自动补全
+            $( ".companyname" ).autocomplete({
+                source: getManagerURL,
+                minLength: 1,
+                autoFocus: true,
+                select: function( event, ui ) { // 选择项目公司
+                    $('input[name="cid"]').val(ui.item.id);
+                }
+            });
+
+            // 承运公司自动补全
+            $( ".transportName" ).autocomplete({
+                source: getCarriersURL,
+                minLength: 1,
+                autoFocus: true,
+                select: function( event, ui ) { // 选择项目公司
+                    $('input[name="appoint_cid"]').val(ui.item.id);
+                    // 获取承运公司下的调度
+                    getDriver();
+                }
+            });
+             /**
+             * 添加周边城市
+             * @param  {[type]} type [类型 1 提货 2 配送]
+             * @param  {[type]} id   [城市id]
+             * @param  {[type]} name [城市名称]
+             * @return {[type]}      [description]
+             */
+            function setCity(type,id,name) {
+                var ele = '<span class="item"><span class="badge badge-primary item-city" data-id="'+id+'" >'+name+'</span> <span class="glyphicon glyphicon-remove delete" aria-hidden="true"></span></span>';
+                if (type == 1) {
+                    $("#startCity-list").append(ele);
+                } else {
+                    $("#endCity-list").append(ele);
+                }
+            }
+			// 添加周边城市
+            $(".addcity").click(function () {
+                var type = $(this).attr("data-index");
+                var cityId = $(this).parents('.selectAddress').find('.city').val();
+                var cityName = $(this).parents('.selectAddress').find('.city option:selected').text();
+                if(!cityId || cityId == '0' || !cityName) return false;
+                setCity(type,cityId,cityName);
+            });
+
+            // 删除周边城市
+            $("body").on('click', '.delete', function(event) {
+                $(this).parent().remove();
+                event.preventDefault();
+                /* Act on the event */
+            });
+            // 提交数据
+            $('body').on('click', '#submit', function(event) {
+				var s = new Array();
+                var startDom = $("#startCity-list").find('.item');
+                var startLen = startDom.length;
+                for (var i = 0; i < startLen; i++) {
+                    var id = startDom.eq(i).find('.item-city').attr("data-id");
+                    var name = startDom.eq(i).find('.item-city').text();
+                    s.push({"id":id,"name":name});
+                }
+                var e = new Array();
+                var endDom = $("#endCity-list").find('.item');
+                var endLen = endDom.length;
+                for (var m = 0; m < endLen; m++) {
+                    var id = endDom.eq(m).find('.item-city').attr("data-id");
+                    var name = endDom.eq(m).find('.item-city').text();
+                    e.push({"id":id,"name":name});
+                }
+
+                if (s.length == 0) {
+                    layer.msg("请添加提货周边城市");
+                    return false;
+                };
+
+                if (e.length == 0) {
+                    layer.msg("请添加配送周边城市");
+                    return false;
+                };
+
+               
+                var s = JSON.stringify(s);
+                var e = JSON.stringify(e);
+				var startCity = $('#startCity').val();
+				var endCity = $('#endCity').val();
+				var price = $("#price").val();
+				var appoint_price = $('#appoint_price').val();
+				var appoint_cid = $('#appoint_cid').val();
+				var appoint_driver = $('#selectDriver').val();
+				var remark = $('#remark').val();
+				var listid = $('#listid').val();
+                var data = {
+                    id: listid, // 列表索引id
+                    startCity :  startCity,
+                    endCity: endCity,
+                    price: price,
+                    remark:remark,
+                    startCityAround: s,
+                    endCityAround:e,
+                    appoint_cid: appoint_cid,
+                    appoint_driver: appoint_driver,
+                    appoint_price: appoint_price
+                }
+                // 发送请求
+                send(sendDataURL,data,function () {
+                    // body...
+                    window.history.back();  //返回上一页
+                });
+                event.preventDefault();
+                /* Act on the event */
+            });
+        });
+    </script>
+</body>
+</html>

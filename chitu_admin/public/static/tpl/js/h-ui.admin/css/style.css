@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* 你自己的样式 */
+.dataTables_wrapper .dataTables_paginate{
+    display: none;
+}
+.dataTables_wrapper .dataTables_length{
+    display: none;
+}
+.dataTables_wrapper .dataTables_filter{
+    display: none;
+}
+.dataTables_wrapper .dataTables_info{
+    display: none;
+}
+.pagination {
+    text-align: right;
+    margin-top: 20px;
+}
+.pagination li {display: inline-block;margin-right: -1px;padding: 5px;border: 1px solid #e2e2e2;min-width: 20px;text-align: center;}
+.pagination li.active {background: #009688;color: #fff;border: 1px solid #009688;}
+.pagination li a {display: block;text-align: center;}

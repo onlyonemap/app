@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{include file="public/header" /} 
+	<link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+</head>
+<body class="gray-bg">
+	<div class="wrapper wrapper-content animated fadeInUp">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>城配签约客户列表</h5>
+                <div class="ibox-tools">
+                    <a class="dropdown-toggle"  href="/admin/cityconfig/toaddContract" style="color:#000">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <span>添加</span>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+            	<!-- 搜索 start -->
+            	<div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/cityconfig/contractList" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入公司名称" value="" id="provSelect1" class="form-control" /> 
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+				<!-- 搜索 end -->
+				<!-- 列表 start -->
+				<table class="footable table table-stripped toggle-arrow-tiny">
+                    <thead>
+                        <tr>
+                            <th class="text-left">公司名称</th>
+                            <th class="text-left">开通城市</th>
+                            <th class="text-left">最低收费</th>
+                            <th class="text-left">包含门店</th>
+                            <th class="text-left">最高门店</th>
+                            <th class="text-left">多门店费</th>
+
+                            <th class="text-left">承运公司</th>
+                            <th class="text-left">承运最低收费</th>
+                            <th class="text-left">承运包含门店</th>
+                            <th class="text-left">承运最高门店</th>
+                            <th class="text-left">承运多门店费</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>
+                            <td class="text-left">{$vo.name}</td>
+                            <td class="text-left">{$vo.cityName}</td>
+                            <td class="text-left">{$vo.low_price}</td>
+                            <td class="text-left">{$vo.low_door}</td>
+                            <td class="text-left">{$vo.high_door}</td>
+                            <td class="text-left">{$vo.moredoor_price}</td>
+                            
+                            <td class="text-left">{$vo.driverName}</td>
+                            <td class="text-left">{$vo.appoint_lowprice}</td>
+                            <td class="text-left">{$vo.appoint_lowdoor}</td>
+                            <td class="text-left">{$vo.appoint_highdoor}</td>
+                            <td class="text-left">{$vo.appoint_moreprice}</td>
+                            <td class="text-center">
+                                <a href="/admin/cityconfig/toupdateContract?id={$vo.id}" class="btn btn-warning">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                    <span>修改</span>
+                                </a>
+                                <a data-href="/admin/cityconfig/deleteContract?id={$vo.id}" class="btn btn-danger delete">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                    <span>删除</span>
+                                </a>    
+                            </td>
+                        </tr>
+                    	{/volist}
+                    </tbody>
+                </table>
+				<!-- 列表 end -->
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <!-- bootstrap -->
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- footbale -->
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+    <!-- 提示 -->
+    <script src="/static/tpl/js/plugins/layer-v3.3.1/layer.js"></script>
+    <!-- 页面js -->
+    <script type="text/javascript">
+    	$(document).ready(function() {
+            // 初始话表格
+            $('.footable').footable();
+            // 查询
+            $('#search').click(function(){
+                var psel = document.getElementById("provSelect1");
+                window.location.href='/admin/cityconfig/contractList?search='+psel.value;
+            });
+            // 删除
+            $('.delete').click(function(){
+				var href = $(this).attr("data-href");
+                layer.confirm('删除后数据将无法找回，确定要执行该操作吗？', {
+                    btn: ['确定','取消'] //按钮
+                }, function(){
+                    window.location.href=href;
+                }, function(){
+                	
+                });
+            });
+        });
+    </script>
+</body>
+</html>

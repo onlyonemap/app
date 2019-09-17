@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link href="/static/tpl/css/plugins/iCheck/custom.css" rel="stylesheet" />
+    <link href="/static/tpl/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5> 
+                    <a href="javascript:history.back(-1);"><span class="glyphicon glyphicon-chevron-left"><b>返回</b></span></a>
+                </h5>
+                <div class="ibox-tools">添加车辆信息</div>
+            </div>
+            <div class="ibox-content">
+                <form class="form-horizontal" enctype="multipart/form-data" method="post" action="/admin/driver/addCar" id="commentForm">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车型:</label>
+                        <div  class="col-sm-10">
+                            <select class="form-control" id="cartype" name="cartype">
+                            {volist name="list" id="vo"}
+                            <option value="{$vo.car_id}">{$vo.carparame}</option>
+                            {/volist}
+                           </select>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车牌号:<span style="color:red"> *</span></label>
+                        <div class="col-sm-10">
+                            <input id="carnumber" name="carnumber"  value="" type="text" class="form-control" required="" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">温控:</label>
+                        <div class="col-sm-10">
+                            <input id="temperature" name="temperature"  value="" type="text" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    
+                    
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">注册日期:<span style="color:red"> *</span></label>
+                        <div class="col-sm-10">
+                            <div class="input-group date date-view-three" data-provide="datepicker">
+                                <div class="input-group-addon">
+                                    <span class="fa fa-calendar"></span>
+                                </div>
+                                <input type="text" name="car_age" value="" class="form-control" placeholder="注册日期" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">行驶证图片:</label>
+                        <div class="col-sm-10">
+                            <input type="file" name="travelimg" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">运营证图片:</label>
+                        <div class="col-sm-10">
+                            <input type="file" name="operateimg" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">右前方45°侧面照:</label>
+                        <div class="col-sm-10">
+                            <input type="file" name="carimage" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label">类别:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="select-type" name="type">
+                                <option value="1">个体</option>
+                                <option value="2">公司</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车辆审核:</label>
+                        <div class="col-sm-10">
+                            <label class="radio-inline i-checks">
+                                <input type="radio"  checked="" value="1" name="status"> <i></i>未审核
+                            </label>
+                            <label class="radio-inline i-checks">
+                                <input type="radio"  value="2" name="status"> <i></i>审核通过
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group" id="sj">
+                        <label class="col-sm-2 control-label">司机电话:<span style="color:red"> *</span></label>
+                        <div class="col-sm-10">
+                            <input type="hidden" name="driverid" value="" />
+                            <input id="key" placeholder="请填选司机" name="name"  type="text" class="form-control" >
+                        </div>
+                    </div>
+
+                    <div class="form-group hidden" id="gs">
+                        <label class="col-sm-2 control-label">公司名称:<span style="color:red"> *</span></label>
+                        <div class="col-sm-10">
+                            <input id="company" placeholder="请填选公司名称" name="company"  type="text" class="form-control" >
+                            <input type="hidden" name="com_id" value="" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    
+                   
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <input type="hidden" value="add" name="action" />
+                            <button class="btn btn-primary" type="submit">保存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- 自动补全 -->
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- jQuery Validation plugin javascript-->
+    <script src="/static/tpl/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="/static/tpl/js/plugins/validate/messages_zh.min.js"></script>
+     <!-- 日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <!-- 调用日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+    <script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {            
+            // 初始化radio
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+            // 司机姓名自动补全
+            $( "#key" ).autocomplete({
+                source: "/admin/common/getonePhone",
+                minLength: 1,
+                autoFocus: true,
+                select: function(event, ui) {
+                    $(this).siblings('input[name="driverid"]').val(ui.item.id);
+                }
+            });
+            // 承运公司名称自动补全
+            $('#company').autocomplete({
+                source: "/admin/common/getcarriers",
+                minLength: 1,
+                autoFocus: true,
+                select: function(event, ui) {
+                    $(this).siblings('input[name="com_id"]').val(ui.item.id);
+                }
+            });
+            // 类型选择 1 个体 2 司机
+            $('#select-type').change(function (argument) {
+                var val = $(this).val();
+                if(val == 1){ // 选择个体
+                    $('#sj').addClass('show').removeClass('hidden');
+                    $('#gs').addClass('hidden').removeClass('show');
+                }else{ // 选择公司
+                    $('#sj').addClass('hidden').removeClass('show');
+                    $('#gs').addClass('show').removeClass('hidden');
+                }
+            })
+        });
+    </script>
+</body>
+</html>

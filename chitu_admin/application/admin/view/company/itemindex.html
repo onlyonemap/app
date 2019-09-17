@@ -1,0 +1,93 @@
+{include file="public/header"}
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            
+            <div class="col-sm-12">
+                <div class="ibox">
+                     <div class="ibox-title">
+                            <h5>物品类型列表</h5>
+
+                            <div class="ibox-tools">
+                                
+                               <a class="dropdown-toggle"  href="/admin/company/additem" style="color:#000">
+                                    <i class="fa fa-wrench" ></i>
+                                    添加物品
+                                </a>
+                            </div>
+                        </div>
+                    <div class="ibox-content">
+                       
+                        <div class="clients-list">
+                            
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane active">
+                                    <div class="full-height-scroll">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-hover">
+                                                <tbody>
+                                                    {volist name="list" id="vo"}
+                                                    <tr>
+                                                        <td>
+                                                            {$vo.item_id}
+                                                        </td>
+                                                        <td>{$vo.goodsname}</td>
+                                                        
+                                                      
+                                                        <td class="pull-right">
+                                                           
+                                                            <a href="/admin/company/updateitem?id={$vo.item_id}" class="btn btn-info"><i class="fa fa-paste"></i>编辑</a>
+                                                          
+                                                           
+                                                            <a href="/admin/company/delitem?id={$vo.item_id}&del=1" class="btn btn-info" ><i class="fa fa-paste"></i>删除</a>
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                   {/volist}
+                                                </tbody>
+                                            </table>
+                                           {$page}
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+
+    <script src="/static/tpl/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="/static/tpl/js/content.js?v=1.0.0"></script>
+
+    <script>
+        $(function () {
+            $('.full-height-scroll').slimScroll({
+                height: '100%'
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+    function sousuo(){
+        var psel = document.getElementById("provSelect1");
+        window.location.href='/admin/driver/carindex?search='+psel.value;
+    }
+    </script>
+    
+
+</body>
+
+</html>

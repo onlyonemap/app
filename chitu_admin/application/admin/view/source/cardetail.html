@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="ibox-tools">车源发布详情</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>订单详情</h5>
+                    </div>
+                    <div class="ibox-content m-b-sm border-bottom">
+	                    <div class="row">
+	                        <div class="col-sm-2">订单编号:</div>
+	                        <div class="col-sm-10">{$list.ordernumber}</div>
+	                    </div>
+	                    <div class="hr-line-dashed"></div>
+
+	                    <div class="row">
+	                        <div class="col-sm-2">线路:</div>
+	                        <div class="col-sm-10">{$list.startcity} —— {$list.endcity}</div>
+	                    </div>
+	                    <div class="hr-line-dashed"></div>
+
+	                    <div class="row">
+	                        <div class="col-sm-2">下单人员:</div>
+	                        <div class="col-sm-10">{$list.realname} ( tel: {$list.mobile} )</div>
+	                    </div>
+	                    <div class="hr-line-dashed"></div>
+
+	                    <div class="row">
+	                        <div class="col-sm-2">联系信息:</div>
+	                        <div class="col-sm-10">{$list.issue_realname} ( tel: {$list.issue_phone} )</div>
+	                    </div>
+	                    <div class="hr-line-dashed"></div>
+
+	                    <div class="row">
+	                        <div class="col-sm-2">下单时间:</div>
+	                        <div class="col-sm-10">{$list.addtime|date='Y-m-d H:i',###}</div>
+	                    </div>
+                    	<div class="hr-line-dashed"></div>
+
+	                    <div class="row">
+	                        <div class="col-sm-2">发车时间:</div>
+	                        <div class="col-sm-10">{$list.loaddate}</div>
+	                    </div>
+	                    <div class="hr-line-dashed"></div>
+
+	                    <div class="row">
+	                        <div class="col-sm-2">发布车型:</div>
+	                        <div class="col-sm-10">{$list.carparame}</div>
+	                    </div>
+	                    <div class="hr-line-dashed"></div>
+
+	                    <div class="row">
+	                        <div class="col-sm-2">订单备注:</div>
+	                        <div class="col-sm-10">{$list.remark}</div>
+	                    </div>
+	                    <div class="hr-line-dashed"></div>
+
+	                    <div class="row">
+	                        <div class="col-sm-2">订单状态:</div>
+	                        <div class="col-sm-10">
+	                            {if condition="($list.orderstate==1)"}
+	                            <span class="label label-primary">进行中</span>
+	                            {elseif condition="($list.orderstate==2)" /}
+	                            <span class="label label-info">已完成</span>
+	                            {elseif condition="($list.orderstate==3)" /}
+	                            <span class="label label-info">已取消</span>
+	                            
+	                            {/if}
+	                        </div>
+	                    </div>
+	                    
+	                    <div class="hr-line-dashed"></div>
+            		</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <!-- <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5> -->
+                <div class="text-center p-lg">
+                    <h2>整车订单详情</h2>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">订单编号:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.ordernumber}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">线路:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.startcity} -- {$list.endcity}
+                            </div>
+                        </div>
+                    </div>
+                     <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">下单人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                ({$list.username}  {$list.phone})
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">接单人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {if condition="($list.carrphone=='')"}
+                                    未确定
+                                {else/}
+                                    
+                                    {$list.carrname} / {$list.carrphone}
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label "><span class="label label-primary">提货地址:</span></label>
+                         {volist name="$list.pickaddress" id="vo"}
+                        <div class="col-sm-10">
+                            <div class="radio">
+                               
+                                {if condition="isset($vo.address)"}{$list.startcity}{$vo.areaName}{$vo.address}{else/}{$vo.areaName}{/if}
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                    
+                    {/volist}
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><span class="label label-info">配送地址:</span></label>
+                        {volist name="$list.sendaddress" id="v"}
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                
+                                {if condition="isset($v.address)"}{$list.endcity}{$v.areaName}{$v.address}{else/}{$v.areaName}{/if}
+                            </div>
+                        </div> 
+                    </div>
+                    
+                   
+
+                    {/volist}
+                    {if condition="!empty($list.receipts)"}
+                    <div class="hr-line-dashed"></div>
+                     
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><span class="label label-info">回单:</span></label>
+                        {foreach name="$list.receipts" id="val"}
+                        <div class="col-sm-4">
+                            <div class="radio">
+                                <img width="200" height="200" src="{val}" />
+                            </div>
+                        </div>  
+                         {/foreach}
+                    </div>
+                    {/if}
+                     <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">物品:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                {$list.goodsname}
+                            </div>
+                        </div>
+                         <label class="col-sm-2 control-label">温度:</label>
+                        <div class="col-sm-2"> 
+                            <div class="radio"> 
+                            {$list.temperture}
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">是否装卸:</label>
+                        <div class="col-sm-2"> 
+                            <div class="radio"> 
+                            {if condition="$list.pickyesno==1"}
+                            <span class="label label-info">否</span>
+                            {else/}
+                            <span class="label label-info">是</span>
+                            {/if}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车型:</label>
+                        <label class="col-sm-2 control-label">承载吨位(t):</label>
+                        <div class="col-sm-1"> 
+                            <div class="radio"> 
+                            {$list.allweight}(t)
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">承载立方(m³):</label>
+                        <div class="col-sm-1">
+                            <div class="radio"> 
+                            {$list.allvolume}(m³)
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">长*宽*高(L*W*H):</label>
+                        <div class="col-sm-1">
+                            <div class="radio"> 
+                            {$list.dimensions}(L*W*H)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">价格:</label>
+                        <div class="col-sm-1"> 
+                            <div class="radio"> 
+                            {$list.prices}
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+
+                        <label class="col-sm-2 control-label">发货日期:</label>
+                        <div class="col-sm-2">
+                            <div class="radio"> 
+                                {$list.loaddate|date='Y-m-d H:i:s',###}
+
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">到达日期:</label>
+                        <div class="col-sm-2">
+                            <div class="radio"> 
+                                {$list.arrtime|date='Y-m-d H:i:s',###}
+
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">订单状态:</label>
+                        <div class="col-sm-1">
+                            <div class="radio"> 
+                                {if condition="($list.orderstate == 1)"}
+                                        <span class="label label-primary">未接单</span>
+                                {elseif condition="($list.orderstate == 2)"/}
+                                        <span class="label label-info">已接单</span>
+                                {elseif condition="($list.orderstate == 3)" /}
+                                        <span class="label label-danger">已完成</span>
+                                {/if}
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">备注:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.remark}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+
+                        <label class="col-sm-2 control-label" style="vertical-align: middle">添加司机姓名:</label>
+                        <div class="col-sm-2" style="line-height: 30px;height: 30px">
+                            <!-- <div class="radio"> -->
+                                <input type="text" style="height: 30px;line-height: 30px"placeholder="请输入司机姓名" value="{$list.drivername}" class="form-control" id="drivername">
+                            <!-- </div> -->
+                        </div>
+                        <label class="col-sm-2 control-label" style="vertical-align: middle">添加司机电话:</label>
+                        <div class="col-sm-2">
+                            <!-- <div class="radio" style="line-height: 30px;height: 30px"> -->
+                                <input type="text" style="height: 30px; line-height: 30px" maxlength="11" width="100%" onblur="abab(this.value);" placeholder="请输入司机手机号" value="{$list.driverphone}" class="form-control" id="driverphone">
+                            <!-- </div> -->
+                        </div>
+                        <label class="col-sm-2 control-label" style="vertical-align: middle">添加车辆牌照:</label>
+                        <div class="col-sm-2">
+                            <!-- <div class="radio" style="line-height: 30px;height: 30px"> -->
+                                <input type="text" style="height: 30px; line-height: 30px" placeholder="请输入车辆牌照" value="{$list.carlicense}" class="form-control" id="carlicense">
+                            <!-- </div> -->
+                        </div>
+                       <label class="col-sm-2 control-label pull-right" style="display: inline-block;"><a href="javascript:add({$list.uoid})" class="btn btn-primary " type="submit">{eq name="$list.drivername" value=""}确定添加{else/}确定修改{/eq}</a></label>
+                       <!-- <div class="col-sm-1">
+                            <div class="radio">
+                                
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="hr-line-dashed"></div>
+                    
+                </div>
+                <!-- </div> -->
+                <div class="text-center p-lg">
+                    <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-primary">返  回</a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function abab(arr){
+    if(arr==""){  
+        alert("手机号不能为空！");  
+    }else{  
+        var re = /^(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;                               
+        if (!re.test(arr)) {  
+             alert("手机号格式错误！");
+        }
+    }  
+}
+function add(id){
+    var drivername = document.getElementById('drivername').value;
+    var driverphone = document.getElementById('driverphone').value;
+    var carlicense = document.getElementById('carlicense').value;
+    if (!drivername) {alert('司机姓名不可为空！');return false;};
+    if (!driverphone) {alert('司机电话不可为空！');return false;};
+    if (!carlicense) {alert('车辆牌照不可为空！');return false;};
+    window.location.href='/backstage/order/adddriver_city?id='+id+'&drivername='+drivername+'&driverphone='+driverphone+'&carlicense='+carlicense;
+}
+</script>

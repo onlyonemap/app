@@ -1,0 +1,652 @@
+[ 2019-08-11T14:53:07+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/vehical_count
+[ log ] www.chitu12.com/user/vehicle/vehical_count [运行时间：1.939000s][吞吐率：0.52req/s] [内存消耗：2,549.38kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'vehical_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryoK4batDLP4QDCkLY',
+  'postman-token' => '56aa1de4-2d78-5bba-b8af-e24186b58edb',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1347',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/vehical_count' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'startcity_str' => '[{"city":"上海市"},{"city":"邵阳市"}]',
+  'endcity_str' => '[{"city":"广州市"}]',
+  'taddress' => '[{"areaName":"上海市嘉定区爱特路855号"},{"areaName":"邵阳市高崇山"}]',
+  'paddress' => ' [{"areaName":"广州市天河区天河公园"}]',
+  'pickyesno' => '2',
+  'sendyesno' => '1',
+  'data_type' => '1565316553',
+  'carid' => '1',
+  'type' => '2',
+  'carnum' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_count[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.046000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1565010161982389codephp' LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 1364  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.046000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T14:53:15+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/vehical_count
+[ log ] www.chitu12.com/user/vehicle/vehical_count [运行时间：1.912000s][吞吐率：0.52req/s] [内存消耗：2,549.38kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'vehical_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryp1BAmUBypshhmpFJ',
+  'postman-token' => 'e6f2cf35-311f-bbf8-b1bc-c1fe92303de5',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1347',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/vehical_count' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'startcity_str' => '[{"city":"上海市"},{"city":"邵阳市"}]',
+  'endcity_str' => '[{"city":"广州市"}]',
+  'taddress' => '[{"areaName":"上海市嘉定区爱特路855号"},{"areaName":"邵阳市高崇山"}]',
+  'paddress' => ' [{"areaName":"广州市天河区天河公园"}]',
+  'pickyesno' => '2',
+  'sendyesno' => '1',
+  'data_type' => '1565316553',
+  'carid' => '1',
+  'type' => '2',
+  'carnum' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_count[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.256000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1565010161982389codephp' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 1364  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T14:53:26+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/vehical_count
+[ log ] www.chitu12.com/user/vehicle/vehical_count [运行时间：1.789000s][吞吐率：0.56req/s] [内存消耗：2,549.38kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'vehical_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryXmaWebzag33EBbKZ',
+  'postman-token' => '59faf95a-4b9d-ef3b-0109-3168c501c1f8',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1347',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/vehical_count' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'startcity_str' => '[{"city":"上海市"},{"city":"邵阳市"}]',
+  'endcity_str' => '[{"city":"广州市"}]',
+  'taddress' => '[{"areaName":"上海市嘉定区爱特路855号"},{"areaName":"邵阳市高崇山"}]',
+  'paddress' => ' [{"areaName":"广州市天河区天河公园"}]',
+  'pickyesno' => '2',
+  'sendyesno' => '1',
+  'data_type' => '1565316553',
+  'carid' => '1',
+  'type' => '2',
+  'carnum' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_count[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1565010161982389codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 1364  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T14:53:38+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/vehical_count
+[ log ] www.chitu12.com/user/vehicle/vehical_count [运行时间：1.615000s][吞吐率：0.62req/s] [内存消耗：2,549.38kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'vehical_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarySjuhEOmuguf66RNJ',
+  'postman-token' => '054f49ab-c5a6-fa83-a390-badae3bd9783',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1347',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/vehical_count' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'startcity_str' => '[{"city":"上海市"},{"city":"邵阳市"}]',
+  'endcity_str' => '[{"city":"广州市"}]',
+  'taddress' => '[{"areaName":"上海市嘉定区爱特路855号"},{"areaName":"邵阳市高崇山"}]',
+  'paddress' => ' [{"areaName":"广州市天河区天河公园"}]',
+  'pickyesno' => '2',
+  'sendyesno' => '1',
+  'data_type' => '1565316553',
+  'carid' => '1',
+  'type' => '2',
+  'carnum' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_count[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1565010161982389codephp' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 1364  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T14:53:45+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/vehical_count
+[ log ] www.chitu12.com/user/vehicle/vehical_count [运行时间：1.848000s][吞吐率：0.54req/s] [内存消耗：2,549.38kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'vehical_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary7iwZgBRiDaAY6c96',
+  'postman-token' => 'd04b1cd2-fa2a-5b9e-03a3-c5e4eb418345',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1347',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/vehical_count' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'startcity_str' => '[{"city":"上海市"},{"city":"邵阳市"}]',
+  'endcity_str' => '[{"city":"广州市"}]',
+  'taddress' => '[{"areaName":"上海市嘉定区爱特路855号"},{"areaName":"邵阳市高崇山"}]',
+  'paddress' => ' [{"areaName":"广州市天河区天河公园"}]',
+  'pickyesno' => '2',
+  'sendyesno' => '1',
+  'data_type' => '1565316553',
+  'carid' => '1',
+  'type' => '2',
+  'carnum' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_count[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1565010161982389codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 1364  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T16:32:13+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/vehical_count
+[ log ] www.chitu12.com/user/vehicle/vehical_count [运行时间：0.896000s][吞吐率：1.12req/s] [内存消耗：2,579.09kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'vehical_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary5C04BwoqR0XUhH5F',
+  'postman-token' => 'bf8f5e99-fac8-5f72-9f60-704275da7934',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1353',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/vehical_count' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'startcity_str' => '[{"city":"上海市"},{"city":"邵阳市"}]',
+  'endcity_str' => '[{"city":"广州市"}]',
+  'taddress' => '[{"areaName":"上海市嘉定区爱特路855号"},{"areaName":"邵阳市高崇山"}]',
+  'paddress' => '" [{\\"areaName\\":\\"广州市天河区天河公园\\"}]"',
+  'pickyesno' => '2',
+  'sendyesno' => '1',
+  'data_type' => '1565316553',
+  'carid' => '1',
+  'type' => '2',
+  'carnum' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_count[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1565010161982389codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 1364  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [2]Illegal string offset 'areaName'[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:895]
+
+---------------------------------------------------------------
+[ 2019-08-11T16:34:47+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/vehical_count
+[ log ] www.chitu12.com/user/vehicle/vehical_count [运行时间：0.075000s][吞吐率：13.33req/s] [内存消耗：2,578.97kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'vehical_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBEOWk8us3LzXeC32',
+  'postman-token' => 'f4da9a81-2e1b-adf7-5022-3cdac75365e3',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1363',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/vehical_count' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'startcity_str' => '[{"city":"上海市"},{"city":"邵阳市"}]',
+  'endcity_str' => '[{"city":"广州市"}]',
+  'taddress' => '"[{\\"areaName\\":\\"上海市嘉定区爱特路855号\\"},{\\"areaName\\":\\"邵阳市高崇山\\"}]"',
+  'paddress' => '" [{\\"areaName\\":\\"广州市天河区天河公园\\"}]"',
+  'pickyesno' => '2',
+  'sendyesno' => '1',
+  'data_type' => '1565316553',
+  'carid' => '1',
+  'type' => '2',
+  'carnum' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_count[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1565010161982389codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 1364  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [2]Illegal string offset 'areaName'[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:886]
+
+---------------------------------------------------------------
+[ 2019-08-11T16:36:07+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/vehical_count
+[ log ] www.chitu12.com/user/vehicle/vehical_count [运行时间：0.033000s][吞吐率：30.30req/s] [内存消耗：2,530.91kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'vehical_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryGQuZWxWRCmULcbXG',
+  'postman-token' => '1e89e0a9-54fd-9463-6775-fd491f9cd522',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1347',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/vehical_count' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'startcity_str' => '[{"city":"上海市"},{"city":"邵阳市"}]',
+  'endcity_str' => '[{"city":"广州市"}]',
+  'taddress' => '[{"areaName":"上海市嘉定区爱特路855号"},{"areaName":"邵阳市高崇山\\"}]',
+  'paddress' => '[{"areaName":"广州市天河区天河公园"}]',
+  'pickyesno' => '2',
+  'sendyesno' => '1',
+  'data_type' => '1565316553',
+  'carid' => '1',
+  'type' => '2',
+  'carnum' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_count[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T17:09:28+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/vehical_count
+[ log ] www.chitu12.com/user/vehicle/vehical_count [运行时间：0.042000s][吞吐率：23.81req/s] [内存消耗：2,530.91kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'vehical_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryogMggrWMhjocz5Gg',
+  'postman-token' => 'f46518d1-6219-6936-c2fe-b5a60bebfda9',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1347',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/vehical_count' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'startcity_str' => '[{"city":"上海市"},{"city":"邵阳市"}]',
+  'endcity_str' => '[{"city":"广州市"}]',
+  'taddress' => '[{"areaName":"上海市嘉定区爱特路855号"},{"areaName":"邵阳市高崇山\\"}]',
+  'paddress' => '[{"areaName":"广州市天河区天河公园"}]',
+  'pickyesno' => '2',
+  'sendyesno' => '1',
+  'data_type' => '1565316553',
+  'carid' => '1',
+  'type' => '2',
+  'carnum' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_count[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T19:19:37+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/pay/zcpay
+[ log ] www.chitu12.com/driver/pay/zcpay [运行时间：0.089000s][吞吐率：11.24req/s] [内存消耗：2,249.07kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'pay',
+    2 => 'zcpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary1TTiekifYRWEsAUl',
+  'postman-token' => 'ad578e78-8738-0181-dc24-6bbcd63fbee6',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/pay/zcpay' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'id' => '495',
+  'price' => '0.01',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\driver\controller\Pay->zcpay[ D:\WWW\chitu_admin\application\driver\controller\Pay.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '15)�iO�=ǣ=�=�������卽�����' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T19:19:54+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/pay/zcpay
+[ log ] www.chitu12.com/driver/pay/zcpay [运行时间：0.029000s][吞吐率：34.48req/s] [内存消耗：2,249.07kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'pay',
+    2 => 'zcpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryqpQ3a1ATA6cFLXof',
+  'postman-token' => '784b9189-4ace-564e-0bb4-97a0c4175bb9',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/pay/zcpay' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'id' => '495',
+  'price' => '0.01',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\driver\controller\Pay->zcpay[ D:\WWW\chitu_admin\application\driver\controller\Pay.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '15)�iO�=ǣ=�=�������卽�����' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T19:20:28+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/pay/zcpay
+[ log ] www.chitu12.com/driver/pay/zcpay [运行时间：0.034000s][吞吐率：29.41req/s] [内存消耗：2,249.07kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'pay',
+    2 => 'zcpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynQKbXrb8h2cWVhDv',
+  'postman-token' => '99648300-c65c-ed42-b050-c91d00b4b2a8',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/pay/zcpay' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'id' => '495',
+  'price' => '0.01',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\driver\controller\Pay->zcpay[ D:\WWW\chitu_admin\application\driver\controller\Pay.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '15)�iO�=ǣ=�=�������卽�����' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-08-11T19:21:02+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/pay/zcpay
+[ log ] www.chitu12.com/driver/pay/zcpay [运行时间：0.033000s][吞吐率：30.30req/s] [内存消耗：2,249.07kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'pay',
+    2 => 'zcpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBvsJRepr7BIH9NdI',
+  'postman-token' => 'eb47faea-b67a-b3c1-f000-b1369f060b19',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '463',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/pay/zcpay' => '',
+  'token' => 'McTtUp2hNpT6A9x6M9D6E92MTk4MjM4OWNvZGVwaHAO0O0O',
+  'id' => '495',
+  'price' => '0.01',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\driver\controller\Pay->zcpay[ D:\WWW\chitu_admin\application\driver\controller\Pay.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tsst;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '15)�iO�=ǣ=�=�������卽�����' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------

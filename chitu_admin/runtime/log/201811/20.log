@@ -1,0 +1,352 @@
+[ 2018-11-20T10:28:41+08:00 ] 127.0.0.1 127.0.0.1 POST /user/bulk/shift_list
+[ log ] www.ctadmin.com/user/bulk/shift_list [运行时间：0.810000s][吞吐率：1.23req/s] [内存消耗：2,837.53kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'bulk',
+    2 => 'shift_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '376',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => 'a51ea4a7-eaa0-5297-e10d-9809c33a4de8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryAy6LpQ1iKheznABG',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/bulk/shift_list' => '',
+  'token' => 'McTtUp0hMpj6Y946M9D6g9wMDU5Njk0Y29kZXBocAO0O0OO0O0O',
+  'order_type' => '',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Bulk->shift_list[ E:\chitu\chitu_project\trunk\chitu_admin\application\user\controller\Bulk.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.082000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '154268080059694codephp' LIMIT 1 [ RunTime:0.077000s ]
+
+---------------------------------------------------------------
+[ 2018-11-20T10:28:57+08:00 ] 127.0.0.1 127.0.0.1 POST /user/bulk/shift_list
+[ log ] www.ctadmin.com/user/bulk/shift_list [运行时间：0.507000s][吞吐率：1.97req/s] [内存消耗：2,837.54kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'bulk',
+    2 => 'shift_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '376',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'postman-token' => '25380f34-ded7-73a6-955d-0bec4ddfec80',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary6oL57AecOGEyY3p2',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/user/bulk/shift_list' => '',
+  'token' => 'McTtUp0hMpj6Y946M9D6g9wMDU5Njk0Y29kZXBocAO0O0OO0O0O',
+  'order_type' => '',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Bulk->shift_list[ E:\chitu\chitu_project\trunk\chitu_admin\application\user\controller\Bulk.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.093000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.117000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '154268080059694codephp' LIMIT 1 [ RunTime:0.079000s ]
+
+---------------------------------------------------------------
+[ 2018-11-20T15:02:53+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.ctadmin.com/ [运行时间：0.357000s][吞吐率：2.80req/s] [内存消耗：1,972.76kb] [文件加载：47]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\chitu\chitu_project\trunk\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-11-20T15:02:53+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.ctadmin.com/admin/index/login.html [运行时间：0.045000s][吞吐率：22.22req/s] [内存消耗：1,910.45kb] [文件加载：46]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=se48rs6dtuh7qvhp6o8n89u397',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\chitu\chitu_project\trunk\chitu_admin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\chitu\chitu_project\trunk\chitu_admin\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-11-20T15:03:12+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/shift/ctaaa
+[ log ] www.ctadmin.com/driver/shift/ctaaa [运行时间：0.550000s][吞吐率：1.82req/s] [内存消耗：2,650.70kb] [文件加载：56]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'shift',
+    2 => 'ctaaa',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=se48rs6dtuh7qvhp6o8n89u397',
+)
+[ info ] [ PARAM ] array (
+  '/driver/shift/ctaaa' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Shift->ctaaa[ E:\chitu\chitu_project\trunk\chitu_admin\application\driver\controller\Shift.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_shift` WHERE  `shiftstate` = 2  AND `lowprice` = 0 [ RunTime:0.073000s ]
+[ error ] [8]未定义变量: variable[E:\chitu\chitu_project\trunk\chitu_admin\application\driver\controller\Shift.php:179]
+
+---------------------------------------------------------------
+[ 2018-11-20T15:03:22+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/shift/ctaaa
+[ log ] www.ctadmin.com/driver/shift/ctaaa [运行时间：0.328000s][吞吐率：3.05req/s] [内存消耗：2,607.07kb] [文件加载：52]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'shift',
+    2 => 'ctaaa',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=se48rs6dtuh7qvhp6o8n89u397',
+)
+[ info ] [ PARAM ] array (
+  '/driver/shift/ctaaa' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Shift->ctaaa[ E:\chitu\chitu_project\trunk\chitu_admin\application\driver\controller\Shift.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.089000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_shift` WHERE  `shiftstate` = 2  AND `lowprice` = 0 [ RunTime:0.069000s ]
+
+---------------------------------------------------------------
+[ 2018-11-20T15:04:25+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/shift/ctaaa
+[ log ] www.ctadmin.com/driver/shift/ctaaa [运行时间：0.093000s][吞吐率：10.75req/s] [内存消耗：1,559.70kb] [文件加载：41]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'shift',
+    2 => 'ctaaa',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=se48rs6dtuh7qvhp6o8n89u397',
+)
+[ info ] [ PARAM ] array (
+  '/driver/shift/ctaaa' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected 'print_r' (T_STRING)[E:\chitu\chitu_project\trunk\chitu_admin\application\driver\controller\Shift.php:180]
+
+---------------------------------------------------------------
+[ 2018-11-20T15:04:37+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/shift/ctaaa
+[ log ] www.ctadmin.com/driver/shift/ctaaa [运行时间：0.312000s][吞吐率：3.21req/s] [内存消耗：2,528.20kb] [文件加载：50]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'shift',
+    2 => 'ctaaa',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=se48rs6dtuh7qvhp6o8n89u397',
+)
+[ info ] [ PARAM ] array (
+  '/driver/shift/ctaaa' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Shift->ctaaa[ E:\chitu\chitu_project\trunk\chitu_admin\application\driver\controller\Shift.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.074000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_shift` WHERE  `shiftstate` = 2  AND `lowprice` = 0 [ RunTime:0.065000s ]
+
+---------------------------------------------------------------
+[ 2018-11-20T15:04:56+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/shift/ctaaa
+[ log ] www.ctadmin.com/driver/shift/ctaaa [运行时间：0.310000s][吞吐率：3.23req/s] [内存消耗：2,555.53kb] [文件加载：50]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'shift',
+    2 => 'ctaaa',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=se48rs6dtuh7qvhp6o8n89u397',
+)
+[ info ] [ PARAM ] array (
+  '/driver/shift/ctaaa' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Shift->ctaaa[ E:\chitu\chitu_project\trunk\chitu_admin\application\driver\controller\Shift.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.136000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_shift` WHERE  `shiftstate` = 2 [ RunTime:0.061000s ]
+
+---------------------------------------------------------------
+[ 2018-11-20T15:05:07+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/shift/ctaaa
+[ log ] www.ctadmin.com/driver/shift/ctaaa [运行时间：0.471000s][吞吐率：2.12req/s] [内存消耗：2,591.73kb] [文件加载：52]
+[ info ] [ LANG ] E:\chitu\chitu_project\trunk\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'shift',
+    2 => 'ctaaa',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'cookie' => 'PHPSESSID=se48rs6dtuh7qvhp6o8n89u397',
+)
+[ info ] [ PARAM ] array (
+  '/driver/shift/ctaaa' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Shift->ctaaa[ E:\chitu\chitu_project\trunk\chitu_admin\application\driver\controller\Shift.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_shift` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_shift` WHERE  `shiftstate` = 2 [ RunTime:0.061000s ]
+[ sql ] [ SQL ] UPDATE `ct_shift`  SET `lowprice`=1000  WHERE  `sid` = 269 [ RunTime:0.066000s ]
+[ sql ] [ SQL ] UPDATE `ct_shift`  SET `lowprice`=1000  WHERE  `sid` = 272 [ RunTime:0.034000s ]
+[ sql ] [ SQL ] UPDATE `ct_shift`  SET `lowprice`=1000  WHERE  `sid` = 273 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] UPDATE `ct_shift`  SET `lowprice`=1000  WHERE  `sid` = 275 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] UPDATE `ct_shift`  SET `lowprice`=1000  WHERE  `sid` = 277 [ RunTime:0.032000s ]
+
+---------------------------------------------------------------

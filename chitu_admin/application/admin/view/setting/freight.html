@@ -1,0 +1,78 @@
+{include file="public/header"}
+<body class="gray-bg" onload="getTArea('0','tpro');">
+    <div class="wrapper wrapper-content animated fadeInRight">
+       
+      
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                        <div class="ibox-tools">
+                           运费区间添加
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" method="post" action="/admin/setting/post_freight" id="commentForm">
+                           
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">订单类型<span style="color:red"> *</span></label>
+                                <div class="col-sm-3">
+                                    <select  class="form-control m-b" name="otype" id="otype">
+                                        <option value="1">城配</option>
+                                        <option value="2">整车</option>
+                                        <option value="3">提货</option>
+                                        <option value="4">干线</option>
+                                        <option value="5">配送</option>
+                                    </select>
+                                </div>
+                                
+                                
+                            </div>
+                             <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">添加</label>
+                                <div class="col-sm-10 col-xs-12" ><a id="AddMoreFileBox"  class="btn btn-info">添加更多运费区间</a></div>
+                            </div>
+                           <div class="form-group" id="InputsWrapper">
+                            <div class="zhongliangtext" style="height: 45px;">
+                                <label class="col-sm-2 control-label">运费范围：</label>                                
+                                <div class="col-sm-10" >
+                                   
+                                    <i class="col-sm-2 "><input type="text" class="inputos form-control row" name="mytext1[]" id="field1_1" /></i>
+                                    <p class="col-sm-1  form-control-static">￥ 到</p>
+                                    <i class="col-sm-2 "><input type="text" class="inputos form-control" name="mytext2[]" id="field2_1"/></i>
+                                    <p class="col-sm-1  form-control-static">￥</p>
+                                    <p class="col-sm-1 form-control-static">百分比</p>
+                                    <i class="col-sm-1 "><input style="width:85px;" type="text" class="inputos form-control" name="mytext4[]" id="field4_1" placeholder="%" /></i>
+                                    <a href="#" class="removeclass col-sm-1  form-control-static">×</a>
+                                </div>  
+                            </div>
+                        </div>  
+                           <div class="hr-line-dashed"></div>
+
+                           
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <input type="hidden" value="add" name="action" />
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                    <a class="btn btn-danger" onClick="javascript :history.back(-1);" style="width:82px">取消</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<!--表单验证-->
+<script src="/static/tpl/js/plugins/validate/jquery.validate.min.js"></script>
+<script src="/static/tpl/js/plugins/validate/messages_zh.min.js"></script>
+<script src="/static/tpl/js/freight.js"></script>

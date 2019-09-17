@@ -1,0 +1,1993 @@
+[ 2019-06-01T09:41:54+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/delivery
+[ log ] www.chitu12.com/user/vehicle/delivery [运行时间：0.249000s][吞吐率：4.02req/s] [内存消耗：2,455.43kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'delivery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarygMTi35t7nNnvZX8t',
+  'postman-token' => 'a8ce4ad7-ba71-eecd-3ab3-b8a7df945f39',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '270',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/delivery' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->delivery[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_delivery` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_delivery` (`userid` , `carid` , `startcity` , `taddress` , `paddress` , `tempreture` , `goodsname` , `weight` , `pickyesno` , `sendyesno` , `handingmode` , `paytype` , `picktime` , `remark` , `price` , `fprice`) VALUES (156 , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL) [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay_type' in 'field list'[D:\WWW\chitu_admin\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2019-06-01T09:42:26+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/delivery
+[ log ] www.chitu12.com/user/vehicle/delivery [运行时间：0.097000s][吞吐率：10.31req/s] [内存消耗：2,497.93kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'delivery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryOln0SlL2FH6CVBVL',
+  'postman-token' => 'fcdc66f0-be75-6d86-5c9d-4fac89ae2755',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '270',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/delivery' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->delivery[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_delivery` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_delivery` (`userid` , `carid` , `startcity` , `taddress` , `paddress` , `tempreture` , `goodsname` , `weight` , `pickyesno` , `sendyesno` , `handingmode` , `paytype` , `picktime` , `remark` , `price` , `fprice`) VALUES (156 , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `startcity` FROM `ct_delivery` WHERE  `uoid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: endcity[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:735]
+
+---------------------------------------------------------------
+[ 2019-06-01T09:45:44+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/delivery
+[ log ] www.chitu12.com/user/vehicle/delivery [运行时间：0.783000s][吞吐率：1.28req/s] [内存消耗：3,124.49kb] [文件加载：87]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'delivery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryQYbhtwxHsXhu3H32',
+  'postman-token' => 'f86240e0-dce1-bf30-b0d4-2dbba63503e2',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '270',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/delivery' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->delivery[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_delivery` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] INSERT INTO `ct_delivery` (`userid` , `carid` , `startcity` , `taddress` , `paddress` , `tempreture` , `goodsname` , `weight` , `pickyesno` , `sendyesno` , `handingmode` , `paytype` , `picktime` , `remark` , `price` , `fprice`) VALUES (156 , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `startcity` FROM `ct_delivery` WHERE  `uoid` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.247000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T11:13:02+08:00 ] 127.0.0.1 127.0.0.1 POST /user/ucenter/deliveryList
+[ log ] www.chitu12.com/user/ucenter/deliveryList [运行时间：0.160000s][吞吐率：6.25req/s] [内存消耗：2,705.23kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ucenter',
+    2 => 'deliveryList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryJslJF6KQhNkPdZU2',
+  'postman-token' => 'e3c15a99-d0a9-fb29-f527-cbca2b7048f8',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '183',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/ucenter/deliveryList' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Ucenter->deliveryList[ D:\WWW\chitu_admin\application\user\controller\Ucenter.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_delivery` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_delivery` `o` LEFT JOIN `ct_cartype` `c` ON `o`.`carid`=`c`.`car_id` WHERE  `orderstatus` <> 1  AND `userid` = 156  AND `o`.`orderstatus` <> 4 LIMIT 1 [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `o`.*,`c`.`carparame` FROM `ct_delivery` `o` LEFT JOIN `ct_cartype` `c` ON `o`.`carid`=`c`.`car_id` WHERE  `orderstatus` <> 1  AND `userid` = 156  AND `o`.`orderstatus` <> 4 ORDER BY addtime desc LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T11:57:52+08:00 ] 127.0.0.1 127.0.0.1 POST /user/ucenter/deliveryView
+[ log ] www.chitu12.com/user/ucenter/deliveryView [运行时间：0.051000s][吞吐率：19.61req/s] [内存消耗：2,621.72kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ucenter',
+    2 => 'deliveryView',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryTBLGzoTwKgHfvbEa',
+  'postman-token' => '40b9b3e3-2803-93ea-0af0-0fa4536e41c7',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '227',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/ucenter/deliveryView' => '',
+  'token' => '',
+  'uoid' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Ucenter->deliveryView[ D:\WWW\chitu_admin\application\user\controller\Ucenter.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T11:58:07+08:00 ] 127.0.0.1 127.0.0.1 POST /user/ucenter/deliveryView
+[ log ] www.chitu12.com/user/ucenter/deliveryView [运行时间：0.057000s][吞吐率：17.54req/s] [内存消耗：2,623.37kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ucenter',
+    2 => 'deliveryView',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary8ObQJ2BB1TN0vjNQ',
+  'postman-token' => '023bd74c-89a9-9a25-a501-fa500096f0d6',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '276',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/ucenter/deliveryView' => '',
+  'token' => 'McTtUp1hOpT6M916O9T6A9zNzk5MjExNGNvZGVwaHAO0O0O',
+  'uoid' => '31',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Ucenter->deliveryView[ D:\WWW\chitu_admin\application\user\controller\Ucenter.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1559359037992114codephp' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:06:36+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/delivery_cancle
+[ log ] www.chitu12.com/user/vehicle/delivery_cancle [运行时间：0.045000s][吞吐率：22.22req/s] [内存消耗：2,437.68kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'delivery_cancle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryhDgRHTauy0HB7J0w',
+  'postman-token' => '6c89a299-2842-5653-5149-3d9087426f43',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '384',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/delivery_cancle' => '',
+  'token' => 'McTtUp1hOpT6M936M9j6c90OTE5NDE4N2NvZGVwaHAO0O0O',
+  'uoid' => '47',
+  'picktime' => '1559372400000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Base->_empty[ D:\WWW\chitu_admin\application\user\controller\Base.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:07:34+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/delivery_cancel
+[ log ] www.chitu12.com/user/vehicle/delivery_cancel [运行时间：0.057000s][吞吐率：17.54req/s] [内存消耗：2,439.31kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'delivery_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryoIiylttm360z2p8i',
+  'postman-token' => '4535a085-dc11-8bb8-cdb6-d6f89c1f1d14',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '384',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/delivery_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936M9j6c90OTE5NDE4N2NvZGVwaHAO0O0O',
+  'uoid' => '47',
+  'picktime' => '1559372400000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->delivery_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1559372749194187codephp' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:20:00+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.154000s][吞吐率：6.49req/s] [内存消耗：2,470.76kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryVE0OJWKkBBbidGWA',
+  'postman-token' => '2f487ff5-d221-ea12-7648-8c7a7eb31430',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '385',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'uoid' => '360',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 156 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.036000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=10000  WHERE  `uid` = 156 [ RunTime:0.038000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1032]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:21:10+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.139000s][吞吐率：7.19req/s] [内存消耗：2,470.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryKPWvbZwtBeaHcaj3',
+  'postman-token' => '91bd725e-b8a3-e4d2-fb00-d1d0bd8246c6',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '385',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'uoid' => '360',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 156 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=10000  WHERE  `uid` = 156 [ RunTime:0.062000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1033]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:21:47+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.057000s][吞吐率：17.54req/s] [内存消耗：2,378.76kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarya7BHL2huyg5hfK6R',
+  'postman-token' => 'f831827f-f1f7-fa67-1bc0-fe6bc9c44fe6',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '385',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'uoid' => '360',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:21:57+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.137000s][吞吐率：7.30req/s] [内存消耗：2,470.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryS6GyMRDYYRvahn01',
+  'postman-token' => '851922db-6c0e-7194-880f-70ee1f5aee76',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '385',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'uoid' => '360',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 156 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=10000  WHERE  `uid` = 156 [ RunTime:0.048000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1033]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:24:28+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.131000s][吞吐率：7.63req/s] [内存消耗：2,470.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryqti0KYIwxI8MpAxB',
+  'postman-token' => '43b863b7-be09-c36a-c057-5fd3afc98f35',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '385',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'uoid' => '443',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 156 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=10000  WHERE  `uid` = 156 [ RunTime:0.043000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1033]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:36:28+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.067000s][吞吐率：14.93req/s] [内存消耗：2,443.39kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarybbrTjkypzvyyPmWm',
+  'postman-token' => '3010d5ef-626b-30de-7e50-a2ef5f0bf6b3',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:38:31+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.129000s][吞吐率：7.75req/s] [内存消耗：2,474.90kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylt92NgACck5o7cnP',
+  'postman-token' => '5cd8f5c1-41ef-91cf-9690-4b03dd3aee2f',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.040000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1035]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:39:42+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.134000s][吞吐率：7.46req/s] [内存消耗：2,474.90kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryCnEDmfKR1AOvmdBw',
+  'postman-token' => 'a3e0ff0b-42f0-4535-38b9-20595313b3b7',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.058000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1037]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:39:57+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.066000s][吞吐率：15.15req/s] [内存消耗：2,382.93kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryqwqHTJsZ0vXrSbOw',
+  'postman-token' => 'dc3485e0-76c8-0f1f-a3c5-8ba6e0a4028d',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:40:12+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.381000s][吞吐率：2.62req/s] [内存消耗：2,452.75kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryeCMmiAhHmnkEQp3j',
+  'postman-token' => '7a59f006-e05f-0bb1-4f24-4e651f467f1c',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.298000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:41:48+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.134000s][吞吐率：7.46req/s] [内存消耗：2,456.75kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNhbRlbemd1GtVjaW',
+  'postman-token' => 'f0a1c8a4-a8d8-f9ed-cbea-ae32d7af1e84',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.050000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:43:26+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.199000s][吞吐率：5.03req/s] [内存消耗：2,457.25kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryRBtbqHyujXIALQv8',
+  'postman-token' => '0e9550f6-d9da-0969-18e3-8dcc8953b47e',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.116000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:43:42+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.130000s][吞吐率：7.69req/s] [内存消耗：2,457.25kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary7UhalsR6majKAPEI',
+  'postman-token' => 'edce32bb-f7db-9c61-43b9-37951c5b6540',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.057000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:44:09+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.135000s][吞吐率：7.41req/s] [内存消耗：2,457.30kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarypB4dUjVitDO3MDzc',
+  'postman-token' => 'a3860f5a-bdc9-2959-7a02-4d098a0cd8ec',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:44:33+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.135000s][吞吐率：7.41req/s] [内存消耗：2,457.32kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarycFUMkkiWgoilmsJp',
+  'postman-token' => '49deb267-b57f-b4cc-0d75-046fa53b9c83',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:44:56+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：2,457.25kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarybKvgYmgPXmmfhACl',
+  'postman-token' => 'fdb1d6dd-f433-ed8f-e705-aee5b22edae9',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.055000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:46:43+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.129000s][吞吐率：7.75req/s] [内存消耗：2,457.25kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryepzAhm8jZaY95ZqG',
+  'postman-token' => '4cd58d06-3b02-bd94-0506-f77e9e62a196',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.047000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:47:20+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.128000s][吞吐率：7.81req/s] [内存消耗：2,457.28kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryuKzssZkeVADTeY55',
+  'postman-token' => 'faf801e1-0b4e-3049-f39f-9ca667b9549a',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.046000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:51:31+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.133000s][吞吐率：7.52req/s] [内存消耗：2,475.40kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryIM8atup7SubMf08D',
+  'postman-token' => 'fdb43280-9ad4-de51-eb05-3927976ecc8a',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.053000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1041]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:55:03+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.166000s][吞吐率：6.02req/s] [内存消耗：2,475.40kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryKKSkkuL4Z0TsHbix',
+  'postman-token' => 'a6d951ee-3a88-3a0e-e19b-35153992a3a1',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.062000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1036]
+
+---------------------------------------------------------------
+[ 2019-06-01T15:55:18+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.152000s][吞吐率：6.58req/s] [内存消耗：2,470.85kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryxxmBPOeQnvul5f8g',
+  'postman-token' => '18976fad-cfed-edcc-c330-12ff675525ef',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.075000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1032]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:00:37+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.801000s][吞吐率：1.25req/s] [内存消耗：2,342.48kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryCVsYrpSFBPOjZTLv',
+  'postman-token' => 'cf5a3453-3ec9-b2d8-fb7b-328332371544',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.719000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:02:59+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.173000s][吞吐率：5.78req/s] [内存消耗：2,470.90kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryVAVyA4Uup4f8Q2xH',
+  'postman-token' => 'f5666b75-4cb6-24a0-f1b8-9d2aa74b66b6',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.056000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1034]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:09:14+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.155000s][吞吐率：6.45req/s] [内存消耗：2,474.90kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarypuXhwOX9HIKigX9u',
+  'postman-token' => 'c0d83850-b066-db93-8f61-5489650e0de4',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.046000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1035]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:09:59+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.146000s][吞吐率：6.85req/s] [内存消耗：2,475.40kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryLQobaS3BP9mfv8AI',
+  'postman-token' => '00b09aca-0ba2-2c16-fdc4-b1e062b43926',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.051000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1036]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:10:24+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.135000s][吞吐率：7.41req/s] [内存消耗：2,475.40kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryjR4f5whTbydFsmpp',
+  'postman-token' => 'e3006471-7ae2-7f05-c451-78ee280da36f',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.040000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1036]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:11:09+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.160000s][吞吐率：6.25req/s] [内存消耗：2,474.90kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryaN03JuLZg6TFI9Ay',
+  'postman-token' => 'dbf23b64-62f4-fa74-81bf-1d658de52ad4',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=0  WHERE  `uid` = 149 [ RunTime:0.064000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1036]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:12:04+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.212000s][吞吐率：4.72req/s] [内存消耗：2,422.34kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNALWMzL6II75b1rt',
+  'postman-token' => 'de50b480-1e45-d711-3a17-cc7029986f24',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=2  WHERE  `uid` = 149 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] UPDATE `ct_useorder`  SET `orderstatus`=4  WHERE  `userid` = 149  AND `uoid` = 442 [ RunTime:0.043000s ]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:13:57+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.150000s][吞吐率：6.67req/s] [内存消耗：2,474.90kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryaHCPV1tmcPgTUbMa',
+  'postman-token' => '7cab3872-7ec3-919e-5236-11ed7d8db30f',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=2  WHERE  `uid` = 149 [ RunTime:0.043000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1037]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:17:46+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.173000s][吞吐率：5.78req/s] [内存消耗：2,475.45kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryAdED7qj0jycumFY0',
+  'postman-token' => 'd435efee-2a53-a2c9-59c1-6d72b9b99448',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=2  WHERE  `uid` = 149 [ RunTime:0.054000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1038]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:17:58+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.156000s][吞吐率：6.41req/s] [内存消耗：2,473.90kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHS9cWjQUXsU3WLaZ',
+  'postman-token' => '38d5c3af-4796-224c-4c9f-3585e8d8e0ca',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=2  WHERE  `uid` = 149 [ RunTime:0.047000s ]
+[ error ] [0]致命错误: Call to undefined function app\user\controller\float()[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1027]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:18:13+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.151000s][吞吐率：6.62req/s] [内存消耗：2,473.90kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryvkOxGFblUcA3vBka',
+  'postman-token' => '90d93dca-3a8c-2475-076b-96c824da6c73',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=2  WHERE  `uid` = 149 [ RunTime:0.057000s ]
+[ error ] [0]致命错误: Call to undefined function app\user\controller\float()[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1027]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:18:40+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.173000s][吞吐率：5.78req/s] [内存消耗：2,474.90kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarytB3YlGnO7AbAGlpA',
+  'postman-token' => '160eb6ff-e1d0-0597-38e6-cc6d594bafff',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=2  WHERE  `uid` = 149 [ RunTime:0.067000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1037]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:18:54+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.150000s][吞吐率：6.67req/s] [内存消耗：2,474.90kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryqDh6OHP0pQd3vA7i',
+  'postman-token' => '74ce5e97-5510-5744-0e91-848803b56105',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=2  WHERE  `uid` = 149 [ RunTime:0.056000s ]
+[ error ] [8]未定义变量: res[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:1036]
+
+---------------------------------------------------------------
+[ 2019-06-01T16:20:38+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_cancel
+[ log ] www.chitu12.com/user/Vehicle/vehical_cancel [运行时间：0.303000s][吞吐率：3.30req/s] [内存消耗：2,421.84kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_cancel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary4dzeO9IzAdQVYG6E',
+  'postman-token' => '35d13f43-f863-641a-1483-8288e434a45f',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '389',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_cancel' => '',
+  'token' => 'McTtUp1hOpT6M936N9D6Q93MTUwNjA1Y29kZXBocAO0O0OO0O0O',
+  'uoid' => '442',
+  'picktime' => '1558947600000',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_cancel[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '155937447150605codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 149  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money` FROM `ct_user` WHERE  `uid` = 149 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `cancleprice` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `ct_user`  SET `money`=2  WHERE  `uid` = 149 [ RunTime:0.139000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_useorder` [ RunTime:0.029000s ]
+[ sql ] [ SQL ] UPDATE `ct_useorder`  SET `orderstatus`=4  WHERE  `userid` = 149  AND `uoid` = 442 [ RunTime:0.039000s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,105 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>司机整车订单列表</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入订单号码" id="provSelect1" class="input-sm form-control"> <span class="input-group-btn">
+                                <a href="javascript:sousuo();" class="btn btn-sm btn-primary"> 查询</a> </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-list">
+
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr style="background-color:#F0FAFD;">
+                                <td class="project-completion">
+                                    订单号码
+                                </td>
+                                <td class="project-completion">
+                                    装货日期                           
+                                </td>
+                                <td class="project-completion">
+                                    下单人
+                                </td>
+                                <td class="project-completion">
+                                    下单时间                           
+                                </td>
+                                <td class="project-completion">
+                                    市区/长途   
+                                </td>
+                                <td class="project-completion">
+                                    价格
+                                </td>
+                                <td class="project-completion">
+                                    状态
+                                </td>
+                                <td class="project-completion">
+                                 
+                                </td>
+                            </tr>
+                            {volist name="list" id="vo"}
+                                <tr>
+                                    <td class="project-completion">
+                                        {$vo.ordernumber}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$vo.sparedate|date='Y年m月d日',###}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$vo.realname}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$vo.addtime|date='Y年m月d日',###}
+                                    </td>
+                                    <td class="project-completion">
+                                        {switch name="$vo.type" }
+                                            {case value="1"}<span class="label label-info">市内</span>{/case}
+                                            {case value="2"}<span class="label label-primary">长途</span>{/case}
+                                        {/switch}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$vo.price}
+                                    </td>
+                                    <td class="project-completion">
+                                        {switch name="$vo.orderstate" }
+                                            {case value="0"}<span class="label label-warning">待确认</span>{/case}
+                                            {case value="1"}<span class="label label-success">已完成</span>{/case}
+                                            {case value="2"}<span class="label label-danger">已失效</span>{/case}
+                                        {/switch}
+                                    </td>
+                                    <td class="project-completion">
+                                        <a href="/backstage/order/provincevehicledetails?id={$vo.bid}" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 查看</a>
+                                    </td>
+                                </tr>
+                            {/volist}
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>{$list->render()}</td>
+                            </tr>   
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

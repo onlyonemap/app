@@ -1,0 +1,179 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="text-center p-lg">
+                    <h2>订单详情</h2>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">订单编号:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.orderid}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">下单人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                               {$list.realname} / {$list.phone}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">接单人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {if condition="($list.drivername=='' && $list.mobile=='')"}
+                                    未接单
+                                {else/}
+                                    {$list.drivername} / {$list.mobile}
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">物品:</label>
+                        <div class="col-sm-4">
+                            <div class="radio">
+                                {$list.sent_type}
+                            </div>
+                        </div>
+                         <label class="col-sm-2 control-label">温控类型:</label>
+                        <div class="col-sm-4"> 
+                            <div class="radio"> 
+                                {if condition="($list.cold_type==1)"}
+                                <span class="label label-info">冷冻</span>
+                                {elseif condition="($list.cold_type==2)"/}
+                                <span class="label label-info">冷藏</span>
+                                {else/}
+                                <span class="label label-info">常温</span>
+                                {/if}
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">重量(kg):</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                              {$list.all_weight}
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">体积(m³):</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                               {$list.all_volume}
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">件数(件):</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                               {$list.all_number}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+
+                        <label class="col-sm-2 control-label">价格(元):</label>
+                        <div class="col-sm-1"> 
+                            <div class="radio"> 
+                            {$list.paymoney}
+                            </div>
+                        </div>
+                    </div>
+                     <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+
+                       
+                        <label class="col-sm-2 control-label">发货人:</label>
+                        <div class="col-sm-4">
+                            <div class="radio"> 
+                            {$list.shipperid} / {$list.pickphone}
+                            </div>
+                        </div>
+                         <div class="col-sm-6">
+                            <div class="radio"> 
+                            {$list.pickaddress}
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+
+                       
+                        <label class="col-sm-2 control-label">收货人:</label>
+                        <div class="col-sm-4">
+                            <div class="radio"> 
+                            {$list.contactid} / {$list.sendphone}
+                            </div>
+                        </div>
+                         <div class="col-sm-6">
+                            <div class="radio"> 
+                            {$list.getaddress}
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+
+                      
+                        
+                        <label class="col-sm-2 control-label">订单状态:</label>
+                        <div class="col-sm-1">
+                            <div class="radio"> 
+                                 {if condition="($list.state==1)"}
+                                <span class="label label-primary">待付款</span>
+                                {elseif condition="($list.state==2)" /}
+                                <span class="label label-info">已接单</span>
+                                {elseif condition="($list.state==3)" /}
+                                <span class="label label-info">已完成</span>
+                                {elseif condition="($list.state==4)" /}
+                                <span class="label label-danger">已删除</span>
+                                {/if}
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="hr-line-dashed"></div>
+                    {if condition="!empty($list.pic)"}
+                     <div class="form-group">
+
+                      
+                        
+                        <label class="col-sm-2 control-label">回单:</label>
+                        {volist name="list.pic" id="v"}
+                        <div class="col-sm-3">
+                           <img src="{$v}">
+                        </div>
+                       {/volist}
+                    </div>
+                    
+                    <div class="hr-line-dashed"></div>
+                    {/if}
+                </div>
+               <!--  <div class="text-center p-lg">
+                    <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-primary">返  回</a>
+                </div> -->
+            </div>
+            
+        </div>
+    </div>
+</div>

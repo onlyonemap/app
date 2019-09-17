@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+	<!-- 自动补全 -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                    	<h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                    	<div class="ibox-tools">修改定制线路</div>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" id="commentForm" method="post" action="/admin/customline/upmessage">
+							<input type="hidden" name="cid" value="{$list.cid}" />
+							
+							<div class="form-group">
+                                <label class="col-sm-2 control-label">始发地</label>
+                                <div class="col-sm-3">
+                                   	<p class="form-control-static">{$list.startname}</p>
+                                </div>
+                            </div>
+                            <div class="form-group selectAddress">
+                                <label class="col-sm-2 control-label">请重新选择始发地</label>
+                                <div class="col-sm-3">
+                                    <select  class="form-control pro" name="tpro"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select  class="form-control city" name="tcity"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select  class="form-control area" name="tarea"></select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group selectAddress">
+                                <label class="col-sm-2 control-label">终点地</label>
+                                <div class="col-sm-3">
+                                    <p class="form-control-static">{$list.endname}</p>
+                                </div>
+                            </div>
+                            <div class="form-group selectAddress">
+                                <label class="col-sm-2 control-label">请重新选择终点地</label>
+                                <div class="col-sm-3">
+                                    <select  class="form-control pro" name="ppro"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select  class="form-control city" name="pcity"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select  class="form-control area" name="parea"></select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+							
+							{if condition="isset($list.paddress)"}
+                        	<div class="form-group">
+                                <label class="col-sm-2 control-label">已选提货点地址</label>
+                                <div class="col-sm-10">
+                                {volist name="list.paddress" id="tiid" key ="k"}
+                                    <div id='pickinfos{$k}'>
+                                        <div class='col-sm-10 show-hugh' style="padding-left: 0">
+                                            <input disabled='disabled' value='{$tiid}'  class="form-control" type='text'>
+                                            <input type="hidden" name="pickinfos[{$k}]" value='{$tiid}' >
+                                        </div>
+                                        <div class='col-sm-2 show-hugh'>
+                                            <button data-toggle='dropdown' value='{$k}' class='btn btn-default pull-right dropdown-toggle' onclick='upda({$k})' aria-expanded='false'>删除</button>
+                                        </div>
+                                    </div>
+                                {/volist}
+                                </div> 
+                            </div>
+                            {/if}
+
+                        	<div class="form-group">
+                                <label class="col-sm-2 control-label">提货点地址</label>
+
+                                <div class="col-sm-10 addresslist">
+                                	<div class="row addresslist-item selectAddress">
+	                                	<div class="col-sm-3">
+		                                    <select  class="form-control m-b pro" name="pickinfo[0][province]"></select>
+		                                </div>
+		                                <div class="col-sm-3">
+		                                    <select  class="form-control m-b city" name="pickinfo[0][city]"></select>
+		                                </div>
+		                                <div class="col-sm-3">
+		                                    <select  class="form-control m-b area" name="pickinfo[0][area]"></select>
+		                                </div>
+		                                <div class="col-sm-2">
+		                                	<input class="form-control" name="pickinfo[0][address]" type="text" placeholder="详细地址" />
+		                                </div>
+		                                <div class="col-sm-1">
+		                                    <button type="button" class="btn btn-primary addAddress">添加</button>
+		                                </div>	
+	                                </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+	                            <label class="col-sm-2 control-label">物品类别</label>
+	                            <div class="col-sm-10">
+	                                <input type="text" class="form-control" name="goodname"  value="{$list.goodname}" placeholder="物品名称">
+	                            </div>
+	                        </div>
+	                        <div class="hr-line-dashed"></div>
+
+	                        <div class="form-group">
+	                            <label class="col-sm-2 control-label">温度要求</label>
+	                            <div class="col-sm-10">
+	                            	<select class="form-control" name="temperature" >
+	                                	<option {if condition="strpos($list.temperature,'冷冻') !== false"} selected="selected" {/if} value="冷冻 ( -15℃ ~ -8℃' )"> 冷冻 ( -15℃ ~ -8℃' )</option>
+
+	                                	<option {if condition="strpos($list.temperature,'冷藏') !== false"} selected="selected" {/if} value="冷藏 ( 2℃ ~ 8℃ )" >冷藏 ( 2℃ ~ 8℃ )</option>
+	                                	<option {if condition="strpos($list.temperature,'恒温') !== false"} selected="selected" {/if} value="恒温 ( 12℃ ~ 18℃ )" >恒温 ( 12℃ ~ 18℃ )</option>
+	                                </select>
+	                            </div>
+	                        </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">基础运费 (元/车)</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="carprice" value="{$list.carprice}"  placeholder="基础运费 (元/车)">
+                                </div>
+                            </div>
+	                        
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">超配门店运价 (元/门店)</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="moredoor" value="{$list.moredoor}"  placeholder="超配门店运价 (元/门店)">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">合同门店数(个)</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="appoint_door" value="{$list.appoint_door}"  placeholder="合同门店数(个)">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">APP备注</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="remark" value="{$list.remark}" placeholder="备注">
+                                </div>
+                            </div>
+	                        <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">后台备注</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="pcremark" value="{$list.pcremark}" placeholder="备注">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed" style="border-top: 1px dashed red;"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">指派承运商<!--<span style="color:red"> *</span>--></label>
+                                <div class="col-sm-10">
+                                    <input id="carrierName" class="form-control" name="carrierName" type="text" placeholder="公司名称" value="{$list.carr_company}" />
+                                </div>
+                                <input type="hidden" value="{$list.carrierid}" name="companyid" >
+                            </div>
+							<div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">车型</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="carid" >
+                                        <option {if condition="strpos($list.carid,'0') !== false"} selected="selected" {/if} value="">---请选择---</option>
+                                        <option {if condition="strpos($list.carid,'9') !== false"} selected="selected" {/if} value="9">依维柯</option>
+                                        <option {if condition="strpos($list.carid,'1') !== false"} selected="selected" {/if} value="1">4.2米冷藏厢车</option>
+                                        <option {if condition="strpos($list.carid,'2') !== false"} selected="selected" {/if} value="2">5.2米冷藏厢车</option>
+                                        <option {if condition="strpos($list.carid,'3') !== false"} selected="selected" {/if} value="3">7.6米冷藏厢车</option>
+                                        <option {if condition="strpos($list.carid,'4') !== false"} selected="selected" {/if} value="4">9.6米冷藏厢车(前四后四)</option>
+                                        <option {if condition="strpos($list.carid,'5') !== false"} selected="selected" {/if} value="5">9.6米冷藏厢车(前四后八)</option>
+                                        <option {if condition="strpos($list.carid,'6') !== false"} selected="selected" {/if} value="6">12.5米冷藏厢车</option>
+                                        <option {if condition="strpos($list.carid,'7') !== false"} selected="selected" {/if} value="7">15米冷藏厢车</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">承运商基础运费（元/车）<span style="color:red"> *</span></label>
+                                <div class="col-sm-10">
+                                    <input  class="form-control" name="carr_price" value="{$list.carr_price}" type="text" placeholder="承运商基础运费（元/车）" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">承运商超配门店运价（元/门店）<span style="color:red"> *</span></label>
+                                <div class="col-sm-10">
+                                    <input  class="form-control" name="carr_moredoor" value="{$list.carr_moredoor}" type="text" placeholder="承运商超配门店运价（元/门店）" required/>
+                                </div>
+                            </div>
+                            {if condition="isset($list.trans_mess)"}
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">已指派司机</label>
+                                <div class="col-sm-10">
+                                
+	                                {volist name="list.trans_mess" id="vo" key ="k"}
+	                                    <div id='driverinfos{$k}'>
+	                                        <div class='col-sm-10 show-hugh' style="padding-left: 0">
+	                                            <input disabled='disabled' value='{$vo.driver_name}( {$vo.driver_phone} ) {$vo.car_number}'  class="form-control" type='text'>
+	                                            <input type="hidden" name="driverinfos[{$k}][driverid]" value='{$vo.driver_id}' >
+	                                            <input type="hidden" name="driverinfos[{$k}][carid]" value='{$vo.car_id}' >
+	                                        </div>
+	                                        <div class='col-sm-2 show-hugh'>
+	                                            <button data-toggle='dropdown' value='{$k}' class='btn btn-default pull-right dropdown-toggle' onclick='updriver({$k})' aria-expanded='false'>删除</button>
+	                                        </div>
+	                                    </div>
+	                                   
+	                                {/volist}
+                                </div>     
+                            </div>
+                            {/if}
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">司机<!--<span style="color:red"> *</span>--></label>
+                                <div class="col-sm-10 info">
+                                	<div class="row info-item m-b">
+	                                	<div class="col-sm-5">
+		                                    <select  class="form-control m-b driverName" name="carmess[0][driverid]"></select>
+		                                </div>
+		                                <div class="col-sm-5">
+		                                    <select  class="form-control m-b carnum" name="carmess[0][carid]"></select>
+		                                </div>
+		                                <div class="col-sm-2">
+		                                    <button type="button" class="btn btn-primary addInfo">添加</button>
+		                                </div>	
+	                                </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <input type="hidden" name="action" value="add">
+                                    <input type="hidden" name="sid" value="{$list.id}">
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                    <a class="btn btn-danger" onClick="javascript :history.back(-1);" style="width:82px">取消</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery -->
+    <script type="text/javascript" src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+	<!-- bootstarp -->
+    <script type="text/javascript" src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script type="text/javascript" src="/static/tpl/ui/form.js"></script>
+    
+    <!-- 自动补全 -->
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>    
+     <!-- jQuery Validation plugin javascript-->
+    <script src="/static/tpl/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="/static/tpl/js/plugins/validate/messages_zh.min.js"></script>
+    <!-- iCheck -->
+    <script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="/static/tpl/js/ajaxUtil.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    	$(function(){
+	        var element = '';
+	        var lineData = null; // 线路数据
+	        var drivercompanyid = null; // 承运商公司
+        	var driverlist = null; // 承运商的司机列表
+        	var carlist = null; // 承运商的车辆列表
+	        /**
+	         * 根据url获取参数值
+	         * @param {string} url     url
+	         * @param {string} strName 要获取对应值的键
+	         */
+	        function Request(url,strName) {
+	            var strHref = url;
+	            var intPos = strHref.indexOf("?");
+	            var strRight = strHref.substr(intPos + 1);
+	            var arrTmp = strRight.split("&");
+	            for(var i = 0; i < arrTmp.length; i++) {
+	                var arrTemp = arrTmp[i].split("=");
+	                if(arrTemp[0].toUpperCase() == strName.toUpperCase())return arrTemp[1];
+	            }
+	            return "Request(strName)";
+	        }
+	        
+	        /**
+	         * @description:  定义函数，获取数据库的省份数据  
+	         * @param {Number} index 父级索引
+	         * @param {String} element 数据展示的dom
+	         */
+	       function getData(index,ele){
+                element = ele;
+                // 每次往select节点写入option前先将原有的option节点清掉
+                ele.html('');
+                // 定义url  
+                var url = "/admin/common/getaddress";
+                // 定义参数  
+                var data={id:index};  
+                // 调用ajax 进行交互  
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    dataType: 'json',
+                    data: data,
+                })
+                .done(function(response) {
+                    updataEle(response);
+                })
+                .fail(function() {
+                    console.log("error");
+                })
+                .always(function() {
+                    console.log("complete");
+                });
+            }
+	        function updataEle(xhr){
+	        	//将服务器端返回的jason格式的字符串转化为对象  
+	            var obj = xhr; 
+	            var options = '<option value="0">----请选择----</option>';
+	            //在此将jason数组对象的下表为id的作为option的value值，将下表为name的值作为文本节点追加给  
+	            for(var i=0;i<obj.length;i++){  
+	            	options += '<option value="'+obj[i].id+'">'+obj[i].name+'</option>';
+	            }  
+	            element.html(options);
+	        }
+	        /**
+	         * 根据承运公司id获取下面的司机和车牌
+	         * @param  {number} companyid 承运公司id
+	         * @return {[type]}           [description]
+	         */
+	        function getDriveData(companyid,callback) {
+	        	$.ajax({
+	        		url: '/admin/customline/search_driver',
+	        		type: 'POST',
+	        		dataType: 'json',
+	        		data: {companyid: companyid},
+	        	})
+	        	.done(function(response) {
+	        		driverlist = response.driverlist;
+	        		carlist = response.carlist;
+	        		callback();
+	        	})
+	        	.fail(function() {
+	        		console.log("error");
+	        	})
+	        	.always(function() {
+	        		console.log("complete");
+	        	});
+	        	
+	        }
+	        /**
+	         * @description: 输出承运公司的司机
+	         * @param ele 要追加的dom
+	         */
+	        function addDriverName(ele,data) {
+	        	var driverStr = '<option value="">---请选择---</option>';
+	        	for (var i = 0; i < data.length; i++) {
+    				driverStr += '<option value="'+ data[i].id +'">'+ data[i].name +'</option>';	
+    			}
+    			ele.html(driverStr);
+	        }
+	        /**
+	         * @description: 输出承运公司的车牌
+	         * @param ele 要追加的dom
+	         */
+	        function addCarnum(ele,data) {
+	        	var driverStr = '<option value="">---请选择---</option>';
+	        	for (var i = 0; i < data.length; i++) {
+    				driverStr += '<option value="'+ data[i].ccid +'">'+ data[i].carnumber +'</option>';	
+    			}
+    			ele.html(driverStr);
+	        }
+	        /**
+	         * @description:  定义函数，根据承运商获取对应的司机车牌 
+	         * @param company {string} 承运商名称
+	         * @param type {number}
+	         */
+	        function getInfo(company){
+	        	$.ajax({
+	        		url: '/admin/customline/search_driver',
+	        		type: 'POST',
+	        		dataType: 'json',
+	        		data: {companyid: company},
+	        	})
+	        	.done(function(res) {
+	        		driverlist = res.driverlist;
+	        		carlist = res.carlist;
+	        		var driverEle = $('.info-item').eq(0).find('.driverName');
+	        		var carEle = $('.info-item').eq(0).find('.carnum');
+	        		appendEle(driverEle,1,driverlist);
+	        		appendEle(carEle,2,carlist);
+	        	})
+	        	.fail(function() {
+	        		console.log("error");
+	        	})
+	        	.always(function() {
+	        		console.log("complete");
+	        	});
+	        }
+	        function appendEle(ele,type,obj){
+	        	if(type == 1){ // 司机
+	        		var options = '<option value="0">----请选择----</option>';
+		            //在此将jason数组对象的下表为id的作为option的value值，将下表为name的值作为文本节点追加给  
+		            for(var i=0;i<obj.length;i++){  
+		            	options += '<option value="'+obj[i].id+'">'+obj[i].name+'</option>';
+		            }  
+		            ele.html(options);
+	        	}else{ // 车牌
+	        		var options = '<option value="0">----请选择----</option>';
+		            //在此将jason数组对象的下表为id的作为option的value值，将下表为name的值作为文本节点追加给  
+		            for(var i=0;i<obj.length;i++){  
+		            	options += '<option value="'+obj[i].carid+'">'+obj[i].carnumber+'</option>';
+		            }  
+		            ele.html(options);
+	        	}
+	        }
+	        var comid = $("input:hidden[name=companyid]").val();
+	        
+	        //搜索司机初始化
+	        getInfo(comid);
+	        // 页面加载调用初始化省
+	        getData(0,$('.pro'));
+	        // 省份改变
+	        $('body').on('change','.pro',function(){
+	        	var id = $(this).val();
+	        	element = $(this).parents('.selectAddress').find('.city');
+	        	getData(id,element);
+	        });
+	        // 城市改变
+	        $('body').on('change','.city',function(){
+	        	var id = $(this).val();
+	        	element = $(this).parents('.selectAddress').find('.area');
+	        	getData(id,element);
+	        });
+	        
+            // 指派承运商自动补全
+            $( "#carrierName" ).autocomplete({
+                source: "/admin/common/getcarriers",
+                minLength: 2,
+                autoFocus:function(event,ui){
+                    $("#carrierName").val( ui.item.label );
+                    return false;
+                },
+                select:function(event,ui){
+                	var id =  ui.item.id; 
+                	getInfo(id,1);
+                    $("#carrierName").val( ui.item.label );
+                   	drivercompanyid = ui.item.id;
+                	$('input[name="companyid"]').val(drivercompanyid);
+                    // 初始化选中的车型
+                        $(this).parents('.form-horizontal').find('select[name="carid"]').val('');
+                	getDriveData(drivercompanyid,function() {
+			        	var str = '<div class="row info-item">'
+			                    +'<div class="col-sm-5">'
+		                        +'<select  class="form-control m-b driverName" name="carmess[0][driverid]"></select>'
+		                        +'</div>'
+		                        +'<div class="col-sm-5">'
+		                        +'<select  class="form-control m-b carnum" name="carmess[0][carid]"></select>'
+		                        +'</div>'
+		                        +'<div class="col-sm-2">'
+		                        +'<button type="button" class="btn btn-primary addInfo">添加</button>'
+		                        +'</div>'
+		                    	+'</div>';
+			        	$( ".carrierName" ).parents('.form-horizontal').find('.info').html(str);
+			        	// 初始化司机
+					    var driverEle = $( ".carrierName" ).parents('.form-horizontal').find('.driverName');
+					    addDriverName(driverEle,driverlist);
+
+					    // 初始化化车牌
+					    var carEle = $( ".carrierName" ).parents('.form-horizontal').find('.carnum');
+					    addCarnum(carEle,carlist);
+                	});
+                    return false;
+                }
+            });
+            // 指派运输人信息自动补全
+            
+            // 添加提货地址
+            $('body').on('click','.addAddress',function(){
+            	var len = $('.addresslist-item').length;
+            	var str = '<div class="row addresslist-item selectAddress">'
+            			+ '<div class="col-sm-3"><select class="form-control m-b pro"  name="pickinfo['+len+'][province]" ></select></div>'
+            			+ '<div class="col-sm-3"><select class="form-control m-b city" name="pickinfo['+len+'][city]" ></select></div>'
+            			+ '<div class="col-sm-3"><select class="form-control m-b area" name="pickinfo['+len+'][area]" ></select></div>'
+            			+ '<div class="col-sm-2"><input class="form-control" name="pickinfo['+len+'][address]" type="text" placeholder="详细地址" /></div>'
+            			+ '<div class="col-sm-1"><button type="button" class="btn btn-primary removeAddress">删除</button></div>'
+            			+ '</div>';
+            	$(this).parents('.addresslist').append(str);
+            	var el = $(this).parents('.addresslist').find('.pro').last();
+            	getData(0,el);
+            });
+            // 移除提货地址
+            $('body').on('click','.removeAddress',function(){
+            	$(this).parents('.addresslist-item').remove();
+            });
+            // 添加运输人信息
+            $('body').on('click','.addInfo',function(){
+            	var len = $('.info-item').length;
+            	var str = '<div class="row m-b info-item">'
+	                    + '<div class="col-sm-5">'
+		                + '<select  class="form-control m-b driverName" name="carmess['+ len +'][driverid]"></select>'                  
+		                + '</div>'
+		                + '<div class="col-sm-5">'
+						+ '<select  class="form-control m-b carnum" name="carmess['+ len +'][carid]"></select>'		                                
+						+ '</div>'		                                    
+		                + '<div class="col-sm-2">'                
+						+ '<button type="button" class="btn btn-primary removeInfo">删除</button>'		                                
+						+ '</div>'		                                    
+		                + '</div>';
+		        $(this).parents('.info').append(str);
+		        var index = $('.info-item').length-1;
+		        var driverEle = $('.info-item').eq(index).find('.driverName');
+        		var carEle = $('.info-item').eq(index).find('.carnum');
+        		appendEle(driverEle,1,driverlist);
+        		appendEle(carEle,2,carlist);
+            });
+            // 移除运输人信息
+            $('body').on('click','.removeInfo',function(){
+            	$(this).parents('.info-item').remove();
+            });
+            // 车型改变
+            $('body').on('change','select[name="carid"]',function(argument) {
+                var carid = $(this).val();
+                var self = $(this);
+                $.ajax({
+                    url: '/admin/common/getcarrierscarnum',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {companyid: drivercompanyid,carid:carid},
+                })
+                .done(function(data) {
+                    console.log(data.length);
+                     // 初始化化车牌
+                    var carEle = self.parents('.form-horizontal').find('.carnum');
+                    addCarnum(carEle,data);
+                })
+                .fail(function() {
+                    console.log("error");
+                })
+                .always(function() {
+                    console.log("complete");
+                });
+            });
+            // 表单验证
+            $("#commentForm").validate({
+                errorElement : 'span',
+                errorClass : 'help-block',       
+                rules : {},
+                messages : {},
+                //自定义错误消息放到哪里
+                errorPlacement : function(error, element) {
+                    element.next().remove();//删除显示图标
+                    element.after('<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>');
+                    element.closest('.form-group').append(error);//显示错误消息提示
+                },
+                //给未通过验证的元素进行处理
+                highlight : function(element) {
+                    $(element).closest('.form-group').addClass('has-error has-feedback');
+                },
+                //验证通过的处理
+                success : function(label) {
+                    var el=label.closest('.form-group').find("input");
+                    el.next().remove();//与errorPlacement相似
+                    el.after('<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>');
+                    label.closest('.form-group').removeClass('has-error').addClass("has-feedback has-success");
+                    label.remove();
+                },
+            });
+    	});
+    </script>
+    <script type="text/javascript">
+			function upda(id) {
+		        var num = $("input:text[id=pickinfos" + id + "]").length + 1;
+		        for (iii = 0; iii < num; iii++) {
+		            $("#pickinfos" + id).remove();
+		        }
+		    }
+		    function updriver(id){
+		    	var num = $("input:text[id=driverinfos" + id + "]").length + 1;
+		        for (iii = 0; iii < num; iii++) {
+		            $("#driverinfos" + id).remove();
+		        }
+		    }
+    </script>
+    
+    
+
+</body>
+
+</html>

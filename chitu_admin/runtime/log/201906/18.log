@@ -1,0 +1,156 @@
+[ 2019-06-18T14:21:26+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/undertake/bulk_post
+[ log ] www.chitu12.com/driver/undertake/bulk_post [运行时间：0.103000s][吞吐率：9.71req/s] [内存消耗：2,190.31kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'undertake',
+    2 => 'bulk_post',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHXyN4IKZyjzkqVqQ',
+  'postman-token' => 'd5b63451-06e8-7a13-6f03-c210320c0427',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '274',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/undertake/bulk_post' => '',
+  'token' => 'McTtU828M8D8gpzhNpDgzNzk4OTcwN2NvZGVwaHAO0O0O',
+  'oid' => '744',
+)
+[ info ] [ RUN ] app\driver\controller\Undertake->bulk_post[ D:\WWW\chitu_admin\application\driver\controller\Undertake.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1560834837989707codephp' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-06-18T15:20:57+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/pay/zcpay
+[ log ] www.chitu12.com/driver/pay/zcpay [运行时间：0.043000s][吞吐率：23.26req/s] [内存消耗：2,171.82kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'pay',
+    2 => 'zcpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary22ZoiDoMQ1YtDEB1',
+  'postman-token' => 'f11911b2-7597-d8d9-e47d-8755e293895d',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '457',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/pay/zcpay' => '',
+  'token' => 'McTtU828M8D8gp0hMpTU0ODEwNjAzNmNvZGVwaHAO0O0O',
+  'price' => '1',
+  'id' => '19',
+  'type' => '3',
+)
+[ info ] [ RUN ] app\driver\controller\Pay->zcpay[ D:\WWW\chitu_admin\application\driver\controller\Pay.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1560841548106036codephp' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-06-18T15:21:23+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/pay/zcpay
+[ log ] www.chitu12.com/driver/pay/zcpay [运行时间：0.098000s][吞吐率：10.20req/s] [内存消耗：2,197.88kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'pay',
+    2 => 'zcpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryxaytjA5IfQHGYrTb',
+  'postman-token' => '2da238c7-2b8a-cc76-b2c4-88a2a5bcb90d',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '457',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/pay/zcpay' => '',
+  'token' => 'McTtU828M8D8gp0hMpTU0ODEwNjAzNmNvZGVwaHAO0O0O',
+  'price' => '1',
+  'id' => '19',
+  'type' => '3',
+)
+[ info ] [ RUN ] app\driver\controller\Pay->zcpay[ D:\WWW\chitu_admin\application\driver\controller\Pay.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.ct_bulk_order' doesn't exist[D:\WWW\chitu_admin\thinkphp\library\think\db\connector\Mysql.php:63]
+
+---------------------------------------------------------------
+[ 2019-06-18T15:24:13+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/pay/zcpay
+[ log ] www.chitu12.com/driver/pay/zcpay [运行时间：0.049000s][吞吐率：20.41req/s] [内存消耗：2,197.88kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'pay',
+    2 => 'zcpay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryJXEuRF7Tc8WL6nFz',
+  'postman-token' => 'ec99b9ea-e2ca-243a-163e-5c7ec773ebe5',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '457',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/pay/zcpay' => '',
+  'token' => 'McTtU828M8D8gp0hMpTU0ODEwNjAzNmNvZGVwaHAO0O0O',
+  'price' => '1',
+  'id' => '19',
+  'type' => '3',
+)
+[ info ] [ RUN ] app\driver\controller\Pay->zcpay[ D:\WWW\chitu_admin\application\driver\controller\Pay.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.ct_bulk_order' doesn't exist[D:\WWW\chitu_admin\thinkphp\library\think\db\connector\Mysql.php:63]
+
+---------------------------------------------------------------

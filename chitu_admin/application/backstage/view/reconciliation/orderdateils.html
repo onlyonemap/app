@@ -1,0 +1,147 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="text-center p-lg">
+                    <h2>订单详情</h2>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">订单号码:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.ordernumber}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">班次信息:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                班次号：{$list.shiftnumber}&nbsp&nbsp&nbsp由：{$list.startcity} {$list.deptime|date='Y年m月d日',###} {$list.timestrat} - {$list.timeend}&nbsp&nbsp&nbsp发往 {$list.endcity} {$list.endtime|date='Y年m月d日',###} {$list.arrivetimestart} - {$list.arrivetimeend}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">托运人:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                               {$list.username}&nbsp&nbsp （电话：{$list.userphone}）
+                            </div>
+                        </div>
+                    </div>
+                     <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">物品类别:</label>
+                        <div class="col-sm-4">
+                            <div class="radio">
+                              {$list.itemtype}
+                            </div>
+                        </div>
+                         <label class="col-sm-2 control-label">温控区间:</label>
+                        <div class="col-sm-4">
+                            <div class="radio">
+                              {$list.coldtype}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">总重量:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                              {$list.totalweight}(kg)
+                            </div>
+                        </div>
+                         <label class="col-sm-2 control-label">总体积:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                              {$list.totalvolume}(m³)
+                            </div>
+                        </div>
+                         <label class="col-sm-2 control-label">总数量:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                              {$list.totalnumber}(件)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        
+                            {volist name="$list.taddress" key="key" id="vo"}
+                                <label class="col-sm-2 control-label">提货地址:</label>
+                                <div class="col-sm-10">
+                                    <div class="radio">
+                                        {$list.startcity}{$vo}
+                                    </div>
+                                </div>
+                                
+                            {/volist}
+                        
+                    </div>
+                    
+                    {volist name="$list.paddress" key="key" id="vo"}
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">        
+                            <label class="col-sm-2 control-label">配送地址:</label>
+                            <div class="col-sm-10">
+                                <div class="radio">
+                                     {$list.endcity}{$vo.address}
+                                </div>
+                            </div>    
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">        
+                            <label class="col-sm-2 control-label">收货人:</label>
+                            <div class="col-sm-10">
+                                <div class="radio">
+                                     {$vo.contact}
+                                </div>
+                            </div>    
+                    </div>
+                    {/volist}
+                    
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+
+                        <label class="col-sm-2 control-label">总费用:</label>
+                        <div class="col-sm-1">
+                        </div>
+                        <label class="col-sm-2 control-label">提货费用:{$list.pickcost}(元)</label>
+                        <div class="col-sm-1">
+                        </div>
+                        <label class="col-sm-2 control-label">干线费用:{$list.linepice}(元)</label>
+                        <div class="col-sm-1">
+                        </div>
+                        <label class="col-sm-2 control-label">配送费用:{$list.delivecost}(元)</label>
+                        <div class="col-sm-1">
+                        </div>
+                    </div>
+                     <div class="form-group">
+
+                        <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-1">                        </div>
+                        <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-1">
+                        </div>
+                        <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-1">
+                        </div>
+                        <label class="col-sm-2 control-label">总费用:{$list.totalcost}(元)</label>
+                        <div class="col-sm-1">
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                </div>
+                <a onClick="javascript :history.back(-1);" class="btn btn-block btn-outline btn-primary">返  回</a>
+            </div>
+            
+        </div>
+    </div>
+</div>

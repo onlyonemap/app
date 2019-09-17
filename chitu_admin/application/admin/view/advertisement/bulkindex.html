@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/order_table.css" />
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox">
+        <div class="ibox-title">
+            <h5>零担动态新闻列表</h5>
+            <div class="ibox-tools">
+                <a class="dropdown-toggle"  href="/admin/advertisement/bulkadd" style="color:#000">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span>添加内容</span>
+                </a>
+            </div>
+        </div>
+        <div class="ibox-content">
+            <table class="table" data-toggle="table" data-height="800">
+                <thead>
+                <tr>
+                    <th class="td-input"></th>
+                    <th class="text-left" data-sortable="true">ID</th>
+                    <th class="text-left" data-sortable="true">动态内容</th>
+                    <th class="text-left" data-sortable="true">类别</th>
+                    <th class="text-left" data-sortable="true">创建时间</th>
+                    <th class="text-left" data-sortable="true">状态</th>
+                    <th class="text-right">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name="list" id="vo"}
+                <tr>
+                    <td>
+                        <input type="checkbox" value="{$vo.id}" class="i-checks check-list" name="id">
+                    </td>
+                    <td class="text-left">{$vo.id}</td>
+
+
+                    <td class="text-left">{$vo.content}</td>
+                    <td class="text-left">
+                        {switch name="vo.type" }
+                        {case value="1"}<span class="label label-info">零担</span>{/case}
+                        {case value="2"}<span class="label label-info">整车</span>{/case}
+                        {case value="3"}<span class="label label-info">城配</span>{/case}
+                        {case value="4"}<span class="label label-info">承运端</span>{/case}
+                        {/switch}
+                    </td>
+                    <td class="text-left">{$vo.createtime|date='Y-m-d H:i',###}</td>
+                    <td class="text-left">
+                        {switch name="vo.state" }
+                        {case value="1"}<span class="label label-success">已上架</span>{/case}
+                        {case value="2"}<span class="label label-warning">已下线</span>{/case}
+                        {/switch}
+                    </td>
+                    <td class="text-right">
+                        <a href="/admin/advertisement/edit?id={$vo.id}" class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>修改</a>
+                        <a href="/admin/advertisement/contentdel?id={$vo.id}" class="btn btn-danger del"><span class="glyphicon glyphicon-trash"></span>删除</a>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+            <div class="row m-t-sm">
+                <div class="col-sm-2" style="padding-left: 23px;">
+                    <input class="i-checks" id="allCheck" type="checkbox" />
+                    <label for="allCheck">全选</label>
+                </div>
+                <div class="col-sm-10">
+                    <a class="btn btn-sm btn-primary"  id="execlcheck" href="javascript:;">导出</a>
+                    <a class="btn btn-sm btn-primary"  id="unpay" href="javascript:;">导出未支付订单</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<!-- 日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<!-- 调用日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+<!-- bootstrap table -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+<!-- bootstrap table 语言包 -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        // 全选
+        $('#allCheck').change(function (argument) {
+            if(this.checked){ // 全选
+                $('input[name="id"]').prop("checked",true);
+            }else{ // 全不选
+                $('input[name="id"]').prop("checked",false);
+            }
+        });
+        // 查询
+        // $('#search').click(function(){
+        //     var psel = document.getElementById("provSelect1");
+        //     var endtime = document.getElementById("endtime").value;
+        //     var starttime = document.getElementById("starttime").value;
+        //     window.location.href='/admin/cityorder/cycList?search='+psel.value+'&starttime='+starttime+'&endtime='+endtime;
+        // });
+        // 订单导出
+        $("#execlcheck").click(function(){
+            var endtime = document.getElementById("endtime").value;
+            var starttime = document.getElementById("starttime").value;
+            var chk_value = new Array();
+
+            var length = $('input[name="id"]:checked').length;
+            if (length<=0) {
+                alert('请勾选数据！！'); return false;
+            };
+            //订单ID
+            $('input[name="id"]:checked').each(function(){
+                chk_value.push($(this).val());//将选中的值添加到数组chk_value中
+            });
+            window.location.href='/admin/execl/getclient?id='+chk_value+'&starttime='+starttime+'&endtime='+endtime;
+        });
+        // 导出未支付订单
+        $("#unpay").click(function(){
+            if(confirm("确认要导出下单未支付用户吗？")) {
+                window.location.href='/admin/execl/unpay?ordertype=1';
+            }else{
+                return false;
+            }
+        });
+    });
+</script>
+</body>
+</html>

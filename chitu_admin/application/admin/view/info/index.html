@@ -1,0 +1,123 @@
+{include file="public/header"}
+<link rel="stylesheet" type="text/css" href="/static/tpl/css/common.css" />
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox">
+                     <div class="ibox-title">
+                            <h5>配送类型列表</h5>
+
+                            <div class="ibox-tools">
+                                
+                               <a class="dropdown-toggle"  href="/admin/info/addtype" style="color:#000">
+                                    <i class="fa fa-wrench" ></i>
+                                    添加配送类型
+                                </a>
+                            </div>
+                        </div>
+                    <div id="top-alert" class="fixed alert alert-error" style="display: none;">
+                        <button class="close fixed" >&times;</button>
+                        <div class="alert-content">这是内容</div>
+                    </div>
+                    <div class="ibox-content">
+                       
+                        <div class="clients-list">
+                            
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane active">
+                                    <div class="full-height-scroll">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-hover">
+                                                <tbody>
+                                                    {volist name="list" id="vo"}
+                                                    <tr>
+                                                        <td>
+                                                            {$vo.id}
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="name_type" name="name_type" value="{$vo.name_type}">
+                                                            
+                                                        </td>
+                                                        
+                                                      
+                                                        <td>
+                                                           
+                                                           
+                                                           <a id="sumbit" class="btn btn-sm btn-primary" data-number="{$vo.id}"  data-url="/admin/info/typepost">编辑</a>
+                                                           
+                                                            <a href="/admin/info/deltype?id={$vo.id}&del=1" class="btn btn-info" ><i class="fa fa-paste"></i>删除</a>
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                   {/volist}
+                                                </tbody>
+                                            </table>
+                                           {$page}
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+
+    <script src="/static/tpl/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/static/tpl/js/common.js"></script>
+    <!-- 自定义js -->
+    <script src="/static/tpl/js/content.js?v=1.0.0"></script>
+
+    <script>
+        $(function () {
+            $('.full-height-scroll').slimScroll({
+                height: '100%'
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+   $(document).ready(function () {
+            $("#sumbit").click(function(){
+                var url = $(this).attr("data-url");
+                var id = $(this).attr("data-number");
+                var type = $("#name_type").val();
+                //alert(price);
+                posttable(url,id,type);
+            });
+           
+        });
+
+        function posttable(url,id,type){
+            
+           $.post(url,{action:'update',idstr:id,typename:type},function(data){
+                if (data=="ok") {
+                    updateAlert("修改成功!!",'alert-success');
+                }else{
+                    updateAlert("修改失败!!",'alert-error');
+                }
+                
+                setTimeout(function(){
+                $('#top-alert').find('button').click();
+                $(this).removeClass('disabled').prop('disabled',false);
+                location.reload();
+                },1500);
+           });
+        }
+    </script>
+    
+
+</body>
+
+</html>

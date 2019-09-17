@@ -1,0 +1,46 @@
+{include file="public/header"}
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+         <div class="ibox-title">
+            <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回</a></h5>
+            <div class="ibox-tools">新闻修改</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 animated fadeInRight">
+                <div class="mail-box-header">
+                   
+                <h2>
+                    {$result.title}
+                </h2>
+                    <div class="mail-tools tooltip-demo m-t-md">
+                    <h5>
+                    <span class="pull-right font-noraml">{$result.addtime | date='Y年m月d日',###}</span>   
+                    </h5>
+                    </div>
+                </div>
+                <div class="mail-box">
+                    <div class="mail-body">
+                        <p>
+                            {$result.description}
+                        </p>
+                    </div>
+                    <div class="mail-attachment">
+                        {$result.content}
+                       
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+    
+    
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="text-center p-lg">
+                    <h2>订单详情</h2>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">订单编号:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.ordernumber}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">司机:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                {$list.username} / {$list.mobile_phone}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">车牌号:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                 {$list.carnumber} 
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-label">车辆状态:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                {if condition="$list.status==1"}
+                                未审核
+                                {elseif condition="$list.status==2"/}
+                                审核通过
+                                {else/}
+                                审核失败
+                                {/if}
+                            </div>
+                        </div>
+                        
+                        
+
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">路线:</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                               {$list.startcity} --> {$list.endcity}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">价格:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.price}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                   
+                    {eq name="$list.type" value="1"}
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">最早空车时间:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$list.sparedate|date='m-d',###}
+                            </div>
+                        </div>
+                    </div>
+                    {/eq}
+                    {eq name="$list.type" value="2"}
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">最早装货时间:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                {$list.sparedate|date='m-d',###}
+                            </div>
+                        </div>
+                    </div>
+                    {/eq}
+                    <div class="hr-line-dashed"></div>
+                     <div class="form-group">
+                        <label class="col-sm-2 control-label">支付状态:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                 {if condition="($list.paystate == 1)" }
+                                <span class="label label-primary">未支付</span>
+                                {elseif condition="($list.paystate == 2)" /}
+                                <span class="label label-success">已支付</span>
+                                {else/}
+                                <span class="label label-danger">支付失败</span>
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">订单状态:</label>
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                 {if condition="($list.orderstate == 1)" }
+                                <span class="label label-primary">未支付</span>
+                                {elseif condition="($list.orderstate == 2)" /}
+                                <span class="label label-success">已支付</span>
+                                {else/}
+                                <span class="label label-danger">支付失败</span>
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                     <div class="form-group">
+                        <label class="col-sm-2 control-label">接单人:</label>
+                        <div class="col-sm-4">
+                            <div class="radio">
+                                {$list.name}
+                            </div>
+                        </div>
+                    </div>
+                   <div class="hr-line-dashed"></div>
+                </div>
+                <div class="text-center p-lg">
+                    <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-primary">返  回</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/order_table.css" />
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>定制线路订单列表</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row m-b-sm m-t-sm">
+                            <div class="col-md-1">
+                                <a href="/admin/order/customlineorder" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="input-group date date-view-three" data-provide="datepicker">
+                                    <div class="input-group-addon">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                    <input type="text" name="starttime" id="starttime" value="" class="form-control" placeholder="搜索下单开始时间">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-1">
+                                <p class="form-control-static text-center">----</p>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="input-group date date-view-three" data-provide="datepicker">
+                                    <div class="input-group-addon">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                    <input type="text" id="endtime" name="endtime" value="" class="form-control" placeholder="搜索下单结束时间">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <input type="text" value="" placeholder="请输入订单号码/公司名称" id="provSelect1" class="form-control"> 
+                                    <span class="input-group-btn">
+                                        <button type="button" id="search" class="btn btn-primary">查询</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                                               
+                        <table class="table" data-toggle="table" data-height="800">
+                            <thead>
+                                <tr> 
+                                    <th class="td-input"></th> 
+                                    <th class="text-left" data-sortable="true">订单号码</th>
+                                    <th class="text-left" data-sortable="true">线路</th>
+                                    <th class="text-left" data-sortable="true">下单时间</th>
+                                    <th class="text-left" data-sortable="true">定制客户</th>
+                                    <th class="text-left" data-sortable="true">提货时间</th>
+                                    <th class="text-left" data-sortable="true">门店数</th>
+                                    <th class="text-left" data-sortable="true">承运公司</th>
+                                    <th class="text-left" data-sortable="true">状态</th>
+                                    <th class="text-left" data-sortable="true">应收状态</th>
+                                    <th class="text-right" data-sortable="true">应收运费</th>
+                                    <th class="text-right" data-sortable="true">实收运费</th>
+                                    <th class="text-left" data-sortable="true">应付状态</th>
+                                    <th class="text-right" data-sortable="true">应付运费</th>
+                                    <th class="text-right" data-sortable="true">实付运费</th>
+                                    <th class="text-right" data-sortable="true">业务员</th>
+                                    <th class="text-right" data-sortable="true">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+	                            {volist name="list" id="vo"}
+	                            <tr>
+	                                <td ><input type="checkbox" value="{$vo.s_oid}" class="i-checks check-list" name="id"></td>
+	                                <td class="text-left" >{$vo.ordernumber}</td>
+                                    <td class="text-left" >{$vo.startcity}--{$vo.endcity}</td>
+	                                <td class="text-left" >{$vo.addtime|date='Y-m-d H:i',###}</td>
+	                                <td class="text-left" >{$vo.name}</td>
+	                                <td class="text-left" >{$vo.picktime}</td>
+	                                <td class="text-left" >{$vo.doornum}</td>
+	                                <td class="text-left" >{$vo.carriername}</td>
+                                    <td class="text-left" > 
+                                        {if condition="$vo.orderstate == 1"}
+                                        <span class="label label-danger">未接单</span>
+                                        {elseif condition="$vo.orderstate == 2"/}
+                                        <span class="label label-primary">已接单</span>
+                                        {elseif condition="$vo.orderstate == 3" /}
+                                        <span class="label label-success">已完成</span>
+                                        {else /}
+                                        <span class="label label-info">已取消</span>
+                                        {/if}
+                                    </td>
+                                    <td class="text-left" > 
+                                        {if condition="($vo.paystatr==1)"}
+                                        <span class="label label-warning">未支付</span>
+                                        {elseif condition="($vo.paystatr==2)" /}
+                                        <span class="label label-primary">已支付</span>
+                                        {elseif condition="($vo.paystatr==3)" /}
+                                        <span class="label label-warning">信用支付</span>
+                                        {/if}
+                                    </td>
+	                               
+	                                <td class="text-right">{$vo.actualprice}</td>
+                                    <td class="text-right">{$vo.payprice}</td>
+                                    <td class="text-right" >
+                                        {if condition="($vo.driver_mess==1)"}
+                                        <span class="label label-warning">未支付</span>
+                                        {elseif condition="($vo.driver_mess==2)" /}
+                                        <span class="label label-primary">已支付</span>
+                                        {elseif condition="($vo.driver_mess==3)" /}
+                                        <span class="label label-warning">信用支付</span>
+                                        {/if}
+                                    </td>
+                                    <td class="text-right">{$vo.driver_payment}</td>
+                                    <td class="text-right">{$vo.driver_pay}</td>
+                                    <td class="text-right">{$vo.salesman}</td>
+	                                <td class="text-right" >
+	                                	<a class="btn btn-sm btn-info" href="/admin/order/customlinedetail?id={$vo.s_oid}">
+	                                		<span class="glyphicon glyphicon-file"></span>
+                                    		<span>详情</span>
+	                                	</a>
+	                                </td>
+	                            </tr>
+	                            {/volist}
+                            </tbody>
+                        </table>
+                        {$page}
+                        <div class="row m-t-sm">
+                            <div class="col-sm-2" style="padding-left: 23px;">
+                                <input class="i-checks" id="allCheck" type="checkbox" />
+                                <label for="allCheck">全选</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <a class="btn btn-sm btn-primary"  id="execlcheck" href="javascript:;">导出</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- 日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <!-- 调用日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+    <!-- bootstrap table -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+    <!-- bootstrap table 语言包 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // 全选
+            $('#allCheck').change(function (argument) {
+                if(this.checked){ // 全选
+                    $('input[name="id"]').prop("checked",true); 
+                    
+                }else{ // 全不选
+                    $('input[name="id"]').prop("checked",false);  
+                }
+            });
+            // $('.footable').footable();
+            $("#execlcheck").click(function(){
+                if(confirm("确认要导出订单吗？")) {
+                  
+                    var starttime = document.getElementById("starttime").value;
+                    var chk_value = new Array();
+                    
+                    var length = $('input[name="id"]:checked').length;
+                    if (length<=0) {
+                        alert('请勾选数据！！'); return false;
+                    };
+                    //订单ID
+                    $('input[name="id"]:checked').each(function(){
+                        chk_value.push($(this).val());//将选中的值添加到数组chk_value中
+                    });
+                   
+                    window.location.href='/admin/execl/getshiftoder?id='+chk_value;
+                 }else{
+                    return false; 
+                }
+            });
+           
+            // 查询
+            $('#search').click(function(){
+                var psel = document.getElementById("provSelect1");
+                var endtime = document.getElementById("endtime").value;
+                var starttime = document.getElementById("starttime").value;
+                window.location.href='/admin/order/customlineorder?search='+psel.value+'&starttime='+starttime+'&endtime='+endtime;
+            });
+        });
+        
+    </script>
+</body>
+
+</html>

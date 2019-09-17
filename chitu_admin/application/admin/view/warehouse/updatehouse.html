@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="ibox-tools">修改仓库</div>
+            </div>
+            <div class="ibox-content">
+                <form class="form-horizontal m-t" id="commentForm" method="post" action="/admin/warehouse/updateMess">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">公司名称</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="name" minlength="2" value="{$list.com_name}" type="text" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">联系人</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="cantact" value="{$list.cantact}"   type="text" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">联系方式</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="telephone" value="{$list.telephone}"  type="text" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">仓库地址</label>
+                        <div class="col-sm-10">
+                            <p class="form-control-static">{$list.add_str}</p>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group selectAddress">
+                        <label class="col-sm-2 control-label">重置仓库地址<span style="color:red"> *</span></label>
+                        <div class="col-sm-2">
+                            <select class="form-control pro" name="province"></select>
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control city" name="city"></select>
+                        </div>
+                         <div class="col-sm-2">
+                            <select class="form-control area" name="area"></select>
+                        </div>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" name="addinfo"  placeholder="补全地址" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">仓库名字</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" name="housename" value="{$list.housename}" minlength="2" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">价格(元/㎡/天)</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" name="price" value="{$list.price}" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">面积(㎡)</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" name="areanumber" value="{$list.areanumber}" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">备注</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" name="remarks" value="{$list.remarks}" />
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <input type="hidden" name="wid" value="{$list.wid}">
+                            <button class="btn btn-primary" type="submit">保存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- jquery -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <!-- bootstrap -->
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- 地址三级联动 -->
+    <script src="/static/tpl/js/common/select-address.js"></script>   
+</body>
+</html>

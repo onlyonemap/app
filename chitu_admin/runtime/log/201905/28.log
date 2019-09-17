@@ -1,0 +1,1478 @@
+[ 2019-05-28T10:12:51+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_price
+[ log ] www.chitu12.com/user/Vehicle/vehical_price [运行时间：0.150000s][吞吐率：6.67req/s] [内存消耗：2,413.96kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_price',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryUPMfZjyAQX9PW6tg',
+  'postman-token' => '74ed18fe-8756-fa16-dbab-ffe1a07481b7',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '275',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_price' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_price[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `charge`,`deposit` FROM `ct_setting_price` WHERE  `type` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:13:08+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_post
+[ log ] www.chitu12.com/user/Vehicle/vehical_post [运行时间：0.102000s][吞吐率：9.80req/s] [内存消耗：2,481.89kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_post',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryQBBnGAskRiZEp444',
+  'postman-token' => '30979a8d-cb47-a155-997c-61ab0b791686',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '1860',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_post' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'fprice' => '3196',
+  'price' => '3000',
+  'ordernumber' => 'K190521131622342',
+  'carid' => '1',
+  'startcity' => '上海市',
+  'endcity' => '北京市',
+  'picktime' => '',
+  'fkilo' => '1229',
+  'pickyesno' => '1',
+  'sendyesno' => '1',
+  'temperture' => '冷藏',
+  'goodsname' => '生鲜',
+  'type' => '4',
+  'handingmode' => '一装一卸',
+  'pickaddress' => '[{\\"areaName\\":\\"上海市嘉定区\\"}]',
+  'sendaddress' => '[{\\"areaName\\":\\"北京市西单广场\\"}]',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_post[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [2]Invalid argument supplied for foreach()[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:760]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:13:29+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：1.423000s][吞吐率：0.70req/s] [内存消耗：2,424.56kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary9ae6PbRLPwn7AJRU',
+  'postman-token' => 'fa92805a-07b6-1bdb-1f55-1a2b81953731',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '486',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'startcity_str' => '上海',
+  'endcity_str' => '丽水',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.038000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:18:03+08:00 ] 127.0.0.1 127.0.0.1 POST /user/vehicle/arrtime_city
+[ log ] www.chitu12.com/user/vehicle/arrtime_city [运行时间：1.503000s][吞吐率：0.67req/s] [内存消耗：2,424.73kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'vehicle',
+    2 => 'arrtime_city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary3Hd5wr2uwA9NhDdN',
+  'postman-token' => '6a3fd0b8-dd20-9e14-fc6c-659c35609aba',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '486',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/vehicle/arrtime_city' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'startcity_str' => '上海',
+  'endcity_str' => '丽水',
+  'carid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->arrtime_city[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cartype` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_cartype` WHERE  `car_id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_price_setting` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_price_setting` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:18:13+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_price
+[ log ] www.chitu12.com/user/Vehicle/vehical_price [运行时间：0.095000s][吞吐率：10.53req/s] [内存消耗：2,472.99kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_price',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarytDrH5ViP0I5P7Pi4',
+  'postman-token' => '8da78b59-7f66-4d82-f5cd-1817d17b4b5e',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '275',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_price' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_price[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `charge`,`deposit` FROM `ct_setting_price` WHERE  `type` = 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: charge[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:852]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:18:53+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_price
+[ log ] www.chitu12.com/user/Vehicle/vehical_price [运行时间：0.092000s][吞吐率：10.87req/s] [内存消耗：2,473.04kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_price',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryqZoRH0RKA86aOSzB',
+  'postman-token' => '234cf512-933f-3605-7c73-a3f932b002a8',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '275',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_price' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_price[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `charge`,`deposit` FROM `ct_setting_price` WHERE  `type` = 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: charge[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:853]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:21:13+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_price
+[ log ] www.chitu12.com/user/Vehicle/vehical_price [运行时间：0.120000s][吞吐率：8.33req/s] [内存消耗：2,471.50kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_price',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPvQ8oBhxvv5hNAqr',
+  'postman-token' => 'b2261be5-d9fc-99ad-f5cc-8f7ab1610750',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '275',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_price' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_price[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `charge`,`deposit` FROM `ct_setting_price` WHERE  `type` = 1 [ RunTime:0.001000s ]
+[ error ] [0]致命错误: Call to undefined function app\user\controller\exti()[D:\WWW\chitu_admin\application\user\controller\Vehicle.php:852]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:21:32+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_price
+[ log ] www.chitu12.com/user/Vehicle/vehical_price [运行时间：0.088000s][吞吐率：11.36req/s] [内存消耗：2,339.80kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_price',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary7DWhiw4DxdpoK6wu',
+  'postman-token' => 'a44488ca-ebf8-c4cc-9bf5-aae967fb0657',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '275',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_price' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_price[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `charge`,`deposit` FROM `ct_setting_price` WHERE  `type` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:21:59+08:00 ] 127.0.0.1 127.0.0.1 POST /user/Vehicle/vehical_price
+[ log ] www.chitu12.com/user/Vehicle/vehical_price [运行时间：0.087000s][吞吐率：11.49req/s] [内存消耗：2,339.59kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Vehicle',
+    2 => 'vehical_price',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary7LcJXesGpNPacAgn',
+  'postman-token' => 'e0998e35-b715-7dee-4e38-2b19dff300f3',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '275',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/Vehicle/vehical_price' => '',
+  'token' => 'McTtUp1hOpD6A936N9z6M9yNDg4MzE3MWNvZGVwaHAO0O0O',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Vehicle->vehical_price[ D:\WWW\chitu_admin\application\user\controller\Vehicle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user_token` WHERE  `token` = '1558077324883171codephp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_user` WHERE  `uid` = 156  AND `delstate` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_setting_price` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `charge`,`deposit` FROM `ct_setting_price` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:46:34+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/product_code
+[ log ] www.chitu12.com/driver/base/product_code [运行时间：0.023000s][吞吐率：43.48req/s] [内存消耗：1,565.48kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'product_code',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '1ccffcaa-6132-fea2-05f6-2e53cec9d516',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/product_code' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:driver_id[D:\WWW\chitu_admin\thinkphp\library\think\App.php:294]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:46:47+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/product_code?123
+[ log ] www.chitu12.com/driver/base/product_code?123 [运行时间：0.020000s][吞吐率：50.00req/s] [内存消耗：1,565.50kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'product_code',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '645a20b9-0af5-72d2-8f38-14c472510b77',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/product_code' => '',
+  0 => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:driver_id[D:\WWW\chitu_admin\thinkphp\library\think\App.php:294]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:47:03+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/base/product_code?driver=123
+[ log ] www.chitu12.com/driver/base/product_code?driver=123 [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：1,565.52kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'product_code',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '781c4c70-0cdf-37fa-a0e4-6b347f878885',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/product_code' => '',
+  'driver' => '123',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:driver_id[D:\WWW\chitu_admin\thinkphp\library\think\App.php:294]
+
+---------------------------------------------------------------
+[ 2019-05-28T10:47:12+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/base/product_code?driver=123
+[ log ] www.chitu12.com/driver/base/product_code?driver=123 [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：1,565.44kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'base',
+    2 => 'product_code',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => 'df536d6a-605b-6dad-cc86-43eef7a15350',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/base/product_code' => '',
+  'driver' => '123',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:driver_id[D:\WWW\chitu_admin\thinkphp\library\think\App.php:294]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:21:29+08:00 ] 127.0.0.1 127.0.0.1 GET /user/ucenter/driverLevel
+[ log ] www.chitu12.com/user/ucenter/driverLevel [运行时间：0.063000s][吞吐率：15.87req/s] [内存消耗：2,608.25kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '64a31270-b4f5-e247-e95f-31284d9b6fff',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/ucenter/driverLevel' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Base->_empty[ D:\WWW\chitu_admin\application\user\controller\Base.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:22:36+08:00 ] 127.0.0.1 127.0.0.1 POST /user/ucenter/driverLevel
+[ log ] www.chitu12.com/user/ucenter/driverLevel [运行时间：0.040000s][吞吐率：25.00req/s] [内存消耗：2,608.80kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryzfNmBoNYs9POw1Pr',
+  'postman-token' => 'e41abf85-ba7b-6b3b-721f-e4f0757523fb',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/ucenter/driverLevel' => '',
+  'token' => 'McTtU8z8M8z8Ep5hMpDA1ODEwOTk3N2NvZGVwaHAO0O0O',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Base->_empty[ D:\WWW\chitu_admin\application\user\controller\Base.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:26:08+08:00 ] 127.0.0.1 127.0.0.1 POST /user/ucenter/driverLevel
+[ log ] www.chitu12.com/user/ucenter/driverLevel [运行时间：0.058000s][吞吐率：17.24req/s] [内存消耗：2,608.80kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryQdrePujuEb9vBFqW',
+  'postman-token' => 'ef7b2396-4dcb-aff6-919d-4480ad87eb64',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Base->_empty[ D:\WWW\chitu_admin\application\user\controller\Base.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010500s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:39:58+08:00 ] 127.0.0.1 127.0.0.1 POST /user/ucenter/driverLevel
+[ log ] www.chitu12.com/user/ucenter/driverLevel [运行时间：0.054500s][吞吐率：18.35req/s] [内存消耗：2,608.80kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarywIxNQ0XchVFNwcY2',
+  'postman-token' => '39d648ab-9d32-a2c7-74fc-7b25d4ff1c37',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Base->_empty[ D:\WWW\chitu_admin\application\user\controller\Base.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009500s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_config` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_config` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:41:39+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/ucenter/driverLevel
+[ log ] www.chitu12.com/driver/ucenter/driverLevel [运行时间：0.069000s][吞吐率：14.49req/s] [内存消耗：2,618.41kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryf54sDUw4cZZx4ISD',
+  'postman-token' => '10197669-ccdb-19ce-eb60-1d6dce8ecdf6',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->driverLevel[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010500s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.036500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:44:57+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/ucenter/driverLevel
+[ log ] www.chitu12.com/driver/ucenter/driverLevel [运行时间：0.043500s][吞吐率：22.99req/s] [内存消耗：2,618.36kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryOKQnALfk5ZA3CD12',
+  'postman-token' => '5060e39c-59ff-21f2-b65e-9a32dcd5cfec',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->driverLevel[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.013500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:45:10+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/ucenter/driverLevel
+[ log ] www.chitu12.com/driver/ucenter/driverLevel [运行时间：0.047000s][吞吐率：21.28req/s] [内存消耗：2,618.36kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBvs5068E1B7egexu',
+  'postman-token' => 'b333a357-182a-6676-ca3e-814058be6044',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->driverLevel[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010500s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.012500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:45:12+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/ucenter/driverLevel
+[ log ] www.chitu12.com/driver/ucenter/driverLevel [运行时间：0.048000s][吞吐率：20.83req/s] [内存消耗：2,618.36kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryC5iO5uTxleWGjIih',
+  'postman-token' => '1822d70d-77f7-aedf-a93e-fd9490976392',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->driverLevel[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:45:13+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/ucenter/driverLevel
+[ log ] www.chitu12.com/driver/ucenter/driverLevel [运行时间：0.046500s][吞吐率：21.51req/s] [内存消耗：2,618.36kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary2AijjjR5xj0oAd3J',
+  'postman-token' => '31e63b5f-59cb-d73a-90b7-4f91d94c059c',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->driverLevel[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010500s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:45:27+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Ucenter/driverLevel
+[ log ] www.chitu12.com/driver/Ucenter/driverLevel [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：2,618.36kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryFZqSuLa4VZRK42eG',
+  'postman-token' => 'fca901b4-4daf-d353-3e16-ffca7a217412',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->driverLevel[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.012500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:46:30+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Ucenter/driverLevel
+[ log ] www.chitu12.com/driver/Ucenter/driverLevel [运行时间：0.045500s][吞吐率：21.98req/s] [内存消耗：2,618.33kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary2D2Gx1VVTTpgVv8A',
+  'postman-token' => '1ec45012-eadf-6884-02db-8efa231058eb',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->driverLevel[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010500s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.011500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:46:32+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Ucenter/driverLevel
+[ log ] www.chitu12.com/driver/Ucenter/driverLevel [运行时间：0.044500s][吞吐率：22.47req/s] [内存消耗：2,618.33kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryuDQfi5eRnUO9yrxN',
+  'postman-token' => '643f8866-8c7c-63fd-d29c-395288079ee7',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->driverLevel[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.013500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:47:23+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Base/check_token
+[ log ] www.chitu12.com/driver/Base/check_token [运行时间：0.045000s][吞吐率：22.22req/s] [内存消耗：2,140.66kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Base',
+    2 => 'check_token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryCJUZzVRoQrPDMEC0',
+  'postman-token' => 'c404c4ea-137d-a9e0-d2f3-1f0a2bf85d3a',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '272',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Base/check_token' => '',
+  'token' => 'McTtU8z8M8z8Ep5hMpDA1ODEwOTk3N2NvZGVwaHAO0O0O',
+  'sex' => '1',
+)
+[ info ] [ RUN ] app\driver\controller\Base->check_token[ D:\WWW\chitu_admin\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]variable type error： array[D:\WWW\chitu_admin\thinkphp\library\think\Response.php:312]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:47:35+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Base/check_token
+[ log ] www.chitu12.com/driver/Base/check_token [运行时间：0.020000s][吞吐率：50.00req/s] [内存消耗：1,565.40kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Base',
+    2 => 'check_token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '5e15b4b4-b9b0-9ff8-cb62-30dadce0e0c6',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Base/check_token' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:token[D:\WWW\chitu_admin\thinkphp\library\think\App.php:294]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:48:18+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Base/check_token
+[ log ] www.chitu12.com/driver/Base/check_token [运行时间：0.059500s][吞吐率：16.81req/s] [内存消耗：2,139.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Base',
+    2 => 'check_token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '8dad2e19-806e-1772-657e-a43e15e7b6aa',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Base/check_token' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->check_token[ D:\WWW\chitu_admin\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]variable type error： array[D:\WWW\chitu_admin\thinkphp\library\think\Response.php:312]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:48:43+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Base/check_token
+[ log ] www.chitu12.com/driver/Base/check_token [运行时间：0.017500s][吞吐率：57.14req/s] [内存消耗：1,320.12kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Base',
+    2 => 'check_token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '741ea58e-dabe-6a22-2b25-d6274318a85d',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Base/check_token' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'codephp' (T_STRING)[D:\WWW\chitu_admin\application\driver\controller\Base.php:221]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:49:13+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Base/check_token
+[ log ] www.chitu12.com/driver/Base/check_token [运行时间：0.039000s][吞吐率：25.64req/s] [内存消耗：2,139.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Base',
+    2 => 'check_token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => 'b4d3997e-8708-27f3-9f29-915dd6f13fcf',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Base/check_token' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->check_token[ D:\WWW\chitu_admin\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.013500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]variable type error： array[D:\WWW\chitu_admin\thinkphp\library\think\Response.php:312]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:50:22+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Base/check_token
+[ log ] www.chitu12.com/driver/Base/check_token [运行时间：0.040500s][吞吐率：24.69req/s] [内存消耗：2,139.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Base',
+    2 => 'check_token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => 'bd6f800b-e8d3-f0c1-7ea0-fada8e81df16',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Base/check_token' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->check_token[ D:\WWW\chitu_admin\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]variable type error： array[D:\WWW\chitu_admin\thinkphp\library\think\Response.php:312]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:50:23+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Base/check_token
+[ log ] www.chitu12.com/driver/Base/check_token [运行时间：0.040000s][吞吐率：25.00req/s] [内存消耗：2,139.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Base',
+    2 => 'check_token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '23f86f44-375a-294c-274d-b38a0bf938db',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Base/check_token' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->check_token[ D:\WWW\chitu_admin\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]variable type error： array[D:\WWW\chitu_admin\thinkphp\library\think\Response.php:312]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:52:25+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Base/check_token
+[ log ] www.chitu12.com/driver/Base/check_token [运行时间：0.043500s][吞吐率：22.99req/s] [内存消耗：2,139.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Base',
+    2 => 'check_token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => 'e64134f4-363e-5402-59a0-cf7408625d03',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Base/check_token' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Base->check_token[ D:\WWW\chitu_admin\application\driver\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.012500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]variable type error： array[D:\WWW\chitu_admin\thinkphp\library\think\Response.php:312]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:53:22+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Base/check_token
+[ log ] www.chitu12.com/driver/Base/check_token [运行时间：0.019500s][吞吐率：51.28req/s] [内存消耗：1,565.39kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Base',
+    2 => 'check_token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '53fa80d5-691e-ce01-2d09-78743fb5171f',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Base/check_token' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:token[D:\WWW\chitu_admin\thinkphp\library\think\App.php:294]
+
+---------------------------------------------------------------
+[ 2019-05-28T11:53:32+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/Ucenter/driverLevel
+[ log ] www.chitu12.com/driver/Ucenter/driverLevel [运行时间：0.037500s][吞吐率：26.67req/s] [内存消耗：2,618.41kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'Ucenter',
+    2 => 'driverLevel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryDP78nbAnOuBBRYlJ',
+  'postman-token' => '5f87d619-d26e-742c-6fb3-76242ac3cb60',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/Ucenter/driverLevel' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->driverLevel[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.012500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T13:12:44+08:00 ] 127.0.0.1 127.0.0.1 GET /driver/ucenter/equity
+[ log ] www.chitu12.com/driver/ucenter/equity [运行时间：0.024500s][吞吐率：40.82req/s] [内存消耗：2,034.25kb] [文件加载：48]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'ucenter',
+    2 => 'equity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '77cb0ba0-259f-fe74-704d-b08911dc909a',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/ucenter/equity' => '',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->equity[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-05-28T13:13:08+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/ucenter/equity
+[ log ] www.chitu12.com/driver/ucenter/equity [运行时间：0.064000s][吞吐率：15.63req/s] [内存消耗：2,622.03kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'ucenter',
+    2 => 'equity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary5H2fNpmh3YbTnJSJ',
+  'postman-token' => 'bfd6c9ec-d981-3f7c-e02d-b5c46cd2adec',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '273',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/ucenter/equity' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->equity[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T19:39:10+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/ucenter/level
+[ log ] www.chitu12.com/driver/ucenter/level [运行时间：0.087500s][吞吐率：11.43req/s] [内存消耗：2,632.10kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'ucenter',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryAAMvUzmfDIdVBqmP',
+  'postman-token' => '5fb86704-eeef-c4e6-a73a-d4c98f343967',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '366',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/ucenter/level' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+  'level' => '2',
+  'uoid' => '1',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->level[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.016500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-05-28T19:39:27+08:00 ] 127.0.0.1 127.0.0.1 POST /driver/ucenter/level
+[ log ] www.chitu12.com/driver/ucenter/level [运行时间：0.040500s][吞吐率：24.69req/s] [内存消耗：2,632.10kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\chitu_admin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'driver',
+    1 => 'ucenter',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarytWPBAi4iHfPBqRkQ',
+  'postman-token' => '1e01615b-e147-c3d5-9193-ce3fc4151d85',
+  'origin' => 'chrome-extension://niphlbdhgiabfnjeompmngebipomclik',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'content-length' => '366',
+  'connection' => 'close',
+  'host' => 'www.chitu12.com',
+)
+[ info ] [ PARAM ] array (
+  '/driver/ucenter/level' => '',
+  'token' => 'McTtU818O8D8kpyhMpTMyNzkzMjU3OWNvZGVwaHAO0O0O',
+  'level' => '2',
+  'uoid' => '1',
+)
+[ info ] [ RUN ] app\driver\controller\Ucenter->level[ D:\WWW\chitu_admin\application\driver\controller\Ucenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=test;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_driver_token` [ RunTime:0.016500s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_driver_token` WHERE  `token` = '1558921327932579codephp' LIMIT 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------

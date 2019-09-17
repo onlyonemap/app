@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header" /}
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+    <link href="/static/tpl/css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
+    <style type="text/css">
+        .lightBoxGallery{
+            display: flex;
+            flex-direction: row;
+        }
+        .lightBoxGallery a {
+            display: flex;
+            margin: 10px;
+            width: 150px;
+            height: 100px;
+            overflow: hidden;
+            border: 5px solid #f3f3f3;
+            border-radius: 5px;
+        }
+        .lightBoxGallery img {
+            margin: auto;
+            width: 160px;
+        }
+        .user-message {
+            padding: 10px 20px;
+        }
+        .company-message{
+            padding: 10px 20px;
+        }
+        .user-message .message-avatar.user-avatar-right{
+            float:right;
+            margin-left: 10px;
+        }
+        .user-message .message-avatar.user-avatar-left{
+            float:left;
+            margin-right: 10px;
+        }
+        .company-message .message-avatar.user-avatar-right{
+            float:right;
+            margin-left: 10px;
+        }
+        .company-message .message-avatar.user-avatar-left{
+            float:left;
+            margin-right: 10px;
+        }
+        .user-message .message {
+            text-align: left;
+            margin-left: 55px;
+        }
+        .company-message{
+            padding: 10px 20px;
+        }
+        .company-message .message {
+            text-align: right;
+            margin-right: 55px;
+        }
+        /* 物流状态 */
+        .logistics{
+            padding: 20px;
+            background-color: #f3f3f4;
+            overflow: hidden;
+        }
+        .logistics p{
+            line-height: 45px;
+            margin-bottom: 0;
+        }
+        .logistics .center{
+            position: relative;
+            height: 3px;
+            background-color: #eee;
+        }
+        .logistics .item{
+            min-width: 140px;
+            display: inline-block;
+            width: 16%;
+        }
+        .logistics .center .item p{
+            position: relative;
+            top: -10px;
+            left: -50%;
+            height: 3px;
+            font-size: 24px;
+            line-height: 1px;
+            color: #1ab394;
+            background-color: #337ab7;
+        }
+        .logistics .center .item:first-child p{
+            background-color: transparent;
+        }
+        .logistics .center .item .round{
+            position: absolute;
+            right: -7px;
+        }
+    </style>
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInUp">
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+            <div class="ibox-tools">整车订单详情</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>订单详情</h5>
+                </div>
+                <div class="ibox-content m-b-sm border-bottom">
+                    <div class="row">
+                        <div class="col-sm-2">订单编号:</div>
+                        <div class="col-sm-10">{$list.ordernumber}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">运输线路:</div>
+                        <div class="col-sm-10">{$list.startcity} -- {$list.endcity}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+
+                    <div class="row">
+                        <div class="col-sm-2">下单人员:</div>
+                        <div class="col-sm-10">{$list.username} ( tel: {$list.mobile} )</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="row">
+                        <div class="col-sm-2">运输车型:</div>
+                        <div class="col-sm-10">{$list.carparame}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="row">
+                        <div class="col-sm-2">提货地址:</div>
+                        <div class="col-sm-10">
+                            {volist name="$list.pickaddress" id="vo"}
+                            {if condition="isset($vo.address)"}{$list.startcity}{$vo.areaName}{$vo.address}{else/}{$vo.areaName}{/if}、
+                            {/volist}
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">配送地址:</div>
+                        <div class="col-sm-10">
+                            {volist name="$list.sendaddress" id="v"}
+                            {if condition="isset($v.address)"}{$list.endcity}{$v.areaName}{$v.address}{else/}{$v.areaName}{/if}、
+                            {/volist}
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">运输物品:</div>
+                        <div class="col-sm-10">{$list.goodsname}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">温度要求:</div>
+                        <div class="col-sm-10">{$list.temperture}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">是否装卸:</div>
+                        <div class="col-sm-10">
+                            {if condition="$list.pickyesno==1"}
+                            <span class="label label-info">用户装货</span>
+                            {else/}
+                            <span class="label label-info">司机装货</span>
+                            {/if}
+                            {if condition="$list.sendyesno==1"}
+                            <span class="label label-info">用户卸货</span>
+                            {else/}
+                            <span class="label label-info">司机卸货</span>
+                            {/if}
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">装货日期:</div>
+                        <div class="col-sm-10">{$list.picktime|date='Y-m-d H:i:s',###}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+
+                    <div class="row">
+                        <div class="col-sm-2">订单备注:</div>
+                        <div class="col-sm-10">{$list.remark}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">付款方式:</div>
+                        {if condition="$list.pay_type==1" }
+                        <div class="col-sm-10">提货付款</div>
+                        {else/}
+                        <div class="col-sm-10">货到付款</div>
+                        {/if}
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+                    <div class="row">
+                        <div class="col-sm-2">付款人数:</div>
+                        <div class="col-sm-10">{$count}</div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 隐藏内容 -->
+<div class="hidden">
+    <input type="hidden" id="orderId" value="{$list.uoid}">
+</div>
+</body>
+</html>
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+<script src="/static/tpl/js/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        // 订单id
+        var id = $("#orderId").val();
+        /**
+         * ajax 请求
+         * @param  {[type]}   url      [请求地址]
+         * @param  {[type]}   data     [请求数据]
+         * @param  {Function} callback [成功回调]
+         * @return {[type]}            [description]
+         */
+        function send(url,data,callback) {
+            callback = callback || function () {};
+            // 设置loading
+            var loadding = layer.load();
+            // ajax请求
+            $.ajax({
+                url: url,
+                type: 'POST',
+                dataType: 'json',
+                data: data,
+            })
+                .done(function(response) {
+                    if(response.code){ // 成功
+                        layer.msg(response.message);
+                        window.location.reload();
+                    }else{ // 失败
+                        layer.msg(response.message);
+                    }
+                    // 回调函数
+                    callback();
+                })
+                .fail(function(response) {
+                    console.log("error");
+                })
+                .always(function(response) {
+                    // 关闭loading
+                    layer.close(loadding);
+                });
+        }
+        // 取消订单
+        $("#cancel").click(function (argument) {
+            // url
+            var url = '/admin/carloadorder/cancelOrder';
+            // data
+            var data = {id: id};
+            // 请求
+            send(url,data);
+        })
+        // 修改价格
+        $("#updateTotal").click(function(){
+            // 获取修改价格
+            var price = $(".newprice").val();
+            // 判断是否为空
+            if (price =='') {
+                layer.msg('请填写要修改的总价');
+                return false;
+            };
+            // url
+            var url = '/admin/carloadorder/upprice';
+            // data
+            var data = {otype:'1',oid:id,price:price};
+            // 请求
+            send(url,data);
+        });
+        // 修改承运商价格
+        $("#updatecarr").click(function(){
+            // 获取修改价
+            var price = $(".carrprice").val();
+            // 判断是否为空
+            if (price =='') {
+                layer.msg('请填写要修改的总价');
+                return false;
+            };
+            // url
+            var url = '/admin/carloadorder/upprice';
+            // data
+            var data = {otype:'2',oid:id,price:price};
+            // 请求
+            send(url,data);
+        });
+        // 订单反馈
+        $("#contact").click(function(){
+            // 获取反馈内容
+            var message = $(".info").val();
+            // 判断是否为空
+            if (message =='') {
+                layer.msg('请填写回复内容');
+                return false;
+            };
+            // url
+            var url = '/admin/order/replay_contact';
+            // data
+            var data = {otype:'4',oid:id,message:message};
+            // 请求
+            send(url,data);
+        });
+    });
+</script>

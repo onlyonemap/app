@@ -1,0 +1,131 @@
+{include file="public/header"}
+<link href="/static/tpl/css/plugins/iCheck/custom.css" rel="stylesheet" />
+<link href="/static/tpl/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+<link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>用户余额明细记录</h5>
+
+                          
+                        </div>
+                        <div class="ibox-content">
+                            <div class="row m-b-sm m-t-sm">
+                                <div class="col-md-1">
+                                    <a href="/admin/logmessage/indexuser" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                                </div>
+                                <div class="col-sm-4">
+                            <div class="input-group date date-view-three" data-provide="datepicker">
+                                <div class="input-group-addon">
+                                    <span class="fa fa-calendar"></span>
+                                </div>
+                                <input type="text" name="starttime" id="starttime" value="<?php echo isset($_GET['starttime'])?$_GET['starttime']:'' ?>" class="form-control" placeholder="搜索开始时间">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-1">
+                            <p class="form-control-static text-center">----</p>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="input-group date date-view-three" data-provide="datepicker">
+                                <div class="input-group-addon">
+                                    <span class="fa fa-calendar"></span>
+                                </div>
+                                <input type="text" id="endtime" name="endtime" value="<?php echo isset($_GET['endtime'])?$_GET['endtime']:'' ?>" class="form-control" placeholder="搜索结束时间">
+                            </div>
+                        </div>
+                                <div class="col-md-2">
+                                    <div class="input-group">
+                                        <a href="javascript:sousuo();" class="btn btn-sm btn-primary" style="border-radius: 6px;"> 查询</a> </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="8" style="font-size:14px">
+                                <thead>
+                                <tr>  
+                                    <th ></th>
+                                    <th>内容</th>
+                                    <th class="text-center">时间</th>
+                                    
+                                    <th class="text-center">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    {volist name="list" id="vo"}
+                                    <tr>  
+                                        <td ><input type="checkbox" value="{$vo.blid}" class="i-checks check-list" name="id"></td>  
+                                        <td >{$vo.realname}在{$vo.addtime|date='Y-m-d H:i:s',###}{if condition="($vo.action_type =='1')"} 增加 {else/} 扣除 {/if}了{$vo.pay_money} 因：{$vo.order_content}</td> 
+                                       <td class="text-center">{$vo.addtime|date='Y-m-d H:i:s',###}</td>
+                                       
+                                        <td class="text-center"><a href="/admin/logmessage/deluser?id={$vo.blid}&del=1" class="btn btn-info" ><i class="fa fa-paste"></i>删除</a></td>
+                                    </tr>
+
+                                    {/volist}
+                                
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td >
+                                        <input class="i-checks" id="allCheck" type="checkbox" />
+                                        <label for="allCheck">全选</label>
+                                    </td>
+                                  <td>
+                                    <a class="btn btn-sm btn-primary" id="del" href="javascript:;">删除</a>
+                                </td> 
+                                </tr>
+                                </tfoot>
+                            </table>
+                            {$page}
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+     <!-- 日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <!-- 调用日期插件 -->
+    <script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+    <script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="/static/tpl/js/calliCheck.js"></script>
+    <script type="text/javascript" src="/static/tpl/js/reconciliation.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+             $("#del").click(function(){
+                    var chk_value = new Array();
+                    var length = $('input[name="id"]:checked').length;
+                     $('input[name="id"]:checked').each(function(){
+                            chk_value.push($(this).val());//将选中的值添加到数组chk_value中
+                    });
+                     $.get('/admin/logmessage/deluser',{del:2,id:chk_value},function(msg){
+                            if (msg =="ok") {
+                                location.reload();
+                            }else if(msg == "fail"){
+                                alert("操作有误!!!");
+                                return false;
+                            }
+                    });
+
+            });
+        })
+        function sousuo(){
+        var endtime = document.getElementById("endtime").value;
+        var starttime = document.getElementById("starttime").value;
+        window.location.href='/admin/logmessage/indexpay?starttime='+starttime+'&endtime='+endtime;
+        }
+    </script>
+</body>
+
+</html>

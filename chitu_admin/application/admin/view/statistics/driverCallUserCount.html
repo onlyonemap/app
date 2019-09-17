@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>承运端拨打电话统计列表</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/statistics/driverCallUserCount" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                </div>
+               
+                <table class="footable table table-stripped toggle-arrow-tiny">
+                    <thead>
+                         <tr>
+                            <th class="text-left" data-sortable="true">索引</th>
+                            <th class="text-left" data-sortable="true">用户</th>
+                            <th class="text-left" data-sortable="true">属性</th>
+                            <th class="text-left" data-sortable="true">职位</th>
+                            <th class="text-left" data-sortable="true">电话</th>
+                            <th class="text-left" data-sortable="true">统计</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>
+                            <td class="text-left">{$vo.index}</td>
+                            <td class="text-left">{$vo.name}</td>
+                            <td class="text-left">
+                            	{if condition="$vo.type == 1"}
+									<span class="label label-default">个体</span>
+                            	{else /}
+                            		<span class="label label-primary">公司</span>
+                            	{/if}
+                        	</td>
+                            <td class="text-left"> 
+                            	{switch name="vo.driver_grade"}
+                            		{case value="1"}司机{/case}
+                            		{case value="2"}司机{/case}
+                            		{case value="3"}调度{/case}
+                            		{case value="4"}管理{/case}
+                            	{/switch}
+                        	</td>
+                            <td class="text-left">{$vo.mobile}</td>
+                            <td class="text-left">{$vo.count}</td>
+                        </tr>
+                        {/volist}
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // 初始话表格
+        $('.footable').bootstrapTable();
+    });
+</script>

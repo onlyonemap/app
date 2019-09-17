@@ -1,0 +1,156 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>市内配送订单列表</h5>
+            </div>
+                <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a style="margin-top: 10px;" href="/backstage/order/torder" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh" style="color:#1a8aff;"></i> 刷新</a>
+                    </div>
+                    
+
+                    <div class="col-sm-3">
+                        <div class="input-group date date-view-three" data-provide="datepicker" style="margin-top: 10px;">
+                            <div class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </div>
+                            <input type="text" name="starttime" id="starttime" value="<?php echo isset($_GET['starttime'])?$_GET['starttime']:'' ?>" class="form-control" placeholder="搜索下单开始时间">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-1">
+                        <p class="form-control-static text-center">----</p>
+                    </div>
+
+                    <div class="col-sm-3"> 
+                        <div class="input-group date date-view-three" data-provide="datepicker" style="margin-top: 10px;">
+                            <div class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </div>
+                            <input type="text" id="endtime" name="endtime" value="<?php echo isset($_GET['endtime'])?$_GET['endtime']:'' ?>" class="form-control" placeholder="搜索下单结束时间">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group" style="margin-top: 10px;">
+                            <input type="text" value="<?php echo isset($_GET['search'])?$_GET['search']:''?>" placeholder="请输入订单号码" id="provSelect1" class="input-sm form-control"> <span class="input-group-btn">
+                                <a href="javascript:sousuo();" class="btn btn-sm " style="margin-left: 20px; background: #1a8aff;color:#fff;border-radius: 6px;"> 查询</a> </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr style="background-color:#F0FAFD;">
+                                <td class="project-completion">
+                                    下单时间
+                                </td>
+                                <td class="project-completion">
+                                    接单人员                           
+                                </td>
+                                <td class="project-status">
+                                    接单人电话
+                                </td>
+                                <td class="project-completion">
+                                    接单时间   
+                                </td>
+                                <td class="project-completion">
+                                    订单价格   
+                                </td>
+                                <td class="project-completion">
+                                    订单运输日   
+                                </td>
+                                <td class="project-completion">
+                                    支付类型
+                                </td>
+                                 <td class="project-completion">
+                                    订单类型
+                                </td>
+                                <td class="project-completion">
+                                    订单状态 
+                                </td>
+                                <td class="project-completion">
+                                    订单详情
+                                </td>
+                            </tr>
+                            {volist name='list' id='user'}
+                            <tr>
+                                
+                                    <td class="project-completion">
+                                        {$user.addtime|date='Y年m月d日 H:i:s',###}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$user.realname}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$user.mobile}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$user.take_time|date='Y年m月d日 H:i:s',###}
+                                    </td>
+                                    <td class="project-completion">
+                                        {$user.paymoney} （元）
+                                    </td>
+                                    <td class="project-completion">
+                                        {$user.data_type}
+                                    </td>
+                                    <td class="project-completion">
+                                        {switch name="user.pytype" }
+                                            {case value="1"}<span class="label label-warning">全额支付</span>{/case}
+                                            {case value="2"}<span class="label label-primary">面议</span>{/case}
+                                        {/switch}
+                                    </td>
+                                     <td class="project-completion">
+                                        {switch name="user.ordertype" }
+                                            {case value="1"}<span class="label label-warning">用车</span>{/case}
+                                            {case value="2"}<span class="label label-primary">包车</span>{/case}
+                                        {/switch}
+                                    </td>
+                                    <td class="project-completion">
+                                        {switch name="user.state" }
+                                            {case value="2"}<span class="label label-warning">进行中</span>{/case}
+                                            {case value="3"}<span class="label label-primary">已完成</span>{/case}
+                                        {/switch}
+                                    </td>
+                                    <td class="project-completion">
+                                        <a href="/backstage/order/citydistributiondetails?id={$user.id}" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 查看</a>
+                                    </td>
+                                
+                            </tr>
+                            {/volist}
+                            <tr>
+                                <td class="project-completion"></td>
+                                <td class="project-completion"></td>
+                                <td class="project-status"></td>
+                                <td class="project-completion"></td>
+                                <td class="project-completion"></td>
+                                <td class="project-completion" colspan="3">
+                                    {$page}
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<!-- 日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<!-- 调用日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+<script type="text/javascript">
+function sousuo(){
+    var psel = document.getElementById("provSelect1");
+    var endtime = document.getElementById("endtime").value;
+    var starttime = document.getElementById("starttime").value;
+    window.location.href='/backstage/order/citydistribution?search='+psel.value+'&starttime='+starttime+'&endtime='+endtime;
+}
+</script>

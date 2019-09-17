@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header" /}
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="widget style1 navy-bg">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <i class="fa fa-user fa-5x"></i>
+                    </div>
+                    <div class="col-xs-8 text-right">
+                        <span> 用户总计 </span>
+                        <h2 class="font-bold">{$user.all_user}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="widget style1 lazur-bg">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <i class="fa fa-cloud-download fa-5x"></i>
+                    </div>
+                    <div class="col-xs-8 text-right">
+                        <span> 司机总计 </span>
+                        <h2 class="font-bold">{$driver.all_driver}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="widget style1 yellow-bg">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <i class="fa fa-dollar fa-5x"></i>
+                    </div>
+                    <div class="col-xs-8 text-right">
+                        <span> 交易金额 </span>
+                        <h2 class="font-bold">{$sum_recharge}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="widget style1 blue-bg">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <i class="fa fa-try fa-5x"></i>
+                    </div>
+                    <div class="col-xs-8 text-right">
+                        <span> 用户提现 </span>
+                        <h2 class="font-bold">{$replay_sum|number_format=2}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    用户当天支付汇总
+                </div>
+                <ul class="panel-body list-group">
+                    <div class="col-xs-3" style="margin:25% auto">昨天</div>
+                    <div class="col-xs-9">
+                        <li class="list-group-item">
+                            <span class="badge">{$wechat.sum_wechat_day|number_format=2}</span> 微信
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">{$alipay.sum_alipay_day|number_format=2}</span> 支付宝
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">{$credit.day_payment|number_format=2}</span> 信用支付
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">{$balance.day_payment|number_format=2}</span> 余额
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">{$tatol_pay.total_day|number_format=2}</span> 总计
+                        </li>
+                    </div>
+                </ul>
+            </div><!--用户当天支付汇总-->
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    用户支付总计
+                </div>
+                <ul class="panel-body list-group">
+                    <div class="col-xs-3" style="margin:25% auto">总计</div>
+                    <div class="col-xs-9">
+                        <li class="list-group-item">
+                            <span class="badge">{$wechat.sum_wechat_All|number_format=2}</span> 微信
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">{$alipay.sum_alipay_All|number_format=2}</span> 支付宝
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">{$credit.all_payment|number_format=2}</span> 信用支付
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">{$balance.all_payment|number_format=2}</span> 余额
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">{$tatol_pay.total_all|number_format=2}</span> 总计
+                        </li>
+                    </div>
+                </ul>
+            </div><!--用户支付总计-->
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <i class="fa fa-info-circle"></i> APP在线充值
+                </div>
+                <ul class="panel-body list-group">
+                    <li class="list-group-item">
+                        <span class="badge">{$pay_recharge|number_format=2}</span> 支付宝充值
+                    </li>
+                    <li class="list-group-item ">
+                        <span class="badge">{$wei_recharge|number_format=2}</span> 微信充值
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">{$client_recharge|number_format=2}</span> 用户充值总额
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">{$driver_recharge|number_format=2}</span> 司机充值总额
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">{$sum_recharge|number_format=2}</span> 总计
+                    </li>
+                </ul>
+            </div><!--APP在线充值-->
+
+        </div>
+
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            用户本周支付汇总
+                        </div>
+                        <ul class="panel-body list-group">
+                            <div class="col-xs-3" style="margin:25% auto">本周</div>
+                            <div class="col-xs-9">
+                                <li class="list-group-item">
+                                    <span class="badge">{$wechat.sum_wechat_week|number_format=2}</span> 微信
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$alipay.sum_alipay_week|number_format=2}</span> 支付宝
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$credit.week_payment|number_format=2}</span> 信用支付
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$balance.week_payment|number_format=2}</span> 余额
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$tatol_pay.total_week|number_format=2}</span> 总计
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div><!--用户本周支付汇总-->
+                <div class="col-sm-4">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading yellow-bg">
+                            用户当月支付汇总
+                        </div>
+                        <ul class="panel-body list-group">
+                            <div class="col-xs-3" style="margin:25% auto">当月</div>
+                            <div class="col-xs-9">
+                                <li class="list-group-item">
+                                    <span class="badge">{$wechat.sum_wechat_tmoth|number_format=2}</span> 微信
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$alipay.sum_alipay_tmoth|number_format=2}</span> 支付宝
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$credit.month_payment|number_format=2}</span> 信用支付
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$balance.month_payment|number_format=2}</span> 余额
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$tatol_pay.total_month|number_format=2}</span> 总计
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div><!--用户当月支付汇总-->
+                <div class="col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            用户今年支付汇总
+                        </div>
+                        <ul class="panel-body list-group">
+                            <div class="col-xs-3" style="margin:25% auto">今年</div>
+                            <div class="col-xs-9">
+                                <li class="list-group-item">
+                                    <span class="badge">{$wechat.sum_wechat_year}</span> 微信
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$alipay.sum_alipay_year}</span> 支付宝
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$credit.year_payment}</span> 信用支付
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$balance.year_payment|number_format=2}</span> 余额
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">{$tatol_pay.total_year|number_format=2}</span> 总计
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div><!--用户今年支付汇总-->
+                <div class="col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <i class="fa fa-info-circle"></i> 司机注册统计
+                        </div>
+                        <ul class="panel-body list-group">
+                            <li class="list-group-item">
+                                <span class="badge">{$driver.day_driver}</span> 昨天
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="badge">{$driver.week_driver}</span> 本周
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$driver.month_driver}</span> 当月
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$driver.year_driver}</span> 当年
+
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$driver.all_driver}</span> 总计
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div><!--司机注册统计-->
+                <div class="col-sm-4">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <i class="fa fa-info-circle"></i> 用户注册统计
+                        </div>
+                        <ul class="panel-body list-group">
+                            <li class="list-group-item">
+                                <span class="badge">{$user.day_user}</span> 昨天
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="badge">{$user.week_user}</span> 本周
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$user.month_user}</span> 当月
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$user.year_user}</span> 当年
+
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$user.all_user}</span> 总计
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div><!--用户注册统计-->
+                <div class="col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <i class="fa fa-info-circle"></i> 用户提现申请
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <div>
+                                    <span>待审核</span>
+                                    <small class="pull-right">{$replay_count|number_format=2} 元</small>
+                                </div>
+                                <div class="progress progress-small">
+                                    <div style="width: 60%;" class="progress-bar"></div>
+                                </div>
+
+                                <div>
+                                    <span>审核成功</span>
+                                    <small class="pull-right">{$replay_pass|number_format=2} 元</small>
+                                </div>
+                                <div class="progress progress-small">
+                                    <div style="width: 50%;" class="progress-bar"></div>
+                                </div>
+
+                                <div>
+                                    <span>已打款</span>
+                                    <small class="pull-right">{$replay_pass_success|number_format=2} 元</small>
+                                </div>
+                                <div class="progress progress-small">
+                                    <div style="width: 40%;" class="progress-bar"></div>
+                                </div>
+
+                                <div>
+                                    <span>提现总额</span>
+                                    <small class="pull-right">{$replay_sum|number_format=2} 元</small>
+                                </div>
+                                <div class="progress progress-small">
+                                    <div style="width: 70%;" class="progress-bar progress-bar-success"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--用户提现-->
+                <div class="col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <i class="fa fa-info-circle"></i> 零担订单统计
+                        </div>
+                        <ul class="panel-body list-group">
+                            <li class="list-group-item">
+                                <span class="badge">{$proceed_order}</span> 在线订单
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="badge">{$finish_order}</span> 已完成订单
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$Invalid_order}</span> 无效订单
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$count_order}</span>
+                                总订单
+                            </li>
+                        </ul>
+
+                    </div>
+                </div><!--零担订单统计-->
+                <div class="col-sm-4">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <i class="fa fa-info-circle"></i> 货主跨区整车订单
+                        </div>
+                        <ul class="panel-body list-group">
+                            <li class="list-group-item">
+                                <span class="badge">{$uncity_user_order}</span> 未接订单
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="badge">{$city_user_order}</span> 已成交订单
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$city_user_cancelorder}</span> 未支付订单
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge"> {$city_user_countorder}</span>
+                                总订单
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <i class="fa fa-info-circle"></i> 货主市内整车订单
+                        </div>
+                        <ul class="panel-body list-group">
+                            <li class="list-group-item">
+                                <span class="badge">{$uncity_driver_order}</span> 未接订单
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="badge">{$city_driver_order}</span> 已成交订单
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$city_driver_cancelorder}</span> 未支付订单
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">{$city_driver_countorder}</span> 总订单
+                            </li>
+                        </ul>
+
+                    </div>
+                </div><!--货主市内整车订单-->
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

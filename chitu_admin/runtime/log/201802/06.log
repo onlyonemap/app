@@ -1,0 +1,2200 @@
+[ 2018-02-06T16:37:33+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.ctadmin.com/ [运行时间：0.352000s][吞吐率：2.84req/s] [内存消耗：1,916.05kb] [文件加载：48]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-02-06T16:37:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.ctadmin.com/admin/index/login.html [运行时间：0.062000s][吞吐率：16.13req/s] [内存消耗：1,853.55kb] [文件加载：47]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-02-06T16:37:33+08:00 ] 127.0.0.1 127.0.0.1 GET /static/tpl/img/favcion.png
+[ log ] www.ctadmin.com/static/tpl/img/favcion.png [运行时间：0.126000s][吞吐率：7.94req/s] [内存消耗：1,446.45kb] [文件加载：40]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'tpl',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/static/tpl/img/favcion_png' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-02-06T16:37:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login_send
+[ log ] www.ctadmin.com/admin/index/login_send [运行时间：0.281000s][吞吐率：3.56req/s] [内存消耗：2,632.52kb] [文件加载：55]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login_send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ctadmin.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/login_send' => '',
+  'admin_name' => 'laochen',
+  'admin_password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login_send[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `username` = 'laochen'  AND `password` = '89d0edf61deb62ac2a01575a272e3e82'  AND `pstate` = 1 LIMIT 1 [ RunTime:0.056000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:37:35+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ log ] www.ctadmin.com/admin/index/index.html [运行时间：0.045000s][吞吐率：22.22req/s] [内存消耗：1,871.36kb] [文件加载：47]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-02-06T16:37:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.426000s][吞吐率：2.35req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:37:38+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/main
+[ log ] www.ctadmin.com/admin/index/main [运行时间：3.521000s][吞吐率：0.28req/s] [内存消耗：2,659.06kb] [文件加载：54]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/main' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\index\main.html [ array (
+  0 => 'pay_recharge',
+  1 => 'wei_recharge',
+  2 => 'client_recharge',
+  3 => 'driver_recharge',
+  4 => 'sum_recharge',
+  5 => 'replay_count',
+  6 => 'replay_pass',
+  7 => 'replay_pass_success',
+  8 => 'replay_sum',
+  9 => 'day_register',
+  10 => 'auth_register',
+  11 => 'count_register',
+  12 => 'count_project',
+  13 => 'count_client',
+  14 => 'count_user',
+  15 => 'proceed_order',
+  16 => 'finish_order',
+  17 => 'Invalid_order',
+  18 => 'count_order',
+  19 => 'register_order',
+  20 => 'project_order',
+  21 => 'client_order',
+  22 => 'oneself_pickorder',
+  23 => 'ti_pickorder',
+  24 => 'line_pickorder',
+  25 => 'unaccept_prickorder',
+  26 => 'accept_prickorder',
+  27 => 'accept_line',
+  28 => 'unaccept_line',
+  29 => 'uncity_user_order',
+  30 => 'city_user_order',
+  31 => 'city_user_cancelorder',
+  32 => 'city_user_countorder',
+  33 => 'unprovince_user_order',
+  34 => 'province_user_order',
+  35 => 'province_user_cancelorder',
+  36 => 'province_user_countorder',
+  37 => 'uncity_driver_order',
+  38 => 'city_driver_order',
+  39 => 'city_driver_cancelorder',
+  40 => 'city_driver_countorder',
+  41 => 'unprovince_driver_order',
+  42 => 'province_driver_order',
+  43 => 'province_driver_cancelorder',
+  44 => 'province_driver_countorder',
+  45 => 'unfeed_message',
+  46 => 'feed_message',
+  47 => 'sum_applay',
+  48 => 'sum_applay_year',
+  49 => 'sum_pay',
+  50 => 'sum_pay_year',
+  51 => 'count',
+  52 => 'cout_cancel_bulk',
+  53 => 'cout_cancel_city',
+  54 => 'sum_cancel_bulk',
+  55 => 'sum_cancel_city',
+  56 => 'sum_cancel_total',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_paymessage` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `paytype` = 2 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_application` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_application` WHERE  `states` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_application` WHERE  `states` = 2 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_application` WHERE  `states` = 4 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ct_application` WHERE  `states` = 4 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  ( `addtime` > '1517846400' AND `addtime` < '1517932799' )  AND `userstate` = 1  AND `delstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  `auth_status` = 2  AND `delstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  `userstate` = 1  AND `delstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  `userstate` = 2  AND `delstate` = 1 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  `userstate` = 3  AND `delstate` = 1 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT COUNT(uid) AS tp_count FROM `ct_user` WHERE  `delstate` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` WHERE  `orderstate` NOT IN (7,8) LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` WHERE  `orderstate` = 7 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` WHERE  `orderstate` = 8 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` `a` INNER JOIN `ct_user` `b` ON `a`.`userid`=`b`.`uid` WHERE  `a`.`orderstate` <> 8  AND `b`.`userstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` `a` INNER JOIN `ct_user` `b` ON `a`.`userid`=`b`.`uid` WHERE  `a`.`orderstate` <> 8  AND `b`.`userstate` = 2 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(oid) AS tp_count FROM `ct_order` `a` INNER JOIN `ct_user` `b` ON `a`.`userid`=`b`.`uid` WHERE  `a`.`orderstate` <> 8  AND `b`.`userstate` = 3 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_pickorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(picid) AS tp_count FROM `ct_pickorder` `a` INNER JOIN `ct_driver` `b` ON `b`.`drivid`=`a`.`driverid` WHERE  `a`.`type` = 1  AND `b`.`type` = 3 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(picid) AS tp_count FROM `ct_pickorder` `a` INNER JOIN `ct_driver` `b` ON `b`.`drivid`=`a`.`driverid` WHERE  `a`.`type` = 1  AND `b`.`type` = 2 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(picid) AS tp_count FROM `ct_pickorder` `a` INNER JOIN `ct_driver` `b` ON `b`.`drivid`=`a`.`driverid` WHERE  `a`.`type` = 2  AND `b`.`type` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(picid) AS tp_count FROM `ct_pickorder` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT COUNT(picid) AS tp_count FROM `ct_pickorder` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_lineorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(lid) AS tp_count FROM `ct_lineorder` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(lid) AS tp_count FROM `ct_lineorder` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `type` = 1  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `type` = 1  AND `orderstate` = 2 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `type` = 1  AND `orderstate` = 3 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `type` = 3  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `type` = 3  AND `orderstate` = 2 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `type` = 3  AND `orderstate` = 3 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT COUNT(uoid) AS tp_count FROM `ct_userorder` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_backcar` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(bid) AS tp_count FROM `ct_backcar` WHERE  `type` = 1  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(bid) AS tp_count FROM `ct_backcar` WHERE  `type` = 1  AND `orderstate` = 2 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT COUNT(bid) AS tp_count FROM `ct_backcar` WHERE  `type` = 1  AND `orderstate` = 3 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT COUNT(bid) AS tp_count FROM `ct_backcar` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(bid) AS tp_count FROM `ct_backcar` WHERE  `type` = 2  AND `orderstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(bid) AS tp_count FROM `ct_backcar` WHERE  `type` = 2  AND `orderstate` = 2 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT COUNT(bid) AS tp_count FROM `ct_backcar` WHERE  `type` = 2  AND `orderstate` = 3 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT COUNT(bid) AS tp_count FROM `ct_backcar` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_feedback` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_feedback` WHERE  `type` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_feedback` WHERE  `type` = 2 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ct_application` WHERE  `states` = 4 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT sum(money) as count FROM `ct_application` where states=4  AND DATE_FORMAT(FROM_UNIXTIME(start_time),'%Y') = DATE_FORMAT(FROM_UNIXTIME(1517906257),'%Y') [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT SUM(paynum) AS tp_sum FROM `ct_paymessage` LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT sum(paynum) as count FROM `ct_paymessage` where  DATE_FORMAT(FROM_UNIXTIME(paytime),'%Y') = DATE_FORMAT(FROM_UNIXTIME(1517906258),'%Y') [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_device` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ct_device` WHERE  `model` <> '' LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT count(id) as countyear FROM `ct_device` where model !=''  AND DATE_FORMAT(FROM_UNIXTIME(dow_time),'%Y')=DATE_FORMAT(FROM_UNIXTIME(1517906258),'%Y') [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT count(id) as countmoth FROM `ct_device` where model !=''  AND DATE_FORMAT(FROM_UNIXTIME(dow_time),'%m')=DATE_FORMAT(FROM_UNIXTIME(1517906258),'%m') [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT count(id) as countweek FROM `ct_device` where model !=''  AND DATE_FORMAT(FROM_UNIXTIME(dow_time),'%w')=DATE_FORMAT(FROM_UNIXTIME(1517906258),'%w') [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT count(id) as countday FROM `ct_device` where model !=''  AND 1517846400 < dow_time AND dow_time < 1517932799 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_cancel_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(can_id) AS tp_count FROM `ct_cancel_order` WHERE  `order_state` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(can_id) AS tp_count FROM `ct_cancel_order` WHERE  `order_state` = 2 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT SUM(deduct) AS tp_sum FROM `ct_cancel_order` WHERE  `order_state` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT SUM(deduct) AS tp_sum FROM `ct_cancel_order` WHERE  `order_state` = 2 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT SUM(deduct) AS tp_sum FROM `ct_cancel_order` LIMIT 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:37:39+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/favicon.ico
+[ log ] www.ctadmin.com/admin/index/favicon.ico [运行时间：0.124000s][吞吐率：8.06req/s] [内存消耗：1,853.59kb] [文件加载：47]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/favicon_ico' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Base->_empty[ E:\chitu\chitu_admin\trunk\application\admin\controller\Base.php ]
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\error\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-02-06T16:37:39+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/charts/countapplytotalyear
+[ log ] www.ctadmin.com/admin/charts/countapplytotalyear [运行时间：0.430000s][吞吐率：2.33req/s] [内存消耗：2,075.84kb] [文件加载：49]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'charts',
+    2 => 'countapplytotalyear',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/charts/countapplytotalyear' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Charts->countapplytotalyear[ E:\chitu\chitu_admin\trunk\application\admin\controller\Charts.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SELECT DATE_FORMAT(FROM_UNIXTIME(start_time),'%Y') years,sum(money) count,
+            (SELECT sum(money) FROM ct_application where DATE_FORMAT(FROM_UNIXTIME(start_time),'%Y')=years AND states=4 AND action_type=1 GROUP BY DATE_FORMAT(FROM_UNIXTIME(start_time),'%Y')) count0,
+            (SELECT sum(money) FROM ct_application where DATE_FORMAT(FROM_UNIXTIME(start_time),'%Y')=years AND states=4 AND action_type=2 GROUP BY DATE_FORMAT(FROM_UNIXTIME(start_time),'%Y')) count1
+            FROM ct_application where states=4 GROUP BY years [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:37:39+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/charts/countpaytotalyear
+[ log ] www.ctadmin.com/admin/charts/countpaytotalyear [运行时间：0.573000s][吞吐率：1.75req/s] [内存消耗：2,076.18kb] [文件加载：49]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'charts',
+    2 => 'countpaytotalyear',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/charts/countpaytotalyear' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Charts->countpaytotalyear[ E:\chitu\chitu_admin\trunk\application\admin\controller\Charts.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SELECT DATE_FORMAT(FROM_UNIXTIME(paytime),'%Y') years,sum(paynum) count,
+            (SELECT sum(paynum) FROM ct_paymessage where DATE_FORMAT(FROM_UNIXTIME(paytime),'%Y')=years AND  type=2 GROUP BY DATE_FORMAT(FROM_UNIXTIME(paytime),'%Y')) count0,
+            (SELECT sum(paynum) FROM ct_paymessage where DATE_FORMAT(FROM_UNIXTIME(paytime),'%Y')=years AND  type=1 GROUP BY DATE_FORMAT(FROM_UNIXTIME(paytime),'%Y')) count1
+            FROM ct_paymessage  GROUP BY years [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:38:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/carloadorder/prouserorder
+[ log ] www.ctadmin.com/admin/carloadorder/prouserorder [运行时间：1.028000s][吞吐率：0.97req/s] [内存消耗：2,685.26kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'carloadorder',
+    2 => 'prouserorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/carloadorder/prouserorder' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Carloadorder->prouserorder[ E:\chitu\chitu_admin\trunk\application\admin\controller\Carloadorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\carloadorder\prouserorder.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` `a` INNER JOIN `ct_cartype` `d` ON `d`.`car_id`=`a`.`carid` LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`d`.`allweight`,`d`.`allvolume`,`d`.`dimensions` FROM `ct_userorder` `a` INNER JOIN `ct_cartype` `d` ON `d`.`car_id`=`a`.`carid` ORDER BY `a`.`uoid`  desc LIMIT 0,10 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 231 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 86 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 206 LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 207 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 217 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 284 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45055 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 98 LIMIT 1 [ RunTime:0.029000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:38:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/carloadorder/prodetails?id=195
+[ log ] www.ctadmin.com/admin/carloadorder/prodetails?id=195 [运行时间：0.788000s][吞吐率：1.27req/s] [内存消耗：2,732.79kb] [文件加载：60]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'carloadorder',
+    2 => 'prodetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/carloadorder/prouserorder',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/carloadorder/prodetails' => '',
+  'id' => '195',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Carloadorder->prodetails[ E:\chitu\chitu_admin\trunk\application\admin\controller\Carloadorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\carloadorder\prodetails.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`car`.`allweight`,`car`.`allvolume`,`car`.`dimensions`,d.realname as carrname,d.mobile as carrphone,`user`.`phone`,user.realname as username FROM `ct_userorder` `a` LEFT JOIN `ct_driver` `d` ON `d`.`drivid`=`a`.`carriersid` INNER JOIN `ct_cartype` `car` ON `car`.`car_id`=`a`.`carid` INNER JOIN `ct_user` `user` ON `user`.`uid`=`a`.`userid` WHERE  `a`.`uoid` = '195' LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.027000s ]
+[ error ] [8]未定义数组索引: goodType[E:\chitu\chitu_admin\trunk\runtime\temp\3fd8b81f3d8faf7f01e20fc589c1da8e.php:97]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:38:13+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/carloadorder/prouserorder
+[ log ] www.ctadmin.com/admin/carloadorder/prouserorder [运行时间：0.952000s][吞吐率：1.05req/s] [内存消耗：2,685.26kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'carloadorder',
+    2 => 'prouserorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/carloadorder/prouserorder' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Carloadorder->prouserorder[ E:\chitu\chitu_admin\trunk\application\admin\controller\Carloadorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\carloadorder\prouserorder.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` `a` INNER JOIN `ct_cartype` `d` ON `d`.`car_id`=`a`.`carid` LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`d`.`allweight`,`d`.`allvolume`,`d`.`dimensions` FROM `ct_userorder` `a` INNER JOIN `ct_cartype` `d` ON `d`.`car_id`=`a`.`carid` ORDER BY `a`.`uoid`  desc LIMIT 0,10 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 231 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 86 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 206 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 207 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 217 LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 284 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45055 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 98 LIMIT 1 [ RunTime:0.028000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:42:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.468000s][吞吐率：2.14req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:47:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.484000s][吞吐率：2.07req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:52:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.465000s][吞吐率：2.15req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:53:37+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/user/userlist
+[ log ] www.ctadmin.com/admin/user/userlist [运行时间：1.302000s][吞吐率：0.77req/s] [内存消耗：2,701.80kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/userlist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->userlist[ E:\chitu\chitu_admin\trunk\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\user\userlist.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `delstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name`,`b`.`provinceid`,`b`.`areaid`,`b`.`cityid`,`b`.`address` FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `delstate` = 1 ORDER BY `uid`  desc LIMIT 0,10 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:53:38+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/user/userlist
+[ log ] www.ctadmin.com/admin/user/userlist [运行时间：1.211000s][吞吐率：0.83req/s] [内存消耗：2,701.80kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/userlist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->userlist[ E:\chitu\chitu_admin\trunk\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\user\userlist.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `delstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name`,`b`.`provinceid`,`b`.`areaid`,`b`.`cityid`,`b`.`address` FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `delstate` = 1 ORDER BY `uid`  desc LIMIT 0,10 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:53:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/user/userlist
+[ log ] www.ctadmin.com/admin/user/userlist [运行时间：1.224000s][吞吐率：0.82req/s] [内存消耗：2,701.80kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/userlist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->userlist[ E:\chitu\chitu_admin\trunk\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\user\userlist.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `delstate` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name`,`b`.`provinceid`,`b`.`areaid`,`b`.`cityid`,`b`.`address` FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `delstate` = 1 ORDER BY `uid`  desc LIMIT 0,10 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:53:52+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/user/userlist?search=%E5%91%A8%E4%BC%9F&starttime=&endtime=
+[ log ] www.ctadmin.com/admin/user/userlist?search=%E5%91%A8%E4%BC%9F&starttime=&endtime= [运行时间：0.284000s][吞吐率：3.52req/s] [内存消耗：2,645.01kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/user/userlist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/userlist' => '',
+  'search' => '周伟',
+  'starttime' => '',
+  'endtime' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->userlist[ E:\chitu\chitu_admin\trunk\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\user\userlist.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  ( `realname` LIKE '%周伟%' OR `phone` LIKE '%周伟%' )  AND `delstate` = 1 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name`,`b`.`provinceid`,`b`.`areaid`,`b`.`cityid`,`b`.`address` FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  ( `realname` LIKE '%周伟%' OR `phone` LIKE '%周伟%' )  AND `delstate` = 1 ORDER BY `uid`  desc LIMIT 0,10 [ RunTime:0.055000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:53:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/user/userlist
+[ log ] www.ctadmin.com/admin/user/userlist [运行时间：1.212000s][吞吐率：0.83req/s] [内存消耗：2,701.80kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/userlist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->userlist[ E:\chitu\chitu_admin\trunk\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\user\userlist.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_user` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `delstate` = 1 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name`,`b`.`provinceid`,`b`.`areaid`,`b`.`cityid`,`b`.`address` FROM `ct_user` `a` LEFT JOIN `ct_company` `b` ON `b`.`cid`=`a`.`lineclient` WHERE  `delstate` = 1 ORDER BY `uid`  desc LIMIT 0,10 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` WHERE  `id` = null LIMIT 1 [ RunTime:0.026000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:57:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/user/index
+[ log ] www.ctadmin.com/admin/user/index [运行时间：0.348000s][吞吐率：2.87req/s] [内存消耗：2,649.62kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ E:\chitu\chitu_admin\trunk\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\user\index.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_admin` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_admin` WHERE  `pstate` = 1 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_admin` WHERE  `pstate` = 1 ORDER BY `aid`  desc LIMIT 0,10 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T16:57:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.483000s][吞吐率：2.07req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.057000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:02:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.481000s][吞吐率：2.08req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.059000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:07:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.486000s][吞吐率：2.06req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:12:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.486000s][吞吐率：2.06req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:17:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.493000s][吞吐率：2.03req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.056000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:22:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.479000s][吞吐率：2.09req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:27:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.472000s][吞吐率：2.12req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:32:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.480000s][吞吐率：2.08req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.056000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:37:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.467000s][吞吐率：2.14req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:42:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.475000s][吞吐率：2.11req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:47:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.482000s][吞吐率：2.07req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:52:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.496000s][吞吐率：2.02req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.055000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:53:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/carloadorder/prouserorder
+[ log ] www.ctadmin.com/admin/carloadorder/prouserorder [运行时间：0.984000s][吞吐率：1.02req/s] [内存消耗：2,685.26kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'carloadorder',
+    2 => 'prouserorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/carloadorder/prouserorder' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Carloadorder->prouserorder[ E:\chitu\chitu_admin\trunk\application\admin\controller\Carloadorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\carloadorder\prouserorder.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` `a` INNER JOIN `ct_cartype` `d` ON `d`.`car_id`=`a`.`carid` LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`d`.`allweight`,`d`.`allvolume`,`d`.`dimensions` FROM `ct_userorder` `a` INNER JOIN `ct_cartype` `d` ON `d`.`car_id`=`a`.`carid` ORDER BY `a`.`uoid`  desc LIMIT 0,10 [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 231 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 86 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 206 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 207 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 217 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 284 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45055 LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 98 LIMIT 1 [ RunTime:0.028000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:53:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/carloadorder/prodetails?id=195
+[ log ] www.ctadmin.com/admin/carloadorder/prodetails?id=195 [运行时间：0.361000s][吞吐率：2.77req/s] [内存消耗：2,567.80kb] [文件加载：58]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'carloadorder',
+    2 => 'prodetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/carloadorder/prouserorder',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/carloadorder/prodetails' => '',
+  'id' => '195',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Carloadorder->prodetails[ E:\chitu\chitu_admin\trunk\application\admin\controller\Carloadorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\carloadorder\prodetails.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`car`.`allweight`,`car`.`allvolume`,`car`.`dimensions`,d.realname as carrname,d.mobile as carrphone,`user`.`phone`,user.realname as username FROM `ct_userorder` `a` LEFT JOIN `ct_driver` `d` ON `d`.`drivid`=`a`.`carriersid` INNER JOIN `ct_cartype` `car` ON `car`.`car_id`=`a`.`carid` INNER JOIN `ct_user` `user` ON `user`.`uid`=`a`.`userid` WHERE  `a`.`uoid` = '195' LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.027000s ]
+[ error ] [8]未定义数组索引: goodType[E:\chitu\chitu_admin\trunk\runtime\temp\3fd8b81f3d8faf7f01e20fc589c1da8e.php:97]
+
+---------------------------------------------------------------
+[ 2018-02-06T17:57:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.503000s][吞吐率：1.99req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.055000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T18:02:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.502000s][吞吐率：1.99req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.056000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T18:07:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.479000s][吞吐率：2.09req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.057000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T18:12:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.477000s][吞吐率：2.10req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.054000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T18:17:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.534000s][吞吐率：1.87req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.074000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.074000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.068000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T18:22:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.486000s][吞吐率：2.06req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T18:27:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.483000s][吞吐率：2.07req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.053000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T18:32:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/sendordernotice
+[ log ] www.ctadmin.com/admin/index/sendordernotice [运行时间：0.506000s][吞吐率：1.98req/s] [内存消耗：2,578.16kb] [文件加载：53]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'sendordernotice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.ctadmin.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/sendordernotice' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->sendordernotice[ E:\chitu\chitu_admin\trunk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_order` [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT `a`.`ordernumber`,`a`.`oid` FROM `ct_order` `a` INNER JOIN `ct_lineorder` `b` ON `b`.`orderid`=`a`.`oid` WHERE  `paystate` = 2  AND `affirm` = '1' [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT `ordernumber`,`uoid` FROM `ct_userorder` WHERE  `orderstate` = 1  AND `paystate` = 2 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_rout_order` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `rid` FROM `ct_rout_order` WHERE  `status` = 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2018-02-06T18:34:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/carloadorder/prouserorder
+[ log ] www.ctadmin.com/admin/carloadorder/prouserorder [运行时间：0.951000s][吞吐率：1.05req/s] [内存消耗：2,685.26kb] [文件加载：57]
+[ info ] [ LANG ] E:\chitu\chitu_admin\trunk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'carloadorder',
+    2 => 'prouserorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ctadmin.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ctadmin.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ki8qb1e680f2ub494h81r3s641',
+)
+[ info ] [ PARAM ] array (
+  '/admin/carloadorder/prouserorder' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Carloadorder->prouserorder[ E:\chitu\chitu_admin\trunk\application\admin\controller\Carloadorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\chitu\chitu_admin\trunk\public/../application/admin\view\carloadorder\prouserorder.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=chitutest;host=rm-2zezn1940ztq6hib5o.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_userorder` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ct_userorder` `a` INNER JOIN `ct_cartype` `d` ON `d`.`car_id`=`a`.`carid` LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`d`.`allweight`,`d`.`allvolume`,`d`.`dimensions` FROM `ct_userorder` `a` INNER JOIN `ct_cartype` `d` ON `d`.`car_id`=`a`.`carid` ORDER BY `a`.`uoid`  desc LIMIT 0,10 [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ct_district` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 231 LIMIT 1 [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 86 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 206 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 207 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 217 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 284 LIMIT 1 [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 319 LIMIT 1 [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45052 LIMIT 1 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 45055 LIMIT 1 [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT * FROM `ct_district` `` WHERE  `id` = 98 LIMIT 1 [ RunTime:0.027000s ]
+
+---------------------------------------------------------------

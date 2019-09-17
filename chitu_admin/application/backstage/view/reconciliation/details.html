@@ -1,0 +1,164 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="text-center p-lg">
+                    <h2>{$array.sermonth|date="Y年m月",###}第 {$array.batch} 次对账单详情</h2>
+                </div>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr style="background-color:#F0FAFD;">
+                            <td class="project-completion">
+                                订单编号
+                            </td>
+                            <td class="project-completion">
+                                班次号码
+                            </td>
+                            <td class="project-completion">
+                                发车时间
+                            </td>
+                            <td class="project-completion">
+                                始发城市                           
+                            </td>
+                            <td class="project-completion">
+                                终点城市                           
+                            </td>
+                            <td class="project-completion">
+                                提货费用
+                            </td>
+                            <td class="project-completion">
+                                干线费用
+                            </td>
+                            <td class="project-completion">
+                                配送配用 
+                            </td>
+                            <td class="project-completion">
+                                订单总价
+                            </td>
+                            <td class="project-completion">
+                                
+                            </td>
+                        </tr>
+                        {volist name="$list" id="vo"}
+                            <tr>
+                                <td>{$vo.ordernumber}</td>
+                                <td>{$vo.shiftnumber}</td>
+                                <td>{$vo.deptime|date="Y年m月d日",###}</td>
+                                <td>{$vo.start_id}</td>
+                                <td>{$vo.end_id}</td>
+                                <td>{$vo.pickcost}</td>
+                                <td>{$vo.linepice}</td>
+                                <td>{$vo.delivecost}</td>
+                                <td>{$vo.totalcost}</td>
+                                <td><a href="/backstage/reconciliation/orderdateils?id={$vo.oid}" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 查看</a></td>
+
+                            </tr>
+                        {/volist}
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>{$list->render()}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label">账单总价:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {$array.totalprice}（元）
+                            </div>
+                        </div>
+                        <label class="col-sm-1 control-label">发票号码:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {if condition="$array.Invoiceno eq ''"}
+                                    <span class="label label-warning">等待审核</span>
+                                {else/}
+                                    {$array.Invoiceno}
+                                {/if}
+                            </div>
+                        </div>
+                        <label class="col-sm-1 control-label">发票金额:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {if condition="$array.Invoiceno eq ''"}
+                                    <span class="label label-warning">等待审核</span>
+                                {else/}
+                                    {$array.Invoiceamount}
+                                {/if}
+                            </div>
+                        </div>
+                        
+                        {if condition="$array.Invoiceno eq ''"}
+                        <label class="col-sm-1 control-label">修改价格:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {if condition="$array.carr_total eq ''"}
+                                    <input type="test" value="{$array.carr_total}" id="newprice" class="form-control" style="width:100px;">
+                                {else/}
+                                    {$array.carr_total}
+                                {/if}
+                            </div>
+                        </div>
+                        <label class="col-sm-1 control-label">修改原因:</label>
+                        <div class="col-sm-1">
+                            <div class="radio">
+                                {if condition="$array.carr_total eq ''"}
+                                    <textarea style="width:100px;" id="remark"></textarea>
+                                {else/}
+                                    <textarea style="width:100px;" class="remark">{$array.carr_remark}</textarea>
+                                {/if}
+                            </div>
+                        </div>
+                        {if condition="$array.confirm eq 0"}
+                        <div class="col-sm-2">
+                            <div class="radio">
+                                {if condition="$array.carr_total eq ''"}
+                                <a onClick="javascript:upda({$array.iid});" class="btn btn-w-m btn-success">确定修改</a>
+                                {else/}
+                                   
+                                {/if}
+                            </div>
+                        </div>
+                        {/if}
+                        {/if}
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                </div>
+                {if condition="$array.Invoiceno eq ''"}
+                    <div class="form-group">
+                        <div class="col-sm-4" style="color:red;">* 价格只能修改一次！<br>* 如果没有问题，请尽快确定！ </div>
+                        {if condition="$array.confirm eq 0"}
+                        <div class="col-sm-4"><a onClick="javascript:determine({$array.iid});" class="btn btn-w-m btn-success">确  定</a></div>
+                        {/if}
+                        <a onClick="javascript :history.back(-1);" class="btn btn-w-m btn-danger">返  回</a>
+                    </div>
+                {else/}
+                    <a onClick="javascript :history.back(-1);" class="btn btn-block btn-outline btn-primary">返  回</a>
+                {/if}
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function upda(id){
+    var price = document.getElementById('newprice');
+    var remark = document.getElementById('remark');
+    window.location.href='/backstage/reconciliation/determineq?id='+id+'&price='+price.value+'&remark='+remark.value;
+}
+function determine(id){
+    window.location.href='/backstage/reconciliation/determine?id='+id;
+}
+</script>
+{include file="public/footer" /} 

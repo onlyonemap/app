@@ -1,0 +1,91 @@
+{include file="public/header" /} 
+<div class="wrapper wrapper-content animated fadeInUp">
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="ibox">
+            <!-- <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5> -->
+            <div class="ibox-title">
+                <h5>账号列表</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/backstage/vehiclereview/index" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh" style="color:#1a8aff;"></i> 刷新</a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入车牌照" id="provSelect1" class="input-sm form-control"> <span class="input-group-btn">
+                                <a href="javascript:sousuo();" class="btn btn-sm" style="margin-left: 20px; background: #1a8aff;color:#fff;border-radius: 6px;"> 搜索</a> </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-list">
+
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr style="background-color:#F0FAFD;">
+                                <td class="project-title">
+                                    车牌号码
+                                </td>
+                                <td class="project-title">
+                                    添加车辆人员                   
+                                </td>
+                                <td class="project-title">
+                                    添加时间
+                                </td>
+                                <td class="project-title">
+                                    车型号
+                                </td>
+                                <td class="project-title">
+                                    出车最低价
+                                </td>
+                                <td class="project-title">
+                                    审核状态
+                                </td>
+                                <td class="project-title">
+                                    订单状态
+                                </td>
+                            </tr>
+                            {volist name="list" id="vo"}
+                                <tr>
+                                    <td>{$vo.carnumber}</td>
+                                    <td>{$vo.realname}</td>
+                                    <td>{$vo.addtime|date="Y年m月d日 H:i:s",###}</td>
+                                    <td>{$vo.carparame}</td>
+                                    <td>{$vo.lowprice}（元）</td>
+                                    <td>
+                                        {switch name="$vo.status" }
+                                            {case value="1"}<span class="label label-warning">等待审核</span>{/case}
+                                            {case value="2"}<span class="label label-success">审核通过</span>{/case}
+                                            {case value="3"}<span class="label label-danger">审核失败</span>{/case}
+                                        {/switch}
+                                    </td>
+                                    <td><a href="/backstage/vehiclereview/details?id={$vo.ccid}" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 查看</a></td>
+                                </tr>
+                            {/volist}
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        {$page}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function sousuo(){
+    var psel = document.getElementById("provSelect1");
+    window.location.href='/backstage/vehiclereview/index?search='+psel.value;
+}
+</script>

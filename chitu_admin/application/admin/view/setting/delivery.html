@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>市内开通城市</h5>
+                    <div class="ibox-tools">
+                        <a class="dropdown-toggle"  href="/admin/setting/addtype" style="color: #000;">
+                            <span class="glyphicon glyphicon-plus"></span>
+                            <span>添加</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+
+                    <table class="footable table table-stripped toggle-arrow-tiny">
+                        <thead>
+                        <tr>
+                            <th data-toggle="true" class="text-left">ID</th>
+                            <th class="text-left">分类名称</th>
+                            <th class="text-left">状态</th>
+                            <th class="text-left">添加时间</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="list" id="vo"}
+                        <tr data-type="">
+                            <td class="text-left">{$vo.cid}</td>
+                            <td class="text-left">{$vo.name}</td>
+
+                            <td class="text-left">
+                                {if condition="($vo.status ==1)"}
+                                开启
+                                {else /}
+                                关闭
+                                {/if}
+                            </td><td class="text-left">{$vo.addtime|date="Y-m-d h:i:s",###}</td>
+                            <td class="text-center">
+                                <a href="/admin/setting/updatedelivery?id={$vo.cid}" class="btn btn-warning">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                    <span>修改</span>
+                                </a>
+                                <a data-url="/admin/setting/deldelivery?id={$vo.cid}&del=2" class="btn btn-danger confir">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                    <span>删除</span>
+                                </a>
+                            </td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+<script type="text/javascript" src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+<!-- 页面js -->
+<script type="text/javascript">
+    $(function () {
+        // 初始话表格
+        $('.footable').footable();
+        // 列表展开
+        $('body').on('click','tr',function(){
+            var self = $(this);
+            setTimeout(function(){
+                var type = self.attr("data-type");
+                if(type == 2){
+                    self.next('.footable-row-detail').find('.footable-row-detail-row').eq(2).hide();
+                    self.next('.footable-row-detail').find('.footable-row-detail-row').eq(3).find('.footable-row-detail-name').text('提货费');
+                    self.next('.footable-row-detail').find('.footable-row-detail-row').eq(4).find('.footable-row-detail-name').text('配送费');
+                }
+            },10)
+        });
+        // 查询
+        $('#search').click(function(){
+            var psel = document.getElementById("provSelect1");
+            var startcity = $(".startcity option:selected").val();
+            if (startcity=='A') {
+                startcity='';
+            };
+            var endcity = $(".endcity option:selected").val();
+            if (endcity=='A') {
+                endcity='';
+            };
+            window.location.href='/admin/shift/index?search='+psel.value+'&startcity='+startcity+"&endcity="+endcity;
+        });
+        // 删除
+        $('.confir').click(function(){
+
+            var url = $(this).attr("data-url");
+            layer.confirm('删除后数据将无法找回，确定要执行该操作吗？', {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                window.location.href=url;
+            }, function(){
+
+            });
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title> 赤途(上海)供应链管理有限公司</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="/static/tpl/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/tpl/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/static/tpl/css/animate.css" rel="stylesheet">
+    <link href="/static/tpl/css/style.css" rel="stylesheet">
+    <link href="/static/tpl/css/login.css" rel="stylesheet">
+    <link rel="icon" href="/static/tpl/img/favcion.png" type="image/x-icon" />
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;/static/tpl/ie.html" />
+    <![endif]-->
+    <script>
+        if (window.top !== window.self) {
+            window.top.location = window.location;
+        }
+    </script>
+
+</head>
+
+<body class="signin">
+    <div class="signinpanel">
+        <div class="row">
+            <div class="col-sm-12">
+               <form method="post" action="/backstage/index/login_send">
+                    <h4 class="no-margins">登录：</h4>
+                    <input type="text" class="form-control uname" name="carrier_name" placeholder="请输入电话号码" />
+                    <input type="password" class="form-control pword m-b" name="carrier_password"  placeholder="请输入密码" />
+                    <input type="radio" checked="" value="driver" name="carrier_usertype"> <i></i>承运商
+                    <input type="radio"  value="user" name="carrier_usertype"> <i></i>项目客户
+                    <button class="btn btn-success btn-block" type="submit">登录</button>
+                </form>
+            </div>
+        </div>
+        <div class="signup-footer">
+            <div class="pull-left">
+                &copy;赤途(上海)供应链管理有限公司
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

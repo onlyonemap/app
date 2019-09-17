@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i> 返回 </a></h5>
+                <div class="ibox-tools"> 添加城配签约客户 </div>
+            </div>
+        </div>
+
+
+        <form class="form-horizontal m-t" method="post" action="/admin/cityconfig/addContract" id="commentForm">
+
+        <div class="row">
+            <!-- 签约项目客户 start -->
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>城配签约客户</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">公司名称</label>
+                            <div class="col-sm-10">
+                                <input type="hidden" name="cid" value="" />
+                                <input value="" name="companyname" type="text" class="form-control companyname" required placeholder="请选择项目公司名称" />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">开通城市</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" name="city_id" id="selectCity"></select>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">最低收费</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="low_price" minlength="2" type="number" required />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">包含门店</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="low_door" maxlength="1" type="number"  required />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">最高门店</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="high_door" maxlength="18" type="number" required />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">多门店费</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="moredoor_price"  type="number" required />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 签约项目客户 end -->
+
+            <!-- 指派承运商 start -->
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>签约客户指派承运商</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">承运公司</label>
+                            <div class="col-sm-10">
+                                <input type="hidden" name="appoint_cid" value="" />
+                                <input name="appointName" type="text" class="form-control transportName" required placeholder="请选择指派的承运商" />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">承接人</label>  
+                            <div class="col-sm-10">
+                                <select class="form-control" name="appoint_driver" id="selectDriver" ></select>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">最低收费</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="appoint_lowprice" minlength="2" type="number" required />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">包含门店</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="appoint_lowdoor" maxlength="1" type="number"  required />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">最高门店</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="appoint_highdoor" maxlength="18" type="number" required />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">多门店费</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="appoint_moreprice"  type="number" required />
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 指派承运商 end -->
+        </div>
+        <!-- 保存 -->
+        <button class="btn btn-primary btn-lg btn-block" type="submit">保存</button>
+
+        </form>
+    </div>
+    <!-- jquery -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <!-- bootstrap -->
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- 自动补全 -->
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- 提示 -->
+    <script src="/static/tpl/js/plugins/layer-v3.3.1/layer.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        	// 城配已开通城市接口地址
+        	var getCityURL = '/admin/common/openCity';
+        	// 获取承运公司下调度接口
+        	var getCarrierStaffURL = '/admin/common/getCarrierStaff';
+
+        	/**
+             * ajax 请求
+             * @param  {[type]}   url      [请求地址]
+             * @param  {[type]}   data     [请求数据]
+             * @param  {Function} callback [成功回调]
+             * @return {[type]}            [description]
+             */
+            function send(url,data,callback) {
+                callback = callback || function () {};
+                // 设置loading
+                var loadding = layer.load();
+                // ajax请求
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    dataType: 'json',
+                    data: data,
+                })
+                .done(function(response) {
+                    if(response.code){ // 成功
+                        layer.msg(response.message); 
+                        // 回调函数
+                        callback(response.data);
+                    }else{ // 失败
+                        layer.msg(response.message); 
+                    }
+                })
+                .fail(function(response) {
+                    console.log("error");
+                })
+                .always(function(response) {
+                    // 关闭loading
+                    layer.close(loadding);
+                });
+            } 
+
+            /**
+             * 插入select下的options
+             * @param  {[type]} ele  [需要插入的dom]
+             * @param  {[type]} data [插入的数据]
+             * @return {[type]}      [description]
+             */
+            function setOptions(ele,data) {
+            	var options = '';
+            	for (var i = 0; i < data.length; i++) {
+            		options +='<option value="'+data[i].id+'">'+data[i].name+'</option>';
+            	}
+            	ele.html(options);
+            }
+
+        	/**
+        	 * 获取城配开通城市
+        	 * @param  {[type]} argument [description]
+        	 * @return {[type]}          [description]
+        	 */
+        	function getopenCity() {
+        		// 接口
+        		var url = getCityURL;
+        		// 数据
+        		var data = {};
+        		// 请求
+        		send(url,data,function (data) {
+        			setOptions($('#selectCity'),data);
+        		})
+        	}
+
+        	/**
+        	 * 获取承运公司下的调度和管理
+        	 * @param  {[type]} argument [description]
+        	 * @return {[type]}          [description]
+        	 */
+        	function getDriver() {
+        		// 接口
+        		var url = getCarrierStaffURL;
+        		// 数据
+        		var data = {
+        			cid : $('input[name="appoint_cid"]').val(),
+        			type: 2,  // 1司机 2调度 3管理 不传则返回所有
+        		}
+        		// 请求
+        		send(url,data,function (data) {
+        			setOptions($('#selectDriver'),data);
+        		})
+        	}
+
+        	// 获取城配开通城市
+            getopenCity();
+
+            // 项目公司自动补全
+            $( ".companyname" ).autocomplete({
+                source: "/admin/common/getmanager",
+                minLength: 1,
+                autoFocus: true,
+                select: function( event, ui ) { // 选择项目公司
+                    $('input[name="cid"]').val(ui.item.id);
+                }
+            });
+
+            // 承运公司自动补全
+            $( ".transportName" ).autocomplete({
+                source: "/admin/common/getcarriers",
+                minLength: 1,
+                autoFocus: true,
+                select: function( event, ui ) { // 选择项目公司
+                    $('input[name="appoint_cid"]').val(ui.item.id);
+                    // 获取承运公司下的调度
+                    getDriver();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

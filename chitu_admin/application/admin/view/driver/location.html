@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <style type="text/css">
+        .wrapper{height: 95%;}
+        .ibox,.ibox-content{height: 100%;}
+        .map{height: 100%; min-height: 700px;}
+        #map label{max-width:none;}
+        .arrow {   
+	        width: 0px;   
+	        height: 0px;   
+	        border-top: 10px solid red;   
+	        border-right: 10px solid transparent;   
+	        border-bottom: 10px solid transparent;  
+	        border-left:transparent 10px solid; 
+	        position: absolute;   
+	      	left:40%;  
+	        top:99%;
+	    } 
+   
+    </style>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>司机位置</h5>
+                <div class="ibox-tools">
+                    共计<span id="static" class="text-danger">0</span>人
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="map" id="map"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <!-- layer -->
+    <script src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+    <!-- common -->
+    <script src="/static/tpl/js/common/date-format.js"></script>    
+    <!-- 百度地图sdk -->
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=1ZbjfBVEfQTuDDMayHQqkFk5yakHGmGw"></script>
+    <!-- 页面逻辑 -->
+    <script type="text/javascript">
+
+        /**
+         * 获取平台司机位置
+         * @Auther: 李渊
+         * @Date: 2048.7.5
+         * @param  {[type]} argument [description]
+         * @return {[type]}          [description]
+         */
+        function getlocation() {
+            $.ajax({
+                url: '/admin/driver/getlocation',
+                type: 'POST',
+                dataType: 'json',
+                data: {search: ''},
+            })
+            .done(function(response) {
+                // 统计
+                $('#static').text(response.length);
+                console.log(response);
+                // 添加marker
+                addMarker(response);
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                console.log("complete");
+            });
+        }
+
+        /**
+         * 编写自定义函数,创建标注
+         * @param {[type]} point [description]
+         */
+        function addMarker(pointData){
+            for (var i = 0; i < pointData.length; i ++) {
+                // 经度
+                var lng = pointData[i].longitude;
+                // 纬度
+                var lat = pointData[i].latitude;
+                // 坐标
+                var point = new BMap.Point(lng,lat);
+                // label
+                var name = pointData[i].realname ? pointData[i].realname : pointData[i].username;
+                // date
+                var d = new Date(pointData[i].addtime*1000);
+                
+				if(d.getTime()<= new Date(new Date(new Date().toLocaleDateString()).getTime()).getTime()){ //不是当天添加的
+               		var dayIcon = new BMap.Icon("/static/tpl/img/mapgry.png", new BMap.Size(19,25));
+               		var marker = new BMap.Marker(point,{icon:dayIcon});
+				}else{ //当天
+               		var marker = new BMap.Marker(point);
+               		
+				};
+				map.addOverlay(marker);
+				var header = ''
+                var center = '<div class="arrow" ></div>'
+                			+'<div>'
+                            +'<p>姓名:'+name+'</p>'
+                            +'<p>电话:'+pointData[i].mobile+'</p>'
+                            +'<p>时间:'+d.format('yyyy-MM-dd h:m:s')+'</p>'
+                            +'<p>地址:'+pointData[i].address+'</p>'
+                            +'</div>';
+                var label = new BMap.Label(center,{
+                    position: point,
+                    offset: new BMap.Size(-84, -137)
+                });
+                // 为Label设置样式，代码如下：
+                label.setStyle({
+                    color : "red",
+                    fontSize : "12px",
+                    padding: "10px",
+                    borderRadius: "5px",
+                    backgroundColor :"#efefef",
+                    display:"none"
+                });
+
+                // 标注添加Label
+                marker.setLabel(label);
+                // 添加点击事件
+                marker.addEventListener("click", function(e){  
+                    // 获取元素
+                    var l =  e.target.getLabel();
+                    // 保留状态
+                    var status = l.V.style.display;
+                    // 所有maker隐藏
+                    $('.BMapLabel').css('display','none');
+                    // 显示隐藏
+                    if(status == 'none'){
+                        l.V.style.display = 'block';
+                    }else{
+                        l.V.style.display = 'none';
+                    }
+                }); 
+            }
+        }
+    
+    
+
+        // 百度地图API功能
+        var map = new BMap.Map("map");
+        // 初始化地图中心点及缩放级别
+        map.centerAndZoom("上海",10);      
+        // 开启鼠标滚轮缩放
+        map.enableScrollWheelZoom(true);  
+        // 添加带有定位的导航控件
+        var navigationControl = new BMap.NavigationControl({
+            // 靠左上角位置
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            // LARGE类型
+            type: BMAP_NAVIGATION_CONTROL_LARGE,
+            // 启用显示定位
+            enableGeolocation: true
+        });
+        map.addControl(navigationControl);
+        
+        getlocation();
+</script>
+
+    </script>
+</body>
+</html>

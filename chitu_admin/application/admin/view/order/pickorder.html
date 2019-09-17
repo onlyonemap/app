@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/order_table.css" />
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>提货订单列表</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/order/pickorder" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>      
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>" placeholder="请输入订单号码" id="provSelect1" class="form-control"> 
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                    
+                <table class="table" data-toggle="table" data-height="800">
+                    <thead>
+                        <tr>
+                            <th class="text-left td-ordernumber" data-sortable="true">订单号码</th>
+                            <th class="text-left" data-sortable="true">下单时间</th>
+                            <th class="text-left" data-sortable="true">客户</th>
+                            <th class="text-left td-time-T" data-sortable="true">提货时间</th>
+                            <th class="text-left td-temperature" data-sortable="true">冷藏类型</th>
+                            <th class="text-left td-goodnumber" data-sortable="true">件数</th>
+                            <th class="text-left td-unitprice" data-sortable="true">W(kg)/V(m³)</th>
+                            
+                            <th class="text-left" data-sortable="true">承运人</th>
+                            <th class="text-left td-adgost" data-sortable="true">订单状态</th>
+                            <th class="text-left td-adgost" data-sortable="true">应收状态</th>
+                            <th class="text-right td-money" data-sortable="true">应收运费</th>
+                            <th class="text-right td-money" data-sortable="true">实收运费</th>
+                            <th class="text-left td-adgost" data-sortable="true">应付状态</th>
+                            <th class="text-right td-money" data-sortable="true">应付运费</th>
+                            <th class="text-right td-money" data-sortable="true">实付运费</th>
+                            <th class="text-right td-handle">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name='list' id='user'}
+                        <tr>
+                            <td class="text-left">{$user.ordernumber}-T</td>
+                            <td class="text-left">{$user.addtime|date='Y-m-d H:i:s',###}</td>
+                            <td class="text-left">
+                                {if condition="($user.name =='')"}
+                                    {if condition="($user.realname =='')"}
+                                        {$user.realname}/{$user.phone} 
+                                    {else /}
+                                        {$user.username}/{$user.phone}
+                                    {/if}    
+                                {else /}
+                                    {$user.name}
+                                {/if}    
+                            </td>
+                            <td class="text-left">
+                                {$user.picktime}                          
+                            </td>
+                            <td class="text-left">
+                                {$user.coldtype}    
+                            </td>
+                            <td class="text-left">
+                                {$user.totalnumber}    
+                            </td>
+                            <td class="text-left">
+                                {$user.totalweight} /  {$user.totalvolume}
+                            </td>
+                            <td class="text-left">
+                                {$user.drivercom}    
+                            </td>
+                            <td class="text-left">
+                                {if condition="($user.orderstate==8)"}
+                                <span class="label label-warning">订单已取消</span>
+                                {else/}
+                                    {if condition="$user.paystate==2"}
+                                        {if condition="$user.status==1"}
+                                        <span class="label label-warning">进行中</span>
+                                        {elseif condition="$user.status==2"}
+                                        <span class="label label-warning">已接单</span>
+                                        {else/}
+                                        <span class="label label-primary">已完成</span>
+                                        {/if}
+                                    {else/}
+                                        <span class="label label-danger">未接单</span>
+                                    {/if}
+                                {/if}
+                            </td>
+                            <td class="text-left">
+                                {if condition="($user.user_paymess==1)"}
+                                <span class="label label-warning">未支付</span>
+                                {elseif condition="($user.user_paymess==2)" /}
+                                <span class="label label-primary">已支付</span>
+                                {elseif condition="($user.user_paymess==3)" /}
+                                <span class="label label-warning">信用支付</span>
+                                {/if}
+                            </td>
+                            <td class="text-right">{$user.tprice}</td>
+                            <td class="text-right">{$user.user_tprice}</td>
+                            <td class="text-left">
+                                {if condition="($user.driver_paymess==1)"}
+                                <span class="label label-warning">未支付</span>
+                                {elseif condition="($user.driver_paymess==2)" /}
+                                <span class="label label-primary">已支付</span>
+                                {elseif condition="($user.driver_paymess==3)" /}
+                                <span class="label label-warning">信用支付</span>
+                                {/if}
+                            </td>
+                            <td class="text-right">{$user.tprice}</td>
+                            <td class="text-right">{$user.driver_tprice}</td>
+                            <td class="text-right">
+                                <a href="/admin/order/pickdetails?id={$user.orderid}" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 查看</a>
+                            </td>
+                        </tr>
+                        {/volist}
+                    </tbody>
+                </table>
+                {$page}
+            </div>
+        </div>
+    </div>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<!-- bootstrap table -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+<!-- bootstrap table 语言包 -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+ <!-- 日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<!-- 调用日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+<script type="text/javascript">
+    // 查询
+    $('#search').click(function(){
+        var psel = document.getElementById("provSelect1");
+        window.location.href='/admin/order/pickorder?search='+psel.value;
+    });
+</script>
+</body>
+</html>

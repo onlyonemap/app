@@ -1,0 +1,54 @@
+.bootstrap-table{
+	overflow: hidden;
+}
+table{
+	min-width: 1600px;
+	border-collapse: collapse;
+	table-layout: fixed;
+	word-break:break-all;
+}
+td{
+	word-wrap:break-word;
+	word-break:break-all;
+}
+.fixed-table-container thead th .sortable{
+	padding-right: 15px;
+}
+.td-input{
+	width: 28px;
+}
+.td-ordernumber{
+	width: 150px;
+}
+.td-goodnumber{
+	width: 60px;
+}
+.td-unitprice{
+	width: 100px;
+}
+.td-adgost{
+	/*地址、物品类别、状态*/
+	width: 80px;
+}
+.td-line{
+	width: 140px;
+}
+.td-time{
+	width: 85px;
+}
+.td-time-T{
+	width: 120px;
+}
+.td-money{
+	width: 80px;
+}
+.td-carnum{
+	width: 75px;
+}
+.td-handle{
+	width: 70px;
+}
+.td-temperature{
+	width: 120px;
+}
+

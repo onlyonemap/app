@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/iCheck/custom.css" rel="stylesheet" />
+    <link href="/static/tpl/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/order_table.css" />
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>干线订单列表</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/order/lineorder" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="input-group date date-view-three" data-provide="datepicker">
+                            <div class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </div>
+                            <input type="text" name="starttime" id="starttime" value="<?php echo isset($_GET['starttime'])?$_GET['starttime']:'' ?>" class="form-control" placeholder="搜索下单开始时间">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-1">
+                        <p class="form-control-static text-center">----</p>
+                    </div>
+
+                    <div class="col-sm-3"> 
+                        <div class="input-group date date-view-three" data-provide="datepicker">
+                            <div class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </div>
+                            <input type="text" id="endtime" name="endtime" value="<?php echo isset($_GET['endtime'])?$_GET['endtime']:'' ?>" class="form-control" placeholder="搜索下单结束时间">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" value="<?php echo isset($_GET['search'])?$_GET['search']:''?>" placeholder="请输入订单号码" id="provSelect1" class="form-control"> 
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table" data-toggle="table" data-height="800">
+                    <thead>
+                        <tr>
+                            <th class="text-left td-ordernumber" data-sortable="true">订单号码</th>
+                            <th class="text-left td-carnum" data-sortable="true">班次号</th>
+                            <th class="text-left td-adgost" data-sortable="true">始发城市</th>
+                            <th class="text-left td-adgost" data-sortable="true">终点城市</th>
+                            <th class="text-left" data-sortable="true">下单时间</th>
+                            <th class="text-left td-temperature" data-sortable="true">冷藏类型</th>
+                            <th class="text-left td-goodnumber" data-sortable="true">件数</th>
+                            <th class="text-left td-unitprice" data-sortable="true">W(kg)/V(m³)</th>
+                            <th class="text-left" data-sortable="true">承运公司</th>
+                            <th class="text-left td-adgost" data-sortable="true">状态</th>
+                            <th class="text-left td-adgost" data-sortable="true">应收状态</th>
+                            <th class="text-right td-money" data-sortable="true">应收运费</th>
+                            <th class="text-right td-money" data-sortable="true">实收运费</th>
+                            <th class="text-left td-adgost" data-sortable="true">应付状态</th>
+                            <th class="text-right td-money" data-sortable="true">应付运费</th>
+                            <th class="text-right td-money" data-sortable="true">实付运费</th>
+                            <th class="text-right td-handle">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>
+                            <td class="">{$vo.ordernumber}-G</td>
+                            <td class="text-left">{$vo.shiftnumber}</td>
+                            <td class="text-left">{$vo.startcity}</td>
+                            <td class="text-left">{$vo.endcity}</td>
+                            <td class="text-left">{$vo.addtime|date='Y-m-d H:i:s',###}</td>
+                            <td class="text-left">
+                                {$vo.coldtype}    
+                            </td>
+                            <td class="text-left">
+                                {$vo.totalnumber}    
+                            </td>
+                            <td class="text-left">
+                                {$vo.totalweight} /  {$vo.totalvolume}
+                            </td>
+                            <td class="text-left">{$vo.shiftcompany}</td>
+                            <td class="text-left">
+                               
+                                {if condition="($vo.orderstate ==7)"}
+                                    <span class="label label-primary addwidth-1">已完成</span>
+                                {elseif condition="($vo.orderstate == 8)"}
+                                    <span class="label label-warning">订单已取消</span>
+                                {else/}
+                                    {if condition="($vo.paystate ==2)" /}
+                                        {if condition="($vo.affirm ==1)"}
+                                        <span class="label label-warning addwidth-1">进行中</span>
+                                        {elseif condition="($vo.affirm ==2)"/}
+                                        <span class="label label-warning addwidth-1">已接单</span>
+                                        {elseif condition="($vo.affirm ==2)"/}
+                                        <span class="label label-warning">系统接单</span>
+                                        {else /}
+                                        <span class="label label-primary">已完成</span>
+                                        {/if}
+                                    {else/}
+                                    <span class="label label-danger addwidth-1">未接单</span>
+                                    {/if}
+                                {/if}
+                            </td>
+                            <td class="text-left">
+                                {if condition="($vo.user_paymess==1)"}
+                                <span class="label label-warning">未支付</span>
+                                {elseif condition="($vo.user_paymess==2)" /}
+                                <span class="label label-primary">已支付</span>
+                                {elseif condition="($vo.user_paymess==3)" /}
+                                <span class="label label-warning">信用支付</span>
+                                {/if}
+                            </td>
+                            <td class="text-right">{$vo.linepice}</td>
+                            <td class="text-right">{$vo.user_linepice}</td>
+                            <td class="text-left">
+                                {if condition="($vo.driver_paymess==1)"}
+                                <span class="label label-warning">未支付</span>
+                                {elseif condition="($vo.driver_paymess==2)" /}
+                                <span class="label label-primary">已支付</span>
+                                {elseif condition="($vo.driver_paymess==3)" /}
+                                <span class="label label-warning">信用支付</span>
+                                {/if}
+                            </td>
+                            <td class="text-right">{$vo.linepice}</td>
+                            <td class="text-right">{$vo.driver_linepice}</td>
+                            <td class="text-right">
+                                <a href="/admin/order/linedetails?id={$vo.oid}" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 查看</a>
+                            </td>
+                        </tr>
+                        {/volist}
+                    </tbody>
+                    </table>
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 全局js -->
+<script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+<!-- bootstrap table -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+<!-- bootstrap table 语言包 -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+<!-- 日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<!-- 调用日期插件 -->
+<script type="text/javascript" src="/static/tpl/js/callDatepicker.js"></script>
+<script type="text/javascript">
+    // 查询
+    $('#search').click(function(){
+        var psel = document.getElementById("provSelect1");
+        var endtime = document.getElementById("endtime").value;
+        var starttime = document.getElementById("starttime").value;
+        window.location.href='/admin/order/lineorder?search='+psel.value+'&starttime='+starttime+'&endtime='+endtime;
+    });
+</script>
+</body>
+</html>

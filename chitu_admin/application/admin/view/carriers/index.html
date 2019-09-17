@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="public/header"}
+    <link href="/static/tpl/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/common/search.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/tpl/css/plugins/layer/layer.css">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>承运商列表</h5>
+                <div class="ibox-tools">
+                    <a class="dropdown-toggle"  href="/admin/carriers/addcarriers" style="color:#000">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <span>添加</span>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <a href="/admin/carriers/index" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" value="<?php echo isset($_GET['search'])?$_GET['search']:''?>" placeholder="请输入公司名称" id="provSelect1" class="form-control"> 
+                            <span class="input-group-btn">
+                                <button type="button" id="search" class="btn btn-primary">查询</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                   
+                <table class="footable table table-stripped toggle-arrow-tiny">
+                    <thead>
+                    <tr>
+                        <th class="text-left">公司名称</th>
+                        <th class="text-left">管理员</th>
+                        <th class="text-left">用户名</th>
+                        <th class="text-left">性别</th>
+                        <th class="text-left">手机号</th>
+                        <th class="text-left" data-hide="all">提货服务区域</th>
+                        <th class="text-left" data-hide="all">干线服务区域</th>
+                        <th class="text-left" data-hide="all">配送服务区域</th>
+                        <th class="text-left">添加时间</th>
+                        <th class="text-center">操作</th> 
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {volist name="list" id="vo"}
+                        <tr>
+                            <td class="text-left">{$vo.name}</td>
+                            <td class="text-left">{$vo.realname}</td>                                  
+                            <td class="text-left">{$vo.username}</td>
+                            <td class="text-left">{if condition ="($vo.sex==1)"}男{else/}女{/if}</td>
+                            <td class="text-left">{$vo.mobile}</td>
+                            <td>
+                                {if condition="isset($vo.ti)"}
+                                <table class=" table">
+                                    <thead>
+                                        
+                                        <th width="20%">城市</th>
+                                        <th width="20%">提货基准价</th>
+                                        <th width="20%">提货费用率</th>
+                                        <th width="20%"></th>
+                                    </thead>
+                                    <tbody>
+                                        {volist name="vo.ti" id="voti"}
+                                        <tr>
+                                            <td width="20%">{$voti.province}</td>
+                                            <td width="20%">{$voti.price}</td>
+                                            <td width="20%">{$voti.rate}</td>
+                                            <td width="20%"></td> 
+                                        <tr/>
+                                        {/volist}
+                                    </tbody>
+                                </table>
+                               {/if}
+                            </td>
+                            <td>
+                                {if condition="isset($vo.shift)"}
+                                <table class=" table">
+                                    <thead>
+                                        <th width="20%">班次号</th>
+                                        <th width="20%">出发城市</th>
+                                        <th width="20%">终点城市</th>
+                                        <th width="20%"></th>
+                                    </thead>
+                                    <tbody>
+                                        {volist name="vo.shift" id="sh"}
+                                        <tr>
+                                            <td width="20%">{$sh.shiftnumber}</td>  
+                                            <td width="20%">{$sh.shifstartline}</td> 
+                                            <td width="20%">{$sh.shifendline}</td>
+                                            <td width="20%"></td> 
+                                        </tr>
+                                        {/volist}
+                                    </tbody>
+                                </table>
+                                {/if}  
+                            </td>
+                            <td>
+                                {if condition="isset($vo.pei)"}
+                                <table class=" table">
+                                    <thead>
+                                        <th width="20%">城市</th>
+                                        <th width="20%">配送基准价</th>
+                                        <th width="20%">配送费用率</th>
+                                        <th width="20%"></th>
+                                        <!-- <th width="20%">仓库地址</th> -->
+                                    </thead>
+                                    <tbody>
+                                        {volist name="vo.pei" id="vopei"}
+                                        <tr>
+                                            <td width="20%">{$vopei.province}</td>
+                                            <td width="20%">{$vopei.price}</td>  
+                                            <td width="20%">{$vopei.rate}</td>
+                                            <td width="20%"></td>
+                                           <!--  <td width="20%">{if condition="isset($vopei.can) !=''"}
+                                            {volist name="vopei.can" id="vocan"}
+                                                {if condition="isset($vocan.can_address) !=''"}
+                                                {$vocan.can_address}
+                                                {/if}
+                                            {/volist} 
+                                            {/if} 
+                                            </td> -->
+                                            
+                                        <tr/>
+                                        {/volist}
+                                    </tbody>
+                                </table>
+                                {/if}                           
+                            </td>    
+                            <td class="text-left">{$vo.addtime|date='Y-m-d',###}</td>
+                            <td class="text-center">
+                                <a class="btn btn-info" href="/admin/carriers/detail?cid={$vo.cid}" >
+                                    <span class="glyphicon glyphicon-file"></span>
+                                    <span>详情</span>
+                                </a>
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">操作 <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="addplace" data-cid="{$vo.cid}">添加提配区域</a>
+                                        </li>
+                                        <li>
+                                            <a class="addround" data-cid="{$vo.cid}">添加周边提货城市</a>
+                                        </li>
+                                        <li>
+                                            <a href="/admin/carriers/carraddshift?cid={$vo.cid}" class="addline">添加干线</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="/admin/carriers/updatecarriers?cid={$vo.cid}" class="btn btn-warning">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                    <span>修改</span>
+                                </a>
+                                <a class="btn btn-danger del" data-cid="{$vo.cid}">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                    <span>删除</span>
+                                </a>
+                            </td>
+                        </tr>
+                        {/volist}
+                    </tbody>
+                </table>
+                {$page}
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+    <!-- 遮罩提示 -->
+    <script type="text/javascript" src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.footable').footable();
+            // 查询
+            $('#search').click(function(){
+                var psel = document.getElementById("provSelect1");
+                window.location.href='/admin/carriers/index?search='+psel.value;
+            });
+            // 删除
+            $('.del').click(function () {
+                var cid = $(this).attr('data-cid');
+
+                layer.confirm('删除后数据将无法找回，确定要执行该操作吗？', {
+                    btn: ['确定','取消'] //按钮
+                }, function(){
+                    window.location.href="/admin/carriers/delcom?cid="+cid;
+                }, function(){
+                    
+                });
+            })
+            //添加提配服务区域
+            $(".addplace").click(function(){
+               //var lineid = $(this).attr('data-cid');
+               var comid = $(this).attr('data-cid');
+               layer.open({
+                  type: 2,
+                  title:"提配服务区域",
+                  area: ['850px', '750px'],
+                  fixed: false, //不固定
+
+                  maxmin: true,
+                  shadeClose: true,
+                  content: '/admin/company/updategan?id='+comid
+                });
+            });
+
+             //添加提配服务区域
+            $(".addround").click(function(){
+               //var lineid = $(this).attr('data-cid');
+               var comid = $(this).attr('data-cid');
+               layer.open({
+                  type: 2,
+                  title:"添加周边提货区域",
+                  area: ['850px', '750px'],
+                  fixed: false, //不固定
+
+                  maxmin: true,
+                  shadeClose: true,
+                  content: '/admin/carriers/addround?id='+comid
+                });
+            });
+            
+        });
+    </script>
+</body>
+</html>

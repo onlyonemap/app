@@ -1,0 +1,159 @@
+{include file="public/header"}
+<link rel="stylesheet" type="text/css" href="/static/tpl/css/common.css" />
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>下载统计</h5>
+                        <div class="ibox-tools" >
+                                    <a href="/admin/charts/countdown" id="loading-example-btn" class="btn btn-white btn-sm" style="color:#1a8aff"><i class="fa fa-refresh"></i> 刷新</a>
+                            </div>
+                        </div>
+                    <div class="ibox-content">
+                        <div class="wrapper wrapper-content">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="ibox float-e-margins">
+                                        <div class="ibox-title">
+                                            <span class="label label-success pull-right">总计</span>
+                                            <h5>总计：</h5>
+                                        </div>
+                                        <div class="ibox-content">
+                                            <h1 class="no-margins">{$count.countAll}</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="ibox float-e-margins">
+                                        <div class="ibox-title">
+                                            <span class="label label-info pull-right">今年</span>
+                                            <h5>今年总计：</h5>
+                                        </div>
+                                        <div class="ibox-content">
+                                            <h1 class="no-margins">{$count.countyear}</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="ibox float-e-margins">
+                                        <div class="ibox-title">
+                                            <span class="label label-info pull-right">今月</span>
+                                            <h5>当月总计：</h5>
+                                        </div>
+                                        <div class="ibox-content">
+                                            <h1 class="no-margins">{$count.countmoth}</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="ibox float-e-margins">
+                                        <div class="ibox-title">
+                                            <span class="label label-info pull-right">今周</span>
+                                            <h5>当周总计：</h5>
+                                        </div>
+                                        <div class="ibox-content">
+                                            <h1 class="no-margins">{$count.countweek}</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="ibox float-e-margins">
+                                        <div class="ibox-title">
+                                            <span class="label label-danger pull-right">今天</span>
+                                            <h5>当天总计</h5>
+                                        </div>
+                                        <div class="ibox-content">
+                                            <h1 class="no-margins">{$count.countday}</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="clients-list">
+                                  
+                                <div class="tab-content">
+                                    <div id="tab-1" class="tab-pane active">
+                                        <div class="full-height-scroll">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>型号</th>
+                                                            <th>数量</th>
+                                                                    
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {volist name="list" id="vo"}
+                                                        <tr>
+                                                            <td>{$vo.model}</td>
+                                                            <td>{$vo.count}</td>
+                                                        </tr>
+                                                        {/volist}
+                                                    </tbody>
+                                                </table>
+                                                {$page}
+                                            </div>
+                                        </div>
+                                    </div>                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+
+    <script src="/static/tpl/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="/static/tpl/js/content.js?v=1.0.0"></script>
+    <script src="/static/tpl/js/plugins/layer/layer.min.js"></script>
+     <script src="/static/tpl/js/common.js"></script>
+   <script src="/static/tpl/js/plugins/iCheck/icheck.min.js"></script>
+
+    <script src="/static/tpl/js/calliCheck.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#optimize").click(function(){
+                var url = $(this).attr("data-url");
+                posttable(url,'优化');
+            });
+            $("#repair").click(function(){
+                var url = $(this).attr("data-url");
+                posttable(url,'修复');
+            });
+           
+        });
+
+        function posttable(url,text){
+            var arr = new Array();   
+            $("input[name='tables']:checked").each(function(){
+                arr.push($(this).val());
+            })
+           $.get(url,{state:2,table:arr},function(data){
+                if (data=="ok") {
+                    updateAlert("数据表"+text+"完成！",'alert-success');
+                }else{
+                    updateAlert("数据表"+text+"出错请重试！",'alert-error');
+                }
+                
+                setTimeout(function(){
+                $('#top-alert').find('button').click();
+                $(this).removeClass('disabled').prop('disabled',false);
+                },1500);
+           });
+        }
+    </script>
+    
+    
+
+</body>
+
+</html>

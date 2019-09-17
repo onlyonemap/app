@@ -1,0 +1,198 @@
+{include file="public/header"}
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>承运商公司列表</h5>
+
+                            <!--<div class="ibox-tools">
+                                
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#000">
+                                    <i class="fa fa-wrench" ></i>
+                                    添加承运商公司
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="/admin/company/addcom.html">干线承运商</a>
+                                    </li>
+                                    <li><a href="/admin/company/pickcompany.html">提货承运商</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>-->
+                        </div>
+                        <div class="ibox-content">
+                            <div class="row m-b-sm m-t-sm">
+                                <div class="col-md-1">
+                                    <a href="/backstage/carrcompany/index" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</a>
+                                </div>
+                                <!--<div class="col-md-11">
+                                    <div class="input-group">
+                                    <input type="text" value="<?php //echo isset($_GET['search'])?$_GET['search']:''?>" placeholder="请输入公司名称" id="provSelect1" class="input-sm form-control"> <span class="input-group-btn">
+                                        <a href="javascript:sousuo();" class="btn btn-sm btn-primary" style="margin-left: 20px; border-radius: 6px" > 查询</a> </span>
+                                    </div>
+                                </div>-->
+                            </div>
+                           
+                            <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="8">
+                                <thead>
+                                    <tr>
+
+                                        <th data-toggle="true">公司名称</th>
+                                        <th class="text-center">日期</th>
+                                        <th class="text-center">公司类型</th>
+                                        <th class="text-center" data-hide="all">提货服务区域</th>
+                                        <th class="text-center" data-hide="all">干线服务区域</th>
+                                        <th class="text-center" data-hide="all">配送服务区域</th>
+                                        <th class="text-center">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <div class="col-xs-4">
+                    
+                                </div>
+                                <div class="col-xs-4">
+                    
+                                </div>
+                                <div class="col-xs-4">
+                    
+                                </div>
+                               {volist name="list" id="vo"}
+                                <tr>
+                                    <td >{$vo.name}</td>
+                                    <td class="text-center">
+                                       {$vo.addtime|date='Y-m-d H:i:s',###}
+                                    </td>
+                                    <td class="text-center">
+                                        {if condition=" ($vo.type == 2)"}
+                                            提货公司
+                                        {elseif condition=" ($vo.type == 1)"/}
+                                            干线公司
+                                        {/if}
+                                    </td>
+                                    <td>
+                                        {if condition="isset($vo.ti)"}
+                                        <table class=" table">
+                                            <thead>
+                                                <th>城市</th>
+                                                <th>提货基准价</th>
+                                                <th>提货费用率</th>
+                                                
+                                            </thead>
+                                        
+                                        
+                                       {volist name="vo.ti" id="voti"}
+                                       <tr>
+                                        <td>{$voti.province}</td>
+                                        <td>{$voti.price}</td>
+                                        <td>{$voti.rate}</td>
+                                        <tr/>
+                                       {/volist}
+                                        </table>
+                                       {/if}
+                                    
+                                    <td>
+                                        
+                                      {if condition="isset($vo.shift)"}
+                                        <table class=" table">
+                                            <thead>
+                                                <th>班次号</th>
+                                                <th>出发城市</th>
+                                                <th>终点城市</th>
+                                                
+                                            </thead>
+                                        {volist name="vo.shift" id="sh"}
+                                        <tr>
+                                        <td>{$sh.shiftnumber}</td>  
+                                        <td>{$sh.shifstartline}</td> 
+                                        <td>{$sh.shifendline}</td> 
+                                        </tr>
+                                       {/volist}
+                                       </table>
+                                      {/if}  
+                                      
+                                    </td>
+                                    <td>
+                                       
+                                        {if condition="isset($vo.pei)"}
+                                         <table class=" table">
+                                            <thead>
+                                                <th>城市</th>
+                                                <th class="text-center">仓库地址</th>
+                                                <th>配送基准价</th>
+                                                <th>配送费用率</th>
+                                            </thead>
+                                        {volist name="vo.pei" id="vopei"}
+                                            <tr>
+                                            <td>{$vopei.province}</td>
+                                            <td>{if condition="isset($vopei.can) !=''"}
+                                            {volist name="vopei.can" id="vocan"}
+                                                {if condition="isset($vocan.can_address) !=''"}
+                                                {$vocan.can_address}
+                                                {/if}
+                                            {/volist} 
+                                            {/if} 
+                                            </td>
+                                            <td>{$vopei.price}</td>  
+                                            <td>{$vopei.rate}</td>
+                                            <tr/>
+                                        {/volist}
+                                        </table>
+                                        {/if} 
+                                                                       
+                                    </td>
+                                    
+                                    <td class="text-center">
+                                         
+                                        <a href="/backstage/carrcompany/updategan?id={$vo.cid}" class="btn btn-info"><i class="fa fa-paste"></i>编辑</a>
+                                     
+                                       
+                                       <!-- {if condition="($vo.status == 1)"}
+                                        <a href="/admin/company/delcom?id={$vo.cid}&del=1" class="btn btn-info" ><i class="fa fa-paste"></i>删除</a>
+                                        {else/}
+                                        <a href="/admin/company/delcom?id={$vo.cid}&del=2" class="btn btn-warning" ><i class="fa fa-paste"></i>恢复</a>
+                                        {/if}-->
+                                    </td>
+                                </tr>
+                                {/volist}
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                   
+                                </tr>
+                                </tfoot>
+                            </table>
+                            {$page}
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    <!-- 全局js -->
+    <script src="/static/tpl/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/tpl/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/tpl/js/plugins/footable/footable.all.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="/static/tpl/js/content.js?v=1.0.0"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.footable').footable();
+            $('.footable2').footable();
+
+        });
+      
+    </script>
+
+
+    
+    
+
+</body>
+
+</html>
